@@ -1,6 +1,30 @@
 * {
-  font-size: 50px;
   background-color: black;
   color: white;
+  border: 1px solid green;
+}
+body {
+  margin: 0;
+}
+
+.container {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 20px;
+  height: 90vh;
+}
+
+#date {
   font-family: "herculanum" ;
+  font-size: 50px;
+}
+
+#positiveMessage {
+  width: 40%;
+  font-family: "optima";
+  font-style: italic;
+  font-size: 40px;
 }

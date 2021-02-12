@@ -10,6 +10,24 @@ function showDate(){
   dateElement.textContent = date.toLocaleDateString('en-us', displayOptions)
 }
 
+function showTime(){
+  const time = new Date()
+  const timeElement = document.querySelector('#time')
+  let ampm = 'AM'
+  let hours = time.getHours() 
+  if (hours>12){
+    hours = hours-12
+    ampm = 'PM'
+  }
+
+  let mins = time.getMinutes()
+  if (mins < 10) {
+    mins = `0${mins}`
+  }
+
+  const fullTime = `${hours}<span class="colon">:</span>${mins} ${ampm}`
+  timeElement.innerHTML = fullTime
+}
 
 function showPositiveMessage(){
   fetch('messages.txt')
@@ -24,6 +42,11 @@ function showPositiveMessage(){
 
 showDate()
 showPositiveMessage()
+showTime()
+
+setInterval(() => {
+  showTime()
+}, 1000)
 
 
 

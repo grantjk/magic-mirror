@@ -1,15 +1,23 @@
+@font-face {
+  font-family: 'Jersey';
+  src: url('fonts/jersey.ttf');
+}
 * {
   background-color: black;
   color: white;
-  border: 1px solid green;
+  font-family: "sans-serif" ;
+  /* border: 1px solid green; */
 }
+
+
 body {
+  display: flex;
   margin: 0;
 }
 
 .container {
-  border: 1px solid red;
   display: flex;
+  border: 1px solid red;
   flex-direction: column;
   justify-content: space-between;
   margin: 0;
@@ -17,9 +25,26 @@ body {
   height: 90vh;
 }
 
+.spacer {
+  border: 1px solid yellow;
+}
+
+.date-time-bar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border: 1px solid blue;
+}
+
 #date {
   font-family: "herculanum" ;
   font-size: 50px;
+}
+
+#time {
+  font-size: 140px;
+  font-family: "jersey";
+  text-align: right;
 }
 
 #positiveMessage {

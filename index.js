@@ -1,3 +1,4 @@
+/* ========== Date ========== */
 function showDate(){
   const date = new Date(Date.now())
   const dateElement = document.querySelector('#date')
@@ -10,12 +11,13 @@ function showDate(){
   dateElement.textContent = date.toLocaleDateString('en-us', displayOptions)
 }
 
+/* ========== Time ========== */
 function showTime(){
   const time = new Date()
   const timeElement = document.querySelector('#time')
   let ampm = 'AM'
   let hours = time.getHours() 
-  if (hours>12){
+  if (hours > 12){
     hours = hours-12
     ampm = 'PM'
   }
@@ -29,6 +31,21 @@ function showTime(){
   timeElement.innerHTML = fullTime
 }
 
+
+/* ========== Positive Message ========== */
+let messageUpdatedForToday = false
+function updatePositiveMessage() {
+  const time = new Date()
+  if (time.getHours() === 0) {
+    messageUpdatedForToday = false
+  }
+
+  if (time.getHours() === 1 && messageUpdatedForToday === false) {
+    showPositiveMessage()
+    messageUpdatedForToday = true
+  }
+}
+
 function showPositiveMessage(){
   fetch('messages.txt')
     .then(response => response.text())
@@ -40,16 +57,17 @@ function showPositiveMessage(){
     })
 }
 
+
+/* ============ Main ====================== */
 showDate()
 showPositiveMessage()
 showTime()
 
 setInterval(() => {
   showTime()
+  showDate()
+  updatePositiveMessage()
 }, 1000)
-
-
-
 
 
 

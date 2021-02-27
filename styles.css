@@ -7,7 +7,7 @@
   background-color: black;
   color: white;
   font-family: "sans-serif" ;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 
@@ -18,12 +18,13 @@ body {
 
 .container {
   display: flex;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   flex-direction: column;
   justify-content: space-between;
   margin: 0;
   padding: 20px;
-  height: 90vh;
+  padding-top: 200px;
+  height: 80vh;
   width: 100%;
 }
 
@@ -32,35 +33,36 @@ body {
 }
 
 .spacer {
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
 }
 
 .date-time-bar {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 #date {
   font-family: "herculanum" ;
-  font-size: 50px;
+  font-size: 100px;
 }
 
 #time {
-  font-size: 140px;
+  font-size: 240px;
   font-family: "jersey";
   text-align: right;
 }
 
 #positiveMessage {
-  flex: 0.5;
+  flex: 0.75;
   font-family: "optima";
   font-style: italic;
-  font-size: 40px;
+  font-size: 80px;
 }
 
 .art {
-  font-family: Courier, Monaco, monospace;
-  font-size: 8px;
+  font-family: monospace;
+  font-size: 12px;
+  text-shadow: -1px 0,  0 1px,  1px 0,  0 -1px; /*fake bold*/
 }

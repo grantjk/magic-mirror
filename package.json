@@ -1,0 +1,21 @@
+{
+  "name": "magic-mirror",
+  "version": "1.0.0",
+  "description": "Teaching Charlie how to write code by building a Magic Mirror. We could use the community module, but I'd like him to learn how to write it himself.",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/nodemon/bin/nodemon.js server.js",
+    "web": " ./node_modules/lite-server/bin/lite-server http://localhost:8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grantjk/magic-mirror.git"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "lite-server": "^2.6.1",
+    "nodemon": "^2.0.7",
+    "scrapegoat": "^1.0.1"
+  }
+}

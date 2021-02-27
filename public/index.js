@@ -47,33 +47,50 @@ function updatePositiveMessage() {
 }
 
 function showPositiveMessage(){
-  fetch('messages.txt')
-    .then(response => response.text())
-    .then(text => {
-      const messageList = text.split('\n')
-      const messageNumber = Math.floor(Math.random()*messageList.length)
+  fetch('/message')
+    .then(response => response.json())
+    .then(payload => {
       const messageElement = document.querySelector('#positiveMessage')
-      messageElement.textContent = messageList[messageNumber]
+      messageElement.textContent = payload.message
     })
 }
 
 /* ============ Cartoon ====================== */
-const pokemons = [
-  'bulbasaur',
-  'charizard',
-  'charmander',
-  'pikachu',
-  'squirtle'
-]
 function showCartoonCharacter() {
-  const number = Math.floor(Math.random()*pokemons.length)
-  const pokemon = pokemons[number]
-  fetch(`pokemon/${pokemon}.txt`)
-    .then(response => response.text())
-    .then(text => {
+  fetch('/pokemon')
+    .then(response => response.json())
+    .then(payload => {
       const cartoonElement = document.querySelector('#cartoon')
-      cartoonElement.innerHTML = `<pre class='art'>${text}</pre>`
+      cartoonElement.innerHTML = `<pre class='art'>${payload.art}</pre>`
     })  
+}
+
+/* ============ Calendar ================== */
+function getCalendarEvents() {
+  fetch('/events')
+    .then(response => response.json())
+    .then(payload => {
+      const calendarElement = document.querySelector('#calendar')
+
+      const listElement = document.createElement('ul')
+      payload.forEach(event => {
+        const itemElement = document.createElement('li')
+        itemElement.textContent = event.title
+        listElement.appendChild(itemElement)
+      })
+
+      calendarElement.innerHTML = ''
+      calendarElement.appendChild(listElement)
+    })
+}
+
+/* ============= Weather ===================== */
+function getWeather() {
+  fetch('/weather')
+    .then(response => response.json())
+    .then(payload => {
+      console.log(payload)
+    })
 }
 
 
@@ -82,6 +99,8 @@ showDate()
 showPositiveMessage()
 showTime()
 showCartoonCharacter()
+// getCalendarEvents()
+getWeather()
 
 setInterval(() => {
   showTime()
@@ -96,5 +115,5 @@ setInterval(() => {
 
 
 
-
+ 
 

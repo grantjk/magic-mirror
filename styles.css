@@ -2,11 +2,12 @@
   font-family: 'Jersey';
   src: url('fonts/jersey.ttf');
 }
+
 * {
   background-color: black;
   color: white;
   font-family: "sans-serif" ;
-  /* border: 1px solid green; */
+  border: 1px solid green;
 }
 
 
@@ -23,6 +24,11 @@ body {
   margin: 0;
   padding: 20px;
   height: 90vh;
+  width: 100%;
+}
+
+.row {
+  display: flex;
 }
 
 .spacer {
@@ -48,8 +54,13 @@ body {
 }
 
 #positiveMessage {
-  width: 40%;
+  flex: 0.5;
   font-family: "optima";
   font-style: italic;
   font-size: 40px;
+}
+
+.art {
+  font-family: Courier, Monaco, monospace;
+  font-size: 8px;
 }

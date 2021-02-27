@@ -57,11 +57,31 @@ function showPositiveMessage(){
     })
 }
 
+/* ============ Cartoon ====================== */
+const pokemons = [
+  'bulbasaur',
+  'charizard',
+  'charmander',
+  'pikachu',
+  'squirtle'
+]
+function showCartoonCharacter() {
+  const number = Math.floor(Math.random()*pokemons.length)
+  const pokemon = pokemons[number]
+  fetch(`pokemon/${pokemon}.txt`)
+    .then(response => response.text())
+    .then(text => {
+      const cartoonElement = document.querySelector('#cartoon')
+      cartoonElement.innerHTML = `<pre class='art'>${text}</pre>`
+    })  
+}
+
 
 /* ============ Main ====================== */
 showDate()
 showPositiveMessage()
 showTime()
+showCartoonCharacter()
 
 setInterval(() => {
   showTime()

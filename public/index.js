@@ -75,8 +75,39 @@ function getCalendarEvents() {
       const listElement = document.createElement('ul')
       payload.forEach(event => {
         const itemElement = document.createElement('li')
-        itemElement.textContent = event.title
+        itemElement.classList.add('calendar-event')
         listElement.appendChild(itemElement)
+
+        // Date Container
+        const datecontainer = document.createElement('div')
+        datecontainer.classList.add('datecontainer')
+        itemElement.appendChild(datecontainer)
+
+        const monthbox = document.createElement('div')
+        monthbox.classList.add('monthbox')
+        monthbox.textContent = event.start.month
+        datecontainer.appendChild(monthbox)
+
+        const datebox = document.createElement('div')
+        datebox.classList.add('datebox')
+        datebox.textContent = event.start.date
+        datecontainer.appendChild(datebox)
+
+        const timebox = document.createElement('div')
+        timebox.classList.add('timebox')
+        timebox.textContent = event.start.time
+        datecontainer.appendChild(timebox)
+
+        // Event Container
+        const eventcontainer = document.createElement('div')
+        eventcontainer.classList.add('eventcontainer')
+        itemElement.appendChild(eventcontainer)
+
+        const eventName = document.createElement('div')
+        eventName.classList.add('event-name')
+        eventName.textContent = event.title
+        eventcontainer.appendChild(eventName)
+
       })
 
       calendarElement.innerHTML = ''
@@ -99,7 +130,7 @@ showDate()
 showPositiveMessage()
 showTime()
 showCartoonCharacter()
-// getCalendarEvents()
+getCalendarEvents()
 getWeather()
 
 setInterval(() => {
@@ -107,6 +138,7 @@ setInterval(() => {
   showDate()
   updatePositiveMessage()
 }, 1000)
+
 
 
 

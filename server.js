@@ -3,13 +3,14 @@ require('dotenv').config()
 const express = require('express')
 const app = express()
 const fs = require('fs');
+const moment = require("moment");
 
 /* =========================== */
 /*      Renderer               */
 /* =========================== */
 app.use(express.static('public'))
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/views/index.html')
+    res.sendFile(__dirname + '/public/index.html')
 })
 
 /* =========================== */
@@ -27,13 +28,21 @@ const Scrapegoat = require("scrapegoat");
 const scrapegoat = new Scrapegoat(config);
 
 app.get('/events', (req, res) => {
-    scrapegoat.getEventsByTime().then(events => {
-        const parsedEvents = events.map(e=> {
+
+    const start = moment().format("YYYYMMDD[T]HHmmss[Z]");
+    const end = moment().add(1, 'month').format("YYYYMMDD[T]HHmmss[Z]");
+    scrapegoat.getEventsByTime(start, end).then(events => {
+        const parsedEvents = events.slice(0,5).map(e=> {
             return {
                 title: e.data.title,
-                start: e.data.start,
+                start: {
+                    raw: e.data.start,
+                    month: moment(e.data.start).format('MMMM'),
+                    date: moment(e.data.start).format('D'),
+                    time: moment(e.data.start).format('h:mm a'),
+                },
                 end: e.data.end,
-                location: e.data.location
+                location: e.data.location,
             }
         })
         res.json(parsedEvents)

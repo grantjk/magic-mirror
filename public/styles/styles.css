@@ -7,29 +7,33 @@
   background-color: black;
   color: white;
   font-family: "sans-serif" ;
+  margin: 0;
+  padding: 0;
   /* border: 1px solid green; */
 }
 
 
 body {
   display: flex;
-  margin: 0;
+  margin: 100px 0 0 0 ;
+  padding: 0;
+  border: 1px solid red;
+  height: 2360px;
 }
 
 .container {
   display: flex;
-  /* border: 1px solid red; */
   flex-direction: column;
   justify-content: space-between;
-  margin: 0;
-  padding: 20px;
-  padding-top: 1vh;
-  height: 90vh;
   width: 100%;
 }
 
 .row {
   display: flex;
+}
+
+.bordered {
+  border: 1px solid blue;
 }
 
 .spacer {
@@ -45,25 +49,66 @@ body {
 
 #date {
   font-family: "herculanum" ;
-  font-size: 5vh;
+  font-size: 100px;
 }
 
 #time {
-  font-size: 20vh;
+  font-size: 200px;
   font-family: "jersey";
   text-align: right;
 }
 
 #positiveMessage {
-  flex: 0.75;
   font-family: "optima";
   font-style: italic;
-  font-size: 5vh;
+  font-size: 40px;
 }
 
 .art {
   font-family: monospace;
-  font-size: 0.5vh;
+  font-size: 6px;
   text-shadow: -1px 0,  0 1px,  1px 0,  0 -1px; /*fake bold*/
-  margin-right: 20px;
+  margin-right: 50px;
+}
+
+
+.art-container {
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.calendar-event {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid white;
+  padding: 10px 0 10px 0;
+}
+
+.datecontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.datebox {
+  font-size: 40px;
+  text-transform: uppercase;
+} 
+.monthbox {
+  font-size: 14px;
+  text-transform: uppercase;
+} 
+
+.timebox {
+  font-size: 14px;
+  text-transform: uppercase;
+} 
+
+.event-name {
+  font-size: 25px;
 }

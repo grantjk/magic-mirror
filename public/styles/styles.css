@@ -204,6 +204,10 @@ ul {
   margin-right: 60px;
 }
 
+#weather-prompt {
+  max-width: 800px;
+}
+
 .temperature {
   font-size: 200px;
 }

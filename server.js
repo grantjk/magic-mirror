@@ -4,6 +4,7 @@ const express = require('express')
 const app = express()
 const fs = require('fs');
 const moment = require("moment");
+const got = require("got");
 
 /* =========================== */
 /*      Renderer               */
@@ -99,10 +100,30 @@ app.get('/pokemon', (req, res) => {
 /* =========================== */
 /*      Weather                */
 /* =========================== */
-app.get('/weather', (req, res) => {
-    const current = require('./fixtures/toronto_current.json')[0]
-    const forecast = require('./fixtures/toronto_5day.json')
-    const hourly = require('./fixtures/toronto_12hours.json')
+app.get('/weather', async (req, res) => {
+    let current, forecast, hourly
+    if (process.env.DEV) {
+        // just reach from cache to avoid rate limit
+        current = require('./fixtures/toronto_current.json')[0]
+        forecast = require('./fixtures/toronto_5day.json')
+        hourly = require('./fixtures/toronto_12hours.json')
+    } else {
+        const api_key = process.env.ACCUWEATHER_API_KEY
+        currentResponse = await got(`http://dataservice.accuweather.com/currentconditions/v1/55488?apikey=${api_key}&details=true`, {json: true})
+        current = currentResponse.body[0]
+
+        forecastResponse = await got(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/55488?apikey=${api_key}&details=true&metric=true`, {json: true})
+        forecast = forecastResponse.body
+
+        hourlyResponse = await got(`http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/55488?apikey=${api_key}&details=true&metric=true`, {json: true})
+        hourly = hourlyResponse.body
+
+        // update cache
+        fs.writeFileSync('./fixtures/toronto_current.json', JSON.stringify(currentResponse.body))
+        fs.writeFileSync('./fixtures/toronto_5day.json', JSON.stringify(forecastResponse.body))
+        fs.writeFileSync('./fixtures/toronto_12hours.json', JSON.stringify(hourlyResponse.body))
+    }
+
     res.json({
         current, forecast, hourly
     })
@@ -112,6 +133,7 @@ app.get('/weather', (req, res) => {
 /*      Server                 */
 /* =========================== */
 app.listen(8000, () => {
+    console.log(`Starting in env: ${process.env.DEV ? 'Dev' : 'Live'}`)
     console.log("Alive on http://localhost:8000....")
 })
 

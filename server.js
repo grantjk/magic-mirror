@@ -100,7 +100,7 @@ app.get('/pokemon', (req, res) => {
 /*      Weather                */
 /* =========================== */
 app.get('/weather', (req, res) => {
-    const current = require('./fixtures/toronto_current.json')
+    const current = require('./fixtures/toronto_current.json')[0]
     const forecast = require('./fixtures/toronto_5day.json')
     const hourly = require('./fixtures/toronto_12hours.json')
     res.json({

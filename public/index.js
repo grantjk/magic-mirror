@@ -189,8 +189,45 @@ function getWeather() {
   fetch('/weather')
     .then(response => response.json())
     .then(payload => {
-      console.log(payload)
+      // Weather Icon
+      const conditions = payload?.current?.WeatherText
+      const dayTime = payload?.current?.IsDayTime
+      const iconEl = document.querySelector('#weather-icon')
+      iconEl.className = `weather-icon flaticon-${weatherIcon(conditions, dayTime)}`
+
+      // Set Current Temp
+      const currentTemp = payload?.current?.Temperature?.Metric?.Value
+      document.querySelector('#weather-temp').textContent = currentTemp
+
+      // Set Prompt
+      const prompt = payload?.forecast?.Headline?.Text
+      document.querySelector('#weather-prompt').textContent = `${conditions}. ${prompt}`
+
+      // Set Feels Like
+      const feelsLike = payload?.current?.RealFeelTemperature?.Metric?.Value
+      document.querySelector('#feels-like').textContent = `Feels like ${feelsLike}`
+
+      // Set High / Low
+      const high = payload?.forecast?.DailyForecasts?.[0]?.Temperature?.Maximum?.Value
+      const low = payload?.forecast?.DailyForecasts?.[0]?.Temperature?.Minimum?.Value
+      document.querySelector('#high-low').textContent = `${high} / ${low}`
+
+      // Set Wind Gust
+      const windGustSpeed = payload?.current?.WindGust?.Speed?.Metric?.Value
+      const windSpeedDirection = payload?.current?.Wind?.Direction?.English
+      document.querySelector('#wind').textContent = `Wind ${windGustSpeed} km/h (${windSpeedDirection})`
     })
+}
+
+function weatherIcon(weatherText, isDayTime) {
+  if (!isDayTime) {
+    return 'moon'
+  }
+
+  if (weatherText === 'Sunny') {
+    return 'sun-1'
+  }
+  return weatherText
 }
 
 

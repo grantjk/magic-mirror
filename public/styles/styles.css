@@ -77,7 +77,7 @@ body {
 
 .date-time-bar {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -176,4 +176,14 @@ ul {
 
 .event-name {
   font-size: 35px;
+}
+
+/* Weather */
+
+.weather-icon {
+  font-size: 300px;
+}
+
+.temperature {
+  font-size: 100px;
 }

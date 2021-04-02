@@ -72,7 +72,7 @@ function getCalendarEvents() {
     .then(payload => {
       const calendarElement = document.querySelector('#event-list')
 
-      // Get first full day event
+      // Show a nice prompt if today is a full day event
       const fullDayEvent = payload.filter(e => e.allDay)?.[0]
       const isToday = fullDayEvent && moment(fullDayEvent).isSame(moment(), 'day')
       if (isToday) {
@@ -81,7 +81,7 @@ function getCalendarEvents() {
       }
 
 
-      // Get First event that isn't today's full day event
+      // Show The Up Next block, or for events that are happening now
       let events = payload
       if (fullDayEvent) {
         events = events.filter(e => e != fullDayEvent) 
@@ -145,7 +145,7 @@ function getCalendarEvents() {
 /* Event Helpers */
 let eventLoopRef
 function calendarEventLoop(event) {
-  eventLoopRef?.clearInterval()
+  clearInterval(eventLoopRef)
   eventLoopRef = setInterval(() => {
     recomputeRelativeTime(event)
   }, 1000)

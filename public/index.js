@@ -197,15 +197,12 @@ function getWeather() {
 
       // Set Current Temp
       const currentTemp = payload?.current?.Temperature?.Metric?.Value
-      document.querySelector('#weather-temp').textContent = currentTemp
+      const feelsLike = payload?.current?.RealFeelTemperature?.Metric?.Value
+      document.querySelector('#weather-temp').innerHTML = `${currentTemp}<span class="feels-like">(${feelsLike})</span>`
 
       // Set Prompt
       const prompt = payload?.forecast?.Headline?.Text
       document.querySelector('#weather-prompt').textContent = `${conditions}. ${prompt}`
-
-      // Set Feels Like
-      const feelsLike = payload?.current?.RealFeelTemperature?.Metric?.Value
-      document.querySelector('#feels-like').textContent = `Feels like ${feelsLike}`
 
       // Set High / Low
       const high = payload?.forecast?.DailyForecasts?.[0]?.Temperature?.Maximum?.Value
@@ -279,6 +276,10 @@ setInterval(() => {
 setInterval(() => {
   getCalendarEvents()
 }, 1000*60*15) // 15 min update for calendar
+
+setInterval(() => {
+  getWeather()
+}, 1000*60*60)
 
 /* Setup */
 

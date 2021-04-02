@@ -15,8 +15,9 @@ body {
   display: flex;
   margin: 100px 0 0 0 ;
   padding: 0;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 2360px;
+  font-weight: bold;
 }
 
 .container {
@@ -174,12 +175,12 @@ ul {
   text-transform: uppercase;
 } 
 .monthbox {
-  font-size: 14px;
+  font-size: 24px;
   text-transform: uppercase;
 } 
 
 .timebox {
-  font-size: 14px;
+  font-size: 24px;
   text-transform: uppercase;
 } 
 
@@ -212,6 +213,10 @@ ul {
   font-size: 200px;
 }
 
+.feels-like {
+  font-size: 70px;
+}
+
 #weather-forecast {
   width: 400px
 }
@@ -222,6 +227,7 @@ ul {
   justify-content: space-between;
   font-size: 30px;
   padding: 6px 0;
+  text-decoration: bold;
 }
 
 .push-down {

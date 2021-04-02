@@ -103,31 +103,39 @@ app.get('/pokemon', (req, res) => {
 app.get('/weather', async (req, res) => {
     let current, forecast, hourly
     if (process.env.DEV) {
-        // just reach from cache to avoid rate limit
-        current = require('./fixtures/toronto_current.json')[0]
-        forecast = require('./fixtures/toronto_5day.json')
-        hourly = require('./fixtures/toronto_12hours.json')
+        res.json(readWeatherFromCache())
     } else {
-        const api_key = process.env.ACCUWEATHER_API_KEY
-        currentResponse = await got(`http://dataservice.accuweather.com/currentconditions/v1/55488?apikey=${api_key}&details=true`, {json: true})
-        current = currentResponse.body[0]
+        try {
+            const api_key = process.env.ACCUWEATHER_API_KEY
+            currentResponse = await got(`http://dataservice.accuweather.com/currentconditions/v1/55488?apikey=${api_key}&details=true`, {json: true})
+            current = currentResponse.body[0]
 
-        forecastResponse = await got(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/55488?apikey=${api_key}&details=true&metric=true`, {json: true})
-        forecast = forecastResponse.body
+            forecastResponse = await got(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/55488?apikey=${api_key}&details=true&metric=true`, {json: true})
+            forecast = forecastResponse.body
 
-        hourlyResponse = await got(`http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/55488?apikey=${api_key}&details=true&metric=true`, {json: true})
-        hourly = hourlyResponse.body
+            hourlyResponse = await got(`http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/55488?apikey=${api_key}&details=true&metric=true`, {json: true})
+            hourly = hourlyResponse.body
 
-        // update cache
-        fs.writeFileSync('./fixtures/toronto_current.json', JSON.stringify(currentResponse.body))
-        fs.writeFileSync('./fixtures/toronto_5day.json', JSON.stringify(forecastResponse.body))
-        fs.writeFileSync('./fixtures/toronto_12hours.json', JSON.stringify(hourlyResponse.body))
+            // update cache
+            fs.writeFileSync('./fixtures/toronto_current.json', JSON.stringify(currentResponse.body))
+            fs.writeFileSync('./fixtures/toronto_5day.json', JSON.stringify(forecastResponse.body))
+            fs.writeFileSync('./fixtures/toronto_12hours.json', JSON.stringify(hourlyResponse.body))
+            res.json({
+                current, forecast, hourly
+            })
+        } catch(err) {
+            res.json(readWeatherFromCache())
+        }
     }
-
-    res.json({
-        current, forecast, hourly
-    })
 })
+
+function readWeatherFromCache() {
+    // just reach from cache to avoid rate limit
+    current = require('./fixtures/toronto_current.json')[0]
+    forecast = require('./fixtures/toronto_5day.json')
+    hourly = require('./fixtures/toronto_12hours.json')
+    return {current, forecast, hourly}
+}
 
 /* =========================== */
 /*      Server                 */

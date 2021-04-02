@@ -115,15 +115,9 @@ function getCalendarEvents() {
         datebox.classList.add('datebox')
         datecontainer.appendChild(datebox)
 
-        const timebox = document.createElement('div')
-        timebox.classList.add('timebox')
-        datecontainer.appendChild(timebox)
 
         monthbox.textContent = event.start.month
         datebox.textContent = event.start.date
-        if (!event.allDay) {
-          timebox.textContent = event.start.time
-        }
 
         // Event Container
         const eventcontainer = document.createElement('div')
@@ -135,6 +129,12 @@ function getCalendarEvents() {
         eventName.textContent = event.title
         eventcontainer.appendChild(eventName)
 
+        const timebox = document.createElement('div')
+        timebox.classList.add('timebox')
+        eventcontainer.appendChild(timebox)
+        if (!event.allDay) {
+          timebox.textContent = event.start.time
+        }
       })
 
       calendarElement.innerHTML = ''
@@ -171,7 +171,10 @@ function eventCurrentlyHappening(event) {
 
 function eventRelativeTime(event) {
   if (event.allDay) {
-    return moment.utc(event.start.raw).fromNow()
+    // All day events returned in UTC, so need to just get date
+    // then convert back to moment for relative dates
+    const ugh = moment.utc(event.start.raw).format('yyyy-MM-DD')
+    return moment(ugh).fromNow()
   }
   return moment(event.start.raw).fromNow()
 }
@@ -280,6 +283,22 @@ setInterval(() => {
 setInterval(() => {
   getWeather()
 }, 1000*60*60)
+
+setInterval(() => {
+  reverseRows()
+}, 1000*60*60) // change layout every hour to prevent burn in
+
+
+let reversed = false
+function reverseRows() {
+  const elements = document.querySelectorAll('.row')
+  if (reversed) {
+    elements.forEach(el => el.classList.remove('row-reverse'))
+  } else {
+    elements.forEach(el => el.classList.add('row-reverse'))
+  }
+  reversed = !reversed
+}
 
 /* Setup */
 

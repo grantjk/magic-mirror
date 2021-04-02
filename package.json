@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "./node_modules/nodemon/bin/nodemon.js server.js",
-    "web": " ./node_modules/lite-server/bin/lite-server http://localhost:8000"
+    "web": " ./node_modules/lite-server/bin/lite-server"
   },
   "repository": {
     "type": "git",

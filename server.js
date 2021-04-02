@@ -28,26 +28,46 @@ const Scrapegoat = require("scrapegoat");
 const scrapegoat = new Scrapegoat(config);
 
 app.get('/events', (req, res) => {
-
     const start = moment().format("YYYYMMDD[T]HHmmss[Z]");
     const end = moment().add(1, 'month').format("YYYYMMDD[T]HHmmss[Z]");
     scrapegoat.getEventsByTime(start, end).then(events => {
-        const parsedEvents = events.slice(0,5).map(e=> {
+        const parsedEvents = events.slice(0,8).map(e=> {
+            let start = moment(e.data.start)
+            let end = moment(e.data.end)
+
+            if (isFullDayEvent(e)) {
+                start = start.utc()
+                end = end.utc()
+            }
+
             return {
                 title: e.data.title,
+                allDay: isFullDayEvent(e),
                 start: {
                     raw: e.data.start,
-                    month: moment(e.data.start).format('MMMM'),
-                    date: moment(e.data.start).format('D'),
-                    time: moment(e.data.start).format('h:mm a'),
+                    month: start.format('MMMM'),
+                    date: start.format('D'),
+                    time: start.format('h:mm a'),
                 },
-                end: e.data.end,
+                end: {
+                    raw: e.data.end,
+                    month: end.format('MMMM'),
+                    date: end.format('D'),
+                    time: end.format('h:mm a'),
+                },
                 location: e.data.location,
             }
         })
         res.json(parsedEvents)
     });
 })
+
+
+function isFullDayEvent(event) {
+    const start = moment.utc(event.data.start)
+    const end = moment.utc(event.data.end)
+    return start.hour() === 0 && end.isSame(start.endOf('day'), 'second')
+}
 
 /* =========================== */
 /*      Positive Message       */

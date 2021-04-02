@@ -70,10 +70,34 @@ function getCalendarEvents() {
   fetch('/events')
     .then(response => response.json())
     .then(payload => {
-      const calendarElement = document.querySelector('#calendar')
+      const calendarElement = document.querySelector('#event-list')
 
+      // Get first full day event
+      const fullDayEvent = payload.filter(e => e.allDay)?.[0]
+      const isToday = fullDayEvent && moment(fullDayEvent).isSame(moment(), 'day')
+      if (isToday) {
+        const todayElement = document.querySelector('#today-description')
+        todayElement.textContent = `Today is ${fullDayEvent.title}`
+      }
+
+
+      // Get First event that isn't today's full day event
+      let events = payload
+      if (fullDayEvent) {
+        events = events.filter(e => e != fullDayEvent) 
+      }
+
+      const nextEvent = events[0]
+      calendarEventLoop(nextEvent)
+      document.querySelector('#up-next-event-name').textContent = nextEvent.title 
+      document.querySelector('#up-next-time-range').textContent = eventTimeRange(nextEvent)
+
+
+
+
+      const remaining = events.slice(1)
       const listElement = document.createElement('ul')
-      payload.forEach(event => {
+      remaining.forEach(event => {
         const itemElement = document.createElement('li')
         itemElement.classList.add('calendar-event')
         listElement.appendChild(itemElement)
@@ -85,18 +109,21 @@ function getCalendarEvents() {
 
         const monthbox = document.createElement('div')
         monthbox.classList.add('monthbox')
-        monthbox.textContent = event.start.month
         datecontainer.appendChild(monthbox)
 
         const datebox = document.createElement('div')
         datebox.classList.add('datebox')
-        datebox.textContent = event.start.date
         datecontainer.appendChild(datebox)
 
         const timebox = document.createElement('div')
         timebox.classList.add('timebox')
-        timebox.textContent = event.start.time
         datecontainer.appendChild(timebox)
+
+        monthbox.textContent = event.start.month
+        datebox.textContent = event.start.date
+        if (!event.allDay) {
+          timebox.textContent = event.start.time
+        }
 
         // Event Container
         const eventcontainer = document.createElement('div')
@@ -115,6 +142,48 @@ function getCalendarEvents() {
     })
 }
 
+/* Event Helpers */
+let eventLoopRef
+function calendarEventLoop(event) {
+  eventLoopRef?.clearInterval()
+  eventLoopRef = setInterval(() => {
+    recomputeRelativeTime(event)
+  }, 1000)
+}
+
+function recomputeRelativeTime(event) {
+  const element = document.querySelector('#up-next-relative')
+
+  if (eventCurrentlyHappening(event)) {
+    element.textContent = `Happening now until ${event.end.time}`
+  } else {
+    element.textContent = `Up next ${eventRelativeTime(event)}`
+  }
+}
+
+function eventCurrentlyHappening(event) {
+  const start = moment(event.start.raw)
+  const end = moment(event.end.raw)
+  const now = moment()
+
+  return start.isBefore(now) && end.isAfter(now)
+}
+
+function eventRelativeTime(event) {
+  if (event.allDay) {
+    return moment.utc(event.start.raw).fromNow()
+  }
+  return moment(event.start.raw).fromNow()
+}
+
+function eventTimeRange(event) {
+  if (event.allDay) {
+    return `${event.start.month} ${event.start.date}`
+  }
+  return `${event.start.time} - ${event.end.time}`
+}
+
+
 /* ============= Weather ===================== */
 function getWeather() {
   fetch('/weather')
@@ -126,6 +195,7 @@ function getWeather() {
 
 
 /* ============ Main ====================== */
+configureMoment()
 showDate()
 showPositiveMessage()
 showTime()
@@ -133,13 +203,24 @@ showCartoonCharacter()
 getCalendarEvents()
 getWeather()
 
+
+/* Run Loop */
 setInterval(() => {
   showTime()
   showDate()
   updatePositiveMessage()
-}, 1000)
+}, 1000) // Update clock every second
 
+setInterval(() => {
+  getCalendarEvents()
+}, 1000*60*15) // 15 min update for calendar
 
+/* Setup */
+
+function configureMoment() {
+  moment.relativeTimeThreshold('h', 48); // better than "a day for 36 hours"
+  moment.relativeTimeThreshold('w', 4);  // enables weeks
+}
 
 
 

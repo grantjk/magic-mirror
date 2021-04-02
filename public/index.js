@@ -216,7 +216,35 @@ function getWeather() {
       const windGustSpeed = payload?.current?.WindGust?.Speed?.Metric?.Value
       const windSpeedDirection = payload?.current?.Wind?.Direction?.English
       document.querySelector('#wind').textContent = `Wind ${windGustSpeed} km/h (${windSpeedDirection})`
+
+      // Add Weather Forecasts
+      const forecastList = document.querySelector('#weather-forecast')
+      forecastList.innerHTML = ""
+      payload?.hourly?.forEach(f => {
+        const li = buildForecastLiElement(f)
+        forecastList.appendChild(li)
+      })
     })
+}
+
+function buildForecastLiElement(forecast) {
+  const li = document.createElement('li')
+  li.classList.add('forecast-row')
+  li.classList.add('row')
+
+  const timeEl = document.createElement('div')
+  const date = moment(forecast.DateTime)
+  timeEl.textContent = date.format('h a')
+  li.appendChild(timeEl)
+
+  const tempEl = document.createElement('div')
+  tempEl.textContent = `${forecast.Temperature.Value}`
+  li.appendChild(tempEl)
+
+
+
+
+  return li
 }
 
 function weatherIcon(weatherText, isDayTime) {

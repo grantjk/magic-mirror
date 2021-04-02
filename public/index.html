@@ -13,16 +13,14 @@
   
 <body>
   <div class="container">
-    <div class="date-time-bar">
+    <div class="row date-time-bar">
       <div class="weather-container">
-        <div class="row">
-          <i id="weather-icon" class='weather-icon flaticon-sun-1'></i>
-          <div id="weather-temp" class='weather-icon'>15</div>
+        <div class="row weather-row">
+          <div>
+            <i id="weather-icon" class='weather-icon flaticon-sun-1'></i>
+          </div>
+          <div id="weather-temp" class='temperature'>15</div>
         </div>
-        <div id="weather-prompt" class="text-subheader">Rain expected in the next hour</div>
-        <div id="feels-like" class="text-subheader">Feels like 10</div>
-        <div id="high-low" class="text-subheader">5 / -3</div>
-        <div id="wind" class="wind text-subheader">Wind 25 km/h</div>
       </div>
       <div class="spacer"></div>
       <div class="date-time-box">
@@ -31,18 +29,27 @@
         <div id="today-description" class="text-right text-subheader italic mt10"></div>
       </div>
     </div>
+    <div class="row mb20 row-top">
+      <div class="weather-prompt-box">
+        <div id="weather-prompt" class="text-subheader">Rain expected in the next hour</div>
+        <div id="feels-like" class="text-subheader">Feels like 10</div>
+        <div id="high-low" class="text-subheader">5 / -3</div>
+        <div id="wind" class="wind text-subheader">Wind 25 km/h</div>
+      </div>
+      <div class="up-next-box">
+        <div id="up-next-relative"class="event-start-relative text-right"></div>
+        <div id="up-next-event-name"class="event-name text-right"></div>
+        <div id="up-next-time-range"class="event-date-start text-right"></div>
+      </div>
+    </div>
     <div class="row right-aligned">
-      <div class="spacer"></div>
+      <ul id="weather-forecast">
+      </ul>
       <div id="calendar">
-        <div class="up-next-box">
-          <div id="up-next-relative"class="event-start-relative text-right"></div>
-          <div id="up-next-event-name"class="event-name text-right"></div>
-          <div id="up-next-time-range"class="event-date-start text-right"></div>
-        </div>
         <div id="event-list"></div>
       </div>
     </div>
-
+    <div class="push-down"></div>
     <div class="art-container row">
       <div id="cartoon"></div>
       <div id="positiveMessage"></div>

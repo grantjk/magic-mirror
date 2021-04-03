@@ -102,7 +102,8 @@ app.get('/pokemon', (req, res) => {
 /* =========================== */
 app.get('/weather', async (req, res) => {
     let current, forecast, hourly
-    if (process.env.DEV) {
+    if (process.env.DEV || req.query.fromCache) {
+        console.log("reading weather from cache...")
         res.json(readWeatherFromCache())
     } else {
         try {

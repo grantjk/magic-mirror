@@ -74,16 +74,14 @@ function getCalendarEvents() {
 
       // Show a nice prompt if today is a full day event
       const fullDayEvent = payload.filter(e => e.allDay)?.[0]
-      const isToday = fullDayEvent && moment(fullDayEvent).isSame(moment(), 'day')
+
+      const isToday = fullDayEvent && moment.utc(fullDayEvent.start.raw).isSame(moment(), 'day')
+      let events = payload
       if (isToday) {
         const todayElement = document.querySelector('#today-description')
         todayElement.textContent = `Today is ${fullDayEvent.title}`
-      }
 
-
-      // Show The Up Next block, or for events that are happening now
-      let events = payload
-      if (fullDayEvent) {
+        // filter out the first full day event if we are showing it in the title
         events = events.filter(e => e != fullDayEvent) 
       }
 
@@ -91,9 +89,6 @@ function getCalendarEvents() {
       calendarEventLoop(nextEvent)
       document.querySelector('#up-next-event-name').textContent = nextEvent.title 
       document.querySelector('#up-next-time-range').textContent = eventTimeRange(nextEvent)
-
-
-
 
       const remaining = events.slice(1)
       const listElement = document.createElement('ul')
@@ -188,8 +183,9 @@ function eventTimeRange(event) {
 
 
 /* ============= Weather ===================== */
-function getWeather() {
-  fetch('/weather')
+function getWeather({fromCache}) {
+  const encoded = encodeURIComponent(fromCache)
+  fetch(`/weather?fromCache=${fromCache}`)
     .then(response => response.json())
     .then(payload => {
       // Weather Icon
@@ -266,7 +262,7 @@ showPositiveMessage()
 showTime()
 showCartoonCharacter()
 getCalendarEvents()
-getWeather()
+getWeather({fromCache: true})
 
 
 /* Run Loop */
@@ -281,7 +277,7 @@ setInterval(() => {
 }, 1000*60*15) // 15 min update for calendar
 
 setInterval(() => {
-  getWeather()
+  getWeather({fromCache: false})
 }, 1000*60*60)
 
 setInterval(() => {

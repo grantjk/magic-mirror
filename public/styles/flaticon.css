@@ -17,21 +17,39 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 .flaticon-cloud:before {
     content: "\f101";
 }
-.flaticon-cloudy:before {
+.flaticon-clouds:before {
     content: "\f102";
 }
-.flaticon-frost:before {
+.flaticon-cloudy-1:before {
     content: "\f103";
 }
-.flaticon-moon:before {
+.flaticon-cloudy-2:before {
     content: "\f104";
 }
-.flaticon-rain:before {
+.flaticon-cloudy-3:before {
     content: "\f105";
 }
-.flaticon-sun-1:before {
+.flaticon-cloudy:before {
     content: "\f106";
 }
-.flaticon-sun:before {
+.flaticon-frost:before {
     content: "\f107";
+}
+.flaticon-heavy-rain:before {
+    content: "\f108";
+}
+.flaticon-moon-1:before {
+    content: "\f109";
+}
+.flaticon-moon:before {
+    content: "\f10a";
+}
+.flaticon-rain:before {
+    content: "\f10b";
+}
+.flaticon-sun-1:before {
+    content: "\f10c";
+}
+.flaticon-sun:before {
+    content: "\f10d";
 }

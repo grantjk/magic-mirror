@@ -6,41 +6,63 @@
   <title>magic mirror</title>
   <meta name="description" content="magic mirror">
   <meta name="author" content="charlie">
-  <link rel="stylesheet" type="text/css" href="styles/styles.css" />
   <link rel="stylesheet" type="text/css" href="styles/flaticon.css" />
+  <link rel="stylesheet" type="text/css" href="styles/fonts.css" />
+  <link rel="stylesheet" type="text/css" href="styles/styles.css" />
  </head>
 </head>
   
 <body>
   <div class="container">
+    <div class="row">
+      <div class="column">
+        <div class="row">
+          <div id="weather-temp" class='temperature'></div>
+          <div class="forecast">
+            <i id="weather-icon" class='weather-icon'></i>
+          </div>
+        </div>
+        <div id="wind" class="text-2 text-normal"></div>
+        <div class="row high-low-row">
+          <div id="high-low" class="text-2"></div>
+          <div id="precip-icon">
+            <i class='flaticon-rain'></i>
+          </div>
+          <div id="precip-probability" class="text-2"></div>
+        </div>
+      </div>
+      <div class="column">
+        <div id="time" class="text-1"></div>
+        <div id="date" class="text-2 text-normal"></div>
+        <div id="today-description" class="text-2 text-normal"></div>
+      </div>
+  </div>
+
+  <div class="row up-next-row">
+    <div class="column up-next-box">
+      <div id="up-next-relative" class="text-3 text-normal"></div>
+      <div id="up-next-event-name" class="event-name text-2"></div>
+      <div id="up-next-time-range" class="text-3 text-normal"></div>
+    </div>
+  </div>
+
+
+
+
     <div class="row date-time-bar">
       <div class="weather-container">
-        <div class="row weather-row">
-          <div>
-            <i id="weather-icon" class='weather-icon flaticon-sun-1'></i>
-          </div>
+        <div class="row">
           <div class="temp-column">
-            <div id="weather-temp" class='temperature'></div>
-            <div id="high-low" class="text-subheader"></div>
           </div>
         </div>
       </div>
       <div class="spacer"></div>
       <div class="date-time-box">
-        <div id="time" class="text-right"></div>
-        <div id="date" class="text-right"></div>
-        <div id="today-description" class="text-right text-subheader italic mt10"></div>
       </div>
     </div>
     <div class="row mb20 row-top">
       <div class="weather-prompt-box">
         <div id="weather-prompt" class="text-subheader"></div>
-        <div id="wind" class="wind text-subheader"></div>
-      </div>
-      <div class="up-next-box">
-        <div id="up-next-relative"class="event-start-relative text-right"></div>
-        <div id="up-next-event-name"class="event-name text-right"></div>
-        <div id="up-next-time-range"class="event-date-start text-right"></div>
       </div>
     </div>
     <div class="row right-aligned">
@@ -53,7 +75,7 @@
     <div class="push-down"></div>
     <div class="art-container row">
       <div id="cartoon"></div>
-      <div id="positiveMessage"></div>
+      <div id="positiveMessage" class="text-2 text-normal"></div>
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>

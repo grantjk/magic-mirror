@@ -60,6 +60,9 @@ app.get('/events', (req, res) => {
             }
         })
         res.json(parsedEvents)
+    }).catch(err => {
+        console.log("Error fetching calendar")
+        console.log(err)
     });
 })
 
@@ -102,7 +105,7 @@ app.get('/pokemon', (req, res) => {
 /* =========================== */
 app.get('/weather', async (req, res) => {
     let current, forecast, hourly
-    if (process.env.DEV || req.query.fromCache) {
+    if (process.env.DEV || req.query.fromCache === 'true') {
         console.log("reading weather from cache...")
         res.json(readWeatherFromCache())
     } else {
@@ -125,6 +128,8 @@ app.get('/weather', async (req, res) => {
                 current, forecast, hourly
             })
         } catch(err) {
+            console.log("Error fetching weather")
+            console.log(err)
             res.json(readWeatherFromCache())
         }
     }

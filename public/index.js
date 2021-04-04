@@ -4,7 +4,7 @@ function showDate(){
   const dateElement = document.querySelector('#date')
   const displayOptions = {
     weekday:'long',
-    month:'long',
+    month:'short',
     day:'numeric'
   }
 
@@ -27,7 +27,7 @@ function showTime(){
     mins = `0${mins}`
   }
 
-  const fullTime = `${hours}<span class="colon">:</span>${mins} ${ampm}`
+  const fullTime = `${hours}<span class="colon">:</span>${mins}`
   timeElement.innerHTML = fullTime
 }
 
@@ -79,7 +79,7 @@ function getCalendarEvents() {
       let events = payload
       if (isToday) {
         const todayElement = document.querySelector('#today-description')
-        todayElement.textContent = `Today is ${fullDayEvent.title}`
+        todayElement.textContent = `${fullDayEvent.title}`
 
         // filter out the first full day event if we are showing it in the title
         events = events.filter(e => e != fullDayEvent) 
@@ -88,7 +88,11 @@ function getCalendarEvents() {
       const nextEvent = events[0]
       calendarEventLoop(nextEvent)
       document.querySelector('#up-next-event-name').textContent = nextEvent.title 
-      document.querySelector('#up-next-time-range').textContent = eventTimeRange(nextEvent)
+      if (eventCurrentlyHappening(nextEvent)) {
+        document.querySelector('#up-next-time-range').textContent = ''
+      } else {
+        document.querySelector('#up-next-time-range').textContent = eventTimeRange(nextEvent)
+      }
 
       const remaining = events.slice(1)
       const listElement = document.createElement('ul')
@@ -192,26 +196,32 @@ function getWeather({fromCache}) {
       const conditions = payload?.current?.WeatherText
       const dayTime = payload?.current?.IsDayTime
       const iconEl = document.querySelector('#weather-icon')
-      iconEl.className = `weather-icon flaticon-${weatherIcon(conditions, dayTime)}`
+      const iconName = weatherIcon(conditions, dayTime)
+      if (iconName) {
+        iconEl.className = `weather-icon flaticon-${iconName}`
+      } else {
+        iconEl.textContent = conditions
+      }
 
       // Set Current Temp
       const currentTemp = payload?.current?.Temperature?.Metric?.Value
       const feelsLike = payload?.current?.RealFeelTemperature?.Metric?.Value
-      document.querySelector('#weather-temp').innerHTML = `${currentTemp}<span class="feels-like">(${feelsLike})</span>`
-
-      // Set Prompt
-      const prompt = payload?.forecast?.Headline?.Text
-      document.querySelector('#weather-prompt').textContent = `${conditions}. ${prompt}`
+      document.querySelector('#weather-temp').innerHTML = `${currentTemp}`
 
       // Set High / Low
       const high = payload?.forecast?.DailyForecasts?.[0]?.Temperature?.Maximum?.Value
       const low = payload?.forecast?.DailyForecasts?.[0]?.Temperature?.Minimum?.Value
-      document.querySelector('#high-low').textContent = `${high} / ${low}`
+      document.querySelector('#high-low').textContent = `${high} | ${low}`
 
       // Set Wind Gust
       const windGustSpeed = payload?.current?.WindGust?.Speed?.Metric?.Value
-      const windSpeedDirection = payload?.current?.Wind?.Direction?.English
-      document.querySelector('#wind').textContent = `Wind ${windGustSpeed} km/h (${windSpeedDirection})`
+      document.querySelector('#wind').textContent = `${windGustSpeed}km/hr wind`
+
+      // Precipitation
+      const probability = payload?.forecast?.DailyForecasts?.[0]?.Day?.PrecipitationProbability
+      if (probability > 0) {
+        document.querySelector('#precip-probability').textContent = `${probability}%`
+      }
 
       // Add Weather Forecasts
       const forecastList = document.querySelector('#weather-forecast')
@@ -237,21 +247,49 @@ function buildForecastLiElement(forecast) {
   tempEl.textContent = `${forecast.Temperature.Value}`
   li.appendChild(tempEl)
 
+  const rainProbability = forecast?.PrecipitationProbability
+  const conditions = forecast?.IconPhrase
+  const isDayTime = forecast?.IsDaylight
+  const icon = weatherIcon(conditions, isDayTime)
 
+  if (icon) {
+    const iconEl = document.createElement('i')
+    iconEl.classList.add(`flaticon-${icon}`)
+    li.appendChild(iconEl)
+  } else {
+    const iconEl = document.createElement('div')
+    iconEl.textContent = conditions
+    li.appendChild(iconEl)
+  }
 
+  const probEl = document.createElement('div')
+  probEl.textContent = `${rainProbability}%`
+  li.appendChild(probEl)
 
   return li
 }
 
 function weatherIcon(weatherText, isDayTime) {
-  if (!isDayTime) {
-    return 'moon'
+  console.log(weatherText)
+  switch (weatherText?.toLowerCase()) {
+    case 'sunny': 
+    case 'mostly clear': 
+    case 'mostly sunny': 
+      return isDayTime ? 'sun' : 'moon-1';
+    case 'partly sunny': 
+      return 'cloudy';
+    case 'partly cloudy': 
+    case 'intermittent clouds':
+      return 'cloud';
+    case 'mostly cloudy': 
+      return 'cloudy-1';
+    case 'cloudy': 
+      return 'cloudy-2'
+    case 'showers':
+      return 'rain';
   }
 
-  if (weatherText === 'Sunny') {
-    return 'sun-1'
-  }
-  return weatherText
+  return undefined
 }
 
 

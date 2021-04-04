@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'HK';
+  src: url('./fonts/HKGrotesk-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'HK';
+  src: url('./fonts/HKGrotesk-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'HK';
+  src: url('./fonts/HKGrotesk-SemiBold.ttf');
+  font-weight: 100;
+}

@@ -32,7 +32,7 @@ app.get('/events', (req, res) => {
     const start = moment().format("YYYYMMDD[T]HHmmss[Z]");
     const end = moment().add(1, 'month').format("YYYYMMDD[T]HHmmss[Z]");
     scrapegoat.getEventsByTime(start, end).then(events => {
-        const parsedEvents = events.slice(0,8).map(e=> {
+        const parsedEvents = events.map(e=> {
             let start = moment(e.data.start)
             let end = moment(e.data.end)
 

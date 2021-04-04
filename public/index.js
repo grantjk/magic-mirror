@@ -70,22 +70,23 @@ function getCalendarEvents() {
   fetch('/events')
     .then(response => response.json())
     .then(payload => {
+      let filteredEvents = payload.filter(e => !eventIsOver(e))
+      console.log(filteredEvents)
       const calendarElement = document.querySelector('#event-list')
 
       // Show a nice prompt if today is a full day event
-      const fullDayEvent = payload.filter(e => e.allDay)?.[0]
+      const fullDayEvent = filteredEvents.filter(e => e.allDay)?.[0]
 
       const isToday = fullDayEvent && moment.utc(fullDayEvent.start.raw).isSame(moment(), 'day')
-      let events = payload
       if (isToday) {
         const todayElement = document.querySelector('#today-description')
         todayElement.textContent = `${fullDayEvent.title}`
 
         // filter out the first full day event if we are showing it in the title
-        events = events.filter(e => e != fullDayEvent)
+        filteredEvents = filteredEvents.filter(e => e != fullDayEvent)
       }
 
-      const nextEvent = events[0]
+      const nextEvent = filteredEvents[0]
       calendarEventLoop(nextEvent)
       document.querySelector('#up-next-event-name').textContent = nextEvent.title
       if (eventCurrentlyHappening(nextEvent)) {
@@ -94,7 +95,7 @@ function getCalendarEvents() {
         document.querySelector('#up-next-time-range').textContent = eventTimeRange(nextEvent)
       }
 
-      const remaining = events.slice(1)
+      const remaining = filteredEvents.slice(1, 6)
       const listElement = document.createElement('ul')
       remaining.forEach(event => {
         const itemElement = document.createElement('li')
@@ -168,6 +169,14 @@ function eventCurrentlyHappening(event) {
   return start.isBefore(now) && end.isAfter(now)
 }
 
+function eventIsOver(event) {
+  const start = moment(event.start.raw)
+  const end = moment(event.end.raw)
+  const now = moment()
+
+  return start.isBefore(now) && end.isBefore(now)
+}
+
 function eventRelativeTime(event) {
   if (event.allDay) {
     // All day events returned in UTC, so need to just get date
@@ -230,7 +239,7 @@ function getWeather({fromCache}) {
       // Add Weather Forecasts
       const forecastList = document.querySelector('#weather-forecast')
       forecastList.innerHTML = ""
-      payload?.hourly?.forEach(f => {
+      payload?.hourly?.slice(0,6).forEach(f => {
         const li = buildForecastLiElement(f)
         forecastList.appendChild(li)
       })

@@ -34,7 +34,7 @@ body {
 
 /* text */
 .text-1 {
-  font-size: 250px;
+  font-size: 210px;
 }
 
 .text-2 {
@@ -212,8 +212,15 @@ ul {
 
 .forecast {
   margin: 0 40px;
-  font-size: 300px;
-  margin-bottom: -80px; /* Needed to shrink bottom padding */
+  font-size: 250px;
+}
+
+.weather-row {
+  margin-bottom: -44px; /* Needed to shrink bottom padding */
+}
+
+#time {
+  margin-bottom: 6px; /* To align right and left sides? */
 }
 
 #weather-prompt {

@@ -216,11 +216,7 @@ ul {
 }
 
 .weather-row {
-  margin-bottom: -44px; /* Needed to shrink bottom padding */
-}
-
-#time {
-  margin-bottom: 6px; /* To align right and left sides? */
+  margin-bottom: -50px; /* Needed to shrink bottom padding */
 }
 
 #weather-prompt {

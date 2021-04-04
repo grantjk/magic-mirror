@@ -20,7 +20,7 @@ body {
   flex-direction: column;
   width: 100%;
   border: 1px solid red;
-  margin: 50px 50px 0px 50px;
+  margin: 70px 60px 60px 40px;
 }
 
 /* spacing */
@@ -212,7 +212,8 @@ ul {
 
 .forecast {
   margin: 0 40px;
-  font-size: 250px;
+  font-size: 180px;
+  margin-top: 50px;
 }
 
 .weather-row {
@@ -231,6 +232,10 @@ ul {
 #precip-icon {
   margin: 10px 20px;
   font-size: 60px;
+}
+
+.hidden {
+  display: none;
 }
 
 .high-low-row {

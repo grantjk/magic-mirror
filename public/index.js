@@ -16,7 +16,7 @@ function showTime(){
   const time = new Date()
   const timeElement = document.querySelector('#time')
   let ampm = 'AM'
-  let hours = time.getHours() 
+  let hours = time.getHours()
   if (hours > 12){
     hours = hours-12
     ampm = 'PM'
@@ -62,7 +62,7 @@ function showCartoonCharacter() {
     .then(payload => {
       const cartoonElement = document.querySelector('#cartoon')
       cartoonElement.innerHTML = `<pre class='art'>${payload.art}</pre>`
-    })  
+    })
 }
 
 /* ============ Calendar ================== */
@@ -82,12 +82,12 @@ function getCalendarEvents() {
         todayElement.textContent = `${fullDayEvent.title}`
 
         // filter out the first full day event if we are showing it in the title
-        events = events.filter(e => e != fullDayEvent) 
+        events = events.filter(e => e != fullDayEvent)
       }
 
       const nextEvent = events[0]
       calendarEventLoop(nextEvent)
-      document.querySelector('#up-next-event-name').textContent = nextEvent.title 
+      document.querySelector('#up-next-event-name').textContent = nextEvent.title
       if (eventCurrentlyHappening(nextEvent)) {
         document.querySelector('#up-next-time-range').textContent = ''
       } else {
@@ -219,8 +219,12 @@ function getWeather({fromCache}) {
 
       // Precipitation
       const probability = payload?.forecast?.DailyForecasts?.[0]?.Day?.PrecipitationProbability
-      if (probability > 0) {
+      if (probability > 40) {
         document.querySelector('#precip-probability').textContent = `${probability}%`
+        document.querySelector('#precip-icon').classList.remove('hidden')
+      } else {
+        document.querySelector('#precip-probability').textContent = ``
+        document.querySelector('#precip-icon').classList.add('hidden')
       }
 
       // Add Weather Forecasts
@@ -272,18 +276,18 @@ function buildForecastLiElement(forecast) {
 function weatherIcon(weatherText, isDayTime) {
   console.log(weatherText)
   switch (weatherText?.toLowerCase()) {
-    case 'sunny': 
-    case 'mostly clear': 
-    case 'mostly sunny': 
+    case 'sunny':
+    case 'mostly clear':
+    case 'mostly sunny':
       return isDayTime ? 'sun' : 'moon-1';
-    case 'partly sunny': 
+    case 'partly sunny':
       return 'cloudy';
-    case 'partly cloudy': 
+    case 'partly cloudy':
     case 'intermittent clouds':
       return 'cloud';
-    case 'mostly cloudy': 
+    case 'mostly cloudy':
       return 'cloudy-1';
-    case 'cloudy': 
+    case 'cloudy':
       return 'cloudy-2'
     case 'showers':
       return 'rain';
@@ -347,5 +351,5 @@ function configureMoment() {
 
 
 
- 
+
 

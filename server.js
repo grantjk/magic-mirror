@@ -26,6 +26,7 @@ let config = {
     uri: process.env.ICLOUD_URL
 };
 const Scrapegoat = require("scrapegoat");
+const { Z_FIXED } = require('zlib');
 const scrapegoat = new Scrapegoat(config);
 
 app.get('/events', (req, res) => {
@@ -105,27 +106,76 @@ app.get('/pokemon', (req, res) => {
 /* =========================== */
 app.get('/weather', async (req, res) => {
     let current, forecast, hourly
-    if (process.env.DEV || req.query.fromCache === 'true') {
-        console.log("reading weather from cache...")
+        // current = require('./fixtures/toronto_current.json')
+        // forecast = require('./fixtures/toronto_5day.json')
+        // hourly = require('./fixtures/toronto_12hours.json')
+
+        
+        // console.log(current.lastUpdated)
+        // console.log(moment(current.lastUpdated).isSame(moment(), 'hour'))
+
+        // console.log(hourly.lastUpdated)
+        // console.log(moment(hourly.lastUpdated).isSame(moment(), 'hour'))
+
+        // console.log(forecast.lastUpdated)
+        // console.log(moment(forecast.lastUpdated).isSame(moment(), 'day'))
+
+        // const syncDate = moment().toISOString()
+        // current.lastUpdated = syncDate
+        // forecast.lastUpdated = syncDate
+        // hourly.lastUpdated = syncDate
+
+        // fs.writeFileSync('./fixtures/toronto_current.json', JSON.stringify(current))
+        // fs.writeFileSync('./fixtures/toronto_12hours.json', JSON.stringify(hourly))
+        // fs.writeFileSync('./fixtures/toronto_5day.json', JSON.stringify(forecast))
+
+        // console.log("reading weather from cache...")
+        // res.json(readWeatherFromCache())
+        // return
+
+    if (moment().hour() < 5) {
+        // Don't waste calls when people are sleeping
+        console.log("Between 12am and 5am. Everyone is sleeping - reading weather from cache...")
         res.json(readWeatherFromCache())
     } else {
         try {
+            const syncDate = moment().toISOString()
             const api_key = process.env.ACCUWEATHER_API_KEY
-            currentResponse = await got(`http://dataservice.accuweather.com/currentconditions/v1/55488?apikey=${api_key}&details=true`, {json: true})
-            current = currentResponse.body[0]
 
-            forecastResponse = await got(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/55488?apikey=${api_key}&details=true&metric=true`, {json: true})
-            forecast = forecastResponse.body
+            current = require('./fixtures/toronto_current.json')
+            if (moment(current.lastUpdated).isSame(moment(), 'hour')) {
+                console.log(`Last updated current: ${current.lastUpdated}. Read from cache`)
+            } else {
+                currentResponse = await got(`http://dataservice.accuweather.com/currentconditions/v1/55488?apikey=${api_key}&details=true`, {json: true})
+                current = currentResponse.body[0]
+                current.lastUpdated = syncDate
+                fs.writeFileSync('./fixtures/toronto_current.json', JSON.stringify(current))
+            }
 
-            hourlyResponse = await got(`http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/55488?apikey=${api_key}&details=true&metric=true`, {json: true})
-            hourly = hourlyResponse.body
+            hourly = require('./fixtures/toronto_12hours.json')
+            if (moment(hourly.lastUpdated).isSame(moment(), 'hour')) {
+                console.log(`Last updated current: ${hourly.lastUpdated}. Read from cache`)
+            } else {
+                hourlyResponse = await got(`http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/55488?apikey=${api_key}&details=true&metric=true`, {json: true})
+                hourly.data = hourlyResponse.body
+                hourly.lastUpdated = syncDate
+                fs.writeFileSync('./fixtures/toronto_12hours.json', JSON.stringify(hourly))
+            }
 
-            // update cache
-            fs.writeFileSync('./fixtures/toronto_current.json', JSON.stringify(currentResponse.body))
-            fs.writeFileSync('./fixtures/toronto_5day.json', JSON.stringify(forecastResponse.body))
-            fs.writeFileSync('./fixtures/toronto_12hours.json', JSON.stringify(hourlyResponse.body))
+            forecast = require('./fixtures/toronto_5day.json')
+            if (moment(forecast.lastUpdated).isSame(moment(), 'day')) {
+                console.log(`Last updated 5day forecast: ${forecast.lastUpdated}. Read from cache`)
+            } else {
+                forecastResponse = await got(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/55488?apikey=${api_key}&details=true&metric=true`, {json: true})
+                forecast = forecastResponse.body
+                forecast.lastUpdated = syncDate
+                fs.writeFileSync('./fixtures/toronto_5day.json', JSON.stringify(forecast))
+            }
+
             res.json({
-                current, forecast, hourly
+                current, 
+                forecast, 
+                hourly: hourly.data
             })
         } catch(err) {
             console.log("Error fetching weather")
@@ -135,12 +185,17 @@ app.get('/weather', async (req, res) => {
     }
 })
 
+
 function readWeatherFromCache() {
-    // just reach from cache to avoid rate limit
-    current = require('./fixtures/toronto_current.json')[0]
+    // just read from cache to avoid rate limit
+    current = require('./fixtures/toronto_current.json')
     forecast = require('./fixtures/toronto_5day.json')
     hourly = require('./fixtures/toronto_12hours.json')
-    return {current, forecast, hourly}
+    return {
+        current,
+        forecast,
+        hourly: hourly.data
+    }
 }
 
 /* =========================== */

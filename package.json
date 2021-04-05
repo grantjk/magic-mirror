@@ -4,8 +4,7 @@
   "description": "Teaching Charlie how to write code by building a Magic Mirror. We could use the community module, but I'd like him to learn how to write it himself.",
   "main": "index.js",
   "scripts": {
-    "live":"./node_modules/nodemon/bin/nodemon.js server.js",
-    "start": "DEV=true ./node_modules/nodemon/bin/nodemon.js server.js",
+    "start": "./node_modules/nodemon/bin/nodemon.js --ignore './fixtures/' server.js",
     "web": " ./node_modules/lite-server/bin/lite-server"
   },
   "repository": {

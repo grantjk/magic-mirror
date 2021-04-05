@@ -196,9 +196,8 @@ function eventTimeRange(event) {
 
 
 /* ============= Weather ===================== */
-function getWeather({fromCache}) {
-  const encoded = encodeURIComponent(fromCache)
-  fetch(`/weather?fromCache=${fromCache}`)
+function getWeather() {
+  fetch(`/weather`)
     .then(response => response.json())
     .then(payload => {
       // Weather Icon
@@ -313,7 +312,7 @@ showPositiveMessage()
 showTime()
 showCartoonCharacter()
 getCalendarEvents()
-getWeather({fromCache: true})
+getWeather()
 
 
 /* Run Loop */
@@ -328,7 +327,7 @@ setInterval(() => {
 }, 1000*60*15) // 15 min update for calendar
 
 setInterval(() => {
-  getWeather({fromCache: false})
+  getWeather()
 }, 1000*60*60)
 
 setInterval(() => {

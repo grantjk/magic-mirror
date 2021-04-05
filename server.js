@@ -30,7 +30,7 @@ const { Z_FIXED } = require('zlib');
 const scrapegoat = new Scrapegoat(config);
 
 app.get('/events', (req, res) => {
-    const start = moment().format("YYYYMMDD[T]HHmmss[Z]");
+    const start = moment().subtract(1, 'day').format("YYYYMMDD[T]HHmmss[Z]");
     const end = moment().add(1, 'month').format("YYYYMMDD[T]HHmmss[Z]");
     scrapegoat.getEventsByTime(start, end).then(events => {
         const parsedEvents = events.map(e=> {
@@ -106,33 +106,6 @@ app.get('/pokemon', (req, res) => {
 /* =========================== */
 app.get('/weather', async (req, res) => {
     let current, forecast, hourly
-        // current = require('./fixtures/toronto_current.json')
-        // forecast = require('./fixtures/toronto_5day.json')
-        // hourly = require('./fixtures/toronto_12hours.json')
-
-        
-        // console.log(current.lastUpdated)
-        // console.log(moment(current.lastUpdated).isSame(moment(), 'hour'))
-
-        // console.log(hourly.lastUpdated)
-        // console.log(moment(hourly.lastUpdated).isSame(moment(), 'hour'))
-
-        // console.log(forecast.lastUpdated)
-        // console.log(moment(forecast.lastUpdated).isSame(moment(), 'day'))
-
-        // const syncDate = moment().toISOString()
-        // current.lastUpdated = syncDate
-        // forecast.lastUpdated = syncDate
-        // hourly.lastUpdated = syncDate
-
-        // fs.writeFileSync('./fixtures/toronto_current.json', JSON.stringify(current))
-        // fs.writeFileSync('./fixtures/toronto_12hours.json', JSON.stringify(hourly))
-        // fs.writeFileSync('./fixtures/toronto_5day.json', JSON.stringify(forecast))
-
-        // console.log("reading weather from cache...")
-        // res.json(readWeatherFromCache())
-        // return
-
     if (moment().hour() < 5) {
         // Don't waste calls when people are sleeping
         console.log("Between 12am and 5am. Everyone is sleeping - reading weather from cache...")

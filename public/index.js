@@ -71,7 +71,6 @@ function getCalendarEvents() {
     .then(response => response.json())
     .then(payload => {
       let filteredEvents = payload.filter(e => !eventIsOver(e))
-      console.log(filteredEvents)
       const calendarElement = document.querySelector('#event-list')
 
       // Show a nice prompt if today is a full day event
@@ -86,14 +85,7 @@ function getCalendarEvents() {
         filteredEvents = filteredEvents.filter(e => e != fullDayEvent)
       }
 
-      const nextEvent = filteredEvents[0]
-      calendarEventLoop(nextEvent)
-      document.querySelector('#up-next-event-name').textContent = nextEvent.title
-      if (eventCurrentlyHappening(nextEvent)) {
-        document.querySelector('#up-next-time-range').textContent = ''
-      } else {
-        document.querySelector('#up-next-time-range').textContent = eventTimeRange(nextEvent)
-      }
+      calendarEventLoop(filteredEvents)
 
       const remaining = filteredEvents.slice(1, 6)
       const listElement = document.createElement('ul')
@@ -151,13 +143,21 @@ function calendarEventLoop(event) {
   }, 1000)
 }
 
-function recomputeRelativeTime(event) {
+function recomputeRelativeTime(events) {
+  let nextEvent = events.filter(e => !eventIsOver(e))[0]
+  document.querySelector('#up-next-event-name').textContent = nextEvent.title
+  if (eventCurrentlyHappening(nextEvent)) {
+    document.querySelector('#up-next-time-range').textContent = ''
+  } else {
+    document.querySelector('#up-next-time-range').textContent = eventTimeRange(nextEvent)
+  }
+
   const element = document.querySelector('#up-next-relative')
 
-  if (eventCurrentlyHappening(event)) {
-    element.textContent = `Happening now until ${event.end.time}`
+  if (eventCurrentlyHappening(nextEvent)) {
+    element.textContent = `Happening now until ${nextEvent.end.time}`
   } else {
-    element.textContent = `Up next ${eventRelativeTime(event)}`
+    element.textContent = `Up next ${eventRelativeTime(nextEvent)}`
   }
 }
 

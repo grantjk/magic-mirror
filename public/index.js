@@ -304,6 +304,74 @@ function weatherIcon(weatherText, isDayTime) {
   return undefined
 }
 
+/* ============== Sports ================= */
+
+function getJaysSchedule() {
+  fetch('/mlb')
+    .then(response => response.json())
+    .then(payload => {
+      console.log(payload)
+
+      const game = payload.dates?.[0]?.games?.[0]
+      console.log(game)
+      if (game) {
+        const gameStart = moment(game.gameDate)
+        const gameState = game.status.abstractGameState
+        console.log(`Start date: ${gameStart.toString()}`)
+        console.log(gameState)
+
+
+        const awayTeam = game.teams.away.team.abbreviation
+        const awayTeamId = game.teams.away.team.id
+        const awayTeamScore = game.teams.away.score
+
+        const homeTeam = game.teams.home.team.abbreviation
+        const homeTeamId = game.teams.home.team.id
+        const homeTeamScore = game.teams.home.score
+
+        const awayTeamRecord = game.teams.away.leagueRecord
+        const awayTeamRecordDisplay = `${awayTeamRecord.wins} - ${awayTeamRecord.losses}`
+
+        const homeTeamRecord = game.teams.home.leagueRecord
+        const homeTeamRecordDisplay = `${homeTeamRecord.wins} - ${homeTeamRecord.losses}`
+
+
+        console.log(teamLogoUrl(awayTeamId))
+        document.querySelector('#away-team-logo').src = teamLogoUrl(awayTeamId)
+        document.querySelector('#home-team-logo').src = teamLogoUrl(homeTeamId)
+
+
+        document.querySelector('#away-team-name').textContent = awayTeam
+        document.querySelector('#away-team-name-detail').textContent = awayTeamRecordDisplay
+        document.querySelector('#home-team-name').textContent = homeTeam
+        document.querySelector('#home-team-name-detail').textContent = homeTeamRecordDisplay
+
+        document.querySelector('#home-team-name').textContent = homeTeam
+        document.querySelector('#home-team-name').textContent = homeTeam
+
+        document.querySelector('#game-status-text').textContent = gameState
+        if (gameStart.isAfter(moment())) { // upcoming
+          document.querySelector('#game-status-text').textContent = '@'
+          document.querySelector('#game-status-subtext').textContent = gameStart.format('h:mm')
+        } else if (false) { // in progress
+          document.querySelector('#home-team-score').textContent = homeTeamScore
+          document.querySelector('#away-team-score').textContent = awayTeamScore
+        } else { // complete
+          document.querySelector('#home-team-score').textContent = homeTeamScore
+          document.querySelector('#away-team-score').textContent = awayTeamScore
+          document.querySelector('#game-status-subtext').textContent = ""
+        }
+      } else {
+        console.log("NO GAME!")
+      }
+  })
+}
+
+
+function teamLogoUrl(teamId) {
+  return `https://www.mlbstatic.com/team-logos/${teamId}.svg`
+}
+
 
 /* ============ Main ====================== */
 configureMoment()
@@ -313,22 +381,24 @@ showTime()
 showCartoonCharacter()
 getCalendarEvents()
 getWeather()
+getJaysSchedule()
 
 
 /* Run Loop */
 setInterval(() => {
   showTime()
   showDate()
-  updatePositiveMessage()
+  updatePositiveMessage() // can probably change this logic now
 }, 1000) // Update clock every second
 
 setInterval(() => {
-  getCalendarEvents()
-}, 1000*60*15) // 15 min update for calendar
+  getWeather() // controlled on server side, so can request frequently
+}, 1000*60*5)  // 5 min updates
 
 setInterval(() => {
-  getWeather()
-}, 1000*60*60)
+  getCalendarEvents() // no check on server
+  getJaysSchedule() // controlled on server side
+}, 1000*60*15)  // 15 min updates
 
 setInterval(() => {
   reverseRows()

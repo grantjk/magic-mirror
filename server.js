@@ -116,7 +116,7 @@ app.get('/weather', async (req, res) => {
             const syncDate = moment().toISOString()
             const api_key = process.env.ACCUWEATHER_API_KEY
 
-            current = require('./fixtures/toronto_current.json')
+            current = require('./cache/toronto_current.json')
             console.log(`Last updated current: ${moment(current.lastUpdated).toString()}.`)
             if (moment(current.lastUpdated).isSame(moment(), 'hour')) {
                 console.log('Loading current data from cache. Only update once an hour.')
@@ -126,12 +126,12 @@ app.get('/weather', async (req, res) => {
                 current = currentResponse.body[0]
                 current.lastUpdated = syncDate
                 console.log('Saving current conditions to cache')
-                fs.writeFileSync('./fixtures/toronto_current.json', JSON.stringify(current))
+                fs.writeFileSync('./cache/toronto_current.json', JSON.stringify(current))
             }
 
             console.log('-----')
 
-            hourly = require('./fixtures/toronto_12hours.json')
+            hourly = require('./cache/toronto_12hours.json')
             console.log(`Last updated hourly: ${moment(hourly.lastUpdated).toString()}`)
             if (moment(hourly.lastUpdated).isSame(moment(), 'hour')) {
                 console.log('Loading hourly data from cache. Only update once an hour.')
@@ -141,12 +141,12 @@ app.get('/weather', async (req, res) => {
                 hourly.data = hourlyResponse.body
                 hourly.lastUpdated = syncDate
                 console.log('Saving hourly forecast to cache')
-                fs.writeFileSync('./fixtures/toronto_12hours.json', JSON.stringify(hourly))
+                fs.writeFileSync('./cache/toronto_12hours.json', JSON.stringify(hourly))
             }
 
             console.log('-----')
 
-            forecast = require('./fixtures/toronto_5day.json')
+            forecast = require('./cache/toronto_5day.json')
             console.log(`Last updated 5 day forecast: ${moment(forecast.lastUpdated).toString()}`)
             if (moment(forecast.lastUpdated).isAfter(moment().subtract(4, 'hour'))) {
                 console.log('Loading 5 day forecast from cache. Only update every 4 hours.')
@@ -156,7 +156,7 @@ app.get('/weather', async (req, res) => {
                 forecast = forecastResponse.body
                 forecast.lastUpdated = syncDate
                 console.log('Saving 5 day forecast to cache')
-                fs.writeFileSync('./fixtures/toronto_5day.json', JSON.stringify(forecast))
+                fs.writeFileSync('./cache/toronto_5day.json', JSON.stringify(forecast))
             }
 
             res.json({
@@ -166,7 +166,7 @@ app.get('/weather', async (req, res) => {
             })
         } catch(err) {
             console.log("Error fetching weather")
-            console.log(err)
+            // console.log(err)
             res.json(readWeatherFromCache())
         }
         console.log('=============================================')
@@ -176,9 +176,9 @@ app.get('/weather', async (req, res) => {
 
 function readWeatherFromCache() {
     // just read from cache to avoid rate limit
-    current = require('./fixtures/toronto_current.json')
-    forecast = require('./fixtures/toronto_5day.json')
-    hourly = require('./fixtures/toronto_12hours.json')
+    current = require('./cache/toronto_current.json')
+    forecast = require('./cache/toronto_5day.json')
+    hourly = require('./cache/toronto_12hours.json')
     return {
         current,
         forecast,
@@ -194,9 +194,8 @@ function readWeatherFromCache() {
 // curl -H 'Host: statsapi.mlb.com' -H 'Accept: */*' -H 'Cookie: gpv_v48=ATBAT%3A%20Season-pick-em%3A%20MLB%202021%20Season%20Pick%20%26%23x27%3BEm; s_getNewRepeat=1617637893080-New; s_lv=1617637893081; s_lv_s=More%20than%2030%20days; s_ppn=ATBAT%3A%20Season-pick-em%3A%20MLB%202021%20Season%20Pick%20%26%23x27%3BEm; AMCV_A65F776A5245B01B0A490D44%40AdobeOrg=1687686476%7CMCIDTS%7C18723%7CMCMID%7C16301876984098754232224264368243292811%7CMCAID%7CNONE%7CMCOPTOUT-1617645091s%7CNONE%7CvVersion%7C3.0.0; mbox=session#0f995e8bed99489e90882ba659600b7d#1617639715; __cfduid=dd54ec15c6fb13c9d90e7919893a719261617637848' -H 'User-Agent: MLB/6099 CFNetwork/1237 Darwin/20.4.0' -H 'Accept-Language: en-ca' --compressed 'https://statsapi.mlb.com/api/v1/schedule?startDate=2021-03-28&endDate=2021-04-13&sportId=1&teamId=141,160&hydrate=team,game(seriesSummary),decisions,person,stats,linescore(runners,matchup,positions),flags,probablePitcher&fields='
 //curl -H 'Host: statsapi.mlb.com' -H 'Accept: */*' -H 'User-Agent: MLB/6099 CFNetwork/1237 Darwin/20.4.0' -H 'Accept-Language: en-ca' --compressed 'https://statsapi.mlb.com/api/v1/schedule?startDate=2021-03-28&endDate=2021-04-13&sportId=1&teamId=141,160&hydrate=team,game(seriesSummary),decisions,person,stats,linescore(runners,matchup,positions),flags,probablePitcher&fields='
 
-
 app.get('/mlb', async (req, res) => {
-    // const mlbResponse = require('./fixtures/mlb-upcoming.json')
+    // const mlbResponse = require('./cache/mlb-upcoming.json')
     // res.json(mlbResponse)
 
     console.log("==============MLB==============")
@@ -214,10 +213,21 @@ app.get('/mlb', async (req, res) => {
 
             const game = response.body.dates?.[0]?.games?.[0]
 
-            // use game start date, or 4 hours
-            const nextGameDate = game?.gameDate ? moment(game.gameDate) : moment().add(4, 'hour')
 
-            // TODO: Check in-progress games and make it 5-10mins?
+            //TODO: make this better by fetching past and future game schedules
+
+            // use game start date, or 4 hours
+            let nextGameDate = game?.gameDate ? moment(game.gameDate) : moment().add(4, 'hours')
+
+            // If game is in progress - use shorter refresh time
+            if (game.status.abstractGameState === 'Live') {
+                nextGameDate = moment().add(5, 'minutes')
+            }
+
+            // If the game is over, just add reasonable time
+            if (game.status.abstractGameState === 'Final') {
+                nextGameDate = moment().add(2, 'hours')
+            }
 
             const data = {
                 nextUpdate: nextGameDate.toISOString(),
@@ -227,6 +237,7 @@ app.get('/mlb', async (req, res) => {
             // Save file to cache
             fs.writeFileSync('./cache/mlb.json', JSON.stringify(data))
             res.json(response.body)
+            console.log('Saved mlb data to cache')
         } catch (err) {
             console.log(`ERROR fetching mlb scores: ${err}`)
         }
@@ -242,7 +253,6 @@ app.get('/mlb', async (req, res) => {
 /*      Server                 */
 /* =========================== */
 app.listen(8000, () => {
-    console.log(`Starting in env: ${process.env.DEV ? 'Dev' : 'Live'}`)
     console.log("Alive on http://localhost:8000....")
 })
 

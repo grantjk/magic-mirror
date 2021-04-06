@@ -91,7 +91,6 @@ body {
   justify-content: space-around;
 }
 
-
 .right-aligned {
   align-items: flex-start;
   justify-content: space-between;
@@ -143,6 +142,10 @@ body {
   justify-content: center;
   align-items: center;
   margin: 100px 0;
+}
+
+.up-next-row.row-reverse { 
+  justify-content: flex-end;
 }
 
 .up-next-box > .event-start-relative {
@@ -283,4 +286,15 @@ ul {
 
 .team-logo {
   /* filter: grayscale(100%); */
+  max-width: 100px;
+  max-height: 100px;
+}
+
+#fun-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#fun-container.reversed {
+  flex-direction: column-reverse;
 }

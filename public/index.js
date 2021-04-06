@@ -76,7 +76,8 @@ function getCalendarEvents() {
       // Show a nice prompt if today is a full day event
       const fullDayEvent = filteredEvents.filter(e => e.allDay)?.[0]
 
-      const isToday = fullDayEvent && moment.utc(fullDayEvent.start.raw).isSame(moment(), 'day')
+      // ugh  - otherwise full day events disppear from the today-description
+      const isToday = fullDayEvent && moment(moment.utc(fullDayEvent.start.raw).format("YYYY-MM-DD")).isSame(moment(), 'day')
       if (isToday) {
         const todayElement = document.querySelector('#today-description')
         todayElement.textContent = `${fullDayEvent.title}`
@@ -170,10 +171,17 @@ function eventCurrentlyHappening(event) {
 }
 
 function eventIsOver(event) {
+  if (event.allDay) {
+    const start = moment.utc(event.start.raw)
+    const end = moment.utc(event.end.raw)
+    const now = moment()
+
+    return start.isBefore(now) && !moment(end.format('YYYY-MM-DD')).isSame(now, 'day')
+  }
+
   const start = moment(event.start.raw)
   const end = moment(event.end.raw)
   const now = moment()
-
   return start.isBefore(now) && end.isBefore(now)
 }
 
@@ -336,7 +344,6 @@ function getJaysSchedule() {
         const homeTeamRecordDisplay = `${homeTeamRecord.wins} - ${homeTeamRecord.losses}`
 
 
-        console.log(teamLogoUrl(awayTeamId))
         document.querySelector('#away-team-logo').src = teamLogoUrl(awayTeamId)
         document.querySelector('#home-team-logo').src = teamLogoUrl(homeTeamId)
 
@@ -353,9 +360,17 @@ function getJaysSchedule() {
         if (gameStart.isAfter(moment())) { // upcoming
           document.querySelector('#game-status-text').textContent = '@'
           document.querySelector('#game-status-subtext').textContent = gameStart.format('h:mm')
-        } else if (false) { // in progress
+        } else if (gameState === 'Live') { // in progress
           document.querySelector('#home-team-score').textContent = homeTeamScore
           document.querySelector('#away-team-score').textContent = awayTeamScore
+
+          const inning = game.linescore.currentInningOrdinal
+          const state = game.linescore.inningState
+          const outs = game.linescore.outs
+          document.querySelector('#game-status-text').textContent = `${state} ${inning}`
+
+          const outText = outs < 3 ? `${outs} out` : ''
+          document.querySelector('#game-status-subtext').textContent = outText
         } else { // complete
           document.querySelector('#home-team-score').textContent = homeTeamScore
           document.querySelector('#away-team-score').textContent = awayTeamScore
@@ -407,11 +422,14 @@ setInterval(() => {
 
 let reversed = false
 function reverseRows() {
-  const elements = document.querySelectorAll('.row')
+  const rows = document.querySelectorAll('.row')
+  const columns = document.querySelectorAll('.column-reversible')
   if (reversed) {
-    elements.forEach(el => el.classList.remove('row-reverse'))
+    rows.forEach(el => el.classList.remove('row-reverse'))
+    columns.forEach(el => el.classList.remove('reversed'))
   } else {
-    elements.forEach(el => el.classList.add('row-reverse'))
+    rows.forEach(el => el.classList.add('row-reverse'))
+    columns.forEach(el => el.classList.add('reversed'))
   }
   reversed = !reversed
 }

@@ -26,45 +26,52 @@ let config = {
     uri: process.env.ICLOUD_URL
 };
 const Scrapegoat = require("scrapegoat");
-const { Z_FIXED } = require('zlib');
 const scrapegoat = new Scrapegoat(config);
 
-app.get('/events', (req, res) => {
-    const start = moment().subtract(1, 'day').format("YYYYMMDD[T]HHmmss[Z]");
-    const end = moment().add(1, 'month').format("YYYYMMDD[T]HHmmss[Z]");
-    scrapegoat.getEventsByTime(start, end).then(events => {
-        const parsedEvents = events.map(e=> {
-            let start = moment(e.data.start)
-            let end = moment(e.data.end)
+app.get('/events', async (req, res) => {
+    console.log('===============CALENDAR===============')
 
-            if (isFullDayEvent(e)) {
-                start = start.utc()
-                end = end.utc()
-            }
+    try {
+        const data = await updateData({identifier: 'calendar', ttlCount: 15, ttlUnit: 'minutes'}, async () => {
+            const start = moment().subtract(1, 'day').format("YYYYMMDD[T]HHmmss[Z]");
+            const end = moment().add(1, 'month').format("YYYYMMDD[T]HHmmss[Z]");
+            const events = await scrapegoat.getEventsByTime(start, end)
+            return events.map(e=> {
+                let start = moment(e.data.start)
+                let end = moment(e.data.end)
 
-            return {
-                title: e.data.title,
-                allDay: isFullDayEvent(e),
-                start: {
-                    raw: e.data.start,
-                    month: start.format('MMMM'),
-                    date: start.format('D'),
-                    time: start.format('h:mm a'),
-                },
-                end: {
-                    raw: e.data.end,
-                    month: end.format('MMMM'),
-                    date: end.format('D'),
-                    time: end.format('h:mm a'),
-                },
-                location: e.data.location,
-            }
+                if (isFullDayEvent(e)) {
+                    start = start.utc()
+                    end = end.utc()
+                }
+
+                return {
+                    title: e.data.title,
+                    allDay: isFullDayEvent(e),
+                    start: {
+                        raw: e.data.start,
+                        month: start.format('MMMM'),
+                        date: start.format('D'),
+                        time: start.format('h:mm a'),
+                    },
+                    end: {
+                        raw: e.data.end,
+                        month: end.format('MMMM'),
+                        date: end.format('D'),
+                        time: end.format('h:mm a'),
+                    },
+                    location: e.data.location,
+                }
+            })
         })
-        res.json(parsedEvents)
-    }).catch(err => {
+
+        res.json(data)
+    } catch (err) {
         console.log("Error fetching calendar")
         console.log(err)
-    });
+
+        res.json([])
+    }
 })
 
 
@@ -77,28 +84,52 @@ function isFullDayEvent(event) {
 /* =========================== */
 /*      Positive Message       */
 /* =========================== */
-app.get('/message', (req, res) => {
-  const messages = fs.readFileSync('./data/messages.txt', 'utf8')
-  const messageList = messages.split('\n')
-  const messageNumber = Math.floor(Math.random()*messageList.length)
-  res.json({message: messageList[messageNumber]})
+app.get('/message', async (req, res) => {
+    try {
+        const data = await updateData({identifier: 'positive-message', ttlHook: () => {
+            return moment().endOf('day')
+        }}, async () => {
+            const messages = fs.readFileSync('./data/messages.txt', 'utf8')
+            const messageList = messages.split('\n')
+            const messageNumber = Math.floor(Math.random()*messageList.length)
+            return { message: messageList[messageNumber] }
+        })
+        res.json(data)
+    } catch (err) {
+        console.log("Error fetching positive message")
+        console.log(err)
+
+        res.json({})
+    }
 })
 
 /* =========================== */
 /*      Pokemon                */
 /* =========================== */
-app.get('/pokemon', (req, res) => {
-    const pokemons = [
-        'bulbasaur',
-        'charizard',
-        'charmander',
-        'pikachu',
-        'squirtle'
-    ]
-    const number = Math.floor(Math.random()*pokemons.length)
-    const pokemon = pokemons[number]
-    const art = fs.readFileSync(`./data/pokemon/${pokemon}.txt`, 'utf8')
-    res.json({art: art})
+app.get('/pokemon', async (req, res) => {
+    try {
+        const data = await updateData({identifier: 'pokemon', ttlHook: () => {
+            return moment().endOf('day')
+        }}, () => {
+            const pokemons = [
+                'bulbasaur',
+                'charizard',
+                'charmander',
+                'pikachu',
+                'squirtle'
+            ]
+            const number = Math.floor(Math.random()*pokemons.length)
+            const pokemon = pokemons[number]
+            const art = fs.readFileSync(`./data/pokemon/${pokemon}.txt`, 'utf8')
+            return { art }
+        })
+        res.json(data)
+    } catch (err) {
+        console.log("Error fetching pokemon")
+        console.log(err)
+
+        res.json({})
+    }
 })
 
 /* =========================== */
@@ -106,85 +137,47 @@ app.get('/pokemon', (req, res) => {
 /* =========================== */
 app.get('/weather', async (req, res) => {
     console.log('================= GET WEATHER ==================')
+    console.log(`Current Time: ${moment().toString()}`)
+
     let current, forecast, hourly
     if (moment().hour() < 5) {
         // Don't waste calls when people are sleeping
         console.log("Between 12am and 5am. Everyone is sleeping - reading weather from cache...")
-        res.json(readWeatherFromCache())
+        res.json({})
     } else {
         try {
-            const syncDate = moment().toISOString()
             const api_key = process.env.ACCUWEATHER_API_KEY
 
-            current = require('./cache/toronto_current.json')
-            console.log(`Last updated current: ${moment(current.lastUpdated).toString()}.`)
-            if (moment(current.lastUpdated).isSame(moment(), 'hour')) {
-                console.log('Loading current data from cache. Only update once an hour.')
-            } else {
-                console.log('Requesting update to current data')
-                currentResponse = await got(`http://dataservice.accuweather.com/currentconditions/v1/55488?apikey=${api_key}&details=true`, {json: true})
-                current = currentResponse.body[0]
-                current.lastUpdated = syncDate
-                console.log('Saving current conditions to cache')
-                fs.writeFileSync('./cache/toronto_current.json', JSON.stringify(current))
-            }
+            current = await updateData({identifier: 'current-conditions', ttlCount: 1, ttlUnit: 'hour'}, async () => {
+                const response = await got(`http://dataservice.accuweather.com/currentconditions/v1/55488?apikey=${api_key}&details=true`, {json: true})
+                return response.body[0]
+            })
 
-            console.log('-----')
+            hourly = await updateData({identifier: 'hourly-conditions', ttlCount: 1, ttlUnit: 'hour'}, async () => {
+                const response = await got(`http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/55488?apikey=${api_key}&details=true&metric=true`, {json: true})
+                return response.body
+            })
 
-            hourly = require('./cache/toronto_12hours.json')
-            console.log(`Last updated hourly: ${moment(hourly.lastUpdated).toString()}`)
-            if (moment(hourly.lastUpdated).isSame(moment(), 'hour')) {
-                console.log('Loading hourly data from cache. Only update once an hour.')
-            } else {
-                console.log('Requesting update to hourly data')
-                hourlyResponse = await got(`http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/55488?apikey=${api_key}&details=true&metric=true`, {json: true})
-                hourly.data = hourlyResponse.body
-                hourly.lastUpdated = syncDate
-                console.log('Saving hourly forecast to cache')
-                fs.writeFileSync('./cache/toronto_12hours.json', JSON.stringify(hourly))
-            }
-
-            console.log('-----')
-
-            forecast = require('./cache/toronto_5day.json')
-            console.log(`Last updated 5 day forecast: ${moment(forecast.lastUpdated).toString()}`)
-            if (moment(forecast.lastUpdated).isAfter(moment().subtract(4, 'hour'))) {
-                console.log('Loading 5 day forecast from cache. Only update every 4 hours.')
-            } else {
-                console.log('Requesting update to 5 day forecast')
-                forecastResponse = await got(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/55488?apikey=${api_key}&details=true&metric=true`, {json: true})
-                forecast = forecastResponse.body
-                forecast.lastUpdated = syncDate
-                console.log('Saving 5 day forecast to cache')
-                fs.writeFileSync('./cache/toronto_5day.json', JSON.stringify(forecast))
-            }
+            forecast = await updateData({identifier: '5day-forecast', ttlCount: 6, ttlUnit: 'hours'}, async () => {
+                const response = await got(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/55488?apikey=${api_key}&details=true&metric=true`, {json: true})
+                return response.body
+            })
 
             res.json({
                 current, 
                 forecast, 
-                hourly: hourly.data
+                hourly
             })
         } catch(err) {
+            // If we get here, then our cache fallback didn't work and we have big troubles
             console.log("Error fetching weather")
-            // console.log(err)
-            res.json(readWeatherFromCache())
+            console.log(err)
+            res.json({})
         }
         console.log('=============================================')
     }
 })
 
-
-function readWeatherFromCache() {
-    // just read from cache to avoid rate limit
-    current = require('./cache/toronto_current.json')
-    forecast = require('./cache/toronto_5day.json')
-    hourly = require('./cache/toronto_12hours.json')
-    return {
-        current,
-        forecast,
-        hourly: hourly.data
-    }
-}
 
 /* =========================== */
 /*      MLB                    */
@@ -195,59 +188,115 @@ function readWeatherFromCache() {
 //curl -H 'Host: statsapi.mlb.com' -H 'Accept: */*' -H 'User-Agent: MLB/6099 CFNetwork/1237 Darwin/20.4.0' -H 'Accept-Language: en-ca' --compressed 'https://statsapi.mlb.com/api/v1/schedule?startDate=2021-03-28&endDate=2021-04-13&sportId=1&teamId=141,160&hydrate=team,game(seriesSummary),decisions,person,stats,linescore(runners,matchup,positions),flags,probablePitcher&fields='
 
 app.get('/mlb', async (req, res) => {
-    // const mlbResponse = require('./cache/mlb-upcoming.json')
-    // res.json(mlbResponse)
+    try {
+        const json = await updateData({identifier: 'mlb', ttlHook: (payload) => {
+            const game = payload?.dates?.[0]?.games?.[0]
 
-    console.log("==============MLB==============")
+            console.log(`[MLB] Determining next update...`)
 
-    const cached = require('./cache/mlb.json')
-    const nextUpdate = moment(cached.nextUpdate)
+            //TODO: make this better by fetching past and future game schedules
+            let nextUpdate
+            if (game?.status?.abstractGameState === 'Live') {
+                // If game is in progress - use shorter refresh time
+                nextUpdate = moment().add(2, 'minutes')
+                console.log(`[MLB] Game is Live. Next update at ${nextUpdate}`)
+            } else if (game?.status?.abstractGameState === 'Final') {
+                // If the game is over, just add reasonable time
+                nextUpdate = moment().add(2, 'hours')
+                console.log(`[MLB] Game is Final. Next update at ${nextUpdate}`)
+            } else if (game?.gameDate) {
+                nextUpdate = moment(game.gameDate) 
+                console.log(`[MLB] Game is later today. Next update at ${nextUpdate}`)
+            } else {
+                nextUpdate = game?.gameDate ? moment(game.gameDate) : moment().add(4, 'hours')
+                console.log(`[MLB] No game found today. Next update at ${nextUpdate}`)
+            }
 
-    console.log(`Next update for MLB after: ${nextUpdate.toString()}`)
-    if (moment().isAfter(nextUpdate)) {
-        console.log("Updating mlb scores:")
-        try {
+            return nextUpdate
+        }}, async () => {
+            console.log(`[MLB] Fetching update....`)
             const today = moment().format('YYYY-MM-DD')
             const url = `https://statsapi.mlb.com/api/v1/schedule?startDate=${today}&endDate=${today}&sportId=1&teamId=141&hydrate=team,game(seriesSummary),decisions,person,stats,linescore(runners,matchup,positions),flags,probablePitcher&fields=`
             const response = await got(url, {json: true})
+            return response.body
+        })
 
-            const game = response.body.dates?.[0]?.games?.[0]
+        res.json(json)
+    } catch (err) {
+        // This means our cache has failed
+        console.log(`[MLB] ERROR fetching mlb scores: ${err}`)
+        res.json({})
+    }
+})
 
 
-            //TODO: make this better by fetching past and future game schedules
+/* ===========SYNC Data ============*/
+const syncFilePath = './data/sync.json'
 
-            // use game start date, or 4 hours
-            let nextGameDate = game?.gameDate ? moment(game.gameDate) : moment().add(4, 'hours')
+async function updateData({identifier, ttlCount, ttlUnit, ttlHook}, updateFunction) {
+    let json
+    const filename = `./cache/${identifier}.json`
 
-            // If game is in progress - use shorter refresh time
-            if (game.status.abstractGameState === 'Live') {
-                nextGameDate = moment().add(5, 'minutes')
-            }
+    const nextUpdate = readSyncData(identifier)
 
-            // If the game is over, just add reasonable time
-            if (game.status.abstractGameState === 'Final') {
-                nextGameDate = moment().add(2, 'hours')
-            }
+    console.log(`[${identifier.toUpperCase()}] Next update to ${identifier} after ${nextUpdate}.`)
+    if (!nextUpdate || moment().isAfter(moment(nextUpdate))) {
+        console.log(`[${identifier.toUpperCase()}] Requesting update for ${identifier}`)
+        try {
+            json = await updateFunction()
+            console.log(`[${identifier.toUpperCase()}] Saving updated data for ${identifier}`)
 
-            const data = {
-                nextUpdate: nextGameDate.toISOString(),
-                data: response.body
-            }
+            writeJSONFile({filename, json})
 
-            // Save file to cache
-            fs.writeFileSync('./cache/mlb.json', JSON.stringify(data))
-            res.json(response.body)
-            console.log('Saved mlb data to cache')
+            // If we want to use the actual response to set the cache ttl, then use the hook
+            const futureDate = ttlHook ? ttlHook(json) : moment().add(ttlCount, ttlUnit)
+
+            console.log(`[${identifier.toUpperCase()}] Updating sync key for ${identifier} to ${futureDate}`)
+            writeSyncData({ key: identifier, value: futureDate })
         } catch (err) {
-            console.log(`ERROR fetching mlb scores: ${err}`)
+            console.log(`[${identifier.toUpperCase()}] Error getting updated data: ${err}`)
+            json = readJSONFile(filename)
         }
     } else {
-        console.log("Read game data from the cache")
-        res.json(cached.data)
+        console.log(`[${identifier.toUpperCase()}] Loading current data from cache`)
+        json = readJSONFile(filename)
     }
 
+    console.log(`[${identifier.toUpperCase()}] Returning data: ${json}`)
+    return json
+}
 
-})
+function readSyncData(key) {
+    const json = readJSONFile(syncFilePath)
+    const value = json[key]
+    console.log(`[${key.toUpperCase()}]: Next sync for ${key} at ${value}`)
+    return value
+}
+
+function writeSyncData({key, value}) {
+    console.log(`[${key.toUpperCase()}]: Updating sync log for ${key} ${value}`)
+    const json = readJSONFile(syncFilePath)
+    json[key] = value
+
+    writeJSONFile({filename: syncFilePath, json})
+}
+
+function readJSONFile(filename) {
+    console.log(`Reading file at ${filename}`)
+    try {
+        const data = fs.readFileSync(filename, 'utf8')
+        const json = JSON.parse(data)
+        return json
+    } catch (err) {
+        console.log(err)
+        return undefined
+    }
+}
+
+function writeJSONFile({filename, json}) {
+    console.log(`Writing file at ${filename}`)
+    fs.writeFileSync(filename, JSON.stringify(json, null, 2))
+}
 
 /* =========================== */
 /*      Server                 */

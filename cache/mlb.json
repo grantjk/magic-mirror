@@ -1,1 +1,1872 @@
-{"nextUpdate":"2021-04-06T02:30:45.879Z","data":{"copyright":"Copyright 2021 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt","totalItems":1,"totalEvents":0,"totalGames":1,"totalGamesInProgress":0,"dates":[{"date":"2021-04-05","totalItems":1,"totalEvents":0,"totalGames":1,"totalGamesInProgress":0,"games":[{"gamePk":634612,"link":"/api/v1.1/game/634612/feed/live","gameType":"R","season":"2021","gameDate":"2021-04-05T20:05:00Z","officialDate":"2021-04-05","status":{"abstractGameState":"Final","codedGameState":"F","detailedState":"Final","statusCode":"F","startTimeTBD":false,"abstractGameCode":"F"},"teams":{"away":{"leagueRecord":{"wins":3,"losses":1,"pct":".750"},"score":6,"team":{"id":141,"name":"Toronto Blue Jays","link":"/api/v1/teams/141","season":2021,"venue":{"id":14,"name":"Rogers Centre","link":"/api/v1/venues/14"},"springVenue":{"id":2536,"link":"/api/v1/venues/2536"},"teamCode":"tor","fileCode":"tor","abbreviation":"TOR","teamName":"Blue Jays","locationName":"Toronto","firstYearOfPlay":"1977","league":{"id":103,"name":"American League","link":"/api/v1/league/103"},"division":{"id":201,"name":"American League East","link":"/api/v1/divisions/201"},"sport":{"id":1,"link":"/api/v1/sports/1","name":"Major League Baseball"},"shortName":"Toronto","springLeague":{"id":115,"name":"Grapefruit League","link":"/api/v1/league/115","abbreviation":"GL"},"allStarStatus":"N","active":true},"isWinner":true,"probablePitcher":{"id":571927,"fullName":"Steven Matz","link":"/api/v1/people/571927","firstName":"Steven","lastName":"Matz","primaryNumber":"22","birthDate":"1991-05-29","currentAge":29,"birthCity":"Stony Brook","birthStateProvince":"NY","birthCountry":"USA","height":"6' 2\"","weight":201,"active":true,"primaryPosition":{"code":"1","name":"Pitcher","type":"Pitcher","abbreviation":"P"},"useName":"Steven","middleName":"Jakob","boxscoreName":"Matz","nickName":"Matzy","gender":"M","isPlayer":true,"isVerified":true,"draftYear":2009,"pronunciation":"Mats","stats":[{"type":{"displayName":"gameLog"},"group":{"displayName":"hitting"},"exemptions":[],"stats":{}},{"type":{"displayName":"gameLog"},"group":{"displayName":"pitching"},"exemptions":[],"stats":{"note":"(W, 1-0)","gamesPlayed":1,"gamesStarted":1,"flyOuts":3,"groundOuts":5,"airOuts":5,"runs":1,"doubles":0,"triples":0,"homeRuns":0,"strikeOuts":9,"baseOnBalls":1,"intentionalWalks":0,"hits":2,"hitByPitch":1,"atBats":21,"caughtStealing":0,"stolenBases":0,"stolenBasePercentage":".---","numberOfPitches":91,"inningsPitched":"6.1","wins":1,"losses":0,"saves":0,"saveOpportunities":0,"holds":0,"blownSaves":0,"earnedRuns":1,"battersFaced":23,"outs":19,"gamesPitched":1,"completeGames":0,"shutouts":0,"pitchesThrown":91,"balls":29,"strikes":62,"strikePercentage":".680","hitBatsmen":1,"balks":0,"wildPitches":0,"pickoffs":0,"rbi":1,"gamesFinished":0,"runsScoredPer9":"1.42","homeRunsPer9":"0.00","inheritedRunners":0,"inheritedRunnersScored":0,"catchersInterference":0,"sacBunts":0,"sacFlies":0}},{"type":{"displayName":"statsSingleSeason"},"group":{"displayName":"hitting"},"exemptions":[],"stats":{"gamesPlayed":0,"flyOuts":0,"groundOuts":0,"runs":0,"doubles":0,"triples":0,"homeRuns":0,"strikeOuts":0,"baseOnBalls":0,"intentionalWalks":0,"hits":0,"hitByPitch":0,"avg":".000","atBats":0,"obp":".000","slg":".000","ops":".000","caughtStealing":0,"stolenBases":0,"stolenBasePercentage":".---","groundIntoDoublePlay":0,"groundIntoTriplePlay":0,"plateAppearances":0,"totalBases":0,"rbi":0,"leftOnBase":0,"sacBunts":0,"sacFlies":0,"babip":".---","catchersInterference":0,"pickoffs":0,"atBatsPerHomeRun":"-.--"}},{"type":{"displayName":"statsSingleSeason"},"group":{"displayName":"pitching"},"exemptions":[],"stats":{"gamesPlayed":1,"gamesStarted":1,"flyOuts":3,"groundOuts":5,"airOuts":5,"runs":1,"doubles":0,"triples":0,"homeRuns":0,"strikeOuts":9,"baseOnBalls":1,"intentionalWalks":0,"hits":2,"hitByPitch":1,"atBats":21,"obp":".174","caughtStealing":0,"stolenBases":0,"stolenBasePercentage":".---","numberOfPitches":91,"era":"1.42","inningsPitched":"6.1","wins":1,"losses":0,"saves":0,"saveOpportunities":0,"holds":0,"blownSaves":0,"earnedRuns":1,"whip":"0.47","battersFaced":23,"outs":19,"gamesPitched":1,"completeGames":0,"shutouts":0,"pitchesThrown":91,"balls":29,"strikes":62,"strikePercentage":".680","hitBatsmen":1,"balks":0,"wildPitches":0,"pickoffs":0,"groundOutsToAirouts":"1.00","rbi":1,"winPercentage":"1.000","pitchesPerInning":"14.37","gamesFinished":0,"strikeoutWalkRatio":"9.00","strikeoutsPer9Inn":"12.79","walksPer9Inn":"1.42","hitsPer9Inn":"2.84","runsScoredPer9":"1.42","homeRunsPer9":"0.00","inheritedRunners":0,"inheritedRunnersScored":0,"catchersInterference":0,"sacBunts":0,"sacFlies":0}}],"mlbDebutDate":"2015-06-28","batSide":{"code":"R","description":"Right"},"pitchHand":{"code":"L","description":"Left"},"nameFirstLast":"Steven Matz","nameSlug":"steven-matz-571927","firstLastName":"Steven Matz","lastFirstName":"Matz, Steven","lastInitName":"Matz, S","initLastName":"S Matz","fullFMLName":"Steven Jakob Matz","fullLFMName":"Matz, Steven Jakob","strikeZoneTop":3.467,"strikeZoneBottom":1.589},"splitSquad":false,"seriesNumber":2,"springLeague":{"id":115,"name":"Grapefruit League","link":"/api/v1/league/115","abbreviation":"GL"}},"home":{"leagueRecord":{"wins":1,"losses":3,"pct":".250"},"score":2,"team":{"id":140,"name":"Texas Rangers","link":"/api/v1/teams/140","season":2021,"venue":{"id":5325,"name":"Globe Life Field","link":"/api/v1/venues/5325"},"springVenue":{"id":2603,"link":"/api/v1/venues/2603"},"teamCode":"tex","fileCode":"tex","abbreviation":"TEX","teamName":"Rangers","locationName":"Arlington","firstYearOfPlay":"1961","league":{"id":103,"name":"American League","link":"/api/v1/league/103"},"division":{"id":200,"name":"American League West","link":"/api/v1/divisions/200"},"sport":{"id":1,"link":"/api/v1/sports/1","name":"Major League Baseball"},"shortName":"Texas","springLeague":{"id":114,"name":"Cactus League","link":"/api/v1/league/114","abbreviation":"CL"},"allStarStatus":"N","active":true},"isWinner":false,"probablePitcher":{"id":592314,"fullName":"Mike Foltynewicz","link":"/api/v1/people/592314","firstName":"Michael","lastName":"Foltynewicz","primaryNumber":"20","birthDate":"1991-10-07","currentAge":29,"birthCity":"Sterling","birthStateProvince":"IL","birthCountry":"USA","height":"6' 4\"","weight":195,"active":true,"primaryPosition":{"code":"1","name":"Pitcher","type":"Pitcher","abbreviation":"P"},"useName":"Mike","middleName":"Gary","boxscoreName":"Foltynewicz","nickName":"High Foltage","gender":"M","isPlayer":true,"isVerified":true,"draftYear":2010,"pronunciation":"Ful-ta-nev-ich","stats":[{"type":{"displayName":"gameLog"},"group":{"displayName":"hitting"},"exemptions":[],"stats":{}},{"type":{"displayName":"gameLog"},"group":{"displayName":"pitching"},"exemptions":[],"stats":{"note":"(L, 0-1)","gamesPlayed":1,"gamesStarted":1,"flyOuts":1,"groundOuts":3,"airOuts":1,"runs":4,"doubles":0,"triples":0,"homeRuns":2,"strikeOuts":7,"baseOnBalls":3,"intentionalWalks":0,"hits":4,"hitByPitch":0,"atBats":15,"caughtStealing":1,"stolenBases":0,"stolenBasePercentage":".000","numberOfPitches":95,"inningsPitched":"4.0","wins":0,"losses":1,"saves":0,"saveOpportunities":0,"holds":0,"blownSaves":0,"earnedRuns":4,"battersFaced":18,"outs":12,"gamesPitched":1,"completeGames":0,"shutouts":0,"pitchesThrown":95,"balls":36,"strikes":59,"strikePercentage":".620","hitBatsmen":0,"balks":0,"wildPitches":0,"pickoffs":0,"rbi":4,"gamesFinished":0,"runsScoredPer9":"9.00","homeRunsPer9":"4.50","inheritedRunners":0,"inheritedRunnersScored":0,"catchersInterference":0,"sacBunts":0,"sacFlies":0}},{"type":{"displayName":"statsSingleSeason"},"group":{"displayName":"hitting"},"exemptions":[],"stats":{"gamesPlayed":0,"flyOuts":0,"groundOuts":0,"runs":0,"doubles":0,"triples":0,"homeRuns":0,"strikeOuts":0,"baseOnBalls":0,"intentionalWalks":0,"hits":0,"hitByPitch":0,"avg":".000","atBats":0,"obp":".000","slg":".000","ops":".000","caughtStealing":0,"stolenBases":0,"stolenBasePercentage":".---","groundIntoDoublePlay":0,"groundIntoTriplePlay":0,"plateAppearances":0,"totalBases":0,"rbi":0,"leftOnBase":0,"sacBunts":0,"sacFlies":0,"babip":".---","catchersInterference":0,"pickoffs":0,"atBatsPerHomeRun":"-.--"}},{"type":{"displayName":"statsSingleSeason"},"group":{"displayName":"pitching"},"exemptions":[],"stats":{"gamesPlayed":1,"gamesStarted":1,"flyOuts":1,"groundOuts":3,"airOuts":1,"runs":4,"doubles":0,"triples":0,"homeRuns":2,"strikeOuts":7,"baseOnBalls":3,"intentionalWalks":0,"hits":4,"hitByPitch":0,"atBats":15,"obp":".389","caughtStealing":1,"stolenBases":0,"stolenBasePercentage":".000","numberOfPitches":95,"era":"9.00","inningsPitched":"4.0","wins":0,"losses":1,"saves":0,"saveOpportunities":0,"holds":0,"blownSaves":0,"earnedRuns":4,"whip":"1.75","battersFaced":18,"outs":12,"gamesPitched":1,"completeGames":0,"shutouts":0,"pitchesThrown":95,"balls":36,"strikes":59,"strikePercentage":".620","hitBatsmen":0,"balks":0,"wildPitches":0,"pickoffs":0,"groundOutsToAirouts":"3.00","rbi":4,"winPercentage":".000","pitchesPerInning":"23.75","gamesFinished":0,"strikeoutWalkRatio":"2.33","strikeoutsPer9Inn":"15.75","walksPer9Inn":"6.75","hitsPer9Inn":"9.00","runsScoredPer9":"9.00","homeRunsPer9":"4.50","inheritedRunners":0,"inheritedRunnersScored":0,"catchersInterference":0,"sacBunts":0,"sacFlies":0}}],"mlbDebutDate":"2014-08-02","batSide":{"code":"R","description":"Right"},"pitchHand":{"code":"R","description":"Right"},"nameFirstLast":"Mike Foltynewicz","nameSlug":"mike-foltynewicz-592314","firstLastName":"Mike Foltynewicz","lastFirstName":"Foltynewicz, Mike","lastInitName":"Foltynewicz, M","initLastName":"M Foltynewicz","fullFMLName":"Michael Gary Foltynewicz","fullLFMName":"Foltynewicz, Michael Gary","strikeZoneTop":3.549,"strikeZoneBottom":1.627},"splitSquad":false,"seriesNumber":2,"springLeague":{"id":114,"name":"Cactus League","link":"/api/v1/league/114","abbreviation":"CL"}}},"linescore":{"currentInning":9,"currentInningOrdinal":"9th","inningState":"Bottom","inningHalf":"Bottom","isTopInning":false,"scheduledInnings":9,"innings":[{"num":1,"ordinalNum":"1st","home":{"runs":0,"hits":0,"errors":0,"leftOnBase":0},"away":{"runs":1,"hits":2,"errors":0,"leftOnBase":2}},{"num":2,"ordinalNum":"2nd","home":{"runs":0,"hits":0,"errors":0,"leftOnBase":0},"away":{"runs":3,"hits":2,"errors":0,"leftOnBase":0}},{"num":3,"ordinalNum":"3rd","home":{"runs":0,"hits":0,"errors":0,"leftOnBase":0},"away":{"runs":0,"hits":0,"errors":0,"leftOnBase":0}},{"num":4,"ordinalNum":"4th","home":{"runs":1,"hits":2,"errors":1,"leftOnBase":2},"away":{"runs":0,"hits":0,"errors":0,"leftOnBase":0}},{"num":5,"ordinalNum":"5th","home":{"runs":0,"hits":0,"errors":0,"leftOnBase":1},"away":{"runs":0,"hits":1,"errors":0,"leftOnBase":0}},{"num":6,"ordinalNum":"6th","home":{"runs":0,"hits":0,"errors":0,"leftOnBase":0},"away":{"runs":1,"hits":1,"errors":0,"leftOnBase":2}},{"num":7,"ordinalNum":"7th","home":{"runs":0,"hits":1,"errors":1,"leftOnBase":0},"away":{"runs":1,"hits":0,"errors":0,"leftOnBase":1}},{"num":8,"ordinalNum":"8th","home":{"runs":0,"hits":1,"errors":0,"leftOnBase":2},"away":{"runs":0,"hits":1,"errors":1,"leftOnBase":0}},{"num":9,"ordinalNum":"9th","home":{"runs":1,"hits":1,"errors":0,"leftOnBase":1},"away":{"runs":0,"hits":0,"errors":0,"leftOnBase":1}}],"teams":{"home":{"runs":2,"hits":5,"errors":2,"leftOnBase":6},"away":{"runs":6,"hits":7,"errors":1,"leftOnBase":6}},"defense":{"pitcher":{"id":503569,"fullName":"Rafael Dolis","link":"/api/v1/people/503569","firstName":"Rafael","lastName":"Dolis","primaryNumber":"41","birthDate":"1988-01-10","currentAge":33,"birthCity":"La Romana","birthCountry":"Dominican Republic","height":"6' 4\"","weight":235,"active":true,"primaryPosition":{"code":"1","name":"Pitcher","type":"Pitcher","abbreviation":"P"},"useName":"Rafael","middleName":"Jose","boxscoreName":"Dolis","gender":"M","isPlayer":true,"isVerified":true,"pronunciation":"dough-lease","stats":[{"type":{"displayName":"gameLog"},"group":{"displayName":"hitting"},"exemptions":[],"stats":{}},{"type":{"displayName":"gameLog"},"group":{"displayName":"pitching"},"exemptions":[],"stats":{"gamesPlayed":1,"gamesStarted":0,"groundOuts":0,"airOuts":0,"runs":1,"doubles":1,"triples":0,"homeRuns":0,"strikeOuts":3,"baseOnBalls":0,"intentionalWalks":0,"hits":1,"hitByPitch":1,"atBats":4,"caughtStealing":0,"stolenBases":0,"stolenBasePercentage":".---","numberOfPitches":23,"inningsPitched":"1.0","wins":0,"losses":0,"saves":0,"saveOpportunities":0,"holds":0,"blownSaves":0,"earnedRuns":1,"battersFaced":5,"outs":3,"gamesPitched":1,"completeGames":0,"shutouts":0,"pitchesThrown":23,"balls":8,"strikes":15,"strikePercentage":".650","hitBatsmen":1,"balks":0,"wildPitches":0,"pickoffs":0,"rbi":1,"gamesFinished":1,"runsScoredPer9":"9.00","homeRunsPer9":"0.00","inheritedRunners":0,"inheritedRunnersScored":0,"catchersInterference":0,"sacBunts":0,"sacFlies":0}},{"type":{"displayName":"statsSingleSeason"},"group":{"displayName":"hitting"},"exemptions":[],"stats":{"gamesPlayed":0,"flyOuts":0,"groundOuts":0,"runs":0,"doubles":0,"triples":0,"homeRuns":0,"strikeOuts":0,"baseOnBalls":0,"intentionalWalks":0,"hits":0,"hitByPitch":0,"avg":".000","atBats":0,"obp":".000","slg":".000","ops":".000","caughtStealing":0,"stolenBases":0,"stolenBasePercentage":".---","groundIntoDoublePlay":0,"groundIntoTriplePlay":0,"plateAppearances":0,"totalBases":0,"rbi":0,"leftOnBase":0,"sacBunts":0,"sacFlies":0,"babip":".---","catchersInterference":0,"pickoffs":0,"atBatsPerHomeRun":"-.--"}},{"type":{"displayName":"statsSingleSeason"},"group":{"displayName":"pitching"},"exemptions":[],"stats":{"gamesPlayed":3,"gamesStarted":0,"groundOuts":0,"airOuts":2,"runs":3,"doubles":1,"triples":0,"homeRuns":0,"strikeOuts":6,"baseOnBalls":4,"intentionalWalks":0,"hits":1,"hitByPitch":1,"atBats":9,"obp":".429","caughtStealing":0,"stolenBases":0,"stolenBasePercentage":".---","numberOfPitches":23,"era":"10.13","inningsPitched":"2.2","wins":0,"losses":0,"saves":0,"saveOpportunities":0,"holds":0,"blownSaves":0,"earnedRuns":3,"whip":"1.88","battersFaced":5,"outs":8,"gamesPitched":3,"completeGames":0,"shutouts":0,"pitchesThrown":23,"balls":8,"strikes":15,"strikePercentage":".650","hitBatsmen":1,"balks":0,"wildPitches":0,"pickoffs":0,"groundOutsToAirouts":"0.00","rbi":1,"winPercentage":".---","pitchesPerInning":"8.63","gamesFinished":1,"strikeoutWalkRatio":"1.50","strikeoutsPer9Inn":"20.25","walksPer9Inn":"13.50","hitsPer9Inn":"3.38","runsScoredPer9":"10.13","homeRunsPer9":"0.00","inheritedRunners":0,"inheritedRunnersScored":0,"catchersInterference":0,"sacBunts":0,"sacFlies":0}}],"mlbDebutDate":"2011-09-26","batSide":{"code":"R","description":"Right"},"pitchHand":{"code":"R","description":"Right"},"nameFirstLast":"Rafael Dolis","nameSlug":"rafael-dolis-503569","firstLastName":"Rafael Dolis","lastFirstName":"Dolis, Rafael","lastInitName":"Dolis, R","initLastName":"R Dolis","fullFMLName":"Rafael Jose Dolis","fullLFMName":"Dolis, Rafael Jose","strikeZoneTop":3.549,"strikeZoneBottom":1.627},"catcher":{"id":672386,"fullName":"Alejandro Kirk","link":"/api/v1/people/672386"},"first":{"id":642133,"fullName":"Rowdy Tellez","link":"/api/v1/people/642133"},"second":{"id":543760,"fullName":"Marcus Semien","link":"/api/v1/people/543760"},"third":{"id":624415,"fullName":"Cavan Biggio","link":"/api/v1/people/624415"},"shortstop":{"id":666182,"fullName":"Bo Bichette","link":"/api/v1/people/666182"},"left":{"id":606192,"fullName":"Teoscar Hernandez","link":"/api/v1/people/606192"},"center":{"id":641505,"fullName":"Jonathan Davis","link":"/api/v1/people/641505"},"right":{"id":545341,"fullName":"Randal Grichuk","link":"/api/v1/people/545341"},"batter":{"id":606192,"fullName":"Teoscar Hernandez","link":"/api/v1/people/606192"},"onDeck":{"id":665489,"fullName":"Vladimir Guerrero Jr.","link":"/api/v1/people/665489"},"inHole":{"id":642133,"fullName":"Rowdy Tellez","link":"/api/v1/people/642133"},"battingOrder":4,"team":{"id":141,"name":"Toronto Blue Jays","link":"/api/v1/teams/141"}},"offense":{"batter":{"id":665750,"fullName":"Leody Taveras","link":"/api/v1/people/665750","firstName":"Leody","lastName":"Taveras","primaryNumber":"3","birthDate":"1998-09-08","currentAge":22,"birthCity":"Tenares","birthCountry":"Dominican Republic","height":"6' 2\"","weight":195,"active":true,"primaryPosition":{"code":"11","name":"Pinch Hitter","type":"Hitter","abbreviation":"PH"},"useName":"Leody","boxscoreName":"Taveras","gender":"M","nameMatrilineal":"Salazar","isPlayer":true,"isVerified":true,"pronunciation":"lay-OH-dee tuh-VAIR-uhs","stats":[{"type":{"displayName":"gameLog"},"group":{"displayName":"hitting"},"exemptions":[],"stats":{"note":"a-","gamesPlayed":1,"flyOuts":0,"groundOuts":0,"runs":0,"doubles":0,"triples":0,"homeRuns":0,"strikeOuts":1,"baseOnBalls":0,"intentionalWalks":0,"hits":0,"hitByPitch":0,"atBats":1,"caughtStealing":0,"stolenBases":0,"stolenBasePercentage":".---","groundIntoDoublePlay":0,"groundIntoTriplePlay":0,"plateAppearances":1,"totalBases":0,"rbi":0,"leftOnBase":1,"sacBunts":0,"sacFlies":0,"catchersInterference":0,"pickoffs":0,"atBatsPerHomeRun":"-.--"}},{"type":{"displayName":"gameLog"},"group":{"displayName":"pitching"},"exemptions":[],"stats":{}},{"type":{"displayName":"statsSingleSeason"},"group":{"displayName":"hitting"},"exemptions":[],"stats":{"gamesPlayed":4,"flyOuts":0,"groundOuts":2,"runs":1,"doubles":0,"triples":0,"homeRuns":0,"strikeOuts":9,"baseOnBalls":1,"intentionalWalks":0,"hits":0,"hitByPitch":0,"avg":".000","atBats":13,"obp":".071","slg":".000","ops":".071","caughtStealing":0,"stolenBases":0,"stolenBasePercentage":".---","groundIntoDoublePlay":0,"groundIntoTriplePlay":0,"plateAppearances":14,"totalBases":0,"rbi":0,"leftOnBase":13,"sacBunts":0,"sacFlies":0,"babip":".000","catchersInterference":0,"pickoffs":0,"atBatsPerHomeRun":"-.--"}},{"type":{"displayName":"statsSingleSeason"},"group":{"displayName":"pitching"},"exemptions":[],"stats":{"gamesPlayed":0,"gamesStarted":0,"groundOuts":0,"airOuts":0,"runs":0,"doubles":0,"triples":0,"homeRuns":0,"strikeOuts":0,"baseOnBalls":0,"intentionalWalks":0,"hits":0,"hitByPitch":0,"atBats":0,"obp":".000","caughtStealing":0,"stolenBases":0,"stolenBasePercentage":".---","era":"-.--","inningsPitched":"0.0","wins":0,"losses":0,"saves":0,"saveOpportunities":0,"holds":0,"blownSaves":0,"earnedRuns":0,"whip":"-","outs":0,"gamesPitched":0,"completeGames":0,"shutouts":0,"hitBatsmen":0,"balks":0,"wildPitches":0,"pickoffs":0,"groundOutsToAirouts":"-.--","rbi":0,"winPercentage":".---","gamesFinished":0,"strikeoutWalkRatio":"-.--","strikeoutsPer9Inn":"-.--","walksPer9Inn":"-.--","hitsPer9Inn":"-.--","runsScoredPer9":"-.--","homeRunsPer9":"-.--","inheritedRunners":0,"inheritedRunnersScored":0,"catchersInterference":0,"sacBunts":0,"sacFlies":0}}],"mlbDebutDate":"2020-07-24","batSide":{"code":"S","description":"Switch"},"pitchHand":{"code":"R","description":"Right"},"nameFirstLast":"Leody Taveras","nameSlug":"leody-taveras-665750","firstLastName":"Leody Taveras","lastFirstName":"Taveras, Leody","lastInitName":"Taveras, L","initLastName":"L Taveras","fullFMLName":"Leody Taveras","fullLFMName":"Taveras, Leody","strikeZoneTop":3.467,"strikeZoneBottom":1.589},"onDeck":{"id":518586,"fullName":"Charlie Culberson","link":"/api/v1/people/518586","firstName":"Charles","lastName":"Culberson","primaryNumber":"2","birthDate":"1989-04-10","currentAge":31,"birthCity":"Rome","birthStateProvince":"GA","birthCountry":"USA","height":"6' 1\"","weight":200,"active":true,"primaryPosition":{"code":"5","name":"Third Base","type":"Infielder","abbreviation":"3B"},"useName":"Charlie","middleName":"Edward","boxscoreName":"Culberson","nickName":"A.C.E.S.","gender":"M","isPlayer":true,"isVerified":true,"draftYear":2007,"stats":[{"type":{"displayName":"gameLog"},"group":{"displayName":"hitting"},"exemptions":[],"stats":{"gamesPlayed":1,"flyOuts":2,"groundOuts":1,"runs":0,"doubles":0,"triples":0,"homeRuns":0,"strikeOuts":0,"baseOnBalls":0,"intentionalWalks":0,"hits":0,"hitByPitch":0,"atBats":3,"caughtStealing":0,"stolenBases":0,"stolenBasePercentage":".---","groundIntoDoublePlay":0,"groundIntoTriplePlay":0,"plateAppearances":3,"totalBases":0,"rbi":0,"leftOnBase":1,"sacBunts":0,"sacFlies":0,"catchersInterference":0,"pickoffs":0,"atBatsPerHomeRun":"-.--"}},{"type":{"displayName":"gameLog"},"group":{"displayName":"pitching"},"exemptions":[],"stats":{}},{"type":{"displayName":"statsSingleSeason"},"group":{"displayName":"hitting"},"exemptions":[],"stats":{"gamesPlayed":2,"flyOuts":2,"groundOuts":1,"runs":0,"doubles":0,"triples":0,"homeRuns":0,"strikeOuts":0,"baseOnBalls":0,"intentionalWalks":0,"hits":0,"hitByPitch":0,"avg":".000","atBats":7,"obp":".000","slg":".000","ops":".000","caughtStealing":0,"stolenBases":0,"stolenBasePercentage":".---","groundIntoDoublePlay":0,"groundIntoTriplePlay":0,"plateAppearances":7,"totalBases":0,"rbi":0,"leftOnBase":2,"sacBunts":0,"sacFlies":0,"babip":".000","catchersInterference":0,"pickoffs":0,"atBatsPerHomeRun":"-.--"}},{"type":{"displayName":"statsSingleSeason"},"group":{"displayName":"pitching"},"exemptions":[],"stats":{"gamesPlayed":0,"gamesStarted":0,"groundOuts":0,"airOuts":0,"runs":0,"doubles":0,"triples":0,"homeRuns":0,"strikeOuts":0,"baseOnBalls":0,"intentionalWalks":0,"hits":0,"hitByPitch":0,"atBats":0,"obp":".000","caughtStealing":0,"stolenBases":0,"stolenBasePercentage":".---","era":"-.--","inningsPitched":"0.0","wins":0,"losses":0,"saves":0,"saveOpportunities":0,"holds":0,"blownSaves":0,"earnedRuns":0,"whip":"-","outs":0,"gamesPitched":0,"completeGames":0,"shutouts":0,"hitBatsmen":0,"balks":0,"wildPitches":0,"pickoffs":0,"groundOutsToAirouts":"-.--","rbi":0,"winPercentage":".---","gamesFinished":0,"strikeoutWalkRatio":"-.--","strikeoutsPer9Inn":"-.--","walksPer9Inn":"-.--","hitsPer9Inn":"-.--","runsScoredPer9":"-.--","homeRunsPer9":"-.--","inheritedRunners":0,"inheritedRunnersScored":0,"catchersInterference":0,"sacBunts":0,"sacFlies":0}}],"mlbDebutDate":"2012-05-13","batSide":{"code":"R","description":"Right"},"pitchHand":{"code":"R","description":"Right"},"nameFirstLast":"Charlie Culberson","nameSlug":"charlie-culberson-518586","firstLastName":"Charlie Culberson","lastFirstName":"Culberson, Charlie","lastInitName":"Culberson, C","initLastName":"C Culberson","fullFMLName":"Charles Edward Culberson","fullLFMName":"Culberson, Charles Edward","strikeZoneTop":3.411,"strikeZoneBottom":1.565},"inHole":{"id":643396,"fullName":"Isiah Kiner-Falefa","link":"/api/v1/people/643396","firstName":"Isiah","lastName":"Kiner-Falefa","primaryNumber":"9","birthDate":"1995-03-23","currentAge":26,"birthCity":"Honolulu","birthStateProvince":"HI","birthCountry":"USA","height":"5' 11\"","weight":190,"active":true,"primaryPosition":{"code":"6","name":"Shortstop","type":"Infielder","abbreviation":"SS"},"useName":"Isiah","boxscoreName":"Kiner-Falefa","nickName":"Izzy","gender":"M","isPlayer":true,"isVerified":false,"draftYear":2013,"pronunciation":"KYE-nuhr fuh-LEFF-uh","stats":[{"type":{"displayName":"gameLog"},"group":{"displayName":"hitting"},"exemptions":[],"stats":{"gamesPlayed":1,"flyOuts":1,"groundOuts":1,"runs":1,"doubles":0,"triples":0,"homeRuns":0,"strikeOuts":0,"baseOnBalls":0,"intentionalWalks":0,"hits":2,"hitByPitch":0,"atBats":4,"caughtStealing":0,"stolenBases":0,"stolenBasePercentage":".---","groundIntoDoublePlay":0,"groundIntoTriplePlay":0,"plateAppearances":4,"totalBases":2,"rbi":0,"leftOnBase":1,"sacBunts":0,"sacFlies":0,"catchersInterference":0,"pickoffs":0,"atBatsPerHomeRun":"-.--"}},{"type":{"displayName":"gameLog"},"group":{"displayName":"pitching"},"exemptions":[],"stats":{}},{"type":{"displayName":"statsSingleSeason"},"group":{"displayName":"hitting"},"exemptions":[],"stats":{"gamesPlayed":4,"flyOuts":1,"groundOuts":4,"runs":5,"doubles":1,"triples":0,"homeRuns":1,"strikeOuts":3,"baseOnBalls":1,"intentionalWalks":0,"hits":6,"hitByPitch":1,"avg":".353","atBats":17,"obp":".421","slg":".588","ops":"1.009","caughtStealing":0,"stolenBases":0,"stolenBasePercentage":".---","groundIntoDoublePlay":0,"groundIntoTriplePlay":0,"plateAppearances":19,"totalBases":10,"rbi":3,"leftOnBase":6,"sacBunts":0,"sacFlies":0,"babip":".385","catchersInterference":0,"pickoffs":0,"atBatsPerHomeRun":"17.00"}},{"type":{"displayName":"statsSingleSeason"},"group":{"displayName":"pitching"},"exemptions":[],"stats":{"gamesPlayed":0,"gamesStarted":0,"groundOuts":0,"airOuts":0,"runs":0,"doubles":0,"triples":0,"homeRuns":0,"strikeOuts":0,"baseOnBalls":0,"intentionalWalks":0,"hits":0,"hitByPitch":0,"atBats":0,"obp":".000","caughtStealing":0,"stolenBases":0,"stolenBasePercentage":".---","era":"-.--","inningsPitched":"0.0","wins":0,"losses":0,"saves":0,"saveOpportunities":0,"holds":0,"blownSaves":0,"earnedRuns":0,"whip":"-","outs":0,"gamesPitched":0,"completeGames":0,"shutouts":0,"hitBatsmen":0,"balks":0,"wildPitches":0,"pickoffs":0,"groundOutsToAirouts":"-.--","rbi":0,"winPercentage":".---","gamesFinished":0,"strikeoutWalkRatio":"-.--","strikeoutsPer9Inn":"-.--","walksPer9Inn":"-.--","hitsPer9Inn":"-.--","runsScoredPer9":"-.--","homeRunsPer9":"-.--","inheritedRunners":0,"inheritedRunnersScored":0,"catchersInterference":0,"sacBunts":0,"sacFlies":0}}],"mlbDebutDate":"2018-04-10","batSide":{"code":"R","description":"Right"},"pitchHand":{"code":"R","description":"Right"},"nameFirstLast":"Isiah Kiner-Falefa","nameSlug":"isiah-kiner-falefa-643396","firstLastName":"Isiah Kiner-Falefa","lastFirstName":"Kiner-Falefa, Isiah","lastInitName":"Kiner-Falefa, I","initLastName":"I Kiner-Falefa","fullFMLName":"Isiah Kiner-Falefa","fullLFMName":"Kiner-Falefa, Isiah","strikeZoneTop":3.319,"strikeZoneBottom":1.513},"pitcher":{"id":676969,"fullName":"Brett de Geus","link":"/api/v1/people/676969","firstName":"Brett","lastName":"de Geus","primaryNumber":"56","birthDate":"1997-11-04","currentAge":23,"birthCity":"Pleasanton","birthStateProvince":"CA","birthCountry":"USA","height":"6' 2\"","weight":190,"active":true,"primaryPosition":{"code":"1","name":"Pitcher","type":"Pitcher","abbreviation":"P"},"useName":"Brett","boxscoreName":"de Geus","gender":"M","isPlayer":true,"isVerified":false,"draftYear":2017,"pronunciation":"duh-GUS","stats":[{"type":{"displayName":"gameLog"},"group":{"displayName":"hitting"},"exemptions":[],"stats":{}},{"type":{"displayName":"gameLog"},"group":{"displayName":"pitching"},"exemptions":[],"stats":{"gamesPlayed":1,"gamesStarted":0,"groundOuts":5,"airOuts":0,"runs":0,"doubles":0,"triples":0,"homeRuns":0,"strikeOuts":1,"baseOnBalls":0,"intentionalWalks":0,"hits":1,"hitByPitch":1,"atBats":7,"caughtStealing":0,"stolenBases":0,"stolenBasePercentage":".---","numberOfPitches":25,"inningsPitched":"2.2","wins":0,"losses":0,"saves":0,"saveOpportunities":0,"holds":0,"blownSaves":0,"earnedRuns":0,"battersFaced":8,"outs":8,"gamesPitched":1,"completeGames":0,"shutouts":0,"pitchesThrown":25,"balls":10,"strikes":15,"strikePercentage":".600","hitBatsmen":1,"balks":0,"wildPitches":0,"pickoffs":0,"rbi":0,"gamesFinished":1,"runsScoredPer9":"0.00","homeRunsPer9":"0.00","inheritedRunners":2,"inheritedRunnersScored":0,"catchersInterference":0,"sacBunts":0,"sacFlies":0}},{"type":{"displayName":"statsSingleSeason"},"group":{"displayName":"hitting"},"exemptions":[],"stats":{"gamesPlayed":0,"flyOuts":0,"groundOuts":0,"runs":0,"doubles":0,"triples":0,"homeRuns":0,"strikeOuts":0,"baseOnBalls":0,"intentionalWalks":0,"hits":0,"hitByPitch":0,"avg":".000","atBats":0,"obp":".000","slg":".000","ops":".000","caughtStealing":0,"stolenBases":0,"stolenBasePercentage":".---","groundIntoDoublePlay":0,"groundIntoTriplePlay":0,"plateAppearances":0,"totalBases":0,"rbi":0,"leftOnBase":0,"sacBunts":0,"sacFlies":0,"babip":".---","catchersInterference":0,"pickoffs":0,"atBatsPerHomeRun":"-.--"}},{"type":{"displayName":"statsSingleSeason"},"group":{"displayName":"pitching"},"exemptions":[],"stats":{"gamesPlayed":3,"gamesStarted":0,"groundOuts":11,"airOuts":0,"runs":3,"doubles":0,"triples":0,"homeRuns":0,"strikeOuts":1,"baseOnBalls":3,"intentionalWalks":0,"hits":2,"hitByPitch":3,"atBats":14,"obp":".400","caughtStealing":0,"stolenBases":0,"stolenBasePercentage":".---","numberOfPitches":25,"era":"5.79","inningsPitched":"4.2","wins":0,"losses":0,"saves":0,"saveOpportunities":0,"holds":0,"blownSaves":0,"earnedRuns":3,"whip":"1.07","battersFaced":8,"outs":14,"gamesPitched":3,"completeGames":0,"shutouts":0,"pitchesThrown":25,"balls":10,"strikes":15,"strikePercentage":".600","hitBatsmen":3,"balks":0,"wildPitches":0,"pickoffs":0,"groundOutsToAirouts":"11.00","rbi":0,"winPercentage":".---","pitchesPerInning":"5.36","gamesFinished":1,"strikeoutWalkRatio":"0.33","strikeoutsPer9Inn":"1.93","walksPer9Inn":"5.79","hitsPer9Inn":"3.86","runsScoredPer9":"5.79","homeRunsPer9":"0.00","inheritedRunners":2,"inheritedRunnersScored":0,"catchersInterference":0,"sacBunts":0,"sacFlies":0}}],"mlbDebutDate":"2021-04-01","batSide":{"code":"R","description":"Right"},"pitchHand":{"code":"R","description":"Right"},"nameFirstLast":"Brett de Geus","nameSlug":"brett-de-geus-676969","firstLastName":"Brett de Geus","lastFirstName":"de Geus, Brett","lastInitName":"de Geus, B","initLastName":"B de Geus","fullFMLName":"Brett de Geus","fullLFMName":"de Geus, Brett","strikeZoneTop":3.467,"strikeZoneBottom":1.589},"battingOrder":8,"team":{"id":140,"name":"Texas Rangers","link":"/api/v1/teams/140"}},"balls":2,"strikes":3,"outs":3},"decisions":{"winner":{"id":571927,"fullName":"Steven Matz","link":"/api/v1/people/571927","firstName":"Steven","lastName":"Matz","primaryNumber":"22","birthDate":"1991-05-29","currentAge":29,"birthCity":"Stony Brook","birthStateProvince":"NY","birthCountry":"USA","height":"6' 2\"","weight":201,"active":true,"primaryPosition":{"code":"1","name":"Pitcher","type":"Pitcher","abbreviation":"P"},"useName":"Steven","middleName":"Jakob","boxscoreName":"Matz","nickName":"Matzy","gender":"M","isPlayer":true,"isVerified":true,"draftYear":2009,"pronunciation":"Mats","stats":[{"type":{"displayName":"gameLog"},"group":{"displayName":"hitting"},"exemptions":[],"stats":{}},{"type":{"displayName":"gameLog"},"group":{"displayName":"pitching"},"exemptions":[],"stats":{"note":"(W, 1-0)","gamesPlayed":1,"gamesStarted":1,"flyOuts":3,"groundOuts":5,"airOuts":5,"runs":1,"doubles":0,"triples":0,"homeRuns":0,"strikeOuts":9,"baseOnBalls":1,"intentionalWalks":0,"hits":2,"hitByPitch":1,"atBats":21,"caughtStealing":0,"stolenBases":0,"stolenBasePercentage":".---","numberOfPitches":91,"inningsPitched":"6.1","wins":1,"losses":0,"saves":0,"saveOpportunities":0,"holds":0,"blownSaves":0,"earnedRuns":1,"battersFaced":23,"outs":19,"gamesPitched":1,"completeGames":0,"shutouts":0,"pitchesThrown":91,"balls":29,"strikes":62,"strikePercentage":".680","hitBatsmen":1,"balks":0,"wildPitches":0,"pickoffs":0,"rbi":1,"gamesFinished":0,"runsScoredPer9":"1.42","homeRunsPer9":"0.00","inheritedRunners":0,"inheritedRunnersScored":0,"catchersInterference":0,"sacBunts":0,"sacFlies":0}},{"type":{"displayName":"statsSingleSeason"},"group":{"displayName":"hitting"},"exemptions":[],"stats":{"gamesPlayed":0,"flyOuts":0,"groundOuts":0,"runs":0,"doubles":0,"triples":0,"homeRuns":0,"strikeOuts":0,"baseOnBalls":0,"intentionalWalks":0,"hits":0,"hitByPitch":0,"avg":".000","atBats":0,"obp":".000","slg":".000","ops":".000","caughtStealing":0,"stolenBases":0,"stolenBasePercentage":".---","groundIntoDoublePlay":0,"groundIntoTriplePlay":0,"plateAppearances":0,"totalBases":0,"rbi":0,"leftOnBase":0,"sacBunts":0,"sacFlies":0,"babip":".---","catchersInterference":0,"pickoffs":0,"atBatsPerHomeRun":"-.--"}},{"type":{"displayName":"statsSingleSeason"},"group":{"displayName":"pitching"},"exemptions":[],"stats":{"gamesPlayed":1,"gamesStarted":1,"flyOuts":3,"groundOuts":5,"airOuts":5,"runs":1,"doubles":0,"triples":0,"homeRuns":0,"strikeOuts":9,"baseOnBalls":1,"intentionalWalks":0,"hits":2,"hitByPitch":1,"atBats":21,"obp":".174","caughtStealing":0,"stolenBases":0,"stolenBasePercentage":".---","numberOfPitches":91,"era":"1.42","inningsPitched":"6.1","wins":1,"losses":0,"saves":0,"saveOpportunities":0,"holds":0,"blownSaves":0,"earnedRuns":1,"whip":"0.47","battersFaced":23,"outs":19,"gamesPitched":1,"completeGames":0,"shutouts":0,"pitchesThrown":91,"balls":29,"strikes":62,"strikePercentage":".680","hitBatsmen":1,"balks":0,"wildPitches":0,"pickoffs":0,"groundOutsToAirouts":"1.00","rbi":1,"winPercentage":"1.000","pitchesPerInning":"14.37","gamesFinished":0,"strikeoutWalkRatio":"9.00","strikeoutsPer9Inn":"12.79","walksPer9Inn":"1.42","hitsPer9Inn":"2.84","runsScoredPer9":"1.42","homeRunsPer9":"0.00","inheritedRunners":0,"inheritedRunnersScored":0,"catchersInterference":0,"sacBunts":0,"sacFlies":0}}],"mlbDebutDate":"2015-06-28","batSide":{"code":"R","description":"Right"},"pitchHand":{"code":"L","description":"Left"},"nameFirstLast":"Steven Matz","nameSlug":"steven-matz-571927","firstLastName":"Steven Matz","lastFirstName":"Matz, Steven","lastInitName":"Matz, S","initLastName":"S Matz","fullFMLName":"Steven Jakob Matz","fullLFMName":"Matz, Steven Jakob","strikeZoneTop":3.467,"strikeZoneBottom":1.589},"loser":{"id":592314,"fullName":"Mike Foltynewicz","link":"/api/v1/people/592314","firstName":"Michael","lastName":"Foltynewicz","primaryNumber":"20","birthDate":"1991-10-07","currentAge":29,"birthCity":"Sterling","birthStateProvince":"IL","birthCountry":"USA","height":"6' 4\"","weight":195,"active":true,"primaryPosition":{"code":"1","name":"Pitcher","type":"Pitcher","abbreviation":"P"},"useName":"Mike","middleName":"Gary","boxscoreName":"Foltynewicz","nickName":"High Foltage","gender":"M","isPlayer":true,"isVerified":true,"draftYear":2010,"pronunciation":"Ful-ta-nev-ich","stats":[{"type":{"displayName":"gameLog"},"group":{"displayName":"hitting"},"exemptions":[],"stats":{}},{"type":{"displayName":"gameLog"},"group":{"displayName":"pitching"},"exemptions":[],"stats":{"note":"(L, 0-1)","gamesPlayed":1,"gamesStarted":1,"flyOuts":1,"groundOuts":3,"airOuts":1,"runs":4,"doubles":0,"triples":0,"homeRuns":2,"strikeOuts":7,"baseOnBalls":3,"intentionalWalks":0,"hits":4,"hitByPitch":0,"atBats":15,"caughtStealing":1,"stolenBases":0,"stolenBasePercentage":".000","numberOfPitches":95,"inningsPitched":"4.0","wins":0,"losses":1,"saves":0,"saveOpportunities":0,"holds":0,"blownSaves":0,"earnedRuns":4,"battersFaced":18,"outs":12,"gamesPitched":1,"completeGames":0,"shutouts":0,"pitchesThrown":95,"balls":36,"strikes":59,"strikePercentage":".620","hitBatsmen":0,"balks":0,"wildPitches":0,"pickoffs":0,"rbi":4,"gamesFinished":0,"runsScoredPer9":"9.00","homeRunsPer9":"4.50","inheritedRunners":0,"inheritedRunnersScored":0,"catchersInterference":0,"sacBunts":0,"sacFlies":0}},{"type":{"displayName":"statsSingleSeason"},"group":{"displayName":"hitting"},"exemptions":[],"stats":{"gamesPlayed":0,"flyOuts":0,"groundOuts":0,"runs":0,"doubles":0,"triples":0,"homeRuns":0,"strikeOuts":0,"baseOnBalls":0,"intentionalWalks":0,"hits":0,"hitByPitch":0,"avg":".000","atBats":0,"obp":".000","slg":".000","ops":".000","caughtStealing":0,"stolenBases":0,"stolenBasePercentage":".---","groundIntoDoublePlay":0,"groundIntoTriplePlay":0,"plateAppearances":0,"totalBases":0,"rbi":0,"leftOnBase":0,"sacBunts":0,"sacFlies":0,"babip":".---","catchersInterference":0,"pickoffs":0,"atBatsPerHomeRun":"-.--"}},{"type":{"displayName":"statsSingleSeason"},"group":{"displayName":"pitching"},"exemptions":[],"stats":{"gamesPlayed":1,"gamesStarted":1,"flyOuts":1,"groundOuts":3,"airOuts":1,"runs":4,"doubles":0,"triples":0,"homeRuns":2,"strikeOuts":7,"baseOnBalls":3,"intentionalWalks":0,"hits":4,"hitByPitch":0,"atBats":15,"obp":".389","caughtStealing":1,"stolenBases":0,"stolenBasePercentage":".000","numberOfPitches":95,"era":"9.00","inningsPitched":"4.0","wins":0,"losses":1,"saves":0,"saveOpportunities":0,"holds":0,"blownSaves":0,"earnedRuns":4,"whip":"1.75","battersFaced":18,"outs":12,"gamesPitched":1,"completeGames":0,"shutouts":0,"pitchesThrown":95,"balls":36,"strikes":59,"strikePercentage":".620","hitBatsmen":0,"balks":0,"wildPitches":0,"pickoffs":0,"groundOutsToAirouts":"3.00","rbi":4,"winPercentage":".000","pitchesPerInning":"23.75","gamesFinished":0,"strikeoutWalkRatio":"2.33","strikeoutsPer9Inn":"15.75","walksPer9Inn":"6.75","hitsPer9Inn":"9.00","runsScoredPer9":"9.00","homeRunsPer9":"4.50","inheritedRunners":0,"inheritedRunnersScored":0,"catchersInterference":0,"sacBunts":0,"sacFlies":0}}],"mlbDebutDate":"2014-08-02","batSide":{"code":"R","description":"Right"},"pitchHand":{"code":"R","description":"Right"},"nameFirstLast":"Mike Foltynewicz","nameSlug":"mike-foltynewicz-592314","firstLastName":"Mike Foltynewicz","lastFirstName":"Foltynewicz, Mike","lastInitName":"Foltynewicz, M","initLastName":"M Foltynewicz","fullFMLName":"Michael Gary Foltynewicz","fullLFMName":"Foltynewicz, Michael Gary","strikeZoneTop":3.549,"strikeZoneBottom":1.627}},"venue":{"id":5325,"name":"Globe Life Field","link":"/api/v1/venues/5325"},"content":{"link":"/api/v1/game/634612/content"},"isTie":false,"gameNumber":1,"publicFacing":true,"doubleHeader":"N","gamedayType":"P","tiebreaker":"N","calendarEventID":"14-634612-2021-04-05","seasonDisplay":"2021","dayNight":"day","description":"Rangers home opener","scheduledInnings":9,"reverseHomeAwayStatus":false,"inningBreakLength":120,"gamesInSeries":3,"seriesGameNumber":1,"seriesDescription":"Regular Season","flags":{"noHitter":false,"perfectGame":false,"awayTeamNoHitter":false,"awayTeamPerfectGame":false,"homeTeamNoHitter":false,"homeTeamPerfectGame":false},"recordSource":"S","ifNecessary":"N","ifNecessaryDescription":"Normal Game"}],"events":[]}]}}
+{
+  "copyright": "Copyright 2021 MLB Advanced Media, L.P.  Use of any content on this page acknowledges agreement to the terms posted here http://gdx.mlb.com/components/copyright.txt",
+  "totalItems": 1,
+  "totalEvents": 0,
+  "totalGames": 1,
+  "totalGamesInProgress": 1,
+  "dates": [
+    {
+      "date": "2021-04-06",
+      "totalItems": 1,
+      "totalEvents": 0,
+      "totalGames": 1,
+      "totalGamesInProgress": 1,
+      "games": [
+        {
+          "gamePk": 634635,
+          "link": "/api/v1.1/game/634635/feed/live",
+          "gameType": "R",
+          "season": "2021",
+          "gameDate": "2021-04-07T00:05:00Z",
+          "officialDate": "2021-04-06",
+          "status": {
+            "abstractGameState": "Live",
+            "codedGameState": "I",
+            "detailedState": "In Progress",
+            "statusCode": "I",
+            "startTimeTBD": false,
+            "abstractGameCode": "L"
+          },
+          "teams": {
+            "away": {
+              "leagueRecord": {
+                "wins": 3,
+                "losses": 1,
+                "pct": ".750"
+              },
+              "score": 1,
+              "team": {
+                "id": 141,
+                "name": "Toronto Blue Jays",
+                "link": "/api/v1/teams/141",
+                "season": 2021,
+                "venue": {
+                  "id": 14,
+                  "name": "Rogers Centre",
+                  "link": "/api/v1/venues/14"
+                },
+                "springVenue": {
+                  "id": 2536,
+                  "link": "/api/v1/venues/2536"
+                },
+                "teamCode": "tor",
+                "fileCode": "tor",
+                "abbreviation": "TOR",
+                "teamName": "Blue Jays",
+                "locationName": "Toronto",
+                "firstYearOfPlay": "1977",
+                "league": {
+                  "id": 103,
+                  "name": "American League",
+                  "link": "/api/v1/league/103"
+                },
+                "division": {
+                  "id": 201,
+                  "name": "American League East",
+                  "link": "/api/v1/divisions/201"
+                },
+                "sport": {
+                  "id": 1,
+                  "link": "/api/v1/sports/1",
+                  "name": "Major League Baseball"
+                },
+                "shortName": "Toronto",
+                "springLeague": {
+                  "id": 115,
+                  "name": "Grapefruit League",
+                  "link": "/api/v1/league/115",
+                  "abbreviation": "GL"
+                },
+                "allStarStatus": "N",
+                "active": true
+              },
+              "probablePitcher": {
+                "id": 543699,
+                "fullName": "Tanner Roark",
+                "link": "/api/v1/people/543699",
+                "firstName": "Tanner",
+                "lastName": "Roark",
+                "primaryNumber": "14",
+                "birthDate": "1986-10-05",
+                "currentAge": 34,
+                "birthCity": "Wilmington",
+                "birthStateProvince": "IL",
+                "birthCountry": "USA",
+                "height": "6' 2\"",
+                "weight": 238,
+                "active": true,
+                "primaryPosition": {
+                  "code": "1",
+                  "name": "Pitcher",
+                  "type": "Pitcher",
+                  "abbreviation": "P"
+                },
+                "useName": "Tanner",
+                "middleName": "B.",
+                "boxscoreName": "Roark",
+                "nickName": "T-Ro",
+                "gender": "M",
+                "isPlayer": true,
+                "isVerified": false,
+                "draftYear": 2008,
+                "pronunciation": "RO-ark",
+                "stats": [
+                  {
+                    "type": {
+                      "displayName": "gameLog"
+                    },
+                    "group": {
+                      "displayName": "hitting"
+                    },
+                    "exemptions": [],
+                    "stats": {}
+                  },
+                  {
+                    "type": {
+                      "displayName": "gameLog"
+                    },
+                    "group": {
+                      "displayName": "pitching"
+                    },
+                    "exemptions": [],
+                    "stats": {
+                      "gamesPlayed": 1,
+                      "gamesStarted": 1,
+                      "flyOuts": 3,
+                      "groundOuts": 1,
+                      "airOuts": 4,
+                      "runs": 3,
+                      "doubles": 0,
+                      "triples": 0,
+                      "homeRuns": 2,
+                      "strikeOuts": 1,
+                      "baseOnBalls": 0,
+                      "intentionalWalks": 0,
+                      "hits": 3,
+                      "hitByPitch": 0,
+                      "atBats": 9,
+                      "caughtStealing": 0,
+                      "stolenBases": 1,
+                      "stolenBasePercentage": "1.000",
+                      "numberOfPitches": 37,
+                      "inningsPitched": "2.0",
+                      "wins": 0,
+                      "losses": 0,
+                      "saves": 0,
+                      "saveOpportunities": 0,
+                      "holds": 0,
+                      "blownSaves": 0,
+                      "earnedRuns": 3,
+                      "battersFaced": 9,
+                      "outs": 6,
+                      "gamesPitched": 1,
+                      "completeGames": 0,
+                      "shutouts": 0,
+                      "pitchesThrown": 37,
+                      "balls": 17,
+                      "strikes": 20,
+                      "strikePercentage": ".540",
+                      "hitBatsmen": 0,
+                      "balks": 0,
+                      "wildPitches": 0,
+                      "pickoffs": 0,
+                      "rbi": 3,
+                      "gamesFinished": 0,
+                      "runsScoredPer9": "13.50",
+                      "homeRunsPer9": "9.00",
+                      "inheritedRunners": 0,
+                      "inheritedRunnersScored": 0,
+                      "catchersInterference": 0,
+                      "sacBunts": 0,
+                      "sacFlies": 0
+                    }
+                  },
+                  {
+                    "type": {
+                      "displayName": "statsSingleSeason"
+                    },
+                    "group": {
+                      "displayName": "hitting"
+                    },
+                    "exemptions": [],
+                    "stats": {
+                      "gamesPlayed": 0,
+                      "flyOuts": 0,
+                      "groundOuts": 0,
+                      "runs": 0,
+                      "doubles": 0,
+                      "triples": 0,
+                      "homeRuns": 0,
+                      "strikeOuts": 0,
+                      "baseOnBalls": 0,
+                      "intentionalWalks": 0,
+                      "hits": 0,
+                      "hitByPitch": 0,
+                      "avg": ".000",
+                      "atBats": 0,
+                      "obp": ".000",
+                      "slg": ".000",
+                      "ops": ".000",
+                      "caughtStealing": 0,
+                      "stolenBases": 0,
+                      "stolenBasePercentage": ".---",
+                      "groundIntoDoublePlay": 0,
+                      "groundIntoTriplePlay": 0,
+                      "plateAppearances": 0,
+                      "totalBases": 0,
+                      "rbi": 0,
+                      "leftOnBase": 0,
+                      "sacBunts": 0,
+                      "sacFlies": 0,
+                      "babip": ".---",
+                      "catchersInterference": 0,
+                      "pickoffs": 0,
+                      "atBatsPerHomeRun": "-.--"
+                    }
+                  },
+                  {
+                    "type": {
+                      "displayName": "statsSingleSeason"
+                    },
+                    "group": {
+                      "displayName": "pitching"
+                    },
+                    "exemptions": [],
+                    "stats": {
+                      "gamesPlayed": 1,
+                      "gamesStarted": 1,
+                      "flyOuts": 3,
+                      "groundOuts": 1,
+                      "airOuts": 4,
+                      "runs": 3,
+                      "doubles": 0,
+                      "triples": 0,
+                      "homeRuns": 2,
+                      "strikeOuts": 1,
+                      "baseOnBalls": 0,
+                      "intentionalWalks": 0,
+                      "hits": 3,
+                      "hitByPitch": 0,
+                      "atBats": 9,
+                      "obp": ".333",
+                      "caughtStealing": 0,
+                      "stolenBases": 1,
+                      "stolenBasePercentage": "1.000",
+                      "numberOfPitches": 37,
+                      "era": "13.50",
+                      "inningsPitched": "2.0",
+                      "wins": 0,
+                      "losses": 0,
+                      "saves": 0,
+                      "saveOpportunities": 0,
+                      "holds": 0,
+                      "blownSaves": 0,
+                      "earnedRuns": 3,
+                      "whip": "1.50",
+                      "battersFaced": 9,
+                      "outs": 6,
+                      "gamesPitched": 1,
+                      "completeGames": 0,
+                      "shutouts": 0,
+                      "pitchesThrown": 37,
+                      "balls": 17,
+                      "strikes": 20,
+                      "strikePercentage": ".540",
+                      "hitBatsmen": 0,
+                      "balks": 0,
+                      "wildPitches": 0,
+                      "pickoffs": 0,
+                      "groundOutsToAirouts": "0.25",
+                      "rbi": 3,
+                      "winPercentage": ".---",
+                      "pitchesPerInning": "18.50",
+                      "gamesFinished": 0,
+                      "strikeoutWalkRatio": "-.--",
+                      "strikeoutsPer9Inn": "4.50",
+                      "walksPer9Inn": "0.00",
+                      "hitsPer9Inn": "13.50",
+                      "runsScoredPer9": "13.50",
+                      "homeRunsPer9": "9.00",
+                      "inheritedRunners": 0,
+                      "inheritedRunnersScored": 0,
+                      "catchersInterference": 0,
+                      "sacBunts": 0,
+                      "sacFlies": 0
+                    }
+                  }
+                ],
+                "mlbDebutDate": "2013-08-07",
+                "batSide": {
+                  "code": "R",
+                  "description": "Right"
+                },
+                "pitchHand": {
+                  "code": "R",
+                  "description": "Right"
+                },
+                "nameFirstLast": "Tanner Roark",
+                "nameSlug": "tanner-roark-543699",
+                "firstLastName": "Tanner Roark",
+                "lastFirstName": "Roark, Tanner",
+                "lastInitName": "Roark, T",
+                "initLastName": "T Roark",
+                "fullFMLName": "Tanner B. Roark",
+                "fullLFMName": "Roark, Tanner B.",
+                "strikeZoneTop": 3.467,
+                "strikeZoneBottom": 1.589
+              },
+              "splitSquad": false,
+              "seriesNumber": 2,
+              "springLeague": {
+                "id": 115,
+                "name": "Grapefruit League",
+                "link": "/api/v1/league/115",
+                "abbreviation": "GL"
+              }
+            },
+            "home": {
+              "leagueRecord": {
+                "wins": 1,
+                "losses": 3,
+                "pct": ".250"
+              },
+              "score": 3,
+              "team": {
+                "id": 140,
+                "name": "Texas Rangers",
+                "link": "/api/v1/teams/140",
+                "season": 2021,
+                "venue": {
+                  "id": 5325,
+                  "name": "Globe Life Field",
+                  "link": "/api/v1/venues/5325"
+                },
+                "springVenue": {
+                  "id": 2603,
+                  "link": "/api/v1/venues/2603"
+                },
+                "teamCode": "tex",
+                "fileCode": "tex",
+                "abbreviation": "TEX",
+                "teamName": "Rangers",
+                "locationName": "Arlington",
+                "firstYearOfPlay": "1961",
+                "league": {
+                  "id": 103,
+                  "name": "American League",
+                  "link": "/api/v1/league/103"
+                },
+                "division": {
+                  "id": 200,
+                  "name": "American League West",
+                  "link": "/api/v1/divisions/200"
+                },
+                "sport": {
+                  "id": 1,
+                  "link": "/api/v1/sports/1",
+                  "name": "Major League Baseball"
+                },
+                "shortName": "Texas",
+                "springLeague": {
+                  "id": 114,
+                  "name": "Cactus League",
+                  "link": "/api/v1/league/114",
+                  "abbreviation": "CL"
+                },
+                "allStarStatus": "N",
+                "active": true
+              },
+              "probablePitcher": {
+                "id": 641540,
+                "fullName": "Dane Dunning",
+                "link": "/api/v1/people/641540",
+                "firstName": "Dane",
+                "lastName": "Dunning",
+                "primaryNumber": "33",
+                "birthDate": "1994-12-20",
+                "currentAge": 26,
+                "birthCity": "Orange Park",
+                "birthStateProvince": "FL",
+                "birthCountry": "USA",
+                "height": "6' 4\"",
+                "weight": 225,
+                "active": true,
+                "primaryPosition": {
+                  "code": "1",
+                  "name": "Pitcher",
+                  "type": "Pitcher",
+                  "abbreviation": "P"
+                },
+                "useName": "Dane",
+                "middleName": "Anthony",
+                "boxscoreName": "Dunning",
+                "gender": "M",
+                "isPlayer": true,
+                "isVerified": false,
+                "draftYear": 2016,
+                "stats": [
+                  {
+                    "type": {
+                      "displayName": "gameLog"
+                    },
+                    "group": {
+                      "displayName": "hitting"
+                    },
+                    "exemptions": [],
+                    "stats": {}
+                  },
+                  {
+                    "type": {
+                      "displayName": "gameLog"
+                    },
+                    "group": {
+                      "displayName": "pitching"
+                    },
+                    "exemptions": [],
+                    "stats": {
+                      "gamesPlayed": 1,
+                      "gamesStarted": 1,
+                      "flyOuts": 1,
+                      "groundOuts": 1,
+                      "airOuts": 3,
+                      "runs": 1,
+                      "doubles": 0,
+                      "triples": 0,
+                      "homeRuns": 1,
+                      "strikeOuts": 2,
+                      "baseOnBalls": 0,
+                      "intentionalWalks": 0,
+                      "hits": 3,
+                      "hitByPitch": 0,
+                      "atBats": 9,
+                      "caughtStealing": 0,
+                      "stolenBases": 0,
+                      "stolenBasePercentage": ".---",
+                      "numberOfPitches": 37,
+                      "inningsPitched": "2.0",
+                      "wins": 0,
+                      "losses": 0,
+                      "saves": 0,
+                      "saveOpportunities": 0,
+                      "holds": 0,
+                      "blownSaves": 0,
+                      "earnedRuns": 1,
+                      "battersFaced": 9,
+                      "outs": 6,
+                      "gamesPitched": 1,
+                      "completeGames": 0,
+                      "shutouts": 0,
+                      "pitchesThrown": 37,
+                      "balls": 12,
+                      "strikes": 25,
+                      "strikePercentage": ".680",
+                      "hitBatsmen": 0,
+                      "balks": 0,
+                      "wildPitches": 1,
+                      "pickoffs": 0,
+                      "rbi": 1,
+                      "gamesFinished": 0,
+                      "runsScoredPer9": "4.50",
+                      "homeRunsPer9": "4.50",
+                      "inheritedRunners": 0,
+                      "inheritedRunnersScored": 0,
+                      "catchersInterference": 0,
+                      "sacBunts": 0,
+                      "sacFlies": 0
+                    }
+                  },
+                  {
+                    "type": {
+                      "displayName": "statsSingleSeason"
+                    },
+                    "group": {
+                      "displayName": "hitting"
+                    },
+                    "exemptions": [],
+                    "stats": {
+                      "gamesPlayed": 0,
+                      "flyOuts": 0,
+                      "groundOuts": 0,
+                      "runs": 0,
+                      "doubles": 0,
+                      "triples": 0,
+                      "homeRuns": 0,
+                      "strikeOuts": 0,
+                      "baseOnBalls": 0,
+                      "intentionalWalks": 0,
+                      "hits": 0,
+                      "hitByPitch": 0,
+                      "avg": ".000",
+                      "atBats": 0,
+                      "obp": ".000",
+                      "slg": ".000",
+                      "ops": ".000",
+                      "caughtStealing": 0,
+                      "stolenBases": 0,
+                      "stolenBasePercentage": ".---",
+                      "groundIntoDoublePlay": 0,
+                      "groundIntoTriplePlay": 0,
+                      "plateAppearances": 0,
+                      "totalBases": 0,
+                      "rbi": 0,
+                      "leftOnBase": 0,
+                      "sacBunts": 0,
+                      "sacFlies": 0,
+                      "babip": ".---",
+                      "catchersInterference": 0,
+                      "pickoffs": 0,
+                      "atBatsPerHomeRun": "-.--"
+                    }
+                  },
+                  {
+                    "type": {
+                      "displayName": "statsSingleSeason"
+                    },
+                    "group": {
+                      "displayName": "pitching"
+                    },
+                    "exemptions": [],
+                    "stats": {
+                      "gamesPlayed": 1,
+                      "gamesStarted": 1,
+                      "flyOuts": 1,
+                      "groundOuts": 1,
+                      "airOuts": 3,
+                      "runs": 1,
+                      "doubles": 0,
+                      "triples": 0,
+                      "homeRuns": 1,
+                      "strikeOuts": 2,
+                      "baseOnBalls": 0,
+                      "intentionalWalks": 0,
+                      "hits": 3,
+                      "hitByPitch": 0,
+                      "atBats": 9,
+                      "obp": ".333",
+                      "caughtStealing": 0,
+                      "stolenBases": 0,
+                      "stolenBasePercentage": ".---",
+                      "numberOfPitches": 37,
+                      "era": "4.50",
+                      "inningsPitched": "2.0",
+                      "wins": 0,
+                      "losses": 0,
+                      "saves": 0,
+                      "saveOpportunities": 0,
+                      "holds": 0,
+                      "blownSaves": 0,
+                      "earnedRuns": 1,
+                      "whip": "1.50",
+                      "battersFaced": 9,
+                      "outs": 6,
+                      "gamesPitched": 1,
+                      "completeGames": 0,
+                      "shutouts": 0,
+                      "pitchesThrown": 37,
+                      "balls": 12,
+                      "strikes": 25,
+                      "strikePercentage": ".680",
+                      "hitBatsmen": 0,
+                      "balks": 0,
+                      "wildPitches": 1,
+                      "pickoffs": 0,
+                      "groundOutsToAirouts": "0.33",
+                      "rbi": 1,
+                      "winPercentage": ".---",
+                      "pitchesPerInning": "18.50",
+                      "gamesFinished": 0,
+                      "strikeoutWalkRatio": "-.--",
+                      "strikeoutsPer9Inn": "9.00",
+                      "walksPer9Inn": "0.00",
+                      "hitsPer9Inn": "13.50",
+                      "runsScoredPer9": "4.50",
+                      "homeRunsPer9": "4.50",
+                      "inheritedRunners": 0,
+                      "inheritedRunnersScored": 0,
+                      "catchersInterference": 0,
+                      "sacBunts": 0,
+                      "sacFlies": 0
+                    }
+                  }
+                ],
+                "mlbDebutDate": "2020-08-19",
+                "batSide": {
+                  "code": "R",
+                  "description": "Right"
+                },
+                "pitchHand": {
+                  "code": "R",
+                  "description": "Right"
+                },
+                "nameFirstLast": "Dane Dunning",
+                "nameSlug": "dane-dunning-641540",
+                "firstLastName": "Dane Dunning",
+                "lastFirstName": "Dunning, Dane",
+                "lastInitName": "Dunning, D",
+                "initLastName": "D Dunning",
+                "fullFMLName": "Dane Anthony Dunning",
+                "fullLFMName": "Dunning, Dane Anthony",
+                "strikeZoneTop": 3.549,
+                "strikeZoneBottom": 1.627
+              },
+              "splitSquad": false,
+              "seriesNumber": 2,
+              "springLeague": {
+                "id": 114,
+                "name": "Cactus League",
+                "link": "/api/v1/league/114",
+                "abbreviation": "CL"
+              }
+            }
+          },
+          "linescore": {
+            "currentInning": 2,
+            "currentInningOrdinal": "2nd",
+            "inningState": "End",
+            "inningHalf": "Bottom",
+            "isTopInning": false,
+            "scheduledInnings": 9,
+            "innings": [
+              {
+                "num": 1,
+                "ordinalNum": "1st",
+                "home": {
+                  "runs": 2,
+                  "hits": 2,
+                  "errors": 0,
+                  "leftOnBase": 0
+                },
+                "away": {
+                  "runs": 1,
+                  "hits": 2,
+                  "errors": 0,
+                  "leftOnBase": 1
+                }
+              },
+              {
+                "num": 2,
+                "ordinalNum": "2nd",
+                "home": {
+                  "runs": 1,
+                  "hits": 1,
+                  "errors": 0,
+                  "leftOnBase": 0
+                },
+                "away": {
+                  "runs": 0,
+                  "hits": 1,
+                  "errors": 0,
+                  "leftOnBase": 1
+                }
+              }
+            ],
+            "teams": {
+              "home": {
+                "runs": 3,
+                "hits": 3,
+                "errors": 0,
+                "leftOnBase": 0
+              },
+              "away": {
+                "runs": 1,
+                "hits": 3,
+                "errors": 0,
+                "leftOnBase": 2
+              }
+            },
+            "defense": {
+              "pitcher": {
+                "id": 641540,
+                "fullName": "Dane Dunning",
+                "link": "/api/v1/people/641540",
+                "firstName": "Dane",
+                "lastName": "Dunning",
+                "primaryNumber": "33",
+                "birthDate": "1994-12-20",
+                "currentAge": 26,
+                "birthCity": "Orange Park",
+                "birthStateProvince": "FL",
+                "birthCountry": "USA",
+                "height": "6' 4\"",
+                "weight": 225,
+                "active": true,
+                "primaryPosition": {
+                  "code": "1",
+                  "name": "Pitcher",
+                  "type": "Pitcher",
+                  "abbreviation": "P"
+                },
+                "useName": "Dane",
+                "middleName": "Anthony",
+                "boxscoreName": "Dunning",
+                "gender": "M",
+                "isPlayer": true,
+                "isVerified": false,
+                "draftYear": 2016,
+                "stats": [
+                  {
+                    "type": {
+                      "displayName": "gameLog"
+                    },
+                    "group": {
+                      "displayName": "hitting"
+                    },
+                    "exemptions": [],
+                    "stats": {}
+                  },
+                  {
+                    "type": {
+                      "displayName": "gameLog"
+                    },
+                    "group": {
+                      "displayName": "pitching"
+                    },
+                    "exemptions": [],
+                    "stats": {
+                      "gamesPlayed": 1,
+                      "gamesStarted": 1,
+                      "flyOuts": 1,
+                      "groundOuts": 1,
+                      "airOuts": 3,
+                      "runs": 1,
+                      "doubles": 0,
+                      "triples": 0,
+                      "homeRuns": 1,
+                      "strikeOuts": 2,
+                      "baseOnBalls": 0,
+                      "intentionalWalks": 0,
+                      "hits": 3,
+                      "hitByPitch": 0,
+                      "atBats": 9,
+                      "caughtStealing": 0,
+                      "stolenBases": 0,
+                      "stolenBasePercentage": ".---",
+                      "numberOfPitches": 37,
+                      "inningsPitched": "2.0",
+                      "wins": 0,
+                      "losses": 0,
+                      "saves": 0,
+                      "saveOpportunities": 0,
+                      "holds": 0,
+                      "blownSaves": 0,
+                      "earnedRuns": 1,
+                      "battersFaced": 9,
+                      "outs": 6,
+                      "gamesPitched": 1,
+                      "completeGames": 0,
+                      "shutouts": 0,
+                      "pitchesThrown": 37,
+                      "balls": 12,
+                      "strikes": 25,
+                      "strikePercentage": ".680",
+                      "hitBatsmen": 0,
+                      "balks": 0,
+                      "wildPitches": 1,
+                      "pickoffs": 0,
+                      "rbi": 1,
+                      "gamesFinished": 0,
+                      "runsScoredPer9": "4.50",
+                      "homeRunsPer9": "4.50",
+                      "inheritedRunners": 0,
+                      "inheritedRunnersScored": 0,
+                      "catchersInterference": 0,
+                      "sacBunts": 0,
+                      "sacFlies": 0
+                    }
+                  },
+                  {
+                    "type": {
+                      "displayName": "statsSingleSeason"
+                    },
+                    "group": {
+                      "displayName": "hitting"
+                    },
+                    "exemptions": [],
+                    "stats": {
+                      "gamesPlayed": 0,
+                      "flyOuts": 0,
+                      "groundOuts": 0,
+                      "runs": 0,
+                      "doubles": 0,
+                      "triples": 0,
+                      "homeRuns": 0,
+                      "strikeOuts": 0,
+                      "baseOnBalls": 0,
+                      "intentionalWalks": 0,
+                      "hits": 0,
+                      "hitByPitch": 0,
+                      "avg": ".000",
+                      "atBats": 0,
+                      "obp": ".000",
+                      "slg": ".000",
+                      "ops": ".000",
+                      "caughtStealing": 0,
+                      "stolenBases": 0,
+                      "stolenBasePercentage": ".---",
+                      "groundIntoDoublePlay": 0,
+                      "groundIntoTriplePlay": 0,
+                      "plateAppearances": 0,
+                      "totalBases": 0,
+                      "rbi": 0,
+                      "leftOnBase": 0,
+                      "sacBunts": 0,
+                      "sacFlies": 0,
+                      "babip": ".---",
+                      "catchersInterference": 0,
+                      "pickoffs": 0,
+                      "atBatsPerHomeRun": "-.--"
+                    }
+                  },
+                  {
+                    "type": {
+                      "displayName": "statsSingleSeason"
+                    },
+                    "group": {
+                      "displayName": "pitching"
+                    },
+                    "exemptions": [],
+                    "stats": {
+                      "gamesPlayed": 1,
+                      "gamesStarted": 1,
+                      "flyOuts": 1,
+                      "groundOuts": 1,
+                      "airOuts": 3,
+                      "runs": 1,
+                      "doubles": 0,
+                      "triples": 0,
+                      "homeRuns": 1,
+                      "strikeOuts": 2,
+                      "baseOnBalls": 0,
+                      "intentionalWalks": 0,
+                      "hits": 3,
+                      "hitByPitch": 0,
+                      "atBats": 9,
+                      "obp": ".333",
+                      "caughtStealing": 0,
+                      "stolenBases": 0,
+                      "stolenBasePercentage": ".---",
+                      "numberOfPitches": 37,
+                      "era": "4.50",
+                      "inningsPitched": "2.0",
+                      "wins": 0,
+                      "losses": 0,
+                      "saves": 0,
+                      "saveOpportunities": 0,
+                      "holds": 0,
+                      "blownSaves": 0,
+                      "earnedRuns": 1,
+                      "whip": "1.50",
+                      "battersFaced": 9,
+                      "outs": 6,
+                      "gamesPitched": 1,
+                      "completeGames": 0,
+                      "shutouts": 0,
+                      "pitchesThrown": 37,
+                      "balls": 12,
+                      "strikes": 25,
+                      "strikePercentage": ".680",
+                      "hitBatsmen": 0,
+                      "balks": 0,
+                      "wildPitches": 1,
+                      "pickoffs": 0,
+                      "groundOutsToAirouts": "0.33",
+                      "rbi": 1,
+                      "winPercentage": ".---",
+                      "pitchesPerInning": "18.50",
+                      "gamesFinished": 0,
+                      "strikeoutWalkRatio": "-.--",
+                      "strikeoutsPer9Inn": "9.00",
+                      "walksPer9Inn": "0.00",
+                      "hitsPer9Inn": "13.50",
+                      "runsScoredPer9": "4.50",
+                      "homeRunsPer9": "4.50",
+                      "inheritedRunners": 0,
+                      "inheritedRunnersScored": 0,
+                      "catchersInterference": 0,
+                      "sacBunts": 0,
+                      "sacFlies": 0
+                    }
+                  }
+                ],
+                "mlbDebutDate": "2020-08-19",
+                "batSide": {
+                  "code": "R",
+                  "description": "Right"
+                },
+                "pitchHand": {
+                  "code": "R",
+                  "description": "Right"
+                },
+                "nameFirstLast": "Dane Dunning",
+                "nameSlug": "dane-dunning-641540",
+                "firstLastName": "Dane Dunning",
+                "lastFirstName": "Dunning, Dane",
+                "lastInitName": "Dunning, D",
+                "initLastName": "D Dunning",
+                "fullFMLName": "Dane Anthony Dunning",
+                "fullLFMName": "Dunning, Dane Anthony",
+                "strikeZoneTop": 3.549,
+                "strikeZoneBottom": 1.627
+              },
+              "catcher": {
+                "id": 641680,
+                "fullName": "Jonah Heim",
+                "link": "/api/v1/people/641680"
+              },
+              "first": {
+                "id": 608597,
+                "fullName": "Ronald Guzman",
+                "link": "/api/v1/people/608597"
+              },
+              "second": {
+                "id": 669256,
+                "fullName": "Nick Solak",
+                "link": "/api/v1/people/669256"
+              },
+              "third": {
+                "id": 571788,
+                "fullName": "Brock Holt",
+                "link": "/api/v1/people/571788"
+              },
+              "shortstop": {
+                "id": 643396,
+                "fullName": "Isiah Kiner-Falefa",
+                "link": "/api/v1/people/643396"
+              },
+              "left": {
+                "id": 621311,
+                "fullName": "David Dahl",
+                "link": "/api/v1/people/621311"
+              },
+              "center": {
+                "id": 665750,
+                "fullName": "Leody Taveras",
+                "link": "/api/v1/people/665750"
+              },
+              "right": {
+                "id": 608336,
+                "fullName": "Joey Gallo",
+                "link": "/api/v1/people/608336"
+              },
+              "batter": {
+                "id": 643396,
+                "fullName": "Isiah Kiner-Falefa",
+                "link": "/api/v1/people/643396"
+              },
+              "onDeck": {
+                "id": 621311,
+                "fullName": "David Dahl",
+                "link": "/api/v1/people/621311"
+              },
+              "inHole": {
+                "id": 608336,
+                "fullName": "Joey Gallo",
+                "link": "/api/v1/people/608336"
+              },
+              "battingOrder": 10,
+              "team": {
+                "id": 140,
+                "name": "Texas Rangers",
+                "link": "/api/v1/teams/140"
+              }
+            },
+            "offense": {
+              "batter": {
+                "id": 543760,
+                "fullName": "Marcus Semien",
+                "link": "/api/v1/people/543760",
+                "firstName": "Marcus",
+                "lastName": "Semien",
+                "primaryNumber": "10",
+                "birthDate": "1990-09-17",
+                "currentAge": 30,
+                "birthCity": "San Francisco",
+                "birthStateProvince": "CA",
+                "birthCountry": "USA",
+                "height": "6' 0\"",
+                "weight": 195,
+                "active": true,
+                "primaryPosition": {
+                  "code": "4",
+                  "name": "Second Base",
+                  "type": "Infielder",
+                  "abbreviation": "2B"
+                },
+                "useName": "Marcus",
+                "middleName": "Andrew",
+                "boxscoreName": "Semien",
+                "nickName": "Simmy",
+                "gender": "M",
+                "isPlayer": true,
+                "isVerified": true,
+                "draftYear": 2011,
+                "pronunciation": "SIH-mee-ehn",
+                "stats": [
+                  {
+                    "type": {
+                      "displayName": "gameLog"
+                    },
+                    "group": {
+                      "displayName": "hitting"
+                    },
+                    "exemptions": [],
+                    "stats": {
+                      "gamesPlayed": 1,
+                      "flyOuts": 0,
+                      "groundOuts": 0,
+                      "runs": 0,
+                      "doubles": 0,
+                      "triples": 0,
+                      "homeRuns": 0,
+                      "strikeOuts": 1,
+                      "baseOnBalls": 0,
+                      "intentionalWalks": 0,
+                      "hits": 0,
+                      "hitByPitch": 0,
+                      "atBats": 1,
+                      "caughtStealing": 0,
+                      "stolenBases": 0,
+                      "stolenBasePercentage": ".---",
+                      "groundIntoDoublePlay": 0,
+                      "groundIntoTriplePlay": 0,
+                      "plateAppearances": 1,
+                      "totalBases": 0,
+                      "rbi": 0,
+                      "leftOnBase": 0,
+                      "sacBunts": 0,
+                      "sacFlies": 0,
+                      "catchersInterference": 0,
+                      "pickoffs": 0,
+                      "atBatsPerHomeRun": "-.--"
+                    }
+                  },
+                  {
+                    "type": {
+                      "displayName": "gameLog"
+                    },
+                    "group": {
+                      "displayName": "pitching"
+                    },
+                    "exemptions": [],
+                    "stats": {}
+                  },
+                  {
+                    "type": {
+                      "displayName": "statsSingleSeason"
+                    },
+                    "group": {
+                      "displayName": "hitting"
+                    },
+                    "exemptions": [],
+                    "stats": {
+                      "gamesPlayed": 5,
+                      "flyOuts": 0,
+                      "groundOuts": 5,
+                      "runs": 2,
+                      "doubles": 0,
+                      "triples": 0,
+                      "homeRuns": 2,
+                      "strikeOuts": 4,
+                      "baseOnBalls": 1,
+                      "intentionalWalks": 0,
+                      "hits": 4,
+                      "hitByPitch": 0,
+                      "avg": ".211",
+                      "atBats": 19,
+                      "obp": ".250",
+                      "slg": ".526",
+                      "ops": ".776",
+                      "caughtStealing": 0,
+                      "stolenBases": 2,
+                      "stolenBasePercentage": "1.000",
+                      "groundIntoDoublePlay": 0,
+                      "groundIntoTriplePlay": 0,
+                      "plateAppearances": 20,
+                      "totalBases": 10,
+                      "rbi": 4,
+                      "leftOnBase": 5,
+                      "sacBunts": 0,
+                      "sacFlies": 0,
+                      "babip": ".154",
+                      "catchersInterference": 0,
+                      "pickoffs": 0,
+                      "atBatsPerHomeRun": "9.50"
+                    }
+                  },
+                  {
+                    "type": {
+                      "displayName": "statsSingleSeason"
+                    },
+                    "group": {
+                      "displayName": "pitching"
+                    },
+                    "exemptions": [],
+                    "stats": {
+                      "gamesPlayed": 0,
+                      "gamesStarted": 0,
+                      "groundOuts": 0,
+                      "airOuts": 0,
+                      "runs": 0,
+                      "doubles": 0,
+                      "triples": 0,
+                      "homeRuns": 0,
+                      "strikeOuts": 0,
+                      "baseOnBalls": 0,
+                      "intentionalWalks": 0,
+                      "hits": 0,
+                      "hitByPitch": 0,
+                      "atBats": 0,
+                      "obp": ".000",
+                      "caughtStealing": 0,
+                      "stolenBases": 0,
+                      "stolenBasePercentage": ".---",
+                      "era": "-.--",
+                      "inningsPitched": "0.0",
+                      "wins": 0,
+                      "losses": 0,
+                      "saves": 0,
+                      "saveOpportunities": 0,
+                      "holds": 0,
+                      "blownSaves": 0,
+                      "earnedRuns": 0,
+                      "whip": "-",
+                      "outs": 0,
+                      "gamesPitched": 0,
+                      "completeGames": 0,
+                      "shutouts": 0,
+                      "hitBatsmen": 0,
+                      "balks": 0,
+                      "wildPitches": 0,
+                      "pickoffs": 0,
+                      "groundOutsToAirouts": "-.--",
+                      "rbi": 0,
+                      "winPercentage": ".---",
+                      "gamesFinished": 0,
+                      "strikeoutWalkRatio": "-.--",
+                      "strikeoutsPer9Inn": "-.--",
+                      "walksPer9Inn": "-.--",
+                      "hitsPer9Inn": "-.--",
+                      "runsScoredPer9": "-.--",
+                      "homeRunsPer9": "-.--",
+                      "inheritedRunners": 0,
+                      "inheritedRunnersScored": 0,
+                      "catchersInterference": 0,
+                      "sacBunts": 0,
+                      "sacFlies": 0
+                    }
+                  }
+                ],
+                "mlbDebutDate": "2013-09-04",
+                "batSide": {
+                  "code": "R",
+                  "description": "Right"
+                },
+                "pitchHand": {
+                  "code": "R",
+                  "description": "Right"
+                },
+                "nameFirstLast": "Marcus Semien",
+                "nameSlug": "marcus-semien-543760",
+                "firstLastName": "Marcus Semien",
+                "lastFirstName": "Semien, Marcus",
+                "lastInitName": "Semien, M",
+                "initLastName": "M Semien",
+                "fullFMLName": "Marcus Andrew Semien",
+                "fullLFMName": "Semien, Marcus Andrew",
+                "strikeZoneTop": 3.371,
+                "strikeZoneBottom": 1.535
+              },
+              "onDeck": {
+                "id": 624415,
+                "fullName": "Cavan Biggio",
+                "link": "/api/v1/people/624415",
+                "firstName": "Cavan",
+                "lastName": "Biggio",
+                "primaryNumber": "8",
+                "birthDate": "1995-04-11",
+                "currentAge": 25,
+                "birthCity": "Houston",
+                "birthStateProvince": "TX",
+                "birthCountry": "USA",
+                "height": "6' 2\"",
+                "weight": 200,
+                "active": true,
+                "primaryPosition": {
+                  "code": "5",
+                  "name": "Third Base",
+                  "type": "Infielder",
+                  "abbreviation": "3B"
+                },
+                "useName": "Cavan",
+                "middleName": "Thomas",
+                "boxscoreName": "Biggio",
+                "nickName": "Biggy",
+                "gender": "M",
+                "isPlayer": true,
+                "isVerified": false,
+                "draftYear": 2016,
+                "pronunciation": "BIDGE-ee-oh",
+                "stats": [
+                  {
+                    "type": {
+                      "displayName": "gameLog"
+                    },
+                    "group": {
+                      "displayName": "hitting"
+                    },
+                    "exemptions": [],
+                    "stats": {
+                      "gamesPlayed": 1,
+                      "flyOuts": 1,
+                      "groundOuts": 0,
+                      "runs": 0,
+                      "doubles": 0,
+                      "triples": 0,
+                      "homeRuns": 0,
+                      "strikeOuts": 0,
+                      "baseOnBalls": 0,
+                      "intentionalWalks": 0,
+                      "hits": 0,
+                      "hitByPitch": 0,
+                      "atBats": 1,
+                      "caughtStealing": 0,
+                      "stolenBases": 0,
+                      "stolenBasePercentage": ".---",
+                      "groundIntoDoublePlay": 0,
+                      "groundIntoTriplePlay": 0,
+                      "plateAppearances": 1,
+                      "totalBases": 0,
+                      "rbi": 0,
+                      "leftOnBase": 0,
+                      "sacBunts": 0,
+                      "sacFlies": 0,
+                      "catchersInterference": 0,
+                      "pickoffs": 0,
+                      "atBatsPerHomeRun": "-.--"
+                    }
+                  },
+                  {
+                    "type": {
+                      "displayName": "gameLog"
+                    },
+                    "group": {
+                      "displayName": "pitching"
+                    },
+                    "exemptions": [],
+                    "stats": {}
+                  },
+                  {
+                    "type": {
+                      "displayName": "statsSingleSeason"
+                    },
+                    "group": {
+                      "displayName": "hitting"
+                    },
+                    "exemptions": [],
+                    "stats": {
+                      "gamesPlayed": 5,
+                      "flyOuts": 1,
+                      "groundOuts": 3,
+                      "runs": 3,
+                      "doubles": 0,
+                      "triples": 0,
+                      "homeRuns": 1,
+                      "strikeOuts": 5,
+                      "baseOnBalls": 2,
+                      "intentionalWalks": 0,
+                      "hits": 2,
+                      "hitByPitch": 1,
+                      "avg": ".133",
+                      "atBats": 15,
+                      "obp": ".278",
+                      "slg": ".333",
+                      "ops": ".611",
+                      "caughtStealing": 0,
+                      "stolenBases": 0,
+                      "stolenBasePercentage": ".---",
+                      "groundIntoDoublePlay": 1,
+                      "groundIntoTriplePlay": 0,
+                      "plateAppearances": 19,
+                      "totalBases": 5,
+                      "rbi": 1,
+                      "leftOnBase": 5,
+                      "sacBunts": 0,
+                      "sacFlies": 0,
+                      "babip": ".111",
+                      "catchersInterference": 1,
+                      "pickoffs": 0,
+                      "atBatsPerHomeRun": "15.00"
+                    }
+                  },
+                  {
+                    "type": {
+                      "displayName": "statsSingleSeason"
+                    },
+                    "group": {
+                      "displayName": "pitching"
+                    },
+                    "exemptions": [],
+                    "stats": {
+                      "gamesPlayed": 0,
+                      "gamesStarted": 0,
+                      "groundOuts": 0,
+                      "airOuts": 0,
+                      "runs": 0,
+                      "doubles": 0,
+                      "triples": 0,
+                      "homeRuns": 0,
+                      "strikeOuts": 0,
+                      "baseOnBalls": 0,
+                      "intentionalWalks": 0,
+                      "hits": 0,
+                      "hitByPitch": 0,
+                      "atBats": 0,
+                      "obp": ".000",
+                      "caughtStealing": 0,
+                      "stolenBases": 0,
+                      "stolenBasePercentage": ".---",
+                      "era": "-.--",
+                      "inningsPitched": "0.0",
+                      "wins": 0,
+                      "losses": 0,
+                      "saves": 0,
+                      "saveOpportunities": 0,
+                      "holds": 0,
+                      "blownSaves": 0,
+                      "earnedRuns": 0,
+                      "whip": "-",
+                      "outs": 0,
+                      "gamesPitched": 0,
+                      "completeGames": 0,
+                      "shutouts": 0,
+                      "hitBatsmen": 0,
+                      "balks": 0,
+                      "wildPitches": 0,
+                      "pickoffs": 0,
+                      "groundOutsToAirouts": "-.--",
+                      "rbi": 0,
+                      "winPercentage": ".---",
+                      "gamesFinished": 0,
+                      "strikeoutWalkRatio": "-.--",
+                      "strikeoutsPer9Inn": "-.--",
+                      "walksPer9Inn": "-.--",
+                      "hitsPer9Inn": "-.--",
+                      "runsScoredPer9": "-.--",
+                      "homeRunsPer9": "-.--",
+                      "inheritedRunners": 0,
+                      "inheritedRunnersScored": 0,
+                      "catchersInterference": 0,
+                      "sacBunts": 0,
+                      "sacFlies": 0
+                    }
+                  }
+                ],
+                "mlbDebutDate": "2019-05-24",
+                "batSide": {
+                  "code": "L",
+                  "description": "Left"
+                },
+                "pitchHand": {
+                  "code": "R",
+                  "description": "Right"
+                },
+                "nameFirstLast": "Cavan Biggio",
+                "nameSlug": "cavan-biggio-624415",
+                "firstLastName": "Cavan Biggio",
+                "lastFirstName": "Biggio, Cavan",
+                "lastInitName": "Biggio, C",
+                "initLastName": "C Biggio",
+                "fullFMLName": "Cavan Thomas Biggio",
+                "fullLFMName": "Biggio, Cavan Thomas",
+                "strikeZoneTop": 3.467,
+                "strikeZoneBottom": 1.589
+              },
+              "inHole": {
+                "id": 666182,
+                "fullName": "Bo Bichette",
+                "link": "/api/v1/people/666182",
+                "firstName": "Bo",
+                "lastName": "Bichette",
+                "primaryNumber": "11",
+                "birthDate": "1998-03-05",
+                "currentAge": 23,
+                "birthCity": "Orlando",
+                "birthStateProvince": "FL",
+                "birthCountry": "USA",
+                "height": "6' 0\"",
+                "weight": 185,
+                "active": true,
+                "primaryPosition": {
+                  "code": "6",
+                  "name": "Shortstop",
+                  "type": "Infielder",
+                  "abbreviation": "SS"
+                },
+                "useName": "Bo",
+                "middleName": "Joseph",
+                "boxscoreName": "Bichette, B",
+                "gender": "M",
+                "isPlayer": true,
+                "isVerified": false,
+                "draftYear": 2016,
+                "pronunciation": "bih-shett",
+                "stats": [
+                  {
+                    "type": {
+                      "displayName": "gameLog"
+                    },
+                    "group": {
+                      "displayName": "hitting"
+                    },
+                    "exemptions": [],
+                    "stats": {
+                      "gamesPlayed": 1,
+                      "flyOuts": 0,
+                      "groundOuts": 0,
+                      "runs": 1,
+                      "doubles": 0,
+                      "triples": 0,
+                      "homeRuns": 1,
+                      "strikeOuts": 0,
+                      "baseOnBalls": 0,
+                      "intentionalWalks": 0,
+                      "hits": 1,
+                      "hitByPitch": 0,
+                      "atBats": 1,
+                      "caughtStealing": 0,
+                      "stolenBases": 0,
+                      "stolenBasePercentage": ".---",
+                      "groundIntoDoublePlay": 0,
+                      "groundIntoTriplePlay": 0,
+                      "plateAppearances": 1,
+                      "totalBases": 4,
+                      "rbi": 1,
+                      "leftOnBase": 0,
+                      "sacBunts": 0,
+                      "sacFlies": 0,
+                      "catchersInterference": 0,
+                      "pickoffs": 0,
+                      "atBatsPerHomeRun": "1.00"
+                    }
+                  },
+                  {
+                    "type": {
+                      "displayName": "gameLog"
+                    },
+                    "group": {
+                      "displayName": "pitching"
+                    },
+                    "exemptions": [],
+                    "stats": {}
+                  },
+                  {
+                    "type": {
+                      "displayName": "statsSingleSeason"
+                    },
+                    "group": {
+                      "displayName": "hitting"
+                    },
+                    "exemptions": [],
+                    "stats": {
+                      "gamesPlayed": 5,
+                      "flyOuts": 0,
+                      "groundOuts": 6,
+                      "runs": 1,
+                      "doubles": 1,
+                      "triples": 0,
+                      "homeRuns": 1,
+                      "strikeOuts": 5,
+                      "baseOnBalls": 0,
+                      "intentionalWalks": 0,
+                      "hits": 4,
+                      "hitByPitch": 1,
+                      "avg": ".235",
+                      "atBats": 17,
+                      "obp": ".278",
+                      "slg": ".471",
+                      "ops": ".748",
+                      "caughtStealing": 0,
+                      "stolenBases": 0,
+                      "stolenBasePercentage": ".---",
+                      "groundIntoDoublePlay": 1,
+                      "groundIntoTriplePlay": 0,
+                      "plateAppearances": 18,
+                      "totalBases": 8,
+                      "rbi": 1,
+                      "leftOnBase": 7,
+                      "sacBunts": 0,
+                      "sacFlies": 0,
+                      "babip": ".273",
+                      "catchersInterference": 0,
+                      "pickoffs": 0,
+                      "atBatsPerHomeRun": "17.00"
+                    }
+                  },
+                  {
+                    "type": {
+                      "displayName": "statsSingleSeason"
+                    },
+                    "group": {
+                      "displayName": "pitching"
+                    },
+                    "exemptions": [],
+                    "stats": {
+                      "gamesPlayed": 0,
+                      "gamesStarted": 0,
+                      "groundOuts": 0,
+                      "airOuts": 0,
+                      "runs": 0,
+                      "doubles": 0,
+                      "triples": 0,
+                      "homeRuns": 0,
+                      "strikeOuts": 0,
+                      "baseOnBalls": 0,
+                      "intentionalWalks": 0,
+                      "hits": 0,
+                      "hitByPitch": 0,
+                      "atBats": 0,
+                      "obp": ".000",
+                      "caughtStealing": 0,
+                      "stolenBases": 0,
+                      "stolenBasePercentage": ".---",
+                      "era": "-.--",
+                      "inningsPitched": "0.0",
+                      "wins": 0,
+                      "losses": 0,
+                      "saves": 0,
+                      "saveOpportunities": 0,
+                      "holds": 0,
+                      "blownSaves": 0,
+                      "earnedRuns": 0,
+                      "whip": "-",
+                      "outs": 0,
+                      "gamesPitched": 0,
+                      "completeGames": 0,
+                      "shutouts": 0,
+                      "hitBatsmen": 0,
+                      "balks": 0,
+                      "wildPitches": 0,
+                      "pickoffs": 0,
+                      "groundOutsToAirouts": "-.--",
+                      "rbi": 0,
+                      "winPercentage": ".---",
+                      "gamesFinished": 0,
+                      "strikeoutWalkRatio": "-.--",
+                      "strikeoutsPer9Inn": "-.--",
+                      "walksPer9Inn": "-.--",
+                      "hitsPer9Inn": "-.--",
+                      "runsScoredPer9": "-.--",
+                      "homeRunsPer9": "-.--",
+                      "inheritedRunners": 0,
+                      "inheritedRunnersScored": 0,
+                      "catchersInterference": 0,
+                      "sacBunts": 0,
+                      "sacFlies": 0
+                    }
+                  }
+                ],
+                "mlbDebutDate": "2019-07-29",
+                "batSide": {
+                  "code": "R",
+                  "description": "Right"
+                },
+                "pitchHand": {
+                  "code": "R",
+                  "description": "Right"
+                },
+                "nameFirstLast": "Bo Bichette",
+                "nameSlug": "bo-bichette-666182",
+                "firstLastName": "Bo Bichette",
+                "lastFirstName": "Bichette, Bo",
+                "lastInitName": "Bichette, B",
+                "initLastName": "B Bichette",
+                "fullFMLName": "Bo Joseph Bichette",
+                "fullLFMName": "Bichette, Bo Joseph",
+                "strikeZoneTop": 3.371,
+                "strikeZoneBottom": 1.535
+              },
+              "pitcher": {
+                "id": 543699,
+                "fullName": "Tanner Roark",
+                "link": "/api/v1/people/543699",
+                "firstName": "Tanner",
+                "lastName": "Roark",
+                "primaryNumber": "14",
+                "birthDate": "1986-10-05",
+                "currentAge": 34,
+                "birthCity": "Wilmington",
+                "birthStateProvince": "IL",
+                "birthCountry": "USA",
+                "height": "6' 2\"",
+                "weight": 238,
+                "active": true,
+                "primaryPosition": {
+                  "code": "1",
+                  "name": "Pitcher",
+                  "type": "Pitcher",
+                  "abbreviation": "P"
+                },
+                "useName": "Tanner",
+                "middleName": "B.",
+                "boxscoreName": "Roark",
+                "nickName": "T-Ro",
+                "gender": "M",
+                "isPlayer": true,
+                "isVerified": false,
+                "draftYear": 2008,
+                "pronunciation": "RO-ark",
+                "stats": [
+                  {
+                    "type": {
+                      "displayName": "gameLog"
+                    },
+                    "group": {
+                      "displayName": "hitting"
+                    },
+                    "exemptions": [],
+                    "stats": {}
+                  },
+                  {
+                    "type": {
+                      "displayName": "gameLog"
+                    },
+                    "group": {
+                      "displayName": "pitching"
+                    },
+                    "exemptions": [],
+                    "stats": {
+                      "gamesPlayed": 1,
+                      "gamesStarted": 1,
+                      "flyOuts": 3,
+                      "groundOuts": 1,
+                      "airOuts": 4,
+                      "runs": 3,
+                      "doubles": 0,
+                      "triples": 0,
+                      "homeRuns": 2,
+                      "strikeOuts": 1,
+                      "baseOnBalls": 0,
+                      "intentionalWalks": 0,
+                      "hits": 3,
+                      "hitByPitch": 0,
+                      "atBats": 9,
+                      "caughtStealing": 0,
+                      "stolenBases": 1,
+                      "stolenBasePercentage": "1.000",
+                      "numberOfPitches": 37,
+                      "inningsPitched": "2.0",
+                      "wins": 0,
+                      "losses": 0,
+                      "saves": 0,
+                      "saveOpportunities": 0,
+                      "holds": 0,
+                      "blownSaves": 0,
+                      "earnedRuns": 3,
+                      "battersFaced": 9,
+                      "outs": 6,
+                      "gamesPitched": 1,
+                      "completeGames": 0,
+                      "shutouts": 0,
+                      "pitchesThrown": 37,
+                      "balls": 17,
+                      "strikes": 20,
+                      "strikePercentage": ".540",
+                      "hitBatsmen": 0,
+                      "balks": 0,
+                      "wildPitches": 0,
+                      "pickoffs": 0,
+                      "rbi": 3,
+                      "gamesFinished": 0,
+                      "runsScoredPer9": "13.50",
+                      "homeRunsPer9": "9.00",
+                      "inheritedRunners": 0,
+                      "inheritedRunnersScored": 0,
+                      "catchersInterference": 0,
+                      "sacBunts": 0,
+                      "sacFlies": 0
+                    }
+                  },
+                  {
+                    "type": {
+                      "displayName": "statsSingleSeason"
+                    },
+                    "group": {
+                      "displayName": "hitting"
+                    },
+                    "exemptions": [],
+                    "stats": {
+                      "gamesPlayed": 0,
+                      "flyOuts": 0,
+                      "groundOuts": 0,
+                      "runs": 0,
+                      "doubles": 0,
+                      "triples": 0,
+                      "homeRuns": 0,
+                      "strikeOuts": 0,
+                      "baseOnBalls": 0,
+                      "intentionalWalks": 0,
+                      "hits": 0,
+                      "hitByPitch": 0,
+                      "avg": ".000",
+                      "atBats": 0,
+                      "obp": ".000",
+                      "slg": ".000",
+                      "ops": ".000",
+                      "caughtStealing": 0,
+                      "stolenBases": 0,
+                      "stolenBasePercentage": ".---",
+                      "groundIntoDoublePlay": 0,
+                      "groundIntoTriplePlay": 0,
+                      "plateAppearances": 0,
+                      "totalBases": 0,
+                      "rbi": 0,
+                      "leftOnBase": 0,
+                      "sacBunts": 0,
+                      "sacFlies": 0,
+                      "babip": ".---",
+                      "catchersInterference": 0,
+                      "pickoffs": 0,
+                      "atBatsPerHomeRun": "-.--"
+                    }
+                  },
+                  {
+                    "type": {
+                      "displayName": "statsSingleSeason"
+                    },
+                    "group": {
+                      "displayName": "pitching"
+                    },
+                    "exemptions": [],
+                    "stats": {
+                      "gamesPlayed": 1,
+                      "gamesStarted": 1,
+                      "flyOuts": 3,
+                      "groundOuts": 1,
+                      "airOuts": 4,
+                      "runs": 3,
+                      "doubles": 0,
+                      "triples": 0,
+                      "homeRuns": 2,
+                      "strikeOuts": 1,
+                      "baseOnBalls": 0,
+                      "intentionalWalks": 0,
+                      "hits": 3,
+                      "hitByPitch": 0,
+                      "atBats": 9,
+                      "obp": ".333",
+                      "caughtStealing": 0,
+                      "stolenBases": 1,
+                      "stolenBasePercentage": "1.000",
+                      "numberOfPitches": 37,
+                      "era": "13.50",
+                      "inningsPitched": "2.0",
+                      "wins": 0,
+                      "losses": 0,
+                      "saves": 0,
+                      "saveOpportunities": 0,
+                      "holds": 0,
+                      "blownSaves": 0,
+                      "earnedRuns": 3,
+                      "whip": "1.50",
+                      "battersFaced": 9,
+                      "outs": 6,
+                      "gamesPitched": 1,
+                      "completeGames": 0,
+                      "shutouts": 0,
+                      "pitchesThrown": 37,
+                      "balls": 17,
+                      "strikes": 20,
+                      "strikePercentage": ".540",
+                      "hitBatsmen": 0,
+                      "balks": 0,
+                      "wildPitches": 0,
+                      "pickoffs": 0,
+                      "groundOutsToAirouts": "0.25",
+                      "rbi": 3,
+                      "winPercentage": ".---",
+                      "pitchesPerInning": "18.50",
+                      "gamesFinished": 0,
+                      "strikeoutWalkRatio": "-.--",
+                      "strikeoutsPer9Inn": "4.50",
+                      "walksPer9Inn": "0.00",
+                      "hitsPer9Inn": "13.50",
+                      "runsScoredPer9": "13.50",
+                      "homeRunsPer9": "9.00",
+                      "inheritedRunners": 0,
+                      "inheritedRunnersScored": 0,
+                      "catchersInterference": 0,
+                      "sacBunts": 0,
+                      "sacFlies": 0
+                    }
+                  }
+                ],
+                "mlbDebutDate": "2013-08-07",
+                "batSide": {
+                  "code": "R",
+                  "description": "Right"
+                },
+                "pitchHand": {
+                  "code": "R",
+                  "description": "Right"
+                },
+                "nameFirstLast": "Tanner Roark",
+                "nameSlug": "tanner-roark-543699",
+                "firstLastName": "Tanner Roark",
+                "lastFirstName": "Roark, Tanner",
+                "lastInitName": "Roark, T",
+                "initLastName": "T Roark",
+                "fullFMLName": "Tanner B. Roark",
+                "fullLFMName": "Roark, Tanner B.",
+                "strikeZoneTop": 3.467,
+                "strikeZoneBottom": 1.589
+              },
+              "battingOrder": 10,
+              "team": {
+                "id": 141,
+                "name": "Toronto Blue Jays",
+                "link": "/api/v1/teams/141"
+              }
+            },
+            "balls": 2,
+            "strikes": 3,
+            "outs": 3
+          },
+          "venue": {
+            "id": 5325,
+            "name": "Globe Life Field",
+            "link": "/api/v1/venues/5325"
+          },
+          "content": {
+            "link": "/api/v1/game/634635/content"
+          },
+          "gameNumber": 1,
+          "publicFacing": true,
+          "doubleHeader": "N",
+          "gamedayType": "P",
+          "tiebreaker": "N",
+          "calendarEventID": "14-634635-2021-04-06",
+          "seasonDisplay": "2021",
+          "dayNight": "night",
+          "scheduledInnings": 9,
+          "reverseHomeAwayStatus": false,
+          "inningBreakLength": 120,
+          "gamesInSeries": 3,
+          "seriesGameNumber": 2,
+          "seriesDescription": "Regular Season",
+          "flags": {
+            "noHitter": false,
+            "perfectGame": false,
+            "awayTeamNoHitter": false,
+            "awayTeamPerfectGame": false,
+            "homeTeamNoHitter": false,
+            "homeTeamPerfectGame": false
+          },
+          "recordSource": "S",
+          "ifNecessary": "N",
+          "ifNecessaryDescription": "Normal Game"
+        }
+      ],
+      "events": []
+    }
+  ]
+}

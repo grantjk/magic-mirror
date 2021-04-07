@@ -33,19 +33,6 @@ function showTime(){
 
 
 /* ========== Positive Message ========== */
-let messageUpdatedForToday = false
-function updatePositiveMessage() {
-  const time = new Date()
-  if (time.getHours() === 0) {
-    messageUpdatedForToday = false
-  }
-
-  if (time.getHours() === 1 && messageUpdatedForToday === false) {
-    showPositiveMessage()
-    messageUpdatedForToday = true
-  }
-}
-
 function showPositiveMessage(){
   fetch('/message')
     .then(response => response.json())
@@ -403,7 +390,6 @@ getJaysSchedule()
 setInterval(() => {
   showTime()
   showDate()
-  updatePositiveMessage() // can probably change this logic now
 }, 1000) // Update clock every second
 
 setInterval(() => {
@@ -413,6 +399,7 @@ setInterval(() => {
 setInterval(() => {
   getCalendarEvents() // no check on server
   getJaysSchedule() // controlled on server side
+  showPositiveMessage() 
 }, 1000*60*15)  // 15 min updates
 
 setInterval(() => {
@@ -440,12 +427,3 @@ function configureMoment() {
   moment.relativeTimeThreshold('h', 48); // better than "a day for 36 hours"
   moment.relativeTimeThreshold('w', 4);  // enables weeks
 }
-
-
-
-
-
-
-
-
-

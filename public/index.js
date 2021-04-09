@@ -280,6 +280,7 @@ function weatherIcon(weatherText, isDayTime) {
   console.log(weatherText)
   switch (weatherText?.toLowerCase()) {
     case 'sunny':
+    case 'clear':
     case 'mostly clear':
     case 'mostly sunny':
       return isDayTime ? 'sun' : 'moon-1';
@@ -287,13 +288,16 @@ function weatherIcon(weatherText, isDayTime) {
       return 'cloudy';
     case 'partly cloudy':
     case 'intermittent clouds':
-      return 'cloud';
+      return isDayTime ? 'cloud' : 'cloudy-night';
     case 'mostly cloudy':
-      return 'cloudy-1';
+      return isDayTime ? 'cloudy-1' : 'cloudy-night';
     case 'cloudy':
       return 'cloudy-2'
     case 'showers':
       return 'rain';
+    case 'thunderstorms':
+    case 'partly cloudy w/ t-storms':
+      return 'thunderstorm';
   }
 
   return undefined
@@ -394,13 +398,20 @@ setInterval(() => {
 
 setInterval(() => {
   getWeather() // controlled on server side, so can request frequently
-}, 1000*60*5)  // 5 min updates
+  showCartoonCharacter()
+}, 1000*60*60)  // 5 min updates - 90 for now to get a hold on the rate limit
 
+// setInterval(() => {
+//   getCalendarEvents() // no check on server
+//   showPositiveMessage() 
+// }, 1000*60*15)  // 15 min updates
+
+/* Test the TTL on the cache headers */
 setInterval(() => {
+  getJaysSchedule() // dynamic timing based on server
   getCalendarEvents() // no check on server
-  getJaysSchedule() // controlled on server side
   showPositiveMessage() 
-}, 1000*60*15)  // 15 min updates
+}, 1000*60) // every minute
 
 setInterval(() => {
   reverseRows()

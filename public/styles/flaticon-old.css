@@ -29,13 +29,13 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 .flaticon-cloudy-3:before {
     content: "\f105";
 }
-.flaticon-cloudy-night:before {
+.flaticon-cloudy:before {
     content: "\f106";
 }
-.flaticon-cloudy:before {
+.flaticon-frost:before {
     content: "\f107";
 }
-.flaticon-frost:before {
+.flaticon-heavy-rain:before {
     content: "\f108";
 }
 .flaticon-moon-1:before {
@@ -52,7 +52,4 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 }
 .flaticon-sun:before {
     content: "\f10d";
-}
-.flaticon-thunderstorm:before {
-    content: "\f10e";
 }

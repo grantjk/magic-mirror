@@ -2,7 +2,7 @@
   "name": "magic-mirror",
   "version": "1.0.0",
   "description": "Teaching Charlie how to write code by building a Magic Mirror. We could use the community module, but I'd like him to learn how to write it himself.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "./node_modules/nodemon/bin/nodemon.js --ignore './data/' --ignore './fixtures/' --ignore './cache' server.js",
     "web": " ./node_modules/lite-server/bin/lite-server"

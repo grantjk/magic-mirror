@@ -212,8 +212,15 @@ app.get('/mlb', async (req, res) => {
             return nextUpdate
         }}, async () => {
             log(`MLB`, `Fetching update....`)
-            const today = moment().format('YYYY-MM-DD')
-            const url = `https://statsapi.mlb.com/api/v1/schedule?startDate=${today}&endDate=${today}&sportId=1&teamId=141&hydrate=team,game(seriesSummary),decisions,person,stats,linescore(runners,matchup,positions),flags,probablePitcher&fields=`
+            let now = moment()
+
+            // If before 11, show yesterday's game
+            if (now.hour() < 11) {
+                now = moment().subtract(1, 'day')
+            }
+
+            const gameDate = now.format('YYYY-MM-DD')
+            const url = `https://statsapi.mlb.com/api/v1/schedule?startDate=${gameDate}&endDate=${gameDate}&sportId=1&teamId=141&hydrate=team,game(seriesSummary),decisions,person,stats,linescore(runners,matchup,positions),flags,probablePitcher&fields=`
             const response = await got(url, {json: true})
             return response.body
         })

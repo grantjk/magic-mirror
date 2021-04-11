@@ -293,7 +293,11 @@ function weatherIcon(weatherText, isDayTime) {
       return isDayTime ? 'cloudy-1' : 'cloudy-night';
     case 'cloudy':
       return 'cloudy-2'
+    case 'light rain':
     case 'showers':
+    case 'rain':
+    case 'partly sunny w/ showers':
+    case 'mostly cloudy w/ showers':
       return 'rain';
     case 'thunderstorms':
     case 'partly cloudy w/ t-storms':

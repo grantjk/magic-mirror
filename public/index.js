@@ -320,6 +320,8 @@ function getJaysSchedule() {
       if (game) {
         const gameStart = moment(game.gameDate)
         const gameState = game.status.abstractGameState
+        const detailedState = game.status.detailedState
+
         console.log(`Start date: ${gameStart.toString()}`)
         console.log(gameState)
 
@@ -342,7 +344,6 @@ function getJaysSchedule() {
         document.querySelector('#away-team-logo').src = teamLogoUrl(awayTeamId)
         document.querySelector('#home-team-logo').src = teamLogoUrl(homeTeamId)
 
-
         document.querySelector('#away-team-name').textContent = awayTeam
         document.querySelector('#away-team-name-detail').textContent = awayTeamRecordDisplay
         document.querySelector('#home-team-name').textContent = homeTeam
@@ -351,10 +352,12 @@ function getJaysSchedule() {
         document.querySelector('#home-team-name').textContent = homeTeam
         document.querySelector('#home-team-name').textContent = homeTeam
 
-        document.querySelector('#game-status-text').textContent = gameState
+        document.querySelector('#game-status-text').textContent = detailedState
         if (gameStart.isAfter(moment())) { // upcoming
           document.querySelector('#game-status-text').textContent = '@'
           document.querySelector('#game-status-subtext').textContent = gameStart.format('h:mm')
+          document.querySelector('#home-team-score').textContent = ""
+          document.querySelector('#away-team-score').textContent = ""
         } else if (gameState === 'Live') { // in progress
           document.querySelector('#home-team-score').textContent = homeTeamScore
           document.querySelector('#away-team-score').textContent = awayTeamScore

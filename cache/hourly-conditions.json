@@ -1,80 +1,82 @@
 [
   {
-    "DateTime": "2021-04-11T14:00:00-04:00",
-    "EpochDateTime": 1618164000,
-    "WeatherIcon": 7,
-    "IconPhrase": "Cloudy",
-    "HasPrecipitation": false,
+    "DateTime": "2021-04-11T19:00:00-04:00",
+    "EpochDateTime": 1618182000,
+    "WeatherIcon": 12,
+    "IconPhrase": "Showers",
+    "HasPrecipitation": true,
+    "PrecipitationType": "Rain",
+    "PrecipitationIntensity": "Light",
     "IsDaylight": true,
     "Temperature": {
-      "Value": 12.8,
-      "Unit": "C",
-      "UnitType": 17
-    },
-    "RealFeelTemperature": {
       "Value": 12.2,
       "Unit": "C",
       "UnitType": 17
     },
+    "RealFeelTemperature": {
+      "Value": 8.3,
+      "Unit": "C",
+      "UnitType": 17
+    },
     "WetBulbTemperature": {
-      "Value": 10,
+      "Value": 11.7,
       "Unit": "C",
       "UnitType": 17
     },
     "DewPoint": {
-      "Value": 7.8,
+      "Value": 11.7,
       "Unit": "C",
       "UnitType": 17
     },
     "Wind": {
-      "Speed": {
-        "Value": 14.5,
-        "Unit": "km/h",
-        "UnitType": 7
-      },
-      "Direction": {
-        "Degrees": 62,
-        "Localized": "ENE",
-        "English": "ENE"
-      }
-    },
-    "WindGust": {
       "Speed": {
         "Value": 16.1,
         "Unit": "km/h",
         "UnitType": 7
       },
       "Direction": {
-        "Degrees": 62,
-        "Localized": "ENE",
-        "English": "ENE"
+        "Degrees": 86,
+        "Localized": "E",
+        "English": "E"
       }
     },
-    "RelativeHumidity": 70,
-    "IndoorRelativeHumidity": 45,
+    "WindGust": {
+      "Speed": {
+        "Value": 17.7,
+        "Unit": "km/h",
+        "UnitType": 7
+      },
+      "Direction": {
+        "Degrees": 86,
+        "Localized": "E",
+        "English": "E"
+      }
+    },
+    "RelativeHumidity": 93,
+    "IndoorRelativeHumidity": 58,
     "Visibility": {
-      "Value": 16.1,
+      "Value": 9.7,
       "Unit": "km",
       "UnitType": 6
     },
     "Ceiling": {
-      "Value": 1341,
+      "Value": 427,
       "Unit": "m",
       "UnitType": 5
     },
-    "UVIndex": 2,
+    "UVIndex": 0,
     "UVIndexText": "Low",
-    "PrecipitationProbability": 40,
-    "RainProbability": 40,
+    "PrecipitationProbability": 48,
+    "RainProbability": 48,
     "SnowProbability": 0,
     "IceProbability": 0,
     "TotalLiquid": {
-      "Value": 0,
+      "Value": 0.3,
       "Unit": "mm",
       "UnitType": 3
     },
     "Rain": {
-      "Value": 0,
+      "Value": 0.3,
       "Unit": "mm",
       "UnitType": 3
     },
@@ -89,477 +91,6 @@
       "UnitType": 3
     },
     "CloudCover": 100,
-    "MobileLink": "http://m.accuweather.com/en/ca/toronto/m5h/hourly-weather-forecast/55488?day=1&hbhhour=14&unit=c&lang=en-us",
-    "Link": "http://www.accuweather.com/en/ca/toronto/m5h/hourly-weather-forecast/55488?day=1&hbhhour=14&unit=c&lang=en-us"
-  },
-  {
-    "DateTime": "2021-04-11T15:00:00-04:00",
-    "EpochDateTime": 1618167600,
-    "WeatherIcon": 7,
-    "IconPhrase": "Cloudy",
-    "HasPrecipitation": false,
-    "IsDaylight": true,
-    "Temperature": {
-      "Value": 13.3,
-      "Unit": "C",
-      "UnitType": 17
-    },
-    "RealFeelTemperature": {
-      "Value": 13.9,
-      "Unit": "C",
-      "UnitType": 17
-    },
-    "WetBulbTemperature": {
-      "Value": 10.6,
-      "Unit": "C",
-      "UnitType": 17
-    },
-    "DewPoint": {
-      "Value": 7.8,
-      "Unit": "C",
-      "UnitType": 17
-    },
-    "Wind": {
-      "Speed": {
-        "Value": 14.5,
-        "Unit": "km/h",
-        "UnitType": 7
-      },
-      "Direction": {
-        "Degrees": 64,
-        "Localized": "ENE",
-        "English": "ENE"
-      }
-    },
-    "WindGust": {
-      "Speed": {
-        "Value": 17.7,
-        "Unit": "km/h",
-        "UnitType": 7
-      },
-      "Direction": {
-        "Degrees": 64,
-        "Localized": "ENE",
-        "English": "ENE"
-      }
-    },
-    "RelativeHumidity": 68,
-    "IndoorRelativeHumidity": 45,
-    "Visibility": {
-      "Value": 16.1,
-      "Unit": "km",
-      "UnitType": 6
-    },
-    "Ceiling": {
-      "Value": 9144,
-      "Unit": "m",
-      "UnitType": 5
-    },
-    "UVIndex": 3,
-    "UVIndexText": "Moderate",
-    "PrecipitationProbability": 34,
-    "RainProbability": 34,
-    "SnowProbability": 0,
-    "IceProbability": 0,
-    "TotalLiquid": {
-      "Value": 0,
-      "Unit": "mm",
-      "UnitType": 3
-    },
-    "Rain": {
-      "Value": 0,
-      "Unit": "mm",
-      "UnitType": 3
-    },
-    "Snow": {
-      "Value": 0,
-      "Unit": "cm",
-      "UnitType": 4
-    },
-    "Ice": {
-      "Value": 0,
-      "Unit": "mm",
-      "UnitType": 3
-    },
-    "CloudCover": 95,
-    "MobileLink": "http://m.accuweather.com/en/ca/toronto/m5h/hourly-weather-forecast/55488?day=1&hbhhour=15&unit=c&lang=en-us",
-    "Link": "http://www.accuweather.com/en/ca/toronto/m5h/hourly-weather-forecast/55488?day=1&hbhhour=15&unit=c&lang=en-us"
-  },
-  {
-    "DateTime": "2021-04-11T16:00:00-04:00",
-    "EpochDateTime": 1618171200,
-    "WeatherIcon": 7,
-    "IconPhrase": "Cloudy",
-    "HasPrecipitation": false,
-    "IsDaylight": true,
-    "Temperature": {
-      "Value": 13.9,
-      "Unit": "C",
-      "UnitType": 17
-    },
-    "RealFeelTemperature": {
-      "Value": 14.4,
-      "Unit": "C",
-      "UnitType": 17
-    },
-    "WetBulbTemperature": {
-      "Value": 11.1,
-      "Unit": "C",
-      "UnitType": 17
-    },
-    "DewPoint": {
-      "Value": 7.8,
-      "Unit": "C",
-      "UnitType": 17
-    },
-    "Wind": {
-      "Speed": {
-        "Value": 11.3,
-        "Unit": "km/h",
-        "UnitType": 7
-      },
-      "Direction": {
-        "Degrees": 71,
-        "Localized": "ENE",
-        "English": "ENE"
-      }
-    },
-    "WindGust": {
-      "Speed": {
-        "Value": 14.5,
-        "Unit": "km/h",
-        "UnitType": 7
-      },
-      "Direction": {
-        "Degrees": 71,
-        "Localized": "ENE",
-        "English": "ENE"
-      }
-    },
-    "RelativeHumidity": 67,
-    "IndoorRelativeHumidity": 45,
-    "Visibility": {
-      "Value": 16.1,
-      "Unit": "km",
-      "UnitType": 6
-    },
-    "Ceiling": {
-      "Value": 9144,
-      "Unit": "m",
-      "UnitType": 5
-    },
-    "UVIndex": 2,
-    "UVIndexText": "Low",
-    "PrecipitationProbability": 40,
-    "RainProbability": 40,
-    "SnowProbability": 0,
-    "IceProbability": 0,
-    "TotalLiquid": {
-      "Value": 0,
-      "Unit": "mm",
-      "UnitType": 3
-    },
-    "Rain": {
-      "Value": 0,
-      "Unit": "mm",
-      "UnitType": 3
-    },
-    "Snow": {
-      "Value": 0,
-      "Unit": "cm",
-      "UnitType": 4
-    },
-    "Ice": {
-      "Value": 0,
-      "Unit": "mm",
-      "UnitType": 3
-    },
-    "CloudCover": 95,
-    "MobileLink": "http://m.accuweather.com/en/ca/toronto/m5h/hourly-weather-forecast/55488?day=1&hbhhour=16&unit=c&lang=en-us",
-    "Link": "http://www.accuweather.com/en/ca/toronto/m5h/hourly-weather-forecast/55488?day=1&hbhhour=16&unit=c&lang=en-us"
-  },
-  {
-    "DateTime": "2021-04-11T17:00:00-04:00",
-    "EpochDateTime": 1618174800,
-    "WeatherIcon": 18,
-    "IconPhrase": "Rain",
-    "HasPrecipitation": true,
-    "PrecipitationType": "Rain",
-    "PrecipitationIntensity": "Light",
-    "IsDaylight": true,
-    "Temperature": {
-      "Value": 14.4,
-      "Unit": "C",
-      "UnitType": 17
-    },
-    "RealFeelTemperature": {
-      "Value": 13.3,
-      "Unit": "C",
-      "UnitType": 17
-    },
-    "WetBulbTemperature": {
-      "Value": 11.7,
-      "Unit": "C",
-      "UnitType": 17
-    },
-    "DewPoint": {
-      "Value": 8.9,
-      "Unit": "C",
-      "UnitType": 17
-    },
-    "Wind": {
-      "Speed": {
-        "Value": 9.7,
-        "Unit": "km/h",
-        "UnitType": 7
-      },
-      "Direction": {
-        "Degrees": 78,
-        "Localized": "ENE",
-        "English": "ENE"
-      }
-    },
-    "WindGust": {
-      "Speed": {
-        "Value": 11.3,
-        "Unit": "km/h",
-        "UnitType": 7
-      },
-      "Direction": {
-        "Degrees": 78,
-        "Localized": "ENE",
-        "English": "ENE"
-      }
-    },
-    "RelativeHumidity": 69,
-    "IndoorRelativeHumidity": 49,
-    "Visibility": {
-      "Value": 11.3,
-      "Unit": "km",
-      "UnitType": 6
-    },
-    "Ceiling": {
-      "Value": 9144,
-      "Unit": "m",
-      "UnitType": 5
-    },
-    "UVIndex": 1,
-    "UVIndexText": "Low",
-    "PrecipitationProbability": 56,
-    "RainProbability": 56,
-    "SnowProbability": 0,
-    "IceProbability": 0,
-    "TotalLiquid": {
-      "Value": 0.8,
-      "Unit": "mm",
-      "UnitType": 3
-    },
-    "Rain": {
-      "Value": 0.8,
-      "Unit": "mm",
-      "UnitType": 3
-    },
-    "Snow": {
-      "Value": 0,
-      "Unit": "cm",
-      "UnitType": 4
-    },
-    "Ice": {
-      "Value": 0,
-      "Unit": "mm",
-      "UnitType": 3
-    },
-    "CloudCover": 95,
-    "MobileLink": "http://m.accuweather.com/en/ca/toronto/m5h/hourly-weather-forecast/55488?day=1&hbhhour=17&unit=c&lang=en-us",
-    "Link": "http://www.accuweather.com/en/ca/toronto/m5h/hourly-weather-forecast/55488?day=1&hbhhour=17&unit=c&lang=en-us"
-  },
-  {
-    "DateTime": "2021-04-11T18:00:00-04:00",
-    "EpochDateTime": 1618178400,
-    "WeatherIcon": 18,
-    "IconPhrase": "Rain",
-    "HasPrecipitation": true,
-    "PrecipitationType": "Rain",
-    "PrecipitationIntensity": "Light",
-    "IsDaylight": true,
-    "Temperature": {
-      "Value": 13.9,
-      "Unit": "C",
-      "UnitType": 17
-    },
-    "RealFeelTemperature": {
-      "Value": 11.1,
-      "Unit": "C",
-      "UnitType": 17
-    },
-    "WetBulbTemperature": {
-      "Value": 13.3,
-      "Unit": "C",
-      "UnitType": 17
-    },
-    "DewPoint": {
-      "Value": 12.2,
-      "Unit": "C",
-      "UnitType": 17
-    },
-    "Wind": {
-      "Speed": {
-        "Value": 11.3,
-        "Unit": "km/h",
-        "UnitType": 7
-      },
-      "Direction": {
-        "Degrees": 79,
-        "Localized": "E",
-        "English": "E"
-      }
-    },
-    "WindGust": {
-      "Speed": {
-        "Value": 16.1,
-        "Unit": "km/h",
-        "UnitType": 7
-      },
-      "Direction": {
-        "Degrees": 79,
-        "Localized": "E",
-        "English": "E"
-      }
-    },
-    "RelativeHumidity": 89,
-    "IndoorRelativeHumidity": 61,
-    "Visibility": {
-      "Value": 9.7,
-      "Unit": "km",
-      "UnitType": 6
-    },
-    "Ceiling": {
-      "Value": 1341,
-      "Unit": "m",
-      "UnitType": 5
-    },
-    "UVIndex": 0,
-    "UVIndexText": "Low",
-    "PrecipitationProbability": 56,
-    "RainProbability": 56,
-    "SnowProbability": 0,
-    "IceProbability": 0,
-    "TotalLiquid": {
-      "Value": 0.8,
-      "Unit": "mm",
-      "UnitType": 3
-    },
-    "Rain": {
-      "Value": 0.8,
-      "Unit": "mm",
-      "UnitType": 3
-    },
-    "Snow": {
-      "Value": 0,
-      "Unit": "cm",
-      "UnitType": 4
-    },
-    "Ice": {
-      "Value": 0,
-      "Unit": "mm",
-      "UnitType": 3
-    },
-    "CloudCover": 95,
-    "MobileLink": "http://m.accuweather.com/en/ca/toronto/m5h/hourly-weather-forecast/55488?day=1&hbhhour=18&unit=c&lang=en-us",
-    "Link": "http://www.accuweather.com/en/ca/toronto/m5h/hourly-weather-forecast/55488?day=1&hbhhour=18&unit=c&lang=en-us"
-  },
-  {
-    "DateTime": "2021-04-11T19:00:00-04:00",
-    "EpochDateTime": 1618182000,
-    "WeatherIcon": 18,
-    "IconPhrase": "Rain",
-    "HasPrecipitation": true,
-    "PrecipitationType": "Rain",
-    "PrecipitationIntensity": "Light",
-    "IsDaylight": true,
-    "Temperature": {
-      "Value": 13.3,
-      "Unit": "C",
-      "UnitType": 17
-    },
-    "RealFeelTemperature": {
-      "Value": 10,
-      "Unit": "C",
-      "UnitType": 17
-    },
-    "WetBulbTemperature": {
-      "Value": 12.2,
-      "Unit": "C",
-      "UnitType": 17
-    },
-    "DewPoint": {
-      "Value": 11.7,
-      "Unit": "C",
-      "UnitType": 17
-    },
-    "Wind": {
-      "Speed": {
-        "Value": 12.9,
-        "Unit": "km/h",
-        "UnitType": 7
-      },
-      "Direction": {
-        "Degrees": 71,
-        "Localized": "ENE",
-        "English": "ENE"
-      }
-    },
-    "WindGust": {
-      "Speed": {
-        "Value": 16.1,
-        "Unit": "km/h",
-        "UnitType": 7
-      },
-      "Direction": {
-        "Degrees": 71,
-        "Localized": "ENE",
-        "English": "ENE"
-      }
-    },
-    "RelativeHumidity": 89,
-    "IndoorRelativeHumidity": 58,
-    "Visibility": {
-      "Value": 9.7,
-      "Unit": "km",
-      "UnitType": 6
-    },
-    "Ceiling": {
-      "Value": 427,
-      "Unit": "m",
-      "UnitType": 5
-    },
-    "UVIndex": 0,
-    "UVIndexText": "Low",
-    "PrecipitationProbability": 56,
-    "RainProbability": 56,
-    "SnowProbability": 0,
-    "IceProbability": 0,
-    "TotalLiquid": {
-      "Value": 0.8,
-      "Unit": "mm",
-      "UnitType": 3
-    },
-    "Rain": {
-      "Value": 0.8,
-      "Unit": "mm",
-      "UnitType": 3
-    },
-    "Snow": {
-      "Value": 0,
-      "Unit": "cm",
-      "UnitType": 4
-    },
-    "Ice": {
-      "Value": 0,
-      "Unit": "mm",
-      "UnitType": 3
-    },
-    "CloudCover": 95,
     "MobileLink": "http://m.accuweather.com/en/ca/toronto/m5h/hourly-weather-forecast/55488?day=1&hbhhour=19&unit=c&lang=en-us",
     "Link": "http://www.accuweather.com/en/ca/toronto/m5h/hourly-weather-forecast/55488?day=1&hbhhour=19&unit=c&lang=en-us"
   },
@@ -578,12 +109,12 @@
       "UnitType": 17
     },
     "RealFeelTemperature": {
-      "Value": 8.9,
+      "Value": 7.8,
       "Unit": "C",
       "UnitType": 17
     },
     "WetBulbTemperature": {
-      "Value": 11.7,
+      "Value": 11.1,
       "Unit": "C",
       "UnitType": 17
     },
@@ -594,29 +125,29 @@
     },
     "Wind": {
       "Speed": {
-        "Value": 12.9,
-        "Unit": "km/h",
-        "UnitType": 7
-      },
-      "Direction": {
-        "Degrees": 66,
-        "Localized": "ENE",
-        "English": "ENE"
-      }
-    },
-    "WindGust": {
-      "Speed": {
         "Value": 16.1,
         "Unit": "km/h",
         "UnitType": 7
       },
       "Direction": {
-        "Degrees": 66,
-        "Localized": "ENE",
-        "English": "ENE"
+        "Degrees": 82,
+        "Localized": "E",
+        "English": "E"
       }
     },
-    "RelativeHumidity": 88,
+    "WindGust": {
+      "Speed": {
+        "Value": 19.3,
+        "Unit": "km/h",
+        "UnitType": 7
+      },
+      "Direction": {
+        "Degrees": 82,
+        "Localized": "E",
+        "English": "E"
+      }
+    },
+    "RelativeHumidity": 90,
     "IndoorRelativeHumidity": 54,
     "Visibility": {
       "Value": 9.7,
@@ -654,7 +185,7 @@
       "Unit": "mm",
       "UnitType": 3
     },
-    "CloudCover": 95,
+    "CloudCover": 100,
     "MobileLink": "http://m.accuweather.com/en/ca/toronto/m5h/hourly-weather-forecast/55488?day=1&hbhhour=20&unit=c&lang=en-us",
     "Link": "http://www.accuweather.com/en/ca/toronto/m5h/hourly-weather-forecast/55488?day=1&hbhhour=20&unit=c&lang=en-us"
   },
@@ -671,7 +202,7 @@
       "UnitType": 17
     },
     "RealFeelTemperature": {
-      "Value": 10,
+      "Value": 9.4,
       "Unit": "C",
       "UnitType": 17
     },
@@ -687,24 +218,24 @@
     },
     "Wind": {
       "Speed": {
-        "Value": 9.7,
+        "Value": 12.9,
         "Unit": "km/h",
         "UnitType": 7
       },
       "Direction": {
-        "Degrees": 61,
+        "Degrees": 75,
         "Localized": "ENE",
         "English": "ENE"
       }
     },
     "WindGust": {
       "Speed": {
-        "Value": 16.1,
+        "Value": 12.9,
         "Unit": "km/h",
         "UnitType": 7
       },
       "Direction": {
-        "Degrees": 61,
+        "Degrees": 75,
         "Localized": "ENE",
         "English": "ENE"
       }
@@ -764,7 +295,7 @@
       "UnitType": 17
     },
     "RealFeelTemperature": {
-      "Value": 10,
+      "Value": 9.4,
       "Unit": "C",
       "UnitType": 17
     },
@@ -780,14 +311,14 @@
     },
     "Wind": {
       "Speed": {
-        "Value": 8,
+        "Value": 11.3,
         "Unit": "km/h",
         "UnitType": 7
       },
       "Direction": {
-        "Degrees": 49,
-        "Localized": "NE",
-        "English": "NE"
+        "Degrees": 60,
+        "Localized": "ENE",
+        "English": "ENE"
       }
     },
     "WindGust": {
@@ -797,9 +328,9 @@
         "UnitType": 7
       },
       "Direction": {
-        "Degrees": 49,
-        "Localized": "NE",
-        "English": "NE"
+        "Degrees": 60,
+        "Localized": "ENE",
+        "English": "ENE"
       }
     },
     "RelativeHumidity": 85,
@@ -857,7 +388,7 @@
       "UnitType": 17
     },
     "RealFeelTemperature": {
-      "Value": 10,
+      "Value": 9.4,
       "Unit": "C",
       "UnitType": 17
     },
@@ -873,14 +404,14 @@
     },
     "Wind": {
       "Speed": {
-        "Value": 6.4,
+        "Value": 8,
         "Unit": "km/h",
         "UnitType": 7
       },
       "Direction": {
-        "Degrees": 33,
-        "Localized": "NNE",
-        "English": "NNE"
+        "Degrees": 40,
+        "Localized": "NE",
+        "English": "NE"
       }
     },
     "WindGust": {
@@ -890,9 +421,9 @@
         "UnitType": 7
       },
       "Direction": {
-        "Degrees": 33,
-        "Localized": "NNE",
-        "English": "NNE"
+        "Degrees": 40,
+        "Localized": "NE",
+        "English": "NE"
       }
     },
     "RelativeHumidity": 83,
@@ -1040,17 +571,17 @@
     "PrecipitationIntensity": "Light",
     "IsDaylight": false,
     "Temperature": {
-      "Value": 10,
+      "Value": 9.8,
       "Unit": "C",
       "UnitType": 17
     },
     "RealFeelTemperature": {
-      "Value": 6.7,
+      "Value": 6.9,
       "Unit": "C",
       "UnitType": 17
     },
     "WetBulbTemperature": {
-      "Value": 8.3,
+      "Value": 8.6,
       "Unit": "C",
       "UnitType": 17
     },
@@ -1061,7 +592,7 @@
     },
     "Wind": {
       "Speed": {
-        "Value": 9.7,
+        "Value": 9.3,
         "Unit": "km/h",
         "UnitType": 7
       },
@@ -1073,14 +604,9 @@
     },
     "WindGust": {
       "Speed": {
-        "Value": 12.9,
+        "Value": 13,
         "Unit": "km/h",
         "UnitType": 7
-      },
-      "Direction": {
-        "Degrees": 97,
-        "Localized": "E",
-        "English": "E"
       }
     },
     "RelativeHumidity": 83,
@@ -1102,12 +628,12 @@
     "SnowProbability": 0,
     "IceProbability": 0,
     "TotalLiquid": {
-      "Value": 1,
+      "Value": 0.9,
       "Unit": "mm",
       "UnitType": 3
     },
     "Rain": {
-      "Value": 1,
+      "Value": 0.9,
       "Unit": "mm",
       "UnitType": 3
     },
@@ -1124,5 +650,447 @@
     "CloudCover": 95,
     "MobileLink": "http://m.accuweather.com/en/ca/toronto/m5h/hourly-weather-forecast/55488?day=2&hbhhour=1&unit=c&lang=en-us",
     "Link": "http://www.accuweather.com/en/ca/toronto/m5h/hourly-weather-forecast/55488?day=2&hbhhour=1&unit=c&lang=en-us"
+  },
+  {
+    "DateTime": "2021-04-12T02:00:00-04:00",
+    "EpochDateTime": 1618207200,
+    "WeatherIcon": 7,
+    "IconPhrase": "Cloudy",
+    "HasPrecipitation": false,
+    "IsDaylight": false,
+    "Temperature": {
+      "Value": 9.7,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "RealFeelTemperature": {
+      "Value": 8.3,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "WetBulbTemperature": {
+      "Value": 8.4,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "DewPoint": {
+      "Value": 6.9,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "Wind": {
+      "Speed": {
+        "Value": 9.3,
+        "Unit": "km/h",
+        "UnitType": 7
+      },
+      "Direction": {
+        "Degrees": 108,
+        "Localized": "ESE",
+        "English": "ESE"
+      }
+    },
+    "WindGust": {
+      "Speed": {
+        "Value": 13,
+        "Unit": "km/h",
+        "UnitType": 7
+      }
+    },
+    "RelativeHumidity": 83,
+    "IndoorRelativeHumidity": 42,
+    "Visibility": {
+      "Value": 16.1,
+      "Unit": "km",
+      "UnitType": 6
+    },
+    "Ceiling": {
+      "Value": 427,
+      "Unit": "m",
+      "UnitType": 5
+    },
+    "UVIndex": 0,
+    "UVIndexText": "Low",
+    "PrecipitationProbability": 40,
+    "RainProbability": 40,
+    "SnowProbability": 0,
+    "IceProbability": 0,
+    "TotalLiquid": {
+      "Value": 0,
+      "Unit": "mm",
+      "UnitType": 3
+    },
+    "Rain": {
+      "Value": 0,
+      "Unit": "mm",
+      "UnitType": 3
+    },
+    "Snow": {
+      "Value": 0,
+      "Unit": "cm",
+      "UnitType": 4
+    },
+    "Ice": {
+      "Value": 0,
+      "Unit": "mm",
+      "UnitType": 3
+    },
+    "CloudCover": 100,
+    "MobileLink": "http://m.accuweather.com/en/ca/toronto/m5h/hourly-weather-forecast/55488?day=2&hbhhour=2&unit=c&lang=en-us",
+    "Link": "http://www.accuweather.com/en/ca/toronto/m5h/hourly-weather-forecast/55488?day=2&hbhhour=2&unit=c&lang=en-us"
+  },
+  {
+    "DateTime": "2021-04-12T03:00:00-04:00",
+    "EpochDateTime": 1618210800,
+    "WeatherIcon": 7,
+    "IconPhrase": "Cloudy",
+    "HasPrecipitation": false,
+    "IsDaylight": false,
+    "Temperature": {
+      "Value": 9.6,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "RealFeelTemperature": {
+      "Value": 8.2,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "WetBulbTemperature": {
+      "Value": 8.3,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "DewPoint": {
+      "Value": 6.7,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "Wind": {
+      "Speed": {
+        "Value": 9.3,
+        "Unit": "km/h",
+        "UnitType": 7
+      },
+      "Direction": {
+        "Degrees": 106,
+        "Localized": "ESE",
+        "English": "ESE"
+      }
+    },
+    "WindGust": {
+      "Speed": {
+        "Value": 13,
+        "Unit": "km/h",
+        "UnitType": 7
+      }
+    },
+    "RelativeHumidity": 82,
+    "IndoorRelativeHumidity": 42,
+    "Visibility": {
+      "Value": 16.1,
+      "Unit": "km",
+      "UnitType": 6
+    },
+    "Ceiling": {
+      "Value": 427,
+      "Unit": "m",
+      "UnitType": 5
+    },
+    "UVIndex": 0,
+    "UVIndexText": "Low",
+    "PrecipitationProbability": 37,
+    "RainProbability": 37,
+    "SnowProbability": 0,
+    "IceProbability": 0,
+    "TotalLiquid": {
+      "Value": 0,
+      "Unit": "mm",
+      "UnitType": 3
+    },
+    "Rain": {
+      "Value": 0,
+      "Unit": "mm",
+      "UnitType": 3
+    },
+    "Snow": {
+      "Value": 0,
+      "Unit": "cm",
+      "UnitType": 4
+    },
+    "Ice": {
+      "Value": 0,
+      "Unit": "mm",
+      "UnitType": 3
+    },
+    "CloudCover": 100,
+    "MobileLink": "http://m.accuweather.com/en/ca/toronto/m5h/hourly-weather-forecast/55488?day=2&hbhhour=3&unit=c&lang=en-us",
+    "Link": "http://www.accuweather.com/en/ca/toronto/m5h/hourly-weather-forecast/55488?day=2&hbhhour=3&unit=c&lang=en-us"
+  },
+  {
+    "DateTime": "2021-04-12T04:00:00-04:00",
+    "EpochDateTime": 1618214400,
+    "WeatherIcon": 12,
+    "IconPhrase": "Showers",
+    "HasPrecipitation": true,
+    "PrecipitationType": "Rain",
+    "PrecipitationIntensity": "Light",
+    "IsDaylight": false,
+    "Temperature": {
+      "Value": 9.5,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "RealFeelTemperature": {
+      "Value": 7.2,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "WetBulbTemperature": {
+      "Value": 8.1,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "DewPoint": {
+      "Value": 6.5,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "Wind": {
+      "Speed": {
+        "Value": 9.3,
+        "Unit": "km/h",
+        "UnitType": 7
+      },
+      "Direction": {
+        "Degrees": 92,
+        "Localized": "E",
+        "English": "E"
+      }
+    },
+    "WindGust": {
+      "Speed": {
+        "Value": 13,
+        "Unit": "km/h",
+        "UnitType": 7
+      }
+    },
+    "RelativeHumidity": 81,
+    "IndoorRelativeHumidity": 41,
+    "Visibility": {
+      "Value": 16.1,
+      "Unit": "km",
+      "UnitType": 6
+    },
+    "Ceiling": {
+      "Value": 427,
+      "Unit": "m",
+      "UnitType": 5
+    },
+    "UVIndex": 0,
+    "UVIndexText": "Low",
+    "PrecipitationProbability": 40,
+    "RainProbability": 40,
+    "SnowProbability": 0,
+    "IceProbability": 0,
+    "TotalLiquid": {
+      "Value": 0.2,
+      "Unit": "mm",
+      "UnitType": 3
+    },
+    "Rain": {
+      "Value": 0.2,
+      "Unit": "mm",
+      "UnitType": 3
+    },
+    "Snow": {
+      "Value": 0,
+      "Unit": "cm",
+      "UnitType": 4
+    },
+    "Ice": {
+      "Value": 0,
+      "Unit": "mm",
+      "UnitType": 3
+    },
+    "CloudCover": 100,
+    "MobileLink": "http://m.accuweather.com/en/ca/toronto/m5h/hourly-weather-forecast/55488?day=2&hbhhour=4&unit=c&lang=en-us",
+    "Link": "http://www.accuweather.com/en/ca/toronto/m5h/hourly-weather-forecast/55488?day=2&hbhhour=4&unit=c&lang=en-us"
+  },
+  {
+    "DateTime": "2021-04-12T05:00:00-04:00",
+    "EpochDateTime": 1618218000,
+    "WeatherIcon": 7,
+    "IconPhrase": "Cloudy",
+    "HasPrecipitation": false,
+    "IsDaylight": false,
+    "Temperature": {
+      "Value": 9.4,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "RealFeelTemperature": {
+      "Value": 8.2,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "WetBulbTemperature": {
+      "Value": 8,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "DewPoint": {
+      "Value": 6.2,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "Wind": {
+      "Speed": {
+        "Value": 9.3,
+        "Unit": "km/h",
+        "UnitType": 7
+      },
+      "Direction": {
+        "Degrees": 89,
+        "Localized": "E",
+        "English": "E"
+      }
+    },
+    "WindGust": {
+      "Speed": {
+        "Value": 13,
+        "Unit": "km/h",
+        "UnitType": 7
+      }
+    },
+    "RelativeHumidity": 80,
+    "IndoorRelativeHumidity": 41,
+    "Visibility": {
+      "Value": 16.1,
+      "Unit": "km",
+      "UnitType": 6
+    },
+    "Ceiling": {
+      "Value": 427,
+      "Unit": "m",
+      "UnitType": 5
+    },
+    "UVIndex": 0,
+    "UVIndexText": "Low",
+    "PrecipitationProbability": 37,
+    "RainProbability": 37,
+    "SnowProbability": 0,
+    "IceProbability": 0,
+    "TotalLiquid": {
+      "Value": 0,
+      "Unit": "mm",
+      "UnitType": 3
+    },
+    "Rain": {
+      "Value": 0,
+      "Unit": "mm",
+      "UnitType": 3
+    },
+    "Snow": {
+      "Value": 0,
+      "Unit": "cm",
+      "UnitType": 4
+    },
+    "Ice": {
+      "Value": 0,
+      "Unit": "mm",
+      "UnitType": 3
+    },
+    "CloudCover": 100,
+    "MobileLink": "http://m.accuweather.com/en/ca/toronto/m5h/hourly-weather-forecast/55488?day=2&hbhhour=5&unit=c&lang=en-us",
+    "Link": "http://www.accuweather.com/en/ca/toronto/m5h/hourly-weather-forecast/55488?day=2&hbhhour=5&unit=c&lang=en-us"
+  },
+  {
+    "DateTime": "2021-04-12T06:00:00-04:00",
+    "EpochDateTime": 1618221600,
+    "WeatherIcon": 7,
+    "IconPhrase": "Cloudy",
+    "HasPrecipitation": false,
+    "IsDaylight": false,
+    "Temperature": {
+      "Value": 9.3,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "RealFeelTemperature": {
+      "Value": 7.9,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "WetBulbTemperature": {
+      "Value": 7.8,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "DewPoint": {
+      "Value": 5.9,
+      "Unit": "C",
+      "UnitType": 17
+    },
+    "Wind": {
+      "Speed": {
+        "Value": 9.3,
+        "Unit": "km/h",
+        "UnitType": 7
+      },
+      "Direction": {
+        "Degrees": 103,
+        "Localized": "ESE",
+        "English": "ESE"
+      }
+    },
+    "WindGust": {
+      "Speed": {
+        "Value": 13,
+        "Unit": "km/h",
+        "UnitType": 7
+      }
+    },
+    "RelativeHumidity": 80,
+    "IndoorRelativeHumidity": 40,
+    "Visibility": {
+      "Value": 16.1,
+      "Unit": "km",
+      "UnitType": 6
+    },
+    "Ceiling": {
+      "Value": 457,
+      "Unit": "m",
+      "UnitType": 5
+    },
+    "UVIndex": 0,
+    "UVIndexText": "Low",
+    "PrecipitationProbability": 34,
+    "RainProbability": 34,
+    "SnowProbability": 0,
+    "IceProbability": 0,
+    "TotalLiquid": {
+      "Value": 0,
+      "Unit": "mm",
+      "UnitType": 3
+    },
+    "Rain": {
+      "Value": 0,
+      "Unit": "mm",
+      "UnitType": 3
+    },
+    "Snow": {
+      "Value": 0,
+      "Unit": "cm",
+      "UnitType": 4
+    },
+    "Ice": {
+      "Value": 0,
+      "Unit": "mm",
+      "UnitType": 3
+    },
+    "CloudCover": 100,
+    "MobileLink": "http://m.accuweather.com/en/ca/toronto/m5h/hourly-weather-forecast/55488?day=2&hbhhour=6&unit=c&lang=en-us",
+    "Link": "http://www.accuweather.com/en/ca/toronto/m5h/hourly-weather-forecast/55488?day=2&hbhhour=6&unit=c&lang=en-us"
   }
 ]

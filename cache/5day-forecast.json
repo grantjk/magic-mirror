@@ -1,12 +1,12 @@
 {
   "Headline": {
-    "EffectiveDate": "2021-04-11T08:00:00-04:00",
-    "EffectiveEpochDate": 1618142400,
+    "EffectiveDate": "2021-04-11T20:00:00-04:00",
+    "EffectiveEpochDate": 1618185600,
     "Severity": 3,
-    "Text": "Expect rainy weather this morning through this evening",
+    "Text": "Expect showery weather this evening through tomorrow evening",
     "Category": "rain",
-    "EndDate": "2021-04-12T02:00:00-04:00",
-    "EndEpochDate": 1618207200,
+    "EndDate": "2021-04-13T02:00:00-04:00",
+    "EndEpochDate": 1618293600,
     "MobileLink": "http://m.accuweather.com/en/ca/toronto/m5h/extended-weather-forecast/55488?unit=c&lang=en-us",
     "Link": "http://www.accuweather.com/en/ca/toronto/m5h/daily-weather-forecast/55488?unit=c&lang=en-us"
   },
@@ -30,12 +30,12 @@
       },
       "Temperature": {
         "Minimum": {
-          "Value": 8.9,
+          "Value": 8.3,
           "Unit": "C",
           "UnitType": 17
         },
         "Maximum": {
-          "Value": 15,
+          "Value": 13.3,
           "Unit": "C",
           "UnitType": 17
         }
@@ -47,7 +47,7 @@
           "UnitType": 17
         },
         "Maximum": {
-          "Value": 15,
+          "Value": 13.3,
           "Unit": "C",
           "UnitType": 17
         }
@@ -59,15 +59,15 @@
           "UnitType": 17
         },
         "Maximum": {
-          "Value": 13.3,
+          "Value": 12.2,
           "Unit": "C",
           "UnitType": 17
         }
       },
-      "HoursOfSun": 0.7,
+      "HoursOfSun": 0.8,
       "DegreeDaySummary": {
         "Heating": {
-          "Value": 6,
+          "Value": 7,
           "Unit": "C",
           "UnitType": 17
         },
@@ -122,44 +122,44 @@
         "HasPrecipitation": true,
         "PrecipitationType": "Rain",
         "PrecipitationIntensity": "Light",
-        "ShortPhrase": "Periods of rain",
-        "LongPhrase": "Periods of rain",
-        "PrecipitationProbability": 80,
+        "ShortPhrase": "Rain",
+        "LongPhrase": "Rain",
+        "PrecipitationProbability": 90,
         "ThunderstormProbability": 10,
-        "RainProbability": 80,
+        "RainProbability": 89,
         "SnowProbability": 0,
         "IceProbability": 0,
         "Wind": {
           "Speed": {
-            "Value": 11.3,
+            "Value": 16.1,
             "Unit": "km/h",
             "UnitType": 7
           },
           "Direction": {
-            "Degrees": 153,
-            "Localized": "SSE",
-            "English": "SSE"
+            "Degrees": 97,
+            "Localized": "E",
+            "English": "E"
           }
         },
         "WindGust": {
           "Speed": {
-            "Value": 17.7,
+            "Value": 49.9,
             "Unit": "km/h",
             "UnitType": 7
           },
           "Direction": {
-            "Degrees": 153,
-            "Localized": "SSE",
-            "English": "SSE"
+            "Degrees": 97,
+            "Localized": "E",
+            "English": "E"
           }
         },
         "TotalLiquid": {
-          "Value": 11.9,
+          "Value": 12.4,
           "Unit": "mm",
           "UnitType": 3
         },
         "Rain": {
-          "Value": 11.9,
+          "Value": 12.4,
           "Unit": "mm",
           "UnitType": 3
         },
@@ -173,8 +173,8 @@
           "Unit": "mm",
           "UnitType": 3
         },
-        "HoursOfPrecipitation": 5.5,
-        "HoursOfRain": 5.5,
+        "HoursOfPrecipitation": 6,
+        "HoursOfRain": 6,
         "HoursOfSnow": 0,
         "HoursOfIce": 0,
         "CloudCover": 98
@@ -199,19 +199,19 @@
             "UnitType": 7
           },
           "Direction": {
-            "Degrees": 83,
+            "Degrees": 84,
             "Localized": "E",
             "English": "E"
           }
         },
         "WindGust": {
           "Speed": {
-            "Value": 16.1,
+            "Value": 19.3,
             "Unit": "km/h",
             "UnitType": 7
           },
           "Direction": {
-            "Degrees": 83,
+            "Degrees": 84,
             "Localized": "E",
             "English": "E"
           }
@@ -272,7 +272,7 @@
           "UnitType": 17
         },
         "Maximum": {
-          "Value": 10,
+          "Value": 8.9,
           "Unit": "C",
           "UnitType": 17
         }
@@ -284,7 +284,7 @@
           "UnitType": 17
         },
         "Maximum": {
-          "Value": 10,
+          "Value": 8.9,
           "Unit": "C",
           "UnitType": 17
         }
@@ -296,7 +296,7 @@
           "UnitType": 17
         },
         "Maximum": {
-          "Value": 7.8,
+          "Value": 7.2,
           "Unit": "C",
           "UnitType": 17
         }
@@ -359,11 +359,11 @@
         "HasPrecipitation": true,
         "PrecipitationType": "Rain",
         "PrecipitationIntensity": "Light",
-        "ShortPhrase": "A couple of showers",
-        "LongPhrase": "Intervals of clouds and sunshine with a couple of showers",
-        "PrecipitationProbability": 70,
+        "ShortPhrase": "Cooler with a few showers",
+        "LongPhrase": "Intervals of clouds and sunshine with a couple of showers; cooler",
+        "PrecipitationProbability": 76,
         "ThunderstormProbability": 20,
-        "RainProbability": 70,
+        "RainProbability": 76,
         "SnowProbability": 0,
         "IceProbability": 0,
         "Wind": {
@@ -373,30 +373,30 @@
             "UnitType": 7
           },
           "Direction": {
-            "Degrees": 100,
+            "Degrees": 99,
             "Localized": "E",
             "English": "E"
           }
         },
         "WindGust": {
           "Speed": {
-            "Value": 25.7,
+            "Value": 24.1,
             "Unit": "km/h",
             "UnitType": 7
           },
           "Direction": {
-            "Degrees": 100,
+            "Degrees": 99,
             "Localized": "E",
             "English": "E"
           }
         },
         "TotalLiquid": {
-          "Value": 6.1,
+          "Value": 8.4,
           "Unit": "mm",
           "UnitType": 3
         },
         "Rain": {
-          "Value": 6.1,
+          "Value": 8.4,
           "Unit": "mm",
           "UnitType": 3
         },
@@ -410,31 +410,33 @@
           "Unit": "mm",
           "UnitType": 3
         },
-        "HoursOfPrecipitation": 3,
-        "HoursOfRain": 3,
+        "HoursOfPrecipitation": 4,
+        "HoursOfRain": 4,
         "HoursOfSnow": 0,
         "HoursOfIce": 0,
         "CloudCover": 70
       },
       "Night": {
-        "Icon": 38,
-        "IconPhrase": "Mostly cloudy",
-        "HasPrecipitation": false,
-        "ShortPhrase": "Mostly cloudy",
-        "LongPhrase": "Mostly cloudy",
-        "PrecipitationProbability": 25,
-        "ThunderstormProbability": 0,
-        "RainProbability": 25,
+        "Icon": 7,
+        "IconPhrase": "Cloudy",
+        "HasPrecipitation": true,
+        "PrecipitationType": "Rain",
+        "PrecipitationIntensity": "Moderate",
+        "ShortPhrase": "A shower early; cloudy",
+        "LongPhrase": "A shower in spots in the evening; otherwise, cloudy",
+        "PrecipitationProbability": 40,
+        "ThunderstormProbability": 20,
+        "RainProbability": 40,
         "SnowProbability": 0,
         "IceProbability": 0,
         "Wind": {
           "Speed": {
-            "Value": 14.5,
+            "Value": 12.9,
             "Unit": "km/h",
             "UnitType": 7
           },
           "Direction": {
-            "Degrees": 63,
+            "Degrees": 60,
             "Localized": "ENE",
             "English": "ENE"
           }
@@ -446,18 +448,18 @@
             "UnitType": 7
           },
           "Direction": {
-            "Degrees": 63,
+            "Degrees": 60,
             "Localized": "ENE",
             "English": "ENE"
           }
         },
         "TotalLiquid": {
-          "Value": 0,
+          "Value": 0.3,
           "Unit": "mm",
           "UnitType": 3
         },
         "Rain": {
-          "Value": 0,
+          "Value": 0.3,
           "Unit": "mm",
           "UnitType": 3
         },
@@ -471,11 +473,11 @@
           "Unit": "mm",
           "UnitType": 3
         },
-        "HoursOfPrecipitation": 0,
-        "HoursOfRain": 0,
+        "HoursOfPrecipitation": 0.5,
+        "HoursOfRain": 0.5,
         "HoursOfSnow": 0,
         "HoursOfIce": 0,
-        "CloudCover": 88
+        "CloudCover": 90
       },
       "Sources": [
         "AccuWeather"
@@ -502,41 +504,41 @@
       },
       "Temperature": {
         "Minimum": {
-          "Value": 6.7,
+          "Value": 5.6,
           "Unit": "C",
           "UnitType": 17
         },
         "Maximum": {
-          "Value": 8.9,
+          "Value": 11.1,
           "Unit": "C",
           "UnitType": 17
         }
       },
       "RealFeelTemperature": {
         "Minimum": {
-          "Value": 5.6,
+          "Value": 3.9,
           "Unit": "C",
           "UnitType": 17
         },
         "Maximum": {
-          "Value": 8.9,
+          "Value": 10.6,
           "Unit": "C",
           "UnitType": 17
         }
       },
       "RealFeelTemperatureShade": {
         "Minimum": {
-          "Value": 5.6,
+          "Value": 3.9,
           "Unit": "C",
           "UnitType": 17
         },
         "Maximum": {
-          "Value": 8.3,
+          "Value": 10.6,
           "Unit": "C",
           "UnitType": 17
         }
       },
-      "HoursOfSun": 1.8,
+      "HoursOfSun": 0.8,
       "DegreeDaySummary": {
         "Heating": {
           "Value": 10,
@@ -583,55 +585,118 @@
         },
         {
           "Name": "UVIndex",
-          "Value": 2,
+          "Value": 1,
           "Category": "Low",
           "CategoryValue": 1
         }
       ],
       "Day": {
-        "Icon": 12,
-        "IconPhrase": "Showers",
+        "Icon": 18,
+        "IconPhrase": "Rain",
         "HasPrecipitation": true,
         "PrecipitationType": "Rain",
         "PrecipitationIntensity": "Light",
         "ShortPhrase": "Rain and drizzle in the a.m.",
-        "LongPhrase": "Occasional rain and drizzle in the morning; otherwise, mostly cloudy",
-        "PrecipitationProbability": 54,
-        "ThunderstormProbability": 0,
-        "RainProbability": 54,
+        "LongPhrase": "Cloudy; occasional morning rain and drizzle followed by a passing shower in the afternoon",
+        "PrecipitationProbability": 55,
+        "ThunderstormProbability": 20,
+        "RainProbability": 55,
         "SnowProbability": 0,
         "IceProbability": 0,
         "Wind": {
+          "Speed": {
+            "Value": 9.7,
+            "Unit": "km/h",
+            "UnitType": 7
+          },
+          "Direction": {
+            "Degrees": 78,
+            "Localized": "ENE",
+            "English": "ENE"
+          }
+        },
+        "WindGust": {
+          "Speed": {
+            "Value": 14.5,
+            "Unit": "km/h",
+            "UnitType": 7
+          },
+          "Direction": {
+            "Degrees": 78,
+            "Localized": "ENE",
+            "English": "ENE"
+          }
+        },
+        "TotalLiquid": {
+          "Value": 1.3,
+          "Unit": "mm",
+          "UnitType": 3
+        },
+        "Rain": {
+          "Value": 1.3,
+          "Unit": "mm",
+          "UnitType": 3
+        },
+        "Snow": {
+          "Value": 0,
+          "Unit": "cm",
+          "UnitType": 4
+        },
+        "Ice": {
+          "Value": 0,
+          "Unit": "mm",
+          "UnitType": 3
+        },
+        "HoursOfPrecipitation": 2,
+        "HoursOfRain": 2,
+        "HoursOfSnow": 0,
+        "HoursOfIce": 0,
+        "CloudCover": 94
+      },
+      "Night": {
+        "Icon": 40,
+        "IconPhrase": "Mostly cloudy w/ showers",
+        "HasPrecipitation": true,
+        "PrecipitationType": "Rain",
+        "PrecipitationIntensity": "Light",
+        "ShortPhrase": "Some clouds with a few showers",
+        "LongPhrase": "Partly to mostly cloudy with spotty showers",
+        "PrecipitationProbability": 63,
+        "ThunderstormProbability": 20,
+        "RainProbability": 63,
+        "SnowProbability": 0,
+        "IceProbability": 0,
+        "Wind": {
+          "Speed": {
+            "Value": 6.4,
+            "Unit": "km/h",
+            "UnitType": 7
+          },
+          "Direction": {
+            "Degrees": 97,
+            "Localized": "E",
+            "English": "E"
+          }
+        },
+        "WindGust": {
           "Speed": {
             "Value": 12.9,
             "Unit": "km/h",
             "UnitType": 7
           },
           "Direction": {
-            "Degrees": 75,
-            "Localized": "ENE",
-            "English": "ENE"
-          }
-        },
-        "WindGust": {
-          "Speed": {
-            "Value": 20.9,
-            "Unit": "km/h",
-            "UnitType": 7
-          },
-          "Direction": {
-            "Degrees": 75,
-            "Localized": "ENE",
-            "English": "ENE"
+            "Degrees": 97,
+            "Localized": "E",
+            "English": "E"
           }
         },
         "TotalLiquid": {
-          "Value": 0.8,
+          "Value": 3,
           "Unit": "mm",
           "UnitType": 3
         },
         "Rain": {
-          "Value": 0.8,
+          "Value": 3,
           "Unit": "mm",
           "UnitType": 3
         },
@@ -645,69 +710,8 @@
           "Unit": "mm",
           "UnitType": 3
         },
-        "HoursOfPrecipitation": 1.5,
-        "HoursOfRain": 1.5,
-        "HoursOfSnow": 0,
-        "HoursOfIce": 0,
-        "CloudCover": 84
-      },
-      "Night": {
-        "Icon": 8,
-        "IconPhrase": "Dreary",
-        "HasPrecipitation": false,
-        "ShortPhrase": "Low clouds",
-        "LongPhrase": "Low clouds",
-        "PrecipitationProbability": 4,
-        "ThunderstormProbability": 0,
-        "RainProbability": 4,
-        "SnowProbability": 0,
-        "IceProbability": 0,
-        "Wind": {
-          "Speed": {
-            "Value": 8,
-            "Unit": "km/h",
-            "UnitType": 7
-          },
-          "Direction": {
-            "Degrees": 272,
-            "Localized": "W",
-            "English": "W"
-          }
-        },
-        "WindGust": {
-          "Speed": {
-            "Value": 11.3,
-            "Unit": "km/h",
-            "UnitType": 7
-          },
-          "Direction": {
-            "Degrees": 272,
-            "Localized": "W",
-            "English": "W"
-          }
-        },
-        "TotalLiquid": {
-          "Value": 0,
-          "Unit": "mm",
-          "UnitType": 3
-        },
-        "Rain": {
-          "Value": 0,
-          "Unit": "mm",
-          "UnitType": 3
-        },
-        "Snow": {
-          "Value": 0,
-          "Unit": "cm",
-          "UnitType": 4
-        },
-        "Ice": {
-          "Value": 0,
-          "Unit": "mm",
-          "UnitType": 3
-        },
-        "HoursOfPrecipitation": 0,
-        "HoursOfRain": 0,
+        "HoursOfPrecipitation": 2,
+        "HoursOfRain": 2,
         "HoursOfSnow": 0,
         "HoursOfIce": 0,
         "CloudCover": 83
@@ -737,44 +741,44 @@
       },
       "Temperature": {
         "Minimum": {
-          "Value": 6.5,
+          "Value": 5.2,
           "Unit": "C",
           "UnitType": 17
         },
         "Maximum": {
-          "Value": 10.7,
+          "Value": 10.3,
           "Unit": "C",
           "UnitType": 17
         }
       },
       "RealFeelTemperature": {
         "Minimum": {
-          "Value": 2,
+          "Value": 0.6,
           "Unit": "C",
           "UnitType": 17
         },
         "Maximum": {
-          "Value": 11.5,
+          "Value": 10.4,
           "Unit": "C",
           "UnitType": 17
         }
       },
       "RealFeelTemperatureShade": {
         "Minimum": {
-          "Value": 2,
+          "Value": 0.6,
           "Unit": "C",
           "UnitType": 17
         },
         "Maximum": {
-          "Value": 9.7,
+          "Value": 8.6,
           "Unit": "C",
           "UnitType": 17
         }
       },
-      "HoursOfSun": 2.1,
+      "HoursOfSun": 1.3,
       "DegreeDaySummary": {
         "Heating": {
-          "Value": 9,
+          "Value": 10,
           "Unit": "C",
           "UnitType": 17
         },
@@ -818,17 +822,17 @@
         },
         {
           "Name": "UVIndex",
-          "Value": 5,
-          "Category": "Moderate",
-          "CategoryValue": 2
+          "Value": 2,
+          "Category": "Low",
+          "CategoryValue": 1
         }
       ],
       "Day": {
-        "Icon": 6,
-        "IconPhrase": "Mostly cloudy",
+        "Icon": 8,
+        "IconPhrase": "Dreary",
         "HasPrecipitation": false,
-        "ShortPhrase": "Mostly cloudy",
-        "LongPhrase": "Mostly cloudy",
+        "ShortPhrase": "Low clouds",
+        "LongPhrase": "Low clouds",
         "PrecipitationProbability": 25,
         "ThunderstormProbability": 0,
         "RainProbability": 25,
@@ -841,9 +845,9 @@
             "UnitType": 7
           },
           "Direction": {
-            "Degrees": 205,
-            "Localized": "SSW",
-            "English": "SSW"
+            "Degrees": 161,
+            "Localized": "SSE",
+            "English": "SSE"
           }
         },
         "WindGust": {
@@ -853,9 +857,9 @@
             "UnitType": 7
           },
           "Direction": {
-            "Degrees": 200,
-            "Localized": "SSW",
-            "English": "SSW"
+            "Degrees": 311,
+            "Localized": "NW",
+            "English": "NW"
           }
         },
         "TotalLiquid": {
@@ -882,52 +886,52 @@
         "HoursOfRain": 0,
         "HoursOfSnow": 0,
         "HoursOfIce": 0,
-        "CloudCover": 86
+        "CloudCover": 93
       },
       "Night": {
-        "Icon": 12,
-        "IconPhrase": "Showers",
+        "Icon": 7,
+        "IconPhrase": "Cloudy",
         "HasPrecipitation": true,
         "PrecipitationType": "Rain",
         "PrecipitationIntensity": "Light",
-        "ShortPhrase": "Rain and drizzle early",
-        "LongPhrase": "Considerable clouds; rain and drizzle in the evening followed by a shower in spots late",
-        "PrecipitationProbability": 60,
-        "ThunderstormProbability": 12,
-        "RainProbability": 60,
+        "ShortPhrase": "Cloudy with a shower late",
+        "LongPhrase": "Considerable clouds with a stray shower late",
+        "PrecipitationProbability": 40,
+        "ThunderstormProbability": 8,
+        "RainProbability": 40,
         "SnowProbability": 0,
         "IceProbability": 0,
         "Wind": {
           "Speed": {
-            "Value": 11.1,
+            "Value": 13,
             "Unit": "km/h",
             "UnitType": 7
           },
           "Direction": {
-            "Degrees": 344,
+            "Degrees": 337,
             "Localized": "NNW",
             "English": "NNW"
           }
         },
         "WindGust": {
           "Speed": {
-            "Value": 20.4,
+            "Value": 18.5,
             "Unit": "km/h",
             "UnitType": 7
           },
           "Direction": {
-            "Degrees": 12,
-            "Localized": "NNE",
-            "English": "NNE"
+            "Degrees": 307,
+            "Localized": "NW",
+            "English": "NW"
           }
         },
         "TotalLiquid": {
-          "Value": 1.6,
+          "Value": 0.2,
           "Unit": "mm",
           "UnitType": 3
         },
         "Rain": {
-          "Value": 1.6,
+          "Value": 0.2,
           "Unit": "mm",
           "UnitType": 3
         },
@@ -941,11 +945,11 @@
           "Unit": "mm",
           "UnitType": 3
         },
-        "HoursOfPrecipitation": 2.5,
-        "HoursOfRain": 2.5,
+        "HoursOfPrecipitation": 0.5,
+        "HoursOfRain": 0.5,
         "HoursOfSnow": 0,
         "HoursOfIce": 0,
-        "CloudCover": 98
+        "CloudCover": 90
       },
       "Sources": [
         "AccuWeather"
@@ -972,44 +976,44 @@
       },
       "Temperature": {
         "Minimum": {
-          "Value": 6.1,
+          "Value": 6.2,
           "Unit": "C",
           "UnitType": 17
         },
         "Maximum": {
-          "Value": 14,
+          "Value": 8.4,
           "Unit": "C",
           "UnitType": 17
         }
       },
       "RealFeelTemperature": {
         "Minimum": {
-          "Value": 2,
+          "Value": 3.2,
           "Unit": "C",
           "UnitType": 17
         },
         "Maximum": {
-          "Value": 9.5,
+          "Value": 4.7,
           "Unit": "C",
           "UnitType": 17
         }
       },
       "RealFeelTemperatureShade": {
         "Minimum": {
-          "Value": 2,
+          "Value": 3.2,
           "Unit": "C",
           "UnitType": 17
         },
         "Maximum": {
-          "Value": 9.1,
+          "Value": 4.7,
           "Unit": "C",
           "UnitType": 17
         }
       },
-      "HoursOfSun": 0.5,
+      "HoursOfSun": 0.6,
       "DegreeDaySummary": {
         "Heating": {
-          "Value": 8,
+          "Value": 11,
           "Unit": "C",
           "UnitType": 17
         },
@@ -1053,7 +1057,7 @@
         },
         {
           "Name": "UVIndex",
-          "Value": 2,
+          "Value": 1,
           "Category": "Low",
           "CategoryValue": 1
         }
@@ -1064,11 +1068,11 @@
         "HasPrecipitation": true,
         "PrecipitationType": "Rain",
         "PrecipitationIntensity": "Light",
-        "ShortPhrase": "Rain becoming steadier",
-        "LongPhrase": "Cloudy with a couple of showers, then a steadier rain",
-        "PrecipitationProbability": 77,
-        "ThunderstormProbability": 15,
-        "RainProbability": 77,
+        "ShortPhrase": "Rain and drizzle",
+        "LongPhrase": "Rain and drizzle",
+        "PrecipitationProbability": 66,
+        "ThunderstormProbability": 0,
+        "RainProbability": 66,
         "SnowProbability": 0,
         "IceProbability": 0,
         "Wind": {
@@ -1078,72 +1082,9 @@
             "UnitType": 7
           },
           "Direction": {
-            "Degrees": 70,
-            "Localized": "ENE",
-            "English": "ENE"
-          }
-        },
-        "WindGust": {
-          "Speed": {
-            "Value": 22.2,
-            "Unit": "km/h",
-            "UnitType": 7
-          },
-          "Direction": {
-            "Degrees": 97,
-            "Localized": "E",
-            "English": "E"
-          }
-        },
-        "TotalLiquid": {
-          "Value": 7.4,
-          "Unit": "mm",
-          "UnitType": 3
-        },
-        "Rain": {
-          "Value": 7.4,
-          "Unit": "mm",
-          "UnitType": 3
-        },
-        "Snow": {
-          "Value": 0,
-          "Unit": "cm",
-          "UnitType": 4
-        },
-        "Ice": {
-          "Value": 0,
-          "Unit": "mm",
-          "UnitType": 3
-        },
-        "HoursOfPrecipitation": 5,
-        "HoursOfRain": 5,
-        "HoursOfSnow": 0,
-        "HoursOfIce": 0,
-        "CloudCover": 99
-      },
-      "Night": {
-        "Icon": 18,
-        "IconPhrase": "Rain",
-        "HasPrecipitation": true,
-        "PrecipitationType": "Rain",
-        "PrecipitationIntensity": "Light",
-        "ShortPhrase": "Cloudy, rain, mainly early",
-        "LongPhrase": "Considerable cloudiness with rain and drizzle, mainly early",
-        "PrecipitationProbability": 67,
-        "ThunderstormProbability": 13,
-        "RainProbability": 67,
-        "SnowProbability": 0,
-        "IceProbability": 0,
-        "Wind": {
-          "Speed": {
-            "Value": 13,
-            "Unit": "km/h",
-            "UnitType": 7
-          },
-          "Direction": {
-            "Degrees": 328,
-            "Localized": "NNW",
-            "English": "NNW"
+            "Degrees": 231,
+            "Localized": "SW",
+            "English": "SW"
           }
         },
         "WindGust": {
@@ -1153,18 +1094,18 @@
             "UnitType": 7
           },
           "Direction": {
-            "Degrees": 324,
-            "Localized": "NW",
-            "English": "NW"
+            "Degrees": 205,
+            "Localized": "SSW",
+            "English": "SSW"
           }
         },
         "TotalLiquid": {
-          "Value": 4.7,
+          "Value": 5.2,
           "Unit": "mm",
           "UnitType": 3
         },
         "Rain": {
-          "Value": 4.7,
+          "Value": 5.2,
           "Unit": "mm",
           "UnitType": 3
         },
@@ -1178,11 +1119,74 @@
           "Unit": "mm",
           "UnitType": 3
         },
-        "HoursOfPrecipitation": 3.5,
-        "HoursOfRain": 3.5,
+        "HoursOfPrecipitation": 4.5,
+        "HoursOfRain": 4.5,
         "HoursOfSnow": 0,
         "HoursOfIce": 0,
-        "CloudCover": 97
+        "CloudCover": 99
+      },
+      "Night": {
+        "Icon": 40,
+        "IconPhrase": "Mostly cloudy w/ showers",
+        "HasPrecipitation": true,
+        "PrecipitationType": "Rain",
+        "PrecipitationIntensity": "Light",
+        "ShortPhrase": "Rain and drizzle early",
+        "LongPhrase": "On-and-off rain and drizzle in the evening; otherwise, becoming partly cloudy",
+        "PrecipitationProbability": 55,
+        "ThunderstormProbability": 0,
+        "RainProbability": 55,
+        "SnowProbability": 0,
+        "IceProbability": 0,
+        "Wind": {
+          "Speed": {
+            "Value": 13,
+            "Unit": "km/h",
+            "UnitType": 7
+          },
+          "Direction": {
+            "Degrees": 54,
+            "Localized": "NE",
+            "English": "NE"
+          }
+        },
+        "WindGust": {
+          "Speed": {
+            "Value": 20.4,
+            "Unit": "km/h",
+            "UnitType": 7
+          },
+          "Direction": {
+            "Degrees": 141,
+            "Localized": "SE",
+            "English": "SE"
+          }
+        },
+        "TotalLiquid": {
+          "Value": 1,
+          "Unit": "mm",
+          "UnitType": 3
+        },
+        "Rain": {
+          "Value": 1,
+          "Unit": "mm",
+          "UnitType": 3
+        },
+        "Snow": {
+          "Value": 0,
+          "Unit": "cm",
+          "UnitType": 4
+        },
+        "Ice": {
+          "Value": 0,
+          "Unit": "mm",
+          "UnitType": 3
+        },
+        "HoursOfPrecipitation": 1.5,
+        "HoursOfRain": 1.5,
+        "HoursOfSnow": 0,
+        "HoursOfIce": 0,
+        "CloudCover": 96
       },
       "Sources": [
         "AccuWeather"

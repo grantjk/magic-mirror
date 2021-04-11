@@ -18,14 +18,16 @@
           "gameType": "R",
           "season": "2021",
           "gameDate": "2021-04-11T17:07:00Z",
-          "officialDate": "2021-04-11",
+          "officialDate": "2021-08-10",
+          "rescheduleDate": "2021-08-10T22:07:00Z",
           "status": {
-            "abstractGameState": "Preview",
-            "codedGameState": "P",
-            "detailedState": "Delayed Start: Rain",
-            "statusCode": "PR",
+            "abstractGameState": "Final",
+            "codedGameState": "D",
+            "detailedState": "Postponed",
+            "statusCode": "DR",
             "startTimeTBD": false,
-            "abstractGameCode": "P"
+            "reason": "Rain",
+            "abstractGameCode": "F"
           },
           "teams": {
             "away": {
@@ -579,28 +581,6 @@
               }
             }
           },
-          "linescore": {
-            "scheduledInnings": 9,
-            "innings": [],
-            "teams": {
-              "home": {},
-              "away": {}
-            },
-            "defense": {
-              "team": {
-                "id": 108,
-                "name": "Los Angeles Angels",
-                "link": "/api/v1/teams/108"
-              }
-            },
-            "offense": {
-              "team": {
-                "id": 141,
-                "name": "Toronto Blue Jays",
-                "link": "/api/v1/teams/141"
-              }
-            }
-          },
           "venue": {
             "id": 2536,
             "name": "TD Ballpark",
@@ -612,26 +592,18 @@
           "gameNumber": 1,
           "publicFacing": true,
           "doubleHeader": "N",
-          "gamedayType": "E",
+          "gamedayType": "P",
           "tiebreaker": "N",
           "calendarEventID": "14-632208-2021-04-11",
           "seasonDisplay": "2021",
           "dayNight": "day",
           "description": "in Dunedin, FL",
-          "scheduledInnings": 9,
-          "reverseHomeAwayStatus": false,
+          "scheduledInnings": 7,
+          "reverseHomeAwayStatus": true,
           "inningBreakLength": 120,
           "gamesInSeries": 4,
           "seriesGameNumber": 4,
           "seriesDescription": "Regular Season",
-          "flags": {
-            "noHitter": false,
-            "perfectGame": false,
-            "awayTeamNoHitter": false,
-            "awayTeamPerfectGame": false,
-            "homeTeamNoHitter": false,
-            "homeTeamPerfectGame": false
-          },
           "recordSource": "S",
           "ifNecessary": "N",
           "ifNecessaryDescription": "Normal Game"

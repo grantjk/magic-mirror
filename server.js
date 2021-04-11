@@ -9,7 +9,7 @@ const got = require("got");
 /* =========================== */
 /*      Renderer               */
 /* =========================== */
-app.use(express.static('public'))
+app.use(express.static(filePath('public')))
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/public/index.html')
 })
@@ -236,11 +236,11 @@ app.get('/mlb', async (req, res) => {
 
 
 /* ===========SYNC Data ============*/
-const syncFilePath = './data/sync.json'
+const syncFilePath = 'data/sync.json'
 
 async function updateData({identifier, ttlCount, ttlUnit, ttlHook}, updateFunction) {
     let json
-    const filename = `./cache/${identifier}.json`
+    const filename = `cache/${identifier}.json`
 
     const nextUpdate = readSyncData(identifier)
     const shouldUpdate =!nextUpdate || moment().isAfter(moment(nextUpdate))
@@ -291,9 +291,9 @@ function writeSyncData({key, value}) {
 }
 
 function readJSONFile(filename) {
-    log('read-file', `Reading file at ${filename}`)
+    log('read-file', `Reading file at ${filePath(filename)}`)
     try {
-        const data = fs.readFileSync(filename, 'utf8')
+        const data = fs.readFileSync(filePath(filename), 'utf8')
         const json = JSON.parse(data)
         return json
     } catch (err) {
@@ -303,8 +303,12 @@ function readJSONFile(filename) {
 }
 
 function writeJSONFile({filename, json}) {
-    log('write-file', `Writing file at ${filename}`)
-    fs.writeFileSync(filename, JSON.stringify(json, null, 2))
+    log('write-file', `Writing file at ${filePath(filename)}`)
+    fs.writeFileSync(filePath(filename), JSON.stringify(json, null, 2))
+}
+
+function filePath(filename) {
+    return __dirname + '/' + filename
 }
 
 function log(key, message) {

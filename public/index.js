@@ -295,6 +295,7 @@ function weatherIcon(weatherText, isDayTime) {
       return 'cloudy-2'
     case 'light rain':
     case 'showers':
+    case 'drizzle':
     case 'rain':
     case 'partly sunny w/ showers':
     case 'mostly cloudy w/ showers':

@@ -35,6 +35,7 @@ app.get('/events', async (req, res) => {
             const start = moment().subtract(1, 'day').format("YYYYMMDD[T]HHmmss[Z]");
             const end = moment().add(1, 'month').format("YYYYMMDD[T]HHmmss[Z]");
             const events = await scrapegoat.getEventsByTime(start, end)
+            // writeJSONFile({filename: 'calendar-fixture', json: events})
             return events.map(e=> {
                 let start = moment(e.data.start)
                 let end = moment(e.data.end)
@@ -76,6 +77,10 @@ app.get('/events', async (req, res) => {
 
 
 function isFullDayEvent(event) {
+    if (event?.data?.duration?.days > 0 || event?.data?.duration?.weeks > 0) {
+        return true
+    }
+
     const start = moment.utc(event.data.start)
     const end = moment.utc(event.data.end)
     return start.hour() === 0 && end.isSame(start.endOf('day'), 'second')

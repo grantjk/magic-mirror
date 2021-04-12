@@ -1,0 +1,2827 @@
+[
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3A717E16-9CAA-464B-9F59-9CFFB8C18140.ics",
+    "etag": "C=17367@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "School Break",
+      "uid": "3A717E16-9CAA-464B-9F59-9CFFB8C18140",
+      "location": null,
+      "description": null,
+      "start": "2021-04-12T00:00:00.000Z",
+      "end": "2021-04-16T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 5,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": false,
+        "edited": false
+      },
+      "createdAt": "2021-04-08T19:10:50.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/455DB9C5-583C-44AB-AC51-379879A0F25C.ics",
+    "etag": "C=17368@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Garbage Day",
+      "uid": "455DB9C5-583C-44AB-AC51-379879A0F25C",
+      "location": null,
+      "description": null,
+      "start": "2021-04-12T00:00:00.000Z",
+      "end": "2021-04-12T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-02T23:59:57.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/CB8345FE-F1B7-4A7D-A50C-C020C788849D.ics",
+    "etag": "C=17276@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Charlie - Maker kids",
+      "uid": "CB8345FE-F1B7-4A7D-A50C-C020C788849D",
+      "location": null,
+      "description": null,
+      "start": "2021-04-14T22:00:00.000Z",
+      "end": "2021-04-15T00:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 2,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-02T22:09:32.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/7C12C2D8-D569-4F77-8081-BB12E019E820.ics",
+    "etag": "C=17290@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Recycle Day",
+      "uid": "7C12C2D8-D569-4F77-8081-BB12E019E820",
+      "location": null,
+      "description": null,
+      "start": "2021-04-19T00:00:00.000Z",
+      "end": "2021-04-19T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-02T23:59:12.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/95A5DDF9-D1C5-467B-BCB4-71520DA49912.ics",
+    "etag": "C=17358@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Morning Meeting",
+      "uid": "95A5DDF9-D1C5-467B-BCB4-71520DA49912",
+      "location": null,
+      "description": null,
+      "start": "2021-04-19T13:00:00.000Z",
+      "end": "2021-04-19T13:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:28:35.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9.ics",
+    "etag": "C=17359@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Gym Class",
+      "uid": "3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9",
+      "location": null,
+      "description": null,
+      "start": "2021-04-19T14:30:00.000Z",
+      "end": "2021-04-19T15:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:08.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3B4A1A03-3131-431D-9057-20207EE20B45.ics",
+    "etag": "C=17360@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Music/Math",
+      "uid": "3B4A1A03-3131-431D-9057-20207EE20B45",
+      "location": null,
+      "description": null,
+      "start": "2021-04-19T15:00:00.000Z",
+      "end": "2021-04-19T15:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:23.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/5D8F5F17-1A5D-4474-BE5C-78E450E49107.ics",
+    "etag": "C=17361@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack / Charlie Lunch Break",
+      "uid": "5D8F5F17-1A5D-4474-BE5C-78E450E49107",
+      "location": null,
+      "description": null,
+      "start": "2021-04-19T15:30:00.000Z",
+      "end": "2021-04-19T16:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:34.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/D6B23E62-5518-42F5-B2BE-8E80973F52F8.ics",
+    "etag": "C=17362@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Group Play",
+      "uid": "D6B23E62-5518-42F5-B2BE-8E80973F52F8",
+      "location": null,
+      "description": null,
+      "start": "2021-04-19T16:30:00.000Z",
+      "end": "2021-04-19T17:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:47.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/1D888B13-AEC6-4AB5-A8F3-CCC8376843E9.ics",
+    "etag": "C=17363@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - End of Day Reflection",
+      "uid": "1D888B13-AEC6-4AB5-A8F3-CCC8376843E9",
+      "location": null,
+      "description": null,
+      "start": "2021-04-19T17:00:00.000Z",
+      "end": "2021-04-19T17:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:58.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/95A5DDF9-D1C5-467B-BCB4-71520DA49912.ics",
+    "etag": "C=17358@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Morning Meeting",
+      "uid": "95A5DDF9-D1C5-467B-BCB4-71520DA49912",
+      "location": null,
+      "description": null,
+      "start": "2021-04-20T13:00:00.000Z",
+      "end": "2021-04-20T13:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:28:35.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9.ics",
+    "etag": "C=17359@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Gym Class",
+      "uid": "3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9",
+      "location": null,
+      "description": null,
+      "start": "2021-04-20T14:30:00.000Z",
+      "end": "2021-04-20T15:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:08.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3B4A1A03-3131-431D-9057-20207EE20B45.ics",
+    "etag": "C=17360@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Music/Math",
+      "uid": "3B4A1A03-3131-431D-9057-20207EE20B45",
+      "location": null,
+      "description": null,
+      "start": "2021-04-20T15:00:00.000Z",
+      "end": "2021-04-20T15:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:23.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/5D8F5F17-1A5D-4474-BE5C-78E450E49107.ics",
+    "etag": "C=17361@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack / Charlie Lunch Break",
+      "uid": "5D8F5F17-1A5D-4474-BE5C-78E450E49107",
+      "location": null,
+      "description": null,
+      "start": "2021-04-20T15:30:00.000Z",
+      "end": "2021-04-20T16:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:34.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/D6B23E62-5518-42F5-B2BE-8E80973F52F8.ics",
+    "etag": "C=17362@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Group Play",
+      "uid": "D6B23E62-5518-42F5-B2BE-8E80973F52F8",
+      "location": null,
+      "description": null,
+      "start": "2021-04-20T16:30:00.000Z",
+      "end": "2021-04-20T17:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:47.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/1D888B13-AEC6-4AB5-A8F3-CCC8376843E9.ics",
+    "etag": "C=17363@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - End of Day Reflection",
+      "uid": "1D888B13-AEC6-4AB5-A8F3-CCC8376843E9",
+      "location": null,
+      "description": null,
+      "start": "2021-04-20T17:00:00.000Z",
+      "end": "2021-04-20T17:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:58.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/95A5DDF9-D1C5-467B-BCB4-71520DA49912.ics",
+    "etag": "C=17358@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Morning Meeting",
+      "uid": "95A5DDF9-D1C5-467B-BCB4-71520DA49912",
+      "location": null,
+      "description": null,
+      "start": "2021-04-21T13:00:00.000Z",
+      "end": "2021-04-21T13:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:28:35.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9.ics",
+    "etag": "C=17359@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Gym Class",
+      "uid": "3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9",
+      "location": null,
+      "description": null,
+      "start": "2021-04-21T14:30:00.000Z",
+      "end": "2021-04-21T15:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:08.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3B4A1A03-3131-431D-9057-20207EE20B45.ics",
+    "etag": "C=17360@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Music/Math",
+      "uid": "3B4A1A03-3131-431D-9057-20207EE20B45",
+      "location": null,
+      "description": null,
+      "start": "2021-04-21T15:00:00.000Z",
+      "end": "2021-04-21T15:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:23.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/5D8F5F17-1A5D-4474-BE5C-78E450E49107.ics",
+    "etag": "C=17361@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack / Charlie Lunch Break",
+      "uid": "5D8F5F17-1A5D-4474-BE5C-78E450E49107",
+      "location": null,
+      "description": null,
+      "start": "2021-04-21T15:30:00.000Z",
+      "end": "2021-04-21T16:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:34.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/D6B23E62-5518-42F5-B2BE-8E80973F52F8.ics",
+    "etag": "C=17362@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Group Play",
+      "uid": "D6B23E62-5518-42F5-B2BE-8E80973F52F8",
+      "location": null,
+      "description": null,
+      "start": "2021-04-21T16:30:00.000Z",
+      "end": "2021-04-21T17:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:47.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/1D888B13-AEC6-4AB5-A8F3-CCC8376843E9.ics",
+    "etag": "C=17363@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - End of Day Reflection",
+      "uid": "1D888B13-AEC6-4AB5-A8F3-CCC8376843E9",
+      "location": null,
+      "description": null,
+      "start": "2021-04-21T17:00:00.000Z",
+      "end": "2021-04-21T17:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:58.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/CB8345FE-F1B7-4A7D-A50C-C020C788849D.ics",
+    "etag": "C=17276@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Charlie - Maker kids",
+      "uid": "CB8345FE-F1B7-4A7D-A50C-C020C788849D",
+      "location": null,
+      "description": null,
+      "start": "2021-04-21T22:00:00.000Z",
+      "end": "2021-04-22T00:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 2,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-02T22:09:32.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/95A5DDF9-D1C5-467B-BCB4-71520DA49912.ics",
+    "etag": "C=17358@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Morning Meeting",
+      "uid": "95A5DDF9-D1C5-467B-BCB4-71520DA49912",
+      "location": null,
+      "description": null,
+      "start": "2021-04-22T13:00:00.000Z",
+      "end": "2021-04-22T13:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:28:35.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9.ics",
+    "etag": "C=17359@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Gym Class",
+      "uid": "3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9",
+      "location": null,
+      "description": null,
+      "start": "2021-04-22T14:30:00.000Z",
+      "end": "2021-04-22T15:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:08.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3B4A1A03-3131-431D-9057-20207EE20B45.ics",
+    "etag": "C=17360@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Music/Math",
+      "uid": "3B4A1A03-3131-431D-9057-20207EE20B45",
+      "location": null,
+      "description": null,
+      "start": "2021-04-22T15:00:00.000Z",
+      "end": "2021-04-22T15:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:23.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/5D8F5F17-1A5D-4474-BE5C-78E450E49107.ics",
+    "etag": "C=17361@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack / Charlie Lunch Break",
+      "uid": "5D8F5F17-1A5D-4474-BE5C-78E450E49107",
+      "location": null,
+      "description": null,
+      "start": "2021-04-22T15:30:00.000Z",
+      "end": "2021-04-22T16:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:34.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/D6B23E62-5518-42F5-B2BE-8E80973F52F8.ics",
+    "etag": "C=17362@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Group Play",
+      "uid": "D6B23E62-5518-42F5-B2BE-8E80973F52F8",
+      "location": null,
+      "description": null,
+      "start": "2021-04-22T16:30:00.000Z",
+      "end": "2021-04-22T17:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:47.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/1D888B13-AEC6-4AB5-A8F3-CCC8376843E9.ics",
+    "etag": "C=17363@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - End of Day Reflection",
+      "uid": "1D888B13-AEC6-4AB5-A8F3-CCC8376843E9",
+      "location": null,
+      "description": null,
+      "start": "2021-04-22T17:00:00.000Z",
+      "end": "2021-04-22T17:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:58.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/95A5DDF9-D1C5-467B-BCB4-71520DA49912.ics",
+    "etag": "C=17358@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Morning Meeting",
+      "uid": "95A5DDF9-D1C5-467B-BCB4-71520DA49912",
+      "location": null,
+      "description": null,
+      "start": "2021-04-23T13:00:00.000Z",
+      "end": "2021-04-23T13:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:28:35.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9.ics",
+    "etag": "C=17359@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Gym Class",
+      "uid": "3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9",
+      "location": null,
+      "description": null,
+      "start": "2021-04-23T14:30:00.000Z",
+      "end": "2021-04-23T15:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:08.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3B4A1A03-3131-431D-9057-20207EE20B45.ics",
+    "etag": "C=17360@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Music/Math",
+      "uid": "3B4A1A03-3131-431D-9057-20207EE20B45",
+      "location": null,
+      "description": null,
+      "start": "2021-04-23T15:00:00.000Z",
+      "end": "2021-04-23T15:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:23.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/5D8F5F17-1A5D-4474-BE5C-78E450E49107.ics",
+    "etag": "C=17361@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack / Charlie Lunch Break",
+      "uid": "5D8F5F17-1A5D-4474-BE5C-78E450E49107",
+      "location": null,
+      "description": null,
+      "start": "2021-04-23T15:30:00.000Z",
+      "end": "2021-04-23T16:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:34.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/D6B23E62-5518-42F5-B2BE-8E80973F52F8.ics",
+    "etag": "C=17362@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Group Play",
+      "uid": "D6B23E62-5518-42F5-B2BE-8E80973F52F8",
+      "location": null,
+      "description": null,
+      "start": "2021-04-23T16:30:00.000Z",
+      "end": "2021-04-23T17:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:47.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/1D888B13-AEC6-4AB5-A8F3-CCC8376843E9.ics",
+    "etag": "C=17363@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - End of Day Reflection",
+      "uid": "1D888B13-AEC6-4AB5-A8F3-CCC8376843E9",
+      "location": null,
+      "description": null,
+      "start": "2021-04-23T17:00:00.000Z",
+      "end": "2021-04-23T17:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:58.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/455DB9C5-583C-44AB-AC51-379879A0F25C.ics",
+    "etag": "C=17368@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Garbage Day",
+      "uid": "455DB9C5-583C-44AB-AC51-379879A0F25C",
+      "location": null,
+      "description": null,
+      "start": "2021-04-26T00:00:00.000Z",
+      "end": "2021-04-26T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-02T23:59:57.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/95A5DDF9-D1C5-467B-BCB4-71520DA49912.ics",
+    "etag": "C=17358@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Morning Meeting",
+      "uid": "95A5DDF9-D1C5-467B-BCB4-71520DA49912",
+      "location": null,
+      "description": null,
+      "start": "2021-04-26T13:00:00.000Z",
+      "end": "2021-04-26T13:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:28:35.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9.ics",
+    "etag": "C=17359@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Gym Class",
+      "uid": "3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9",
+      "location": null,
+      "description": null,
+      "start": "2021-04-26T14:30:00.000Z",
+      "end": "2021-04-26T15:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:08.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3B4A1A03-3131-431D-9057-20207EE20B45.ics",
+    "etag": "C=17360@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Music/Math",
+      "uid": "3B4A1A03-3131-431D-9057-20207EE20B45",
+      "location": null,
+      "description": null,
+      "start": "2021-04-26T15:00:00.000Z",
+      "end": "2021-04-26T15:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:23.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/5D8F5F17-1A5D-4474-BE5C-78E450E49107.ics",
+    "etag": "C=17361@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack / Charlie Lunch Break",
+      "uid": "5D8F5F17-1A5D-4474-BE5C-78E450E49107",
+      "location": null,
+      "description": null,
+      "start": "2021-04-26T15:30:00.000Z",
+      "end": "2021-04-26T16:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:34.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/D6B23E62-5518-42F5-B2BE-8E80973F52F8.ics",
+    "etag": "C=17362@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Group Play",
+      "uid": "D6B23E62-5518-42F5-B2BE-8E80973F52F8",
+      "location": null,
+      "description": null,
+      "start": "2021-04-26T16:30:00.000Z",
+      "end": "2021-04-26T17:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:47.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/1D888B13-AEC6-4AB5-A8F3-CCC8376843E9.ics",
+    "etag": "C=17363@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - End of Day Reflection",
+      "uid": "1D888B13-AEC6-4AB5-A8F3-CCC8376843E9",
+      "location": null,
+      "description": null,
+      "start": "2021-04-26T17:00:00.000Z",
+      "end": "2021-04-26T17:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:58.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/95A5DDF9-D1C5-467B-BCB4-71520DA49912.ics",
+    "etag": "C=17358@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Morning Meeting",
+      "uid": "95A5DDF9-D1C5-467B-BCB4-71520DA49912",
+      "location": null,
+      "description": null,
+      "start": "2021-04-27T13:00:00.000Z",
+      "end": "2021-04-27T13:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:28:35.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9.ics",
+    "etag": "C=17359@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Gym Class",
+      "uid": "3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9",
+      "location": null,
+      "description": null,
+      "start": "2021-04-27T14:30:00.000Z",
+      "end": "2021-04-27T15:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:08.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3B4A1A03-3131-431D-9057-20207EE20B45.ics",
+    "etag": "C=17360@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Music/Math",
+      "uid": "3B4A1A03-3131-431D-9057-20207EE20B45",
+      "location": null,
+      "description": null,
+      "start": "2021-04-27T15:00:00.000Z",
+      "end": "2021-04-27T15:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:23.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/5D8F5F17-1A5D-4474-BE5C-78E450E49107.ics",
+    "etag": "C=17361@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack / Charlie Lunch Break",
+      "uid": "5D8F5F17-1A5D-4474-BE5C-78E450E49107",
+      "location": null,
+      "description": null,
+      "start": "2021-04-27T15:30:00.000Z",
+      "end": "2021-04-27T16:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:34.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/D6B23E62-5518-42F5-B2BE-8E80973F52F8.ics",
+    "etag": "C=17362@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Group Play",
+      "uid": "D6B23E62-5518-42F5-B2BE-8E80973F52F8",
+      "location": null,
+      "description": null,
+      "start": "2021-04-27T16:30:00.000Z",
+      "end": "2021-04-27T17:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:47.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/1D888B13-AEC6-4AB5-A8F3-CCC8376843E9.ics",
+    "etag": "C=17363@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - End of Day Reflection",
+      "uid": "1D888B13-AEC6-4AB5-A8F3-CCC8376843E9",
+      "location": null,
+      "description": null,
+      "start": "2021-04-27T17:00:00.000Z",
+      "end": "2021-04-27T17:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:58.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/95A5DDF9-D1C5-467B-BCB4-71520DA49912.ics",
+    "etag": "C=17358@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Morning Meeting",
+      "uid": "95A5DDF9-D1C5-467B-BCB4-71520DA49912",
+      "location": null,
+      "description": null,
+      "start": "2021-04-28T13:00:00.000Z",
+      "end": "2021-04-28T13:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:28:35.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9.ics",
+    "etag": "C=17359@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Gym Class",
+      "uid": "3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9",
+      "location": null,
+      "description": null,
+      "start": "2021-04-28T14:30:00.000Z",
+      "end": "2021-04-28T15:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:08.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3B4A1A03-3131-431D-9057-20207EE20B45.ics",
+    "etag": "C=17360@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Music/Math",
+      "uid": "3B4A1A03-3131-431D-9057-20207EE20B45",
+      "location": null,
+      "description": null,
+      "start": "2021-04-28T15:00:00.000Z",
+      "end": "2021-04-28T15:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:23.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/5D8F5F17-1A5D-4474-BE5C-78E450E49107.ics",
+    "etag": "C=17361@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack / Charlie Lunch Break",
+      "uid": "5D8F5F17-1A5D-4474-BE5C-78E450E49107",
+      "location": null,
+      "description": null,
+      "start": "2021-04-28T15:30:00.000Z",
+      "end": "2021-04-28T16:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:34.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/D6B23E62-5518-42F5-B2BE-8E80973F52F8.ics",
+    "etag": "C=17362@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Group Play",
+      "uid": "D6B23E62-5518-42F5-B2BE-8E80973F52F8",
+      "location": null,
+      "description": null,
+      "start": "2021-04-28T16:30:00.000Z",
+      "end": "2021-04-28T17:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:47.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/1D888B13-AEC6-4AB5-A8F3-CCC8376843E9.ics",
+    "etag": "C=17363@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - End of Day Reflection",
+      "uid": "1D888B13-AEC6-4AB5-A8F3-CCC8376843E9",
+      "location": null,
+      "description": null,
+      "start": "2021-04-28T17:00:00.000Z",
+      "end": "2021-04-28T17:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:58.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/CB8345FE-F1B7-4A7D-A50C-C020C788849D.ics",
+    "etag": "C=17276@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Charlie - Maker kids",
+      "uid": "CB8345FE-F1B7-4A7D-A50C-C020C788849D",
+      "location": null,
+      "description": null,
+      "start": "2021-04-28T22:00:00.000Z",
+      "end": "2021-04-29T00:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 2,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-02T22:09:32.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/95A5DDF9-D1C5-467B-BCB4-71520DA49912.ics",
+    "etag": "C=17358@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Morning Meeting",
+      "uid": "95A5DDF9-D1C5-467B-BCB4-71520DA49912",
+      "location": null,
+      "description": null,
+      "start": "2021-04-29T13:00:00.000Z",
+      "end": "2021-04-29T13:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:28:35.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9.ics",
+    "etag": "C=17359@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Gym Class",
+      "uid": "3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9",
+      "location": null,
+      "description": null,
+      "start": "2021-04-29T14:30:00.000Z",
+      "end": "2021-04-29T15:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:08.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3B4A1A03-3131-431D-9057-20207EE20B45.ics",
+    "etag": "C=17360@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Music/Math",
+      "uid": "3B4A1A03-3131-431D-9057-20207EE20B45",
+      "location": null,
+      "description": null,
+      "start": "2021-04-29T15:00:00.000Z",
+      "end": "2021-04-29T15:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:23.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/5D8F5F17-1A5D-4474-BE5C-78E450E49107.ics",
+    "etag": "C=17361@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack / Charlie Lunch Break",
+      "uid": "5D8F5F17-1A5D-4474-BE5C-78E450E49107",
+      "location": null,
+      "description": null,
+      "start": "2021-04-29T15:30:00.000Z",
+      "end": "2021-04-29T16:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:34.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/D6B23E62-5518-42F5-B2BE-8E80973F52F8.ics",
+    "etag": "C=17362@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Group Play",
+      "uid": "D6B23E62-5518-42F5-B2BE-8E80973F52F8",
+      "location": null,
+      "description": null,
+      "start": "2021-04-29T16:30:00.000Z",
+      "end": "2021-04-29T17:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:47.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/1D888B13-AEC6-4AB5-A8F3-CCC8376843E9.ics",
+    "etag": "C=17363@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - End of Day Reflection",
+      "uid": "1D888B13-AEC6-4AB5-A8F3-CCC8376843E9",
+      "location": null,
+      "description": null,
+      "start": "2021-04-29T17:00:00.000Z",
+      "end": "2021-04-29T17:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:58.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/95A5DDF9-D1C5-467B-BCB4-71520DA49912.ics",
+    "etag": "C=17358@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Morning Meeting",
+      "uid": "95A5DDF9-D1C5-467B-BCB4-71520DA49912",
+      "location": null,
+      "description": null,
+      "start": "2021-04-30T13:00:00.000Z",
+      "end": "2021-04-30T13:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:28:35.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9.ics",
+    "etag": "C=17359@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Gym Class",
+      "uid": "3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9",
+      "location": null,
+      "description": null,
+      "start": "2021-04-30T14:30:00.000Z",
+      "end": "2021-04-30T15:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:08.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3B4A1A03-3131-431D-9057-20207EE20B45.ics",
+    "etag": "C=17360@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Music/Math",
+      "uid": "3B4A1A03-3131-431D-9057-20207EE20B45",
+      "location": null,
+      "description": null,
+      "start": "2021-04-30T15:00:00.000Z",
+      "end": "2021-04-30T15:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:23.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/5D8F5F17-1A5D-4474-BE5C-78E450E49107.ics",
+    "etag": "C=17361@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack / Charlie Lunch Break",
+      "uid": "5D8F5F17-1A5D-4474-BE5C-78E450E49107",
+      "location": null,
+      "description": null,
+      "start": "2021-04-30T15:30:00.000Z",
+      "end": "2021-04-30T16:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:34.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/D6B23E62-5518-42F5-B2BE-8E80973F52F8.ics",
+    "etag": "C=17362@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Group Play",
+      "uid": "D6B23E62-5518-42F5-B2BE-8E80973F52F8",
+      "location": null,
+      "description": null,
+      "start": "2021-04-30T16:30:00.000Z",
+      "end": "2021-04-30T17:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:47.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/1D888B13-AEC6-4AB5-A8F3-CCC8376843E9.ics",
+    "etag": "C=17363@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - End of Day Reflection",
+      "uid": "1D888B13-AEC6-4AB5-A8F3-CCC8376843E9",
+      "location": null,
+      "description": null,
+      "start": "2021-04-30T17:00:00.000Z",
+      "end": "2021-04-30T17:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:58.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/0E93663C-7B31-44E9-9546-EEAE094938D9.ics",
+    "etag": "C=17282@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack’s Birthday",
+      "uid": "0E93663C-7B31-44E9-9546-EEAE094938D9",
+      "location": null,
+      "description": null,
+      "start": "2021-05-01T00:00:00.000Z",
+      "end": "2021-05-01T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:01:39.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/7C12C2D8-D569-4F77-8081-BB12E019E820.ics",
+    "etag": "C=17290@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Recycle Day",
+      "uid": "7C12C2D8-D569-4F77-8081-BB12E019E820",
+      "location": null,
+      "description": null,
+      "start": "2021-05-03T00:00:00.000Z",
+      "end": "2021-05-03T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-02T23:59:12.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/95A5DDF9-D1C5-467B-BCB4-71520DA49912.ics",
+    "etag": "C=17358@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Morning Meeting",
+      "uid": "95A5DDF9-D1C5-467B-BCB4-71520DA49912",
+      "location": null,
+      "description": null,
+      "start": "2021-05-03T13:00:00.000Z",
+      "end": "2021-05-03T13:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:28:35.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9.ics",
+    "etag": "C=17359@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Gym Class",
+      "uid": "3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9",
+      "location": null,
+      "description": null,
+      "start": "2021-05-03T14:30:00.000Z",
+      "end": "2021-05-03T15:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:08.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3B4A1A03-3131-431D-9057-20207EE20B45.ics",
+    "etag": "C=17360@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Music/Math",
+      "uid": "3B4A1A03-3131-431D-9057-20207EE20B45",
+      "location": null,
+      "description": null,
+      "start": "2021-05-03T15:00:00.000Z",
+      "end": "2021-05-03T15:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:23.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/5D8F5F17-1A5D-4474-BE5C-78E450E49107.ics",
+    "etag": "C=17361@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack / Charlie Lunch Break",
+      "uid": "5D8F5F17-1A5D-4474-BE5C-78E450E49107",
+      "location": null,
+      "description": null,
+      "start": "2021-05-03T15:30:00.000Z",
+      "end": "2021-05-03T16:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:34.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/D6B23E62-5518-42F5-B2BE-8E80973F52F8.ics",
+    "etag": "C=17362@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Group Play",
+      "uid": "D6B23E62-5518-42F5-B2BE-8E80973F52F8",
+      "location": null,
+      "description": null,
+      "start": "2021-05-03T16:30:00.000Z",
+      "end": "2021-05-03T17:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:47.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/1D888B13-AEC6-4AB5-A8F3-CCC8376843E9.ics",
+    "etag": "C=17363@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - End of Day Reflection",
+      "uid": "1D888B13-AEC6-4AB5-A8F3-CCC8376843E9",
+      "location": null,
+      "description": null,
+      "start": "2021-05-03T17:00:00.000Z",
+      "end": "2021-05-03T17:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:58.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/95A5DDF9-D1C5-467B-BCB4-71520DA49912.ics",
+    "etag": "C=17358@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Morning Meeting",
+      "uid": "95A5DDF9-D1C5-467B-BCB4-71520DA49912",
+      "location": null,
+      "description": null,
+      "start": "2021-05-04T13:00:00.000Z",
+      "end": "2021-05-04T13:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:28:35.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9.ics",
+    "etag": "C=17359@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Gym Class",
+      "uid": "3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9",
+      "location": null,
+      "description": null,
+      "start": "2021-05-04T14:30:00.000Z",
+      "end": "2021-05-04T15:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:08.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3B4A1A03-3131-431D-9057-20207EE20B45.ics",
+    "etag": "C=17360@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Music/Math",
+      "uid": "3B4A1A03-3131-431D-9057-20207EE20B45",
+      "location": null,
+      "description": null,
+      "start": "2021-05-04T15:00:00.000Z",
+      "end": "2021-05-04T15:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:23.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/5D8F5F17-1A5D-4474-BE5C-78E450E49107.ics",
+    "etag": "C=17361@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack / Charlie Lunch Break",
+      "uid": "5D8F5F17-1A5D-4474-BE5C-78E450E49107",
+      "location": null,
+      "description": null,
+      "start": "2021-05-04T15:30:00.000Z",
+      "end": "2021-05-04T16:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:34.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/D6B23E62-5518-42F5-B2BE-8E80973F52F8.ics",
+    "etag": "C=17362@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Group Play",
+      "uid": "D6B23E62-5518-42F5-B2BE-8E80973F52F8",
+      "location": null,
+      "description": null,
+      "start": "2021-05-04T16:30:00.000Z",
+      "end": "2021-05-04T17:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:47.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/1D888B13-AEC6-4AB5-A8F3-CCC8376843E9.ics",
+    "etag": "C=17363@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - End of Day Reflection",
+      "uid": "1D888B13-AEC6-4AB5-A8F3-CCC8376843E9",
+      "location": null,
+      "description": null,
+      "start": "2021-05-04T17:00:00.000Z",
+      "end": "2021-05-04T17:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:58.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/95A5DDF9-D1C5-467B-BCB4-71520DA49912.ics",
+    "etag": "C=17358@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Morning Meeting",
+      "uid": "95A5DDF9-D1C5-467B-BCB4-71520DA49912",
+      "location": null,
+      "description": null,
+      "start": "2021-05-05T13:00:00.000Z",
+      "end": "2021-05-05T13:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:28:35.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9.ics",
+    "etag": "C=17359@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Gym Class",
+      "uid": "3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9",
+      "location": null,
+      "description": null,
+      "start": "2021-05-05T14:30:00.000Z",
+      "end": "2021-05-05T15:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:08.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3B4A1A03-3131-431D-9057-20207EE20B45.ics",
+    "etag": "C=17360@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Music/Math",
+      "uid": "3B4A1A03-3131-431D-9057-20207EE20B45",
+      "location": null,
+      "description": null,
+      "start": "2021-05-05T15:00:00.000Z",
+      "end": "2021-05-05T15:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:23.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/5D8F5F17-1A5D-4474-BE5C-78E450E49107.ics",
+    "etag": "C=17361@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack / Charlie Lunch Break",
+      "uid": "5D8F5F17-1A5D-4474-BE5C-78E450E49107",
+      "location": null,
+      "description": null,
+      "start": "2021-05-05T15:30:00.000Z",
+      "end": "2021-05-05T16:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:34.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/D6B23E62-5518-42F5-B2BE-8E80973F52F8.ics",
+    "etag": "C=17362@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Group Play",
+      "uid": "D6B23E62-5518-42F5-B2BE-8E80973F52F8",
+      "location": null,
+      "description": null,
+      "start": "2021-05-05T16:30:00.000Z",
+      "end": "2021-05-05T17:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:47.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/1D888B13-AEC6-4AB5-A8F3-CCC8376843E9.ics",
+    "etag": "C=17363@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - End of Day Reflection",
+      "uid": "1D888B13-AEC6-4AB5-A8F3-CCC8376843E9",
+      "location": null,
+      "description": null,
+      "start": "2021-05-05T17:00:00.000Z",
+      "end": "2021-05-05T17:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:58.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/CB8345FE-F1B7-4A7D-A50C-C020C788849D.ics",
+    "etag": "C=17276@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Charlie - Maker kids",
+      "uid": "CB8345FE-F1B7-4A7D-A50C-C020C788849D",
+      "location": null,
+      "description": null,
+      "start": "2021-05-05T22:00:00.000Z",
+      "end": "2021-05-06T00:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 2,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-02T22:09:32.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/95A5DDF9-D1C5-467B-BCB4-71520DA49912.ics",
+    "etag": "C=17358@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Morning Meeting",
+      "uid": "95A5DDF9-D1C5-467B-BCB4-71520DA49912",
+      "location": null,
+      "description": null,
+      "start": "2021-05-06T13:00:00.000Z",
+      "end": "2021-05-06T13:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:28:35.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9.ics",
+    "etag": "C=17359@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Gym Class",
+      "uid": "3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9",
+      "location": null,
+      "description": null,
+      "start": "2021-05-06T14:30:00.000Z",
+      "end": "2021-05-06T15:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:08.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3B4A1A03-3131-431D-9057-20207EE20B45.ics",
+    "etag": "C=17360@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Music/Math",
+      "uid": "3B4A1A03-3131-431D-9057-20207EE20B45",
+      "location": null,
+      "description": null,
+      "start": "2021-05-06T15:00:00.000Z",
+      "end": "2021-05-06T15:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:23.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/5D8F5F17-1A5D-4474-BE5C-78E450E49107.ics",
+    "etag": "C=17361@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack / Charlie Lunch Break",
+      "uid": "5D8F5F17-1A5D-4474-BE5C-78E450E49107",
+      "location": null,
+      "description": null,
+      "start": "2021-05-06T15:30:00.000Z",
+      "end": "2021-05-06T16:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:34.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/D6B23E62-5518-42F5-B2BE-8E80973F52F8.ics",
+    "etag": "C=17362@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Group Play",
+      "uid": "D6B23E62-5518-42F5-B2BE-8E80973F52F8",
+      "location": null,
+      "description": null,
+      "start": "2021-05-06T16:30:00.000Z",
+      "end": "2021-05-06T17:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:47.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/1D888B13-AEC6-4AB5-A8F3-CCC8376843E9.ics",
+    "etag": "C=17363@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - End of Day Reflection",
+      "uid": "1D888B13-AEC6-4AB5-A8F3-CCC8376843E9",
+      "location": null,
+      "description": null,
+      "start": "2021-05-06T17:00:00.000Z",
+      "end": "2021-05-06T17:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:58.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/95A5DDF9-D1C5-467B-BCB4-71520DA49912.ics",
+    "etag": "C=17358@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Morning Meeting",
+      "uid": "95A5DDF9-D1C5-467B-BCB4-71520DA49912",
+      "location": null,
+      "description": null,
+      "start": "2021-05-07T13:00:00.000Z",
+      "end": "2021-05-07T13:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:28:35.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9.ics",
+    "etag": "C=17359@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Gym Class",
+      "uid": "3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9",
+      "location": null,
+      "description": null,
+      "start": "2021-05-07T14:30:00.000Z",
+      "end": "2021-05-07T15:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:08.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3B4A1A03-3131-431D-9057-20207EE20B45.ics",
+    "etag": "C=17360@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Music/Math",
+      "uid": "3B4A1A03-3131-431D-9057-20207EE20B45",
+      "location": null,
+      "description": null,
+      "start": "2021-05-07T15:00:00.000Z",
+      "end": "2021-05-07T15:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:23.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/5D8F5F17-1A5D-4474-BE5C-78E450E49107.ics",
+    "etag": "C=17361@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack / Charlie Lunch Break",
+      "uid": "5D8F5F17-1A5D-4474-BE5C-78E450E49107",
+      "location": null,
+      "description": null,
+      "start": "2021-05-07T15:30:00.000Z",
+      "end": "2021-05-07T16:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:34.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/D6B23E62-5518-42F5-B2BE-8E80973F52F8.ics",
+    "etag": "C=17362@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Group Play",
+      "uid": "D6B23E62-5518-42F5-B2BE-8E80973F52F8",
+      "location": null,
+      "description": null,
+      "start": "2021-05-07T16:30:00.000Z",
+      "end": "2021-05-07T17:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:47.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/1D888B13-AEC6-4AB5-A8F3-CCC8376843E9.ics",
+    "etag": "C=17363@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - End of Day Reflection",
+      "uid": "1D888B13-AEC6-4AB5-A8F3-CCC8376843E9",
+      "location": null,
+      "description": null,
+      "start": "2021-05-07T17:00:00.000Z",
+      "end": "2021-05-07T17:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:58.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/455DB9C5-583C-44AB-AC51-379879A0F25C.ics",
+    "etag": "C=17368@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Garbage Day",
+      "uid": "455DB9C5-583C-44AB-AC51-379879A0F25C",
+      "location": null,
+      "description": null,
+      "start": "2021-05-10T00:00:00.000Z",
+      "end": "2021-05-10T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-02T23:59:57.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/95A5DDF9-D1C5-467B-BCB4-71520DA49912.ics",
+    "etag": "C=17358@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Morning Meeting",
+      "uid": "95A5DDF9-D1C5-467B-BCB4-71520DA49912",
+      "location": null,
+      "description": null,
+      "start": "2021-05-10T13:00:00.000Z",
+      "end": "2021-05-10T13:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:28:35.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9.ics",
+    "etag": "C=17359@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Gym Class",
+      "uid": "3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9",
+      "location": null,
+      "description": null,
+      "start": "2021-05-10T14:30:00.000Z",
+      "end": "2021-05-10T15:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:08.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3B4A1A03-3131-431D-9057-20207EE20B45.ics",
+    "etag": "C=17360@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Music/Math",
+      "uid": "3B4A1A03-3131-431D-9057-20207EE20B45",
+      "location": null,
+      "description": null,
+      "start": "2021-05-10T15:00:00.000Z",
+      "end": "2021-05-10T15:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:23.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/5D8F5F17-1A5D-4474-BE5C-78E450E49107.ics",
+    "etag": "C=17361@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack / Charlie Lunch Break",
+      "uid": "5D8F5F17-1A5D-4474-BE5C-78E450E49107",
+      "location": null,
+      "description": null,
+      "start": "2021-05-10T15:30:00.000Z",
+      "end": "2021-05-10T16:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:34.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/D6B23E62-5518-42F5-B2BE-8E80973F52F8.ics",
+    "etag": "C=17362@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Group Play",
+      "uid": "D6B23E62-5518-42F5-B2BE-8E80973F52F8",
+      "location": null,
+      "description": null,
+      "start": "2021-05-10T16:30:00.000Z",
+      "end": "2021-05-10T17:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:47.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/1D888B13-AEC6-4AB5-A8F3-CCC8376843E9.ics",
+    "etag": "C=17363@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - End of Day Reflection",
+      "uid": "1D888B13-AEC6-4AB5-A8F3-CCC8376843E9",
+      "location": null,
+      "description": null,
+      "start": "2021-05-10T17:00:00.000Z",
+      "end": "2021-05-10T17:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:58.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/95A5DDF9-D1C5-467B-BCB4-71520DA49912.ics",
+    "etag": "C=17358@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Morning Meeting",
+      "uid": "95A5DDF9-D1C5-467B-BCB4-71520DA49912",
+      "location": null,
+      "description": null,
+      "start": "2021-05-11T13:00:00.000Z",
+      "end": "2021-05-11T13:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:28:35.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9.ics",
+    "etag": "C=17359@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack Gym Class",
+      "uid": "3EDE9F4A-3BBF-49DB-8999-2E6B3FE7E4E9",
+      "location": null,
+      "description": null,
+      "start": "2021-05-11T14:30:00.000Z",
+      "end": "2021-05-11T15:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:08.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3B4A1A03-3131-431D-9057-20207EE20B45.ics",
+    "etag": "C=17360@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Music/Math",
+      "uid": "3B4A1A03-3131-431D-9057-20207EE20B45",
+      "location": null,
+      "description": null,
+      "start": "2021-05-11T15:00:00.000Z",
+      "end": "2021-05-11T15:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:23.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/5D8F5F17-1A5D-4474-BE5C-78E450E49107.ics",
+    "etag": "C=17361@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack / Charlie Lunch Break",
+      "uid": "5D8F5F17-1A5D-4474-BE5C-78E450E49107",
+      "location": null,
+      "description": null,
+      "start": "2021-05-11T15:30:00.000Z",
+      "end": "2021-05-11T16:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:34.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/D6B23E62-5518-42F5-B2BE-8E80973F52F8.ics",
+    "etag": "C=17362@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - Group Play",
+      "uid": "D6B23E62-5518-42F5-B2BE-8E80973F52F8",
+      "location": null,
+      "description": null,
+      "start": "2021-05-11T16:30:00.000Z",
+      "end": "2021-05-11T17:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:47.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/1D888B13-AEC6-4AB5-A8F3-CCC8376843E9.ics",
+    "etag": "C=17363@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - End of Day Reflection",
+      "uid": "1D888B13-AEC6-4AB5-A8F3-CCC8376843E9",
+      "location": null,
+      "description": null,
+      "start": "2021-05-11T17:00:00.000Z",
+      "end": "2021-05-11T17:30:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 0,
+        "minutes": 30,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-07T16:29:58.000Z"
+    }
+  }
+]

@@ -1,18 +1,18 @@
 [
   {
     "title": "School Break",
-    "allDay": false,
+    "allDay": true,
     "start": {
       "raw": "2021-04-12T00:00:00.000Z",
       "month": "April",
-      "date": "11",
-      "time": "8:00 pm"
+      "date": "12",
+      "time": "12:00 am"
     },
     "end": {
       "raw": "2021-04-16T23:59:59.000Z",
       "month": "April",
       "date": "16",
-      "time": "7:59 pm"
+      "time": "11:59 pm"
     },
     "location": null
   },

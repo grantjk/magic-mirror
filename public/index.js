@@ -1,448 +1,519 @@
 /* ========== Date ========== */
-function showDate(){
-  const date = new Date(Date.now())
-  const dateElement = document.querySelector('#date')
+function showDate() {
+  const date = new Date(Date.now());
+  const dateElement = document.querySelector("#date");
   const displayOptions = {
-    weekday:'long',
-    month:'short',
-    day:'numeric'
-  }
+    weekday: "long",
+    month: "short",
+    day: "numeric",
+  };
 
-  dateElement.textContent = date.toLocaleDateString('en-us', displayOptions)
+  dateElement.textContent = date.toLocaleDateString("en-us", displayOptions);
 }
 
 /* ========== Time ========== */
-function showTime(){
-  const time = new Date()
-  const timeElement = document.querySelector('#time')
-  let ampm = 'AM'
-  let hours = time.getHours()
-  if (hours > 12){
-    hours = hours-12
-    ampm = 'PM'
+function showTime() {
+  const time = new Date();
+  const timeElement = document.querySelector("#time");
+  let ampm = "AM";
+  let hours = time.getHours();
+  if (hours > 12) {
+    hours = hours - 12;
+    ampm = "PM";
   }
 
-  let mins = time.getMinutes()
+  let mins = time.getMinutes();
   if (mins < 10) {
-    mins = `0${mins}`
+    mins = `0${mins}`;
   }
 
-  const fullTime = `${hours}<span class="colon">:</span>${mins}`
-  timeElement.innerHTML = fullTime
+  const fullTime = `${hours}<span class="colon">:</span>${mins}`;
+  timeElement.innerHTML = fullTime;
 }
 
-
 /* ========== Positive Message ========== */
-function showPositiveMessage(){
-  fetch('/message')
-    .then(response => response.json())
-    .then(payload => {
-      const messageElement = document.querySelector('#positiveMessage')
-      messageElement.textContent = payload.message
-    })
+function showPositiveMessage() {
+  fetch("/message")
+    .then((response) => response.json())
+    .then((payload) => {
+      const messageElement = document.querySelector("#positiveMessage");
+      messageElement.textContent = payload.message;
+    });
 }
 
 /* ============ Cartoon ====================== */
 function showCartoonCharacter() {
-  fetch('/pokemon')
-    .then(response => response.json())
-    .then(payload => {
-      const cartoonElement = document.querySelector('#cartoon')
-      cartoonElement.innerHTML = `<pre class='art'>${payload.art}</pre>`
-    })
+  fetch("/pokemon")
+    .then((response) => response.json())
+    .then((payload) => {
+      const cartoonElement = document.querySelector("#cartoon");
+      cartoonElement.innerHTML = `<pre class='art'>${payload.art}</pre>`;
+    });
 }
 
 /* ============ Calendar ================== */
 function getCalendarEvents() {
-  fetch('/events')
-    .then(response => response.json())
-    .then(payload => {
-      let filteredEvents = payload.filter(e => !eventIsOver(e))
-      const calendarElement = document.querySelector('#event-list')
+  fetch("/events")
+    .then((response) => response.json())
+    .then((payload) => {
+      let filteredEvents = payload.filter((e) => !eventIsOver(e));
+      const calendarElement = document.querySelector("#event-list");
 
       // Show a nice prompt if today is a full day event
-      const fullDayEvent = filteredEvents.filter(e => e.allDay)?.[0]
+      const fullDayEvent = filteredEvents.filter((e) => e.allDay)?.[0];
 
       // ugh  - otherwise full day events disppear from the today-description
-      const isToday = fullDayEvent && moment(moment.utc(fullDayEvent.start.raw).format("YYYY-MM-DD")).isSame(moment(), 'day')
+      const isToday =
+        fullDayEvent &&
+        moment(moment.utc(fullDayEvent.start.raw).format("YYYY-MM-DD")).isSame(
+          moment(),
+          "day"
+        );
       if (isToday) {
-        const todayElement = document.querySelector('#today-description')
-        todayElement.textContent = `${fullDayEvent.title}`
+        const todayElement = document.querySelector("#today-description");
+        todayElement.textContent = `${fullDayEvent.title}`;
 
         // filter out the first full day event if we are showing it in the title
-        filteredEvents = filteredEvents.filter(e => e != fullDayEvent)
+        filteredEvents = filteredEvents.filter((e) => e != fullDayEvent);
       }
 
-      calendarEventLoop(filteredEvents)
+      calendarEventLoop(filteredEvents);
 
-      const remaining = filteredEvents.slice(1, 6)
-      const listElement = document.createElement('ul')
-      remaining.forEach(event => {
-        const itemElement = document.createElement('li')
-        itemElement.classList.add('calendar-event')
-        listElement.appendChild(itemElement)
+      const remaining = filteredEvents.slice(1, 6);
+      const listElement = document.createElement("ul");
+      remaining.forEach((event) => {
+        const itemElement = document.createElement("li");
+        itemElement.classList.add("calendar-event");
+        listElement.appendChild(itemElement);
 
         // Date Container
-        const datecontainer = document.createElement('div')
-        datecontainer.classList.add('datecontainer')
-        itemElement.appendChild(datecontainer)
+        const datecontainer = document.createElement("div");
+        datecontainer.classList.add("datecontainer");
+        itemElement.appendChild(datecontainer);
 
-        const monthbox = document.createElement('div')
-        monthbox.classList.add('monthbox')
-        datecontainer.appendChild(monthbox)
+        const monthbox = document.createElement("div");
+        monthbox.classList.add("monthbox");
+        datecontainer.appendChild(monthbox);
 
-        const datebox = document.createElement('div')
-        datebox.classList.add('datebox')
-        datecontainer.appendChild(datebox)
+        const datebox = document.createElement("div");
+        datebox.classList.add("datebox");
+        datecontainer.appendChild(datebox);
 
-
-        monthbox.textContent = event.start.month
-        datebox.textContent = event.start.date
+        monthbox.textContent = event.start.month;
+        datebox.textContent = event.start.date;
 
         // Event Container
-        const eventcontainer = document.createElement('div')
-        eventcontainer.classList.add('eventcontainer')
-        itemElement.appendChild(eventcontainer)
+        const eventcontainer = document.createElement("div");
+        eventcontainer.classList.add("eventcontainer");
+        itemElement.appendChild(eventcontainer);
 
-        const eventName = document.createElement('div')
-        eventName.classList.add('event-name')
-        eventName.textContent = event.title
-        eventcontainer.appendChild(eventName)
+        const eventName = document.createElement("div");
+        eventName.classList.add("event-name");
+        eventName.textContent = event.title;
+        eventcontainer.appendChild(eventName);
 
-        const timebox = document.createElement('div')
-        timebox.classList.add('timebox')
-        eventcontainer.appendChild(timebox)
+        const timebox = document.createElement("div");
+        timebox.classList.add("timebox");
+        eventcontainer.appendChild(timebox);
         if (!event.allDay) {
-          timebox.textContent = event.start.time
+          timebox.textContent = event.start.time;
         }
-      })
+      });
 
-      calendarElement.innerHTML = ''
-      calendarElement.appendChild(listElement)
-    })
+      calendarElement.innerHTML = "";
+      calendarElement.appendChild(listElement);
+    });
 }
 
 /* Event Helpers */
-let eventLoopRef
+let eventLoopRef;
 function calendarEventLoop(event) {
-  clearInterval(eventLoopRef)
+  clearInterval(eventLoopRef);
   eventLoopRef = setInterval(() => {
-    recomputeRelativeTime(event)
-  }, 1000)
+    recomputeRelativeTime(event);
+  }, 1000);
 }
 
 function recomputeRelativeTime(events) {
-  let nextEvent = events.filter(e => !eventIsOver(e))[0]
-  document.querySelector('#up-next-event-name').textContent = nextEvent.title
+  let nextEvent = events.filter((e) => !eventIsOver(e))[0];
+  document.querySelector("#up-next-event-name").textContent = nextEvent.title;
   if (eventCurrentlyHappening(nextEvent)) {
-    document.querySelector('#up-next-time-range').textContent = ''
+    document.querySelector("#up-next-time-range").textContent = "";
   } else {
-    document.querySelector('#up-next-time-range').textContent = eventTimeRange(nextEvent)
+    document.querySelector("#up-next-time-range").textContent = eventTimeRange(
+      nextEvent
+    );
   }
 
-  const element = document.querySelector('#up-next-relative')
+  const element = document.querySelector("#up-next-relative");
 
   if (eventCurrentlyHappening(nextEvent)) {
-    element.textContent = `Happening now until ${nextEvent.end.time}`
+    element.textContent = `Happening now until ${nextEvent.end.time}`;
   } else {
-    element.textContent = `Up next ${eventRelativeTime(nextEvent)}`
+    element.textContent = `Up next ${eventRelativeTime(nextEvent)}`;
   }
 }
 
 function eventCurrentlyHappening(event) {
-  const start = moment(event.start.raw)
-  const end = moment(event.end.raw)
-  const now = moment()
+  const start = moment(event.start.raw);
+  const end = moment(event.end.raw);
+  const now = moment();
 
-  return start.isBefore(now) && end.isAfter(now)
+  return start.isBefore(now) && end.isAfter(now);
 }
 
 function eventIsOver(event) {
   if (event.allDay) {
-    const start = moment.utc(event.start.raw)
-    const end = moment.utc(event.end.raw)
-    const now = moment()
+    const start = moment.utc(event.start.raw);
+    const end = moment.utc(event.end.raw);
+    const now = moment();
 
-    return start.isBefore(now) && !moment(end.format('YYYY-MM-DD')).isSame(now, 'day')
+    return (
+      start.isBefore(now) &&
+      !moment(end.format("YYYY-MM-DD")).isSame(now, "day")
+    );
   }
 
-  const start = moment(event.start.raw)
-  const end = moment(event.end.raw)
-  const now = moment()
-  return start.isBefore(now) && end.isBefore(now)
+  const start = moment(event.start.raw);
+  const end = moment(event.end.raw);
+  const now = moment();
+  return start.isBefore(now) && end.isBefore(now);
 }
 
 function eventRelativeTime(event) {
   if (event.allDay) {
     // All day events returned in UTC, so need to just get date
     // then convert back to moment for relative dates
-    const ugh = moment.utc(event.start.raw).format('yyyy-MM-DD')
-    return moment(ugh).fromNow()
+    const ugh = moment.utc(event.start.raw).format("yyyy-MM-DD");
+    return moment(ugh).fromNow();
   }
-  return moment(event.start.raw).fromNow()
+  return moment(event.start.raw).fromNow();
 }
 
 function eventTimeRange(event) {
   if (event.allDay) {
-    return `${event.start.month} ${event.start.date}`
+    return `${event.start.month} ${event.start.date}`;
   }
-  return `${event.start.time} - ${event.end.time}`
+  return `${event.start.time} - ${event.end.time}`;
 }
-
 
 /* ============= Weather ===================== */
 function getWeather() {
   fetch(`/weather`)
-    .then(response => response.json())
-    .then(payload => {
+    .then((response) => response.json())
+    .then((payload) => {
       // Weather Icon
-      const conditions = payload?.current?.WeatherText
-      const dayTime = payload?.current?.IsDayTime
-      const iconEl = document.querySelector('#weather-icon')
-      const iconName = weatherIcon(conditions, dayTime)
+      const conditions = payload?.current?.WeatherText;
+      const dayTime = payload?.current?.IsDayTime;
+      const iconEl = document.querySelector("#weather-icon");
+      const iconName = weatherIcon(conditions, dayTime);
       if (iconName) {
-        iconEl.className = `weather-icon flaticon-${iconName}`
+        iconEl.className = `weather-icon flaticon-${iconName}`;
       } else {
-        iconEl.textContent = conditions
+        iconEl.textContent = conditions;
       }
 
       // Set Current Temp
-      const currentTemp = payload?.current?.Temperature?.Metric?.Value
-      const feelsLike = payload?.current?.RealFeelTemperature?.Metric?.Value
-      document.querySelector('#weather-temp').innerHTML = `${currentTemp}`
+      const currentTemp = payload?.current?.Temperature?.Metric?.Value;
+      const feelsLike = payload?.current?.RealFeelTemperature?.Metric?.Value;
+      document.querySelector("#weather-temp").innerHTML = `${currentTemp}`;
 
       // Set High / Low
-      const high = payload?.forecast?.DailyForecasts?.[0]?.Temperature?.Maximum?.Value
-      const low = payload?.forecast?.DailyForecasts?.[0]?.Temperature?.Minimum?.Value
-      document.querySelector('#high-low').textContent = `${high} | ${low}`
+      const high =
+        payload?.forecast?.DailyForecasts?.[0]?.Temperature?.Maximum?.Value;
+      const low =
+        payload?.forecast?.DailyForecasts?.[0]?.Temperature?.Minimum?.Value;
+      document.querySelector("#high-low").textContent = `${high} | ${low}`;
 
       // Set Wind Gust
-      const windGustSpeed = payload?.current?.WindGust?.Speed?.Metric?.Value
-      document.querySelector('#wind').textContent = `${windGustSpeed}km/hr wind`
+      const windGustSpeed = payload?.current?.WindGust?.Speed?.Metric?.Value;
+      document.querySelector(
+        "#wind"
+      ).textContent = `${windGustSpeed}km/hr wind`;
 
       // Precipitation
-      const probability = payload?.forecast?.DailyForecasts?.[0]?.Day?.PrecipitationProbability
+      const probability =
+        payload?.forecast?.DailyForecasts?.[0]?.Day?.PrecipitationProbability;
       if (probability > 40) {
-        document.querySelector('#precip-probability').textContent = `${probability}%`
-        document.querySelector('#precip-icon').classList.remove('hidden')
+        document.querySelector(
+          "#precip-probability"
+        ).textContent = `${probability}%`;
+        document.querySelector("#precip-icon").classList.remove("hidden");
       } else {
-        document.querySelector('#precip-probability').textContent = ``
-        document.querySelector('#precip-icon').classList.add('hidden')
+        document.querySelector("#precip-probability").textContent = ``;
+        document.querySelector("#precip-icon").classList.add("hidden");
       }
 
       // Add Weather Forecasts
-      const forecastList = document.querySelector('#weather-forecast')
-      forecastList.innerHTML = ""
-      payload?.hourly?.slice(0,6).forEach(f => {
-        const li = buildForecastLiElement(f)
-        forecastList.appendChild(li)
-      })
-    })
+      const forecastList = document.querySelector("#weather-forecast");
+      forecastList.innerHTML = "";
+
+      // Daily Forecasts after 7pm
+      console.log(moment().hour());
+      if (moment().hour() < 20) {
+        payload?.hourly?.slice(0, 6).forEach((f) => {
+          const li = buildHourlyListElement(f);
+          forecastList.appendChild(li);
+        });
+      } else {
+        // Hourly forecasts during the day
+        payload?.forecast?.DailyForecasts?.forEach((f) => {
+          const li = buildDailyListElement(f);
+          forecastList.appendChild(li);
+        });
+      }
+    });
 }
 
-function buildForecastLiElement(forecast) {
-  const li = document.createElement('li')
-  li.classList.add('forecast-row')
-  li.classList.add('row')
+function buildHourlyListElement(forecast) {
+  if (!forecast) {
+    return null;
+  }
+  const date = moment(forecast.DateTime);
+  return buildForecastLiElement({
+    datetime: date.format("h a"),
+    temp: forecast.Temperature.Value,
+    rainProbability: forecast.PrecipitationProbability,
+    iconPhrase: forecast.IconPhrase,
+    dayTime: forecast.IsDaylight,
+  });
+}
 
-  const timeEl = document.createElement('div')
-  const date = moment(forecast.DateTime)
-  timeEl.textContent = date.format('h a')
-  li.appendChild(timeEl)
-
-  const tempEl = document.createElement('div')
-  tempEl.textContent = `${forecast.Temperature.Value}`
-  li.appendChild(tempEl)
-
-  const rainProbability = forecast?.PrecipitationProbability
-  const conditions = forecast?.IconPhrase
-  const isDayTime = forecast?.IsDaylight
-  const icon = weatherIcon(conditions, isDayTime)
-
-  if (icon) {
-    const iconEl = document.createElement('i')
-    iconEl.classList.add(`flaticon-${icon}`)
-    li.appendChild(iconEl)
-  } else {
-    const iconEl = document.createElement('div')
-    iconEl.textContent = conditions
-    li.appendChild(iconEl)
+function buildDailyListElement(forecast) {
+  if (!forecast) {
+    return null;
   }
 
-  const probEl = document.createElement('div')
-  probEl.textContent = `${rainProbability}%`
-  li.appendChild(probEl)
+  const date = moment(forecast.Date);
+  return buildForecastLiElement({
+    datetime: date.format("ddd"),
+    temp: `${forecast.Temperature.Maximum.Value} | ${forecast.Temperature.Minimum.Value}`,
+    rainProbability: forecast.Day.PrecipitationProbability,
+    iconPhrase: forecast.Day.IconPhrase,
+    dayTime: true,
+  });
+}
 
-  return li
+function buildForecastLiElement({
+  datetime,
+  temp,
+  rainProbability,
+  iconPhrase,
+  dayTime,
+}) {
+  const li = document.createElement("li");
+  li.classList.add("forecast-row");
+  li.classList.add("row");
+
+  const timeEl = document.createElement("div");
+  timeEl.textContent = datetime;
+  li.appendChild(timeEl);
+
+  const tempEl = document.createElement("div");
+  tempEl.textContent = temp;
+  li.appendChild(tempEl);
+
+  const icon = weatherIcon(iconPhrase, dayTime);
+
+  if (icon) {
+    const iconEl = document.createElement("i");
+    iconEl.classList.add(`flaticon-${icon}`);
+    li.appendChild(iconEl);
+  } else {
+    const iconEl = document.createElement("div");
+    iconEl.textContent = iconPhrase;
+    li.appendChild(iconEl);
+  }
+
+  const probEl = document.createElement("div");
+  probEl.textContent = `${rainProbability}%`;
+  li.appendChild(probEl);
+
+  return li;
 }
 
 function weatherIcon(weatherText, isDayTime) {
-  console.log(weatherText)
+  console.log(weatherText);
   switch (weatherText?.toLowerCase()) {
-    case 'sunny':
-    case 'clear':
-    case 'mostly clear':
-    case 'mostly sunny':
-      return isDayTime ? 'sun' : 'moon-1';
-    case 'partly sunny':
-      return 'cloudy';
-    case 'partly cloudy':
-    case 'intermittent clouds':
-      return isDayTime ? 'cloud' : 'cloudy-night';
-    case 'mostly cloudy':
-      return isDayTime ? 'cloudy-1' : 'cloudy-night';
-    case 'cloudy':
-      return 'cloudy-2'
-    case 'light rain':
-    case 'showers':
-    case 'drizzle':
-    case 'rain':
-    case 'partly sunny w/ showers':
-    case 'mostly cloudy w/ showers':
-      return 'rain';
-    case 'thunderstorms':
-    case 'partly cloudy w/ t-storms':
-      return 'thunderstorm';
+    case "sunny":
+    case "clear":
+    case "mostly clear":
+    case "mostly sunny":
+      return isDayTime ? "sun" : "moon-1";
+    case "partly sunny":
+      return "cloudy";
+    case "partly cloudy":
+    case "intermittent clouds":
+      return isDayTime ? "cloud" : "cloudy-night";
+    case "mostly cloudy":
+      return isDayTime ? "cloudy-1" : "cloudy-night";
+    case "cloudy":
+    case "fog":
+    case "dreary":
+      return "cloudy-2";
+    case "light rain":
+    case "showers":
+    case "drizzle":
+    case "rain":
+    case "partly sunny w/ showers":
+    case "mostly cloudy w/ showers":
+      return "rain";
+    case "thunderstorms":
+    case "partly cloudy w/ t-storms":
+      return "thunderstorm";
   }
 
-  return undefined
+  return undefined;
 }
 
 /* ============== Sports ================= */
 
 function getJaysSchedule() {
-  fetch('/mlb')
-    .then(response => response.json())
-    .then(payload => {
-      console.log(payload)
+  fetch("/mlb")
+    .then((response) => response.json())
+    .then((payload) => {
+      console.log(payload);
 
-      const game = payload.dates?.[0]?.games?.[0]
-      console.log(game)
+      const game = payload.dates?.[0]?.games?.[0];
+      console.log(game);
       if (game) {
-        const gameStart = moment(game.gameDate)
-        const gameState = game.status.abstractGameState
-        const detailedState = game.status.detailedState
+        const gameStart = moment(game.gameDate);
+        const gameState = game.status.abstractGameState;
+        const detailedState = game.status.detailedState;
 
-        console.log(`Start date: ${gameStart.toString()}`)
-        console.log(gameState)
+        console.log(`Start date: ${gameStart.toString()}`);
+        console.log(gameState);
 
+        const awayTeam = game.teams.away.team.abbreviation;
+        const awayTeamId = game.teams.away.team.id;
+        const awayTeamScore = game.teams.away.score;
 
-        const awayTeam = game.teams.away.team.abbreviation
-        const awayTeamId = game.teams.away.team.id
-        const awayTeamScore = game.teams.away.score
+        const homeTeam = game.teams.home.team.abbreviation;
+        const homeTeamId = game.teams.home.team.id;
+        const homeTeamScore = game.teams.home.score;
 
-        const homeTeam = game.teams.home.team.abbreviation
-        const homeTeamId = game.teams.home.team.id
-        const homeTeamScore = game.teams.home.score
+        const awayTeamRecord = game.teams.away.leagueRecord;
+        const awayTeamRecordDisplay = `${awayTeamRecord.wins} - ${awayTeamRecord.losses}`;
 
-        const awayTeamRecord = game.teams.away.leagueRecord
-        const awayTeamRecordDisplay = `${awayTeamRecord.wins} - ${awayTeamRecord.losses}`
+        const homeTeamRecord = game.teams.home.leagueRecord;
+        const homeTeamRecordDisplay = `${homeTeamRecord.wins} - ${homeTeamRecord.losses}`;
 
-        const homeTeamRecord = game.teams.home.leagueRecord
-        const homeTeamRecordDisplay = `${homeTeamRecord.wins} - ${homeTeamRecord.losses}`
+        document.querySelector("#away-team-logo").src = teamLogoUrl(awayTeamId);
+        document.querySelector("#home-team-logo").src = teamLogoUrl(homeTeamId);
 
+        document.querySelector("#away-team-name").textContent = awayTeam;
+        document.querySelector(
+          "#away-team-name-detail"
+        ).textContent = awayTeamRecordDisplay;
+        document.querySelector("#home-team-name").textContent = homeTeam;
+        document.querySelector(
+          "#home-team-name-detail"
+        ).textContent = homeTeamRecordDisplay;
 
-        document.querySelector('#away-team-logo').src = teamLogoUrl(awayTeamId)
-        document.querySelector('#home-team-logo').src = teamLogoUrl(homeTeamId)
+        document.querySelector("#home-team-name").textContent = homeTeam;
+        document.querySelector("#home-team-name").textContent = homeTeam;
 
-        document.querySelector('#away-team-name').textContent = awayTeam
-        document.querySelector('#away-team-name-detail').textContent = awayTeamRecordDisplay
-        document.querySelector('#home-team-name').textContent = homeTeam
-        document.querySelector('#home-team-name-detail').textContent = homeTeamRecordDisplay
+        document.querySelector("#game-status-text").textContent = detailedState;
+        if (gameStart.isAfter(moment())) {
+          // upcoming
+          document.querySelector("#game-status-text").textContent = "@";
+          document.querySelector(
+            "#game-status-subtext"
+          ).textContent = gameStart.format("h:mm");
+          document.querySelector("#home-team-score").textContent = "";
+          document.querySelector("#away-team-score").textContent = "";
+        } else if (gameState === "Live") {
+          // in progress
+          document.querySelector(
+            "#home-team-score"
+          ).textContent = homeTeamScore;
+          document.querySelector(
+            "#away-team-score"
+          ).textContent = awayTeamScore;
 
-        document.querySelector('#home-team-name').textContent = homeTeam
-        document.querySelector('#home-team-name').textContent = homeTeam
+          const inning = game.linescore.currentInningOrdinal;
+          const state = game.linescore.inningState;
+          const outs = game.linescore.outs;
+          document.querySelector(
+            "#game-status-text"
+          ).textContent = `${state} ${inning}`;
 
-        document.querySelector('#game-status-text').textContent = detailedState
-        if (gameStart.isAfter(moment())) { // upcoming
-          document.querySelector('#game-status-text').textContent = '@'
-          document.querySelector('#game-status-subtext').textContent = gameStart.format('h:mm')
-          document.querySelector('#home-team-score').textContent = ""
-          document.querySelector('#away-team-score').textContent = ""
-        } else if (gameState === 'Live') { // in progress
-          document.querySelector('#home-team-score').textContent = homeTeamScore
-          document.querySelector('#away-team-score').textContent = awayTeamScore
-
-          const inning = game.linescore.currentInningOrdinal
-          const state = game.linescore.inningState
-          const outs = game.linescore.outs
-          document.querySelector('#game-status-text').textContent = `${state} ${inning}`
-
-          const outText = outs < 3 ? `${outs} out` : ''
-          document.querySelector('#game-status-subtext').textContent = outText
-        } else { // complete
-          document.querySelector('#home-team-score').textContent = homeTeamScore
-          document.querySelector('#away-team-score').textContent = awayTeamScore
-          document.querySelector('#game-status-subtext').textContent = ""
+          const outText = outs < 3 ? `${outs} out` : "";
+          document.querySelector("#game-status-subtext").textContent = outText;
+        } else {
+          // complete
+          document.querySelector(
+            "#home-team-score"
+          ).textContent = homeTeamScore;
+          document.querySelector(
+            "#away-team-score"
+          ).textContent = awayTeamScore;
+          document.querySelector("#game-status-subtext").textContent = "";
         }
       } else {
-        console.log("NO GAME!")
+        console.log("NO GAME!");
       }
-  })
+    });
 }
-
 
 function teamLogoUrl(teamId) {
-  return `https://www.mlbstatic.com/team-logos/${teamId}.svg`
+  return `https://www.mlbstatic.com/team-logos/${teamId}.svg`;
 }
 
-
 /* ============ Main ====================== */
-configureMoment()
-showDate()
-showPositiveMessage()
-showTime()
-showCartoonCharacter()
-getCalendarEvents()
-getWeather()
-getJaysSchedule()
-
+configureMoment();
+showDate();
+showPositiveMessage();
+showTime();
+showCartoonCharacter();
+getCalendarEvents();
+getWeather();
+getJaysSchedule();
 
 /* Run Loop */
 setInterval(() => {
-  showTime()
-  showDate()
-}, 1000) // Update clock every second
+  showTime();
+  showDate();
+}, 1000); // Update clock every second
 
 setInterval(() => {
-  getWeather() // controlled on server side, so can request frequently
-  showCartoonCharacter()
-}, 1000*60*60)  // 5 min updates - 90 for now to get a hold on the rate limit
+  getWeather(); // controlled on server side, so can request frequently
+  showCartoonCharacter();
+}, 1000 * 60 * 60); // 5 min updates - 90 for now to get a hold on the rate limit
 
 // setInterval(() => {
 //   getCalendarEvents() // no check on server
-//   showPositiveMessage() 
+//   showPositiveMessage()
 // }, 1000*60*15)  // 15 min updates
 
 /* Test the TTL on the cache headers */
 setInterval(() => {
-  getJaysSchedule() // dynamic timing based on server
-  getCalendarEvents() // no check on server
-  showPositiveMessage() 
-}, 1000*60) // every minute
+  getJaysSchedule(); // dynamic timing based on server
+  getCalendarEvents(); // no check on server
+  showPositiveMessage();
+}, 1000 * 60); // every minute
 
 setInterval(() => {
-  reverseRows()
-}, 1000*60*60) // change layout every hour to prevent burn in
+  reverseRows();
+}, 1000 * 60 * 60); // change layout every hour to prevent burn in
 
-
-let reversed = false
+let reversed = false;
 function reverseRows() {
-  const rows = document.querySelectorAll('.row')
-  const columns = document.querySelectorAll('.column-reversible')
+  const rows = document.querySelectorAll(".row");
+  const columns = document.querySelectorAll(".column-reversible");
   if (reversed) {
-    rows.forEach(el => el.classList.remove('row-reverse'))
-    columns.forEach(el => el.classList.remove('reversed'))
+    rows.forEach((el) => el.classList.remove("row-reverse"));
+    columns.forEach((el) => el.classList.remove("reversed"));
   } else {
-    rows.forEach(el => el.classList.add('row-reverse'))
-    columns.forEach(el => el.classList.add('reversed'))
+    rows.forEach((el) => el.classList.add("row-reverse"));
+    columns.forEach((el) => el.classList.add("reversed"));
   }
-  reversed = !reversed
+  reversed = !reversed;
 }
 
 /* Setup */
 
 function configureMoment() {
-  moment.relativeTimeThreshold('h', 48); // better than "a day for 36 hours"
-  moment.relativeTimeThreshold('w', 4);  // enables weeks
+  moment.relativeTimeThreshold("h", 48); // better than "a day for 36 hours"
+  moment.relativeTimeThreshold("w", 4); // enables weeks
 }

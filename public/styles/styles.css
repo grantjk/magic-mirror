@@ -7,11 +7,11 @@
 
 body {
   display: flex;
-  margin: 100px 0 0 0 ;
+  margin: 100px 0 0 0;
   padding: 0;
   /* border: 1px solid red; */
   height: 2360px;
-  font-family: 'HK';
+  font-family: "HK";
   font-weight: bold;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 /* spacing */
-.mt10{
+.mt10 {
   margin-top: 10px;
 }
 
@@ -43,7 +43,7 @@ body {
 
 .text-3 {
   font-size: 40px;
-  text-transform: uppercase
+  text-transform: uppercase;
 }
 
 .text-normal {
@@ -117,10 +117,9 @@ body {
 .art {
   font-family: monospace;
   font-size: 6px;
-  text-shadow: -1px 0,  0 1px,  1px 0,  0 -1px; /*fake bold*/
+  text-shadow: -1px 0, 0 1px, 1px 0, 0 -1px; /*fake bold*/
   margin-right: 50px;
 }
-
 
 .art-container {
   align-items: center;
@@ -137,14 +136,13 @@ body {
   width: 600px;
 }
 
-
 .up-next-row {
   justify-content: center;
   align-items: center;
   margin: 100px 0;
 }
 
-.up-next-row.row-reverse { 
+.up-next-row.row-reverse {
   justify-content: flex-end;
 }
 
@@ -248,7 +246,7 @@ ul {
 }
 
 #weather-forecast {
-  width: 400px
+  width: 500px;
 }
 
 .forecast-row {
@@ -258,6 +256,7 @@ ul {
   font-size: 30px;
   text-decoration: bold;
   text-align: center;
+  padding: 5px 0;
 }
 
 .forecast-row > * {
@@ -275,7 +274,6 @@ ul {
 .push-down {
   flex: 10;
 }
-
 
 /* MLB */
 

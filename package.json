@@ -20,5 +20,8 @@
     "moment": "^2.29.1",
     "nodemon": "^2.0.7",
     "scrapegoat": "https://github.com/timklge/scrapegoat.git"
+  },
+  "devDependencies": {
+    "prettier": "2.2.1"
   }
 }

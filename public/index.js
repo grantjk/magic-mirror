@@ -248,15 +248,14 @@ function getWeather() {
       const forecastList = document.querySelector("#weather-forecast");
       forecastList.innerHTML = "";
 
-      // Daily Forecasts after 7pm
-      console.log(moment().hour());
       if (moment().hour() < 20) {
+        // Hourly
         payload?.hourly?.slice(0, 6).forEach((f) => {
           const li = buildHourlyListElement(f);
           forecastList.appendChild(li);
         });
       } else {
-        // Hourly forecasts during the day
+        // Daily forecasts
         payload?.forecast?.DailyForecasts?.forEach((f) => {
           const li = buildDailyListElement(f);
           forecastList.appendChild(li);
@@ -361,6 +360,10 @@ function weatherIcon(weatherText, isDayTime) {
     case "thunderstorms":
     case "partly cloudy w/ t-storms":
       return "thunderstorm";
+    case "snow":
+    case "flurries":
+    case "light snow":
+      return "frost";
   }
 
   return undefined;
@@ -372,10 +375,7 @@ function getJaysSchedule() {
   fetch("/mlb")
     .then((response) => response.json())
     .then((payload) => {
-      console.log(payload);
-
       const game = payload.dates?.[0]?.games?.[0];
-      console.log(game);
       if (game) {
         const gameStart = moment(game.gameDate);
         const gameState = game.status.abstractGameState;

@@ -1,17 +1,18 @@
-const path = require("path");
-require("dotenv").config({ path: path.join(__dirname, ".env") });
+import { join } from "path";
+require("dotenv").config({ path: join(__dirname, ".env") });
 
-const express = require("express");
+import express, { static } from "express";
 const app = express();
-const fs = require("fs");
-const moment = require("moment");
-const got = require("got");
+import { readFileSync, writeFileSync } from "fs";
+import moment, { utc } from "moment";
+import got from "got";
+import Scrapegoat from "scrapegoat";
 
 /* =========================== */
 /*      Renderer               */
 /* =========================== */
-app.use(express.static(filePath("public")));
-app.get("/", (req, res) => {
+app.use(static(filePath("public")));
+app.get("/", (_req, res) => {
   res.sendFile(__dirname + "/public/index.html");
 });
 
@@ -26,10 +27,9 @@ let config = {
   },
   uri: process.env.ICLOUD_URL,
 };
-const Scrapegoat = require("scrapegoat");
 const scrapegoat = new Scrapegoat(config);
 
-app.get("/events", async (req, res) => {
+app.get("/events", async (_req, res) => {
   try {
     const { json, ttlSeconds } = await updateData(
       { identifier: "calendar", ttlCount: 15, ttlUnit: "minutes" },
@@ -39,7 +39,6 @@ app.get("/events", async (req, res) => {
           .format("YYYYMMDD[T]HHmmss[Z]");
         const end = moment().add(1, "month").format("YYYYMMDD[T]HHmmss[Z]");
         const events = await scrapegoat.getEventsByTime(start, end);
-        // writeJSONFile({filename: 'calendar-fixture', json: events})
         return events.map((e) => {
           let start = moment(e.data.start);
           let end = moment(e.data.end);
@@ -85,15 +84,15 @@ function isFullDayEvent(event) {
     return true;
   }
 
-  const start = moment.utc(event.data.start);
-  const end = moment.utc(event.data.end);
+  const start = utc(event.data.start);
+  const end = utc(event.data.end);
   return start.hour() === 0 && end.isSame(start.endOf("day"), "second");
 }
 
 /* =========================== */
 /*      Positive Message       */
 /* =========================== */
-app.get("/message", async (req, res) => {
+app.get("/message", async (_req, res) => {
   try {
     const { json, ttlSeconds } = await updateData(
       {
@@ -103,7 +102,7 @@ app.get("/message", async (req, res) => {
         },
       },
       async () => {
-        const messages = fs.readFileSync("./data/messages.txt", "utf8");
+        const messages = readFileSync("./data/messages.txt", "utf8");
         const messageList = messages.split("\n");
         const messageNumber = Math.floor(Math.random() * messageList.length);
         return { message: messageList[messageNumber] };
@@ -122,7 +121,7 @@ app.get("/message", async (req, res) => {
 /* =========================== */
 /*      Pokemon                */
 /* =========================== */
-app.get("/pokemon", async (req, res) => {
+app.get("/pokemon", async (_req, res) => {
   try {
     const { json, ttlSeconds } = await updateData(
       {
@@ -141,7 +140,7 @@ app.get("/pokemon", async (req, res) => {
         ];
         const number = Math.floor(Math.random() * pokemons.length);
         const pokemon = pokemons[number];
-        const art = fs.readFileSync(`./data/pokemon/${pokemon}.txt`, "utf8");
+        const art = readFileSync(`./data/pokemon/${pokemon}.txt`, "utf8");
         return { art };
       }
     );
@@ -158,7 +157,7 @@ app.get("/pokemon", async (req, res) => {
 /* =========================== */
 /*      Weather                */
 /* =========================== */
-app.get("/weather", async (req, res) => {
+app.get("/weather", async (_req, res) => {
   if (moment().hour() < 5) {
     // Don't waste calls when people are sleeping
     log(
@@ -228,7 +227,7 @@ app.get("/weather", async (req, res) => {
 // curl -H 'Host: statsapi.mlb.com' -H 'Accept: */*' -H 'Cookie: gpv_v48=ATBAT%3A%20Season-pick-em%3A%20MLB%202021%20Season%20Pick%20%26%23x27%3BEm; s_getNewRepeat=1617637893080-New; s_lv=1617637893081; s_lv_s=More%20than%2030%20days; s_ppn=ATBAT%3A%20Season-pick-em%3A%20MLB%202021%20Season%20Pick%20%26%23x27%3BEm; AMCV_A65F776A5245B01B0A490D44%40AdobeOrg=1687686476%7CMCIDTS%7C18723%7CMCMID%7C16301876984098754232224264368243292811%7CMCAID%7CNONE%7CMCOPTOUT-1617645091s%7CNONE%7CvVersion%7C3.0.0; mbox=session#0f995e8bed99489e90882ba659600b7d#1617639715; __cfduid=dd54ec15c6fb13c9d90e7919893a719261617637848' -H 'User-Agent: MLB/6099 CFNetwork/1237 Darwin/20.4.0' -H 'Accept-Language: en-ca' --compressed 'https://statsapi.mlb.com/api/v1/schedule?startDate=2021-03-28&endDate=2021-04-13&sportId=1&teamId=141,160&hydrate=team,game(seriesSummary),decisions,person,stats,linescore(runners,matchup,positions),flags,probablePitcher&fields='
 //curl -H 'Host: statsapi.mlb.com' -H 'Accept: */*' -H 'User-Agent: MLB/6099 CFNetwork/1237 Darwin/20.4.0' -H 'Accept-Language: en-ca' --compressed 'https://statsapi.mlb.com/api/v1/schedule?startDate=2021-03-28&endDate=2021-04-13&sportId=1&teamId=141,160&hydrate=team,game(seriesSummary),decisions,person,stats,linescore(runners,matchup,positions),flags,probablePitcher&fields='
 
-app.get("/mlb", async (req, res) => {
+app.get("/mlb", async (_req, res) => {
   try {
     const { json, ttlSeconds } = await updateData(
       {
@@ -358,7 +357,7 @@ function writeSyncData({ key, value }) {
 function readJSONFile(filename) {
   log("read-file", `Reading file at ${filePath(filename)}`);
   try {
-    const data = fs.readFileSync(filePath(filename), "utf8");
+    const data = readFileSync(filePath(filename), "utf8");
     const json = JSON.parse(data);
     return json;
   } catch (err) {
@@ -369,7 +368,7 @@ function readJSONFile(filename) {
 
 function writeJSONFile({ filename, json }) {
   log("write-file", `Writing file at ${filePath(filename)}`);
-  fs.writeFileSync(filePath(filename), JSON.stringify(json, null, 2));
+  writeFileSync(filePath(filename), JSON.stringify(json, null, 2));
 }
 
 function filePath(filename) {

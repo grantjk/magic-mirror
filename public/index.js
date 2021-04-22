@@ -15,11 +15,9 @@ function showDate() {
 function showTime() {
   const time = new Date();
   const timeElement = document.querySelector("#time");
-  let ampm = "AM";
   let hours = time.getHours();
   if (hours > 12) {
     hours = hours - 12;
-    ampm = "PM";
   }
 
   let mins = time.getMinutes();
@@ -215,7 +213,6 @@ function getWeather() {
 
       // Set Current Temp
       const currentTemp = payload?.current?.Temperature?.Metric?.Value;
-      const feelsLike = payload?.current?.RealFeelTemperature?.Metric?.Value;
       document.querySelector("#weather-temp").innerHTML = `${currentTemp}`;
 
       // Set High / Low
@@ -255,8 +252,8 @@ function getWeather() {
           forecastList.appendChild(li);
         });
       } else {
-        // Daily forecasts
-        payload?.forecast?.DailyForecasts?.forEach((f) => {
+        // Daily forecasts - but ignore today
+        payload?.forecast?.DailyForecasts?.slice(1).forEach((f) => {
           const li = buildDailyListElement(f);
           forecastList.appendChild(li);
         });

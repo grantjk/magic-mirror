@@ -66,38 +66,62 @@ function getCalendarEvents() {
         itemElement.classList.add("calendar-event");
         listElement.appendChild(itemElement);
 
-        // Date Container
-        const datecontainer = document.createElement("div");
-        datecontainer.classList.add("datecontainer");
-        itemElement.appendChild(datecontainer);
 
-        const monthbox = document.createElement("div");
-        monthbox.classList.add("monthbox");
-        datecontainer.appendChild(monthbox);
+        if (event.allDay) {
+          itemElement.classList.add('row');
+          const eventName = document.createElement("div");
+          eventName.classList.add("event-name-all-day");
+          eventName.textContent = event.title;
 
-        const datebox = document.createElement("div");
-        datebox.classList.add("datebox");
-        datecontainer.appendChild(datebox);
+          const spacer = document.createElement('div');
+          itemElement.appendChild(spacer);
+          itemElement.appendChild(eventName);
+        } else {
+          const timeRow = document.createElement('div');
+          timeRow.classList.add('calendar-time-row');
+          timeRow.textContent = `${event.start.time} - ${event.end.time}`
+          itemElement.appendChild(timeRow);
 
-        monthbox.textContent = event.start.month;
-        datebox.textContent = event.start.date;
-
-        // Event Container
-        const eventcontainer = document.createElement("div");
-        eventcontainer.classList.add("eventcontainer");
-        itemElement.appendChild(eventcontainer);
-
-        const eventName = document.createElement("div");
-        eventName.classList.add("event-name");
-        eventName.textContent = event.title;
-        eventcontainer.appendChild(eventName);
-
-        const timebox = document.createElement("div");
-        timebox.classList.add("timebox");
-        eventcontainer.appendChild(timebox);
-        if (!event.allDay) {
-          timebox.textContent = event.start.time;
+          const eventName = document.createElement("div");
+          eventName.classList.add("event-name");
+          eventName.textContent = event.title;
+          itemElement.appendChild(eventName);
         }
+
+
+
+
+
+
+
+        // Date Container
+        //const datecontainer = document.createElement("div");
+        //datecontainer.classList.add("datecontainer");
+        //itemElement.appendChild(datecontainer);
+
+        //const monthbox = document.createElement("div");
+        //monthbox.classList.add("monthbox");
+        //datecontainer.appendChild(monthbox);
+
+        //const datebox = document.createElement("div");
+        //datebox.classList.add("datebox");
+        //datecontainer.appendChild(datebox);
+
+        //monthbox.textContent = event.start.month;
+        //datebox.textContent = event.start.date;
+
+        //// Event Container
+        //const eventcontainer = document.createElement("div");
+        //eventcontainer.classList.add("eventcontainer");
+        //itemElement.appendChild(eventcontainer);
+
+
+        //const timebox = document.createElement("div");
+        //timebox.classList.add("timebox");
+        //eventcontainer.appendChild(timebox);
+        //if (!event.allDay) {
+          //timebox.textContent = event.start.time;
+        //}
       });
 
       calendarElement.innerHTML = "";

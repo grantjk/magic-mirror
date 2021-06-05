@@ -1,6 +1,6 @@
 {
-  "LocalObservationDateTime": "2021-06-05T13:47:00-04:00",
-  "EpochTime": 1622915220,
+  "LocalObservationDateTime": "2021-06-05T14:48:00-04:00",
+  "EpochTime": 1622918880,
   "WeatherText": "Mostly sunny",
   "WeatherIcon": 2,
   "HasPrecipitation": false,
@@ -8,42 +8,42 @@
   "IsDayTime": true,
   "Temperature": {
     "Metric": {
-      "Value": 28.9,
+      "Value": 25,
       "Unit": "C",
       "UnitType": 17
     },
     "Imperial": {
-      "Value": 84,
+      "Value": 77,
       "Unit": "F",
       "UnitType": 18
     }
   },
   "RealFeelTemperature": {
     "Metric": {
-      "Value": 29.3,
+      "Value": 27.2,
       "Unit": "C",
       "UnitType": 17
     },
     "Imperial": {
-      "Value": 85,
+      "Value": 81,
       "Unit": "F",
       "UnitType": 18
     }
   },
   "RealFeelTemperatureShade": {
     "Metric": {
-      "Value": 26.3,
+      "Value": 23.2,
       "Unit": "C",
       "UnitType": 17
     },
     "Imperial": {
-      "Value": 79,
+      "Value": 74,
       "Unit": "F",
       "UnitType": 18
     }
   },
-  "RelativeHumidity": 39,
-  "IndoorRelativeHumidity": 39,
+  "RelativeHumidity": 50,
+  "IndoorRelativeHumidity": 50,
   "DewPoint": {
     "Metric": {
       "Value": 13.9,
@@ -58,18 +58,18 @@
   },
   "Wind": {
     "Direction": {
-      "Degrees": 270,
-      "Localized": "W",
-      "English": "W"
+      "Degrees": 203,
+      "Localized": "SSW",
+      "English": "SSW"
     },
     "Speed": {
       "Metric": {
-        "Value": 35.2,
+        "Value": 16.7,
         "Unit": "km/h",
         "UnitType": 7
       },
       "Imperial": {
-        "Value": 21.9,
+        "Value": 10.4,
         "Unit": "mi/h",
         "UnitType": 9
       }
@@ -78,19 +78,19 @@
   "WindGust": {
     "Speed": {
       "Metric": {
-        "Value": 46.3,
+        "Value": 31.5,
         "Unit": "km/h",
         "UnitType": 7
       },
       "Imperial": {
-        "Value": 28.8,
+        "Value": 19.6,
         "Unit": "mi/h",
         "UnitType": 9
       }
     }
   },
-  "UVIndex": 9,
-  "UVIndexText": "Very High",
+  "UVIndex": 7,
+  "UVIndexText": "High",
   "Visibility": {
     "Metric": {
       "Value": 14.5,
@@ -119,7 +119,7 @@
   },
   "Pressure": {
     "Metric": {
-      "Value": 1010.2,
+      "Value": 1010.1,
       "Unit": "mb",
       "UnitType": 14
     },
@@ -135,48 +135,48 @@
   },
   "Past24HourTemperatureDeparture": {
     "Metric": {
-      "Value": 10,
+      "Value": 7.2,
       "Unit": "C",
       "UnitType": 17
     },
     "Imperial": {
-      "Value": 18,
+      "Value": 13,
       "Unit": "F",
       "UnitType": 18
     }
   },
   "ApparentTemperature": {
     "Metric": {
-      "Value": 28.9,
+      "Value": 24.4,
       "Unit": "C",
       "UnitType": 17
     },
     "Imperial": {
-      "Value": 84,
+      "Value": 76,
       "Unit": "F",
       "UnitType": 18
     }
   },
   "WindChillTemperature": {
     "Metric": {
-      "Value": 28.9,
+      "Value": 25,
       "Unit": "C",
       "UnitType": 17
     },
     "Imperial": {
-      "Value": 84,
+      "Value": 77,
       "Unit": "F",
       "UnitType": 18
     }
   },
   "WetBulbTemperature": {
     "Metric": {
-      "Value": 19.1,
+      "Value": 17.8,
       "Unit": "C",
       "UnitType": 17
     },
     "Imperial": {
-      "Value": 66,
+      "Value": 64,
       "Unit": "F",
       "UnitType": 18
     }
@@ -295,12 +295,12 @@
     "Past6HourRange": {
       "Minimum": {
         "Metric": {
-          "Value": 19,
+          "Value": 21.1,
           "Unit": "C",
           "UnitType": 17
         },
         "Imperial": {
-          "Value": 66,
+          "Value": 70,
           "Unit": "F",
           "UnitType": 18
         }
@@ -347,7 +347,7 @@
     "Past24HourRange": {
       "Minimum": {
         "Metric": {
-          "Value": 15,
+          "Value": 14.9,
           "Unit": "C",
           "UnitType": 17
         },
@@ -359,12 +359,12 @@
       },
       "Maximum": {
         "Metric": {
-          "Value": 28.9,
+          "Value": 30.4,
           "Unit": "C",
           "UnitType": 17
         },
         "Imperial": {
-          "Value": 84,
+          "Value": 87,
           "Unit": "F",
           "UnitType": 18
         }

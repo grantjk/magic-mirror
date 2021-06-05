@@ -285,6 +285,18 @@ ul {
   flex: 10;
 }
 
+#hourly-weather-wrapper {
+  position: relative;
+}
+
+#hourly-gradient {
+  position: absolute;
+  bottom: 0;
+  height: 50%;
+  width: 100%;
+  background: linear-gradient(#00000000, #000000);
+}
+
 /* MLB */
 
 #mlb-row {

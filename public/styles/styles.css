@@ -228,10 +228,9 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 30px;
+  font-size: 26px;
   text-decoration: bold;
   text-align: center;
-  padding: 5px 0;
 }
 
 .forecast-row > * {

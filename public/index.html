@@ -15,7 +15,8 @@
 <body>
   <div class="container">
     <div class="row">
-      <div class="column">
+      <div id="weather-wrapper">
+        <div id="forecast-wrapper" class="column">
         <div class="row weather-row">
           <div id="weather-temp" class='text-1'></div>
           <div class="forecast">
@@ -30,29 +31,24 @@
           </div>
           <div id="precip-probability" class="text-2"></div>
         </div>
+        </div>
+        <div id="hourly-weather-wrapper" class="row">
+          <ul id="weather-forecast">
+          </ul>
+        </div>
       </div>
-      <div class="column">
+      <div id="date-wrapper">
         <div id="time" class="text-1"></div>
         <div id="date" class="text-2 text-normal"></div>
-        <div id="today-description" class="text-2 text-normal"></div>
+        <div id="calendar">
+          <div id="event-list"></div>
+          <div id="empty-calendar" class="hidden text-3 text-normal">
+            No more events today
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="row up-next-row">
-      <div class="column up-next-box">
-        <div id="up-next-relative" class="text-3 text-normal"></div>
-        <div id="up-next-event-name" class="event-name text-2"></div>
-        <div id="up-next-time-range" class="text-3 text-normal"></div>
-      </div>
-    </div>
-
-    <div class="row right-aligned">
-      <ul id="weather-forecast">
-      </ul>
-      <div id="calendar">
-        <div id="event-list"></div>
-      </div>
-    </div>
     <div class="push-down"></div>
     <div id="fun-container" class="column-reversible">
       <div id="mlb-row" class="row">

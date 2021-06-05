@@ -52,36 +52,16 @@ function showCartoonCharacter() {
 }
 
 /* ============ Calendar ================== */
+
 function getCalendarEvents() {
   fetch("/events")
     .then((response) => response.json())
     .then((payload) => {
-      let filteredEvents = payload.filter((e) => !eventIsOver(e));
+      let filteredEvents = payload.filter((e) => !eventIsOver(e) && isEventToday(e));
       const calendarElement = document.querySelector("#event-list");
 
-      // Show a nice prompt if today is a full day event
-      const fullDayEvent = filteredEvents.filter((e) => e.allDay)?.[0];
-
-      // ugh  - otherwise full day events disppear from the today-description
-      const isToday =
-        fullDayEvent &&
-        moment(moment.utc(fullDayEvent.start.raw).format("YYYY-MM-DD")).isSame(
-          moment(),
-          "day"
-        );
-      if (isToday) {
-        const todayElement = document.querySelector("#today-description");
-        todayElement.textContent = `${fullDayEvent.title}`;
-
-        // filter out the first full day event if we are showing it in the title
-        filteredEvents = filteredEvents.filter((e) => e != fullDayEvent);
-      }
-
-      calendarEventLoop(filteredEvents);
-
-      const remaining = filteredEvents.slice(1, 6);
       const listElement = document.createElement("ul");
-      remaining.forEach((event) => {
+      filteredEvents.forEach((event) => {
         const itemElement = document.createElement("li");
         itemElement.classList.add("calendar-event");
         listElement.appendChild(itemElement);
@@ -122,45 +102,18 @@ function getCalendarEvents() {
 
       calendarElement.innerHTML = "";
       calendarElement.appendChild(listElement);
+
+      const emptyCalendar = document.getElementById('empty-calendar')
+      if (filteredEvents.length == 0) {
+        emptyCalendar.classList.remove('hidden')
+      } else {
+        emptyCalendar.classList.add('hidden')
+      }
     });
+
 }
 
 /* Event Helpers */
-let eventLoopRef;
-function calendarEventLoop(event) {
-  clearInterval(eventLoopRef);
-  eventLoopRef = setInterval(() => {
-    recomputeRelativeTime(event);
-  }, 1000);
-}
-
-function recomputeRelativeTime(events) {
-  let nextEvent = events.filter((e) => !eventIsOver(e))[0];
-  document.querySelector("#up-next-event-name").textContent = nextEvent.title;
-  if (eventCurrentlyHappening(nextEvent)) {
-    document.querySelector("#up-next-time-range").textContent = "";
-  } else {
-    document.querySelector("#up-next-time-range").textContent = eventTimeRange(
-      nextEvent
-    );
-  }
-
-  const element = document.querySelector("#up-next-relative");
-
-  if (eventCurrentlyHappening(nextEvent)) {
-    element.textContent = `Happening now until ${nextEvent.end.time}`;
-  } else {
-    element.textContent = `Up next ${eventRelativeTime(nextEvent)}`;
-  }
-}
-
-function eventCurrentlyHappening(event) {
-  const start = moment(event.start.raw);
-  const end = moment(event.end.raw);
-  const now = moment();
-
-  return start.isBefore(now) && end.isAfter(now);
-}
 
 function eventIsOver(event) {
   if (event.allDay) {
@@ -197,6 +150,11 @@ function eventTimeRange(event) {
   return `${event.start.time} - ${event.end.time}`;
 }
 
+function isEventToday(event) {
+  const startDate = moment(moment.utc(event.start.raw).format("YYYY-MM-DD"))
+  return startDate.isSame(moment(), "day");
+}
+
 /* ============= Weather ===================== */
 function getWeather() {
   fetch(`/weather`)
@@ -223,7 +181,7 @@ function getWeather() {
         payload?.forecast?.DailyForecasts?.[0]?.Temperature?.Maximum?.Value;
       const low =
         payload?.forecast?.DailyForecasts?.[0]?.Temperature?.Minimum?.Value;
-      document.querySelector("#high-low").textContent = `${high} | ${low}`;
+      document.querySelector("#high-low").textContent = `${Math.round(high)} | ${Math.round(low)}`;
 
       // Set Wind Gust
       const windGustSpeed = payload?.current?.WindGust?.Speed?.Metric?.Value;
@@ -250,7 +208,7 @@ function getWeather() {
 
       if (moment().hour() < 20) {
         // Hourly
-        payload?.hourly?.slice(0, 6).forEach((f) => {
+        payload?.hourly?.slice(0, 12).forEach((f) => {
           const li = buildHourlyListElement(f);
           forecastList.appendChild(li);
         });
@@ -309,7 +267,7 @@ function buildForecastLiElement({
   li.appendChild(timeEl);
 
   const tempEl = document.createElement("div");
-  tempEl.textContent = temp;
+  tempEl.textContent = Math.round(temp);
   li.appendChild(tempEl);
 
   const icon = weatherIcon(iconPhrase, dayTime);

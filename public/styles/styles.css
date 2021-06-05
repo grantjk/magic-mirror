@@ -108,6 +108,10 @@ body {
   justify-content: space-between;
   margin-bottom: 80px;
 }
+
+#time {
+  margin-bottom: -40px;
+}
 /* Messages */
 
 #positiveMessage {
@@ -202,6 +206,10 @@ ul {
   font-size: 30px;
 }
 
+.empty-calendar {
+  font-size: 80px;
+}
+
 /* Weather */
 
 .weather-row {
@@ -246,7 +254,9 @@ ul {
 }
 
 #weather-forecast {
-  width: 500px;
+  margin: 40px;
+  margin-top: 100px;
+  width: 100%;
 }
 
 .forecast-row {
@@ -260,7 +270,7 @@ ul {
 }
 
 .forecast-row > * {
-  width: 250px;
+ width: 90px;
 }
 
 .forecast-row > div:last-child {

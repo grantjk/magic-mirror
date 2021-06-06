@@ -256,7 +256,7 @@ ul {
 #hourly-gradient {
   position: absolute;
   bottom: 0;
-  height: 50%;
+  height: 60%;
   width: 100%;
   background: linear-gradient(#00000000, #000000);
 }

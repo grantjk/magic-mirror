@@ -154,6 +154,10 @@ ul {
   flex-direction: row;
 }
 
+.calendar-event.row.row-reverse{
+  flex-direction: row-reverse;
+}
+
 .calendar-time-row {
   font-size: 30px;
 }

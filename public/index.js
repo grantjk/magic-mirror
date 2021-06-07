@@ -341,6 +341,7 @@ function weatherIcon(weatherText, isDayTime) {
       return "rain";
     case "thunderstorms":
     case "partly cloudy w/ t-storms":
+    case "partly sunny w/ t-storms":
       return "thunderstorm";
     case "snow":
     case "flurries":

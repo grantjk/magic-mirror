@@ -253,7 +253,7 @@ function buildHourlyListElement(forecast) {
   const date = moment(forecast.DateTime);
   return buildForecastLiElement({
     datetime: date.format("h a"),
-    temp: forecast.Temperature.Value,
+    temp: Math.round(forecast.Temperature.Value),
     rainProbability: forecast.PrecipitationProbability,
     iconPhrase: forecast.IconPhrase,
     dayTime: forecast.IsDaylight,
@@ -268,7 +268,7 @@ function buildDailyListElement(forecast) {
   const date = moment(forecast.Date);
   return buildForecastLiElement({
     datetime: date.format("ddd"),
-    temp: `${forecast.Temperature.Maximum.Value} | ${forecast.Temperature.Minimum.Value}`,
+    temp: `${Math.round(forecast.Temperature.Maximum.Value)} | ${Math.round(forecast.Temperature.Minimum.Value)}`,
     rainProbability: forecast.Day.PrecipitationProbability,
     iconPhrase: forecast.Day.IconPhrase,
     dayTime: true,
@@ -291,7 +291,7 @@ function buildForecastLiElement({
   li.appendChild(timeEl);
 
   const tempEl = document.createElement("div");
-  tempEl.textContent = Math.round(temp);
+  tempEl.textContent = temp;
   li.appendChild(tempEl);
 
   const icon = weatherIcon(iconPhrase, dayTime);

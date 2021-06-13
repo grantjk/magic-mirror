@@ -338,6 +338,7 @@ function weatherIcon(weatherText, isDayTime) {
     case "rain":
     case "partly sunny w/ showers":
     case "mostly cloudy w/ showers":
+    case "heavy rain":
       return "rain";
     case "thunderstorms":
     case "partly cloudy w/ t-storms":

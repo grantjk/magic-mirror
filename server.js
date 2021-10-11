@@ -29,6 +29,9 @@ let config = {
 const Scrapegoat = require("scrapegoat");
 const scrapegoat = new Scrapegoat(config);
 
+let countdownConfig = {...config, uri: process.env.ICLOUD_COUNTDOWN_URL }
+const countdownGoat = new Scrapegoat(countdownConfig);
+
 app.get("/events", async (req, res) => {
   try {
     const { json, ttlSeconds } = await updateData(
@@ -75,6 +78,33 @@ app.get("/events", async (req, res) => {
   } catch (err) {
     log("Calendar", "Error fetching calendar");
     log("Calendar", err);
+
+    res.json([]);
+  }
+});
+
+app.get("/countdown", async (req, res) => {
+  try {
+    const { json, ttlSeconds } = await updateData(
+      { identifier: "countdown", ttlCount: 1, ttlUnit: "hour" },
+      async () => {
+        const start = moment()
+          .subtract(1, "day")
+          .format("YYYYMMDD[T]HHmmss[Z]");
+        const end = moment().add(1, "year").format("YYYYMMDD[T]HHmmss[Z]");
+        const events = await countdownGoat.getEventsByTime(start, end);
+        //writeJSONFile({filename: 'countdown-fixture', json: events})
+        return events.map((e) => {
+          return { title: e.data.title, date: e.data.start }
+        });
+      }
+    );
+
+    res.set("Cache-Control", `private, max-age=${ttlSeconds}`);
+    res.json(json);
+  } catch (err) {
+    log("Countdown", "Error fetching countdown");
+    log("Countdown", err);
 
     res.json([]);
   }

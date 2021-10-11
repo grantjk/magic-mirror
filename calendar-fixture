@@ -1,0 +1,2127 @@
+[
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/5068A053-3252-42A5-9CA8-98AC32D23DEC.ics",
+    "etag": "C=17903@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "John Holidays",
+      "uid": "5068A053-3252-42A5-9CA8-98AC32D23DEC",
+      "location": null,
+      "description": null,
+      "start": "2021-09-27T00:00:00.000Z",
+      "end": "2021-10-11T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 15,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": false,
+        "edited": false
+      },
+      "createdAt": "2021-08-11T17:42:04.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/E099E59A-2430-40AB-A48F-CBBEB70D4EFB.ics",
+    "etag": "C=17944@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Garbage Day",
+      "uid": "E099E59A-2430-40AB-A48F-CBBEB70D4EFB",
+      "location": null,
+      "description": null,
+      "start": "2021-10-11T00:00:00.000Z",
+      "end": "2021-10-11T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-26T13:00:34.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/F6BA2562-5A1A-482B-8B34-63FD8EDD7756.ics",
+    "etag": "C=17939@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Recycle Day",
+      "uid": "F6BA2562-5A1A-482B-8B34-63FD8EDD7756",
+      "location": null,
+      "description": null,
+      "start": "2021-10-18T00:00:00.000Z",
+      "end": "2021-10-18T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-26T13:00:47.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3D91DC29-CC00-433B-A95A-244DF7B6758A.ics",
+    "etag": "C=17843@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - soccer",
+      "uid": "3D91DC29-CC00-433B-A95A-244DF7B6758A",
+      "location": null,
+      "description": null,
+      "start": "2021-10-18T22:00:00.000Z",
+      "end": "2021-10-18T23:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-01T03:05:16.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/4E6DCDFC-7D6B-48D8-A474-84634C7184D2.ics",
+    "etag": "C=17839@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Charlie - soccer",
+      "uid": "4E6DCDFC-7D6B-48D8-A474-84634C7184D2",
+      "location": "Monarch Park Stadium\n1 Parkmount Rd\nToronto ON M4J 0A5\nCanada",
+      "description": null,
+      "start": "2021-10-18T23:00:00.000Z",
+      "end": "2021-10-19T00:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-01T01:18:21.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/E099E59A-2430-40AB-A48F-CBBEB70D4EFB.ics",
+    "etag": "C=17944@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Garbage Day",
+      "uid": "E099E59A-2430-40AB-A48F-CBBEB70D4EFB",
+      "location": null,
+      "description": null,
+      "start": "2021-10-25T00:00:00.000Z",
+      "end": "2021-10-25T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-26T13:00:34.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3D91DC29-CC00-433B-A95A-244DF7B6758A.ics",
+    "etag": "C=17843@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - soccer",
+      "uid": "3D91DC29-CC00-433B-A95A-244DF7B6758A",
+      "location": null,
+      "description": null,
+      "start": "2021-10-25T22:00:00.000Z",
+      "end": "2021-10-25T23:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-01T03:05:16.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/4E6DCDFC-7D6B-48D8-A474-84634C7184D2.ics",
+    "etag": "C=17839@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Charlie - soccer",
+      "uid": "4E6DCDFC-7D6B-48D8-A474-84634C7184D2",
+      "location": "Monarch Park Stadium\n1 Parkmount Rd\nToronto ON M4J 0A5\nCanada",
+      "description": null,
+      "start": "2021-10-25T23:00:00.000Z",
+      "end": "2021-10-26T00:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-01T01:18:21.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/F6BA2562-5A1A-482B-8B34-63FD8EDD7756.ics",
+    "etag": "C=17939@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Recycle Day",
+      "uid": "F6BA2562-5A1A-482B-8B34-63FD8EDD7756",
+      "location": null,
+      "description": null,
+      "start": "2021-11-01T00:00:00.000Z",
+      "end": "2021-11-01T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-26T13:00:47.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3D91DC29-CC00-433B-A95A-244DF7B6758A.ics",
+    "etag": "C=17843@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - soccer",
+      "uid": "3D91DC29-CC00-433B-A95A-244DF7B6758A",
+      "location": null,
+      "description": null,
+      "start": "2021-11-01T22:00:00.000Z",
+      "end": "2021-11-01T23:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-01T03:05:16.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/4E6DCDFC-7D6B-48D8-A474-84634C7184D2.ics",
+    "etag": "C=17839@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Charlie - soccer",
+      "uid": "4E6DCDFC-7D6B-48D8-A474-84634C7184D2",
+      "location": "Monarch Park Stadium\n1 Parkmount Rd\nToronto ON M4J 0A5\nCanada",
+      "description": null,
+      "start": "2021-11-01T23:00:00.000Z",
+      "end": "2021-11-02T00:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-01T01:18:21.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/E099E59A-2430-40AB-A48F-CBBEB70D4EFB.ics",
+    "etag": "C=17944@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Garbage Day",
+      "uid": "E099E59A-2430-40AB-A48F-CBBEB70D4EFB",
+      "location": null,
+      "description": null,
+      "start": "2021-11-08T00:00:00.000Z",
+      "end": "2021-11-08T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-26T13:00:34.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3D91DC29-CC00-433B-A95A-244DF7B6758A.ics",
+    "etag": "C=17843@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - soccer",
+      "uid": "3D91DC29-CC00-433B-A95A-244DF7B6758A",
+      "location": null,
+      "description": null,
+      "start": "2021-11-08T23:00:00.000Z",
+      "end": "2021-11-09T00:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-01T03:05:16.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/4E6DCDFC-7D6B-48D8-A474-84634C7184D2.ics",
+    "etag": "C=17839@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Charlie - soccer",
+      "uid": "4E6DCDFC-7D6B-48D8-A474-84634C7184D2",
+      "location": "Monarch Park Stadium\n1 Parkmount Rd\nToronto ON M4J 0A5\nCanada",
+      "description": null,
+      "start": "2021-11-09T00:00:00.000Z",
+      "end": "2021-11-09T01:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-01T01:18:21.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/F6BA2562-5A1A-482B-8B34-63FD8EDD7756.ics",
+    "etag": "C=17939@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Recycle Day",
+      "uid": "F6BA2562-5A1A-482B-8B34-63FD8EDD7756",
+      "location": null,
+      "description": null,
+      "start": "2021-11-15T00:00:00.000Z",
+      "end": "2021-11-15T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-26T13:00:47.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3D91DC29-CC00-433B-A95A-244DF7B6758A.ics",
+    "etag": "C=17843@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - soccer",
+      "uid": "3D91DC29-CC00-433B-A95A-244DF7B6758A",
+      "location": null,
+      "description": null,
+      "start": "2021-11-15T23:00:00.000Z",
+      "end": "2021-11-16T00:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-01T03:05:16.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/4E6DCDFC-7D6B-48D8-A474-84634C7184D2.ics",
+    "etag": "C=17839@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Charlie - soccer",
+      "uid": "4E6DCDFC-7D6B-48D8-A474-84634C7184D2",
+      "location": "Monarch Park Stadium\n1 Parkmount Rd\nToronto ON M4J 0A5\nCanada",
+      "description": null,
+      "start": "2021-11-16T00:00:00.000Z",
+      "end": "2021-11-16T01:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-01T01:18:21.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/E099E59A-2430-40AB-A48F-CBBEB70D4EFB.ics",
+    "etag": "C=17944@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Garbage Day",
+      "uid": "E099E59A-2430-40AB-A48F-CBBEB70D4EFB",
+      "location": null,
+      "description": null,
+      "start": "2021-11-22T00:00:00.000Z",
+      "end": "2021-11-22T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-26T13:00:34.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3D91DC29-CC00-433B-A95A-244DF7B6758A.ics",
+    "etag": "C=17843@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - soccer",
+      "uid": "3D91DC29-CC00-433B-A95A-244DF7B6758A",
+      "location": null,
+      "description": null,
+      "start": "2021-11-22T23:00:00.000Z",
+      "end": "2021-11-23T00:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-01T03:05:16.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/4E6DCDFC-7D6B-48D8-A474-84634C7184D2.ics",
+    "etag": "C=17839@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Charlie - soccer",
+      "uid": "4E6DCDFC-7D6B-48D8-A474-84634C7184D2",
+      "location": "Monarch Park Stadium\n1 Parkmount Rd\nToronto ON M4J 0A5\nCanada",
+      "description": null,
+      "start": "2021-11-23T00:00:00.000Z",
+      "end": "2021-11-23T01:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-01T01:18:21.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/F6BA2562-5A1A-482B-8B34-63FD8EDD7756.ics",
+    "etag": "C=17939@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Recycle Day",
+      "uid": "F6BA2562-5A1A-482B-8B34-63FD8EDD7756",
+      "location": null,
+      "description": null,
+      "start": "2021-11-29T00:00:00.000Z",
+      "end": "2021-11-29T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-26T13:00:47.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3D91DC29-CC00-433B-A95A-244DF7B6758A.ics",
+    "etag": "C=17843@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - soccer",
+      "uid": "3D91DC29-CC00-433B-A95A-244DF7B6758A",
+      "location": null,
+      "description": null,
+      "start": "2021-11-29T23:00:00.000Z",
+      "end": "2021-11-30T00:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-01T03:05:16.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/4E6DCDFC-7D6B-48D8-A474-84634C7184D2.ics",
+    "etag": "C=17839@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Charlie - soccer",
+      "uid": "4E6DCDFC-7D6B-48D8-A474-84634C7184D2",
+      "location": "Monarch Park Stadium\n1 Parkmount Rd\nToronto ON M4J 0A5\nCanada",
+      "description": null,
+      "start": "2021-11-30T00:00:00.000Z",
+      "end": "2021-11-30T01:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-01T01:18:21.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/E099E59A-2430-40AB-A48F-CBBEB70D4EFB.ics",
+    "etag": "C=17944@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Garbage Day",
+      "uid": "E099E59A-2430-40AB-A48F-CBBEB70D4EFB",
+      "location": null,
+      "description": null,
+      "start": "2021-12-06T00:00:00.000Z",
+      "end": "2021-12-06T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-26T13:00:34.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3D91DC29-CC00-433B-A95A-244DF7B6758A.ics",
+    "etag": "C=17843@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - soccer",
+      "uid": "3D91DC29-CC00-433B-A95A-244DF7B6758A",
+      "location": null,
+      "description": null,
+      "start": "2021-12-06T23:00:00.000Z",
+      "end": "2021-12-07T00:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-01T03:05:16.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/4E6DCDFC-7D6B-48D8-A474-84634C7184D2.ics",
+    "etag": "C=17839@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Charlie - soccer",
+      "uid": "4E6DCDFC-7D6B-48D8-A474-84634C7184D2",
+      "location": "Monarch Park Stadium\n1 Parkmount Rd\nToronto ON M4J 0A5\nCanada",
+      "description": null,
+      "start": "2021-12-07T00:00:00.000Z",
+      "end": "2021-12-07T01:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-01T01:18:21.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/F6BA2562-5A1A-482B-8B34-63FD8EDD7756.ics",
+    "etag": "C=17939@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Recycle Day",
+      "uid": "F6BA2562-5A1A-482B-8B34-63FD8EDD7756",
+      "location": null,
+      "description": null,
+      "start": "2021-12-13T00:00:00.000Z",
+      "end": "2021-12-13T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-26T13:00:47.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3D91DC29-CC00-433B-A95A-244DF7B6758A.ics",
+    "etag": "C=17843@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - soccer",
+      "uid": "3D91DC29-CC00-433B-A95A-244DF7B6758A",
+      "location": null,
+      "description": null,
+      "start": "2021-12-13T23:00:00.000Z",
+      "end": "2021-12-14T00:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-01T03:05:16.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/4E6DCDFC-7D6B-48D8-A474-84634C7184D2.ics",
+    "etag": "C=17839@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Charlie - soccer",
+      "uid": "4E6DCDFC-7D6B-48D8-A474-84634C7184D2",
+      "location": "Monarch Park Stadium\n1 Parkmount Rd\nToronto ON M4J 0A5\nCanada",
+      "description": null,
+      "start": "2021-12-14T00:00:00.000Z",
+      "end": "2021-12-14T01:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-01T01:18:21.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/64D0E13B-3005-40BD-BB7A-C7F201B8AD25.ics",
+    "etag": "C=17285@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "John’s Birthday",
+      "uid": "64D0E13B-3005-40BD-BB7A-C7F201B8AD25",
+      "location": null,
+      "description": null,
+      "start": "2021-12-16T00:00:00.000Z",
+      "end": "2021-12-16T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:03:26.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/E099E59A-2430-40AB-A48F-CBBEB70D4EFB.ics",
+    "etag": "C=17944@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Garbage Day",
+      "uid": "E099E59A-2430-40AB-A48F-CBBEB70D4EFB",
+      "location": null,
+      "description": null,
+      "start": "2021-12-20T00:00:00.000Z",
+      "end": "2021-12-20T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-26T13:00:34.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/3D91DC29-CC00-433B-A95A-244DF7B6758A.ics",
+    "etag": "C=17843@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack - soccer",
+      "uid": "3D91DC29-CC00-433B-A95A-244DF7B6758A",
+      "location": null,
+      "description": null,
+      "start": "2021-12-20T23:00:00.000Z",
+      "end": "2021-12-21T00:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-01T03:05:16.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/4E6DCDFC-7D6B-48D8-A474-84634C7184D2.ics",
+    "etag": "C=17839@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Charlie - soccer",
+      "uid": "4E6DCDFC-7D6B-48D8-A474-84634C7184D2",
+      "location": "Monarch Park Stadium\n1 Parkmount Rd\nToronto ON M4J 0A5\nCanada",
+      "description": null,
+      "start": "2021-12-21T00:00:00.000Z",
+      "end": "2021-12-21T01:00:00.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 0,
+        "hours": 1,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-01T01:18:21.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/E1A22C95-AF0D-4502-9936-8C83A12B092D.ics",
+    "etag": "C=17680@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Charlie’s health card renewal",
+      "uid": "E1A22C95-AF0D-4502-9936-8C83A12B092D",
+      "location": null,
+      "description": null,
+      "start": "2021-12-25T00:00:00.000Z",
+      "end": "2021-12-25T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": false,
+        "edited": false
+      },
+      "createdAt": "2021-06-30T12:51:03.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/6756DCD7-F595-4835-9F12-9AC59859044A.ics",
+    "etag": "C=17283@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Charlie’s Birthday",
+      "uid": "6756DCD7-F595-4835-9F12-9AC59859044A",
+      "location": null,
+      "description": null,
+      "start": "2021-12-25T00:00:00.000Z",
+      "end": "2021-12-25T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:02:10.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/F6BA2562-5A1A-482B-8B34-63FD8EDD7756.ics",
+    "etag": "C=17939@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Recycle Day",
+      "uid": "F6BA2562-5A1A-482B-8B34-63FD8EDD7756",
+      "location": null,
+      "description": null,
+      "start": "2021-12-27T00:00:00.000Z",
+      "end": "2021-12-27T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-26T13:00:47.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/E099E59A-2430-40AB-A48F-CBBEB70D4EFB.ics",
+    "etag": "C=17944@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Garbage Day",
+      "uid": "E099E59A-2430-40AB-A48F-CBBEB70D4EFB",
+      "location": null,
+      "description": null,
+      "start": "2022-01-03T00:00:00.000Z",
+      "end": "2022-01-03T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-26T13:00:34.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/F6BA2562-5A1A-482B-8B34-63FD8EDD7756.ics",
+    "etag": "C=17939@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Recycle Day",
+      "uid": "F6BA2562-5A1A-482B-8B34-63FD8EDD7756",
+      "location": null,
+      "description": null,
+      "start": "2022-01-10T00:00:00.000Z",
+      "end": "2022-01-10T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-26T13:00:47.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/E099E59A-2430-40AB-A48F-CBBEB70D4EFB.ics",
+    "etag": "C=17944@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Garbage Day",
+      "uid": "E099E59A-2430-40AB-A48F-CBBEB70D4EFB",
+      "location": null,
+      "description": null,
+      "start": "2022-01-17T00:00:00.000Z",
+      "end": "2022-01-17T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-26T13:00:34.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/F6BA2562-5A1A-482B-8B34-63FD8EDD7756.ics",
+    "etag": "C=17939@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Recycle Day",
+      "uid": "F6BA2562-5A1A-482B-8B34-63FD8EDD7756",
+      "location": null,
+      "description": null,
+      "start": "2022-01-24T00:00:00.000Z",
+      "end": "2022-01-24T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-26T13:00:47.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/E099E59A-2430-40AB-A48F-CBBEB70D4EFB.ics",
+    "etag": "C=17944@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Garbage Day",
+      "uid": "E099E59A-2430-40AB-A48F-CBBEB70D4EFB",
+      "location": null,
+      "description": null,
+      "start": "2022-01-31T00:00:00.000Z",
+      "end": "2022-01-31T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-26T13:00:34.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/F6BA2562-5A1A-482B-8B34-63FD8EDD7756.ics",
+    "etag": "C=17939@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Recycle Day",
+      "uid": "F6BA2562-5A1A-482B-8B34-63FD8EDD7756",
+      "location": null,
+      "description": null,
+      "start": "2022-02-07T00:00:00.000Z",
+      "end": "2022-02-07T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-09-26T13:00:47.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/0E93663C-7B31-44E9-9546-EEAE094938D9.ics",
+    "etag": "C=17457@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack’s Birthday",
+      "uid": "0E93663C-7B31-44E9-9546-EEAE094938D9",
+      "location": null,
+      "description": null,
+      "start": "2022-05-01T00:00:00.000Z",
+      "end": "2022-05-01T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:01:39.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/4B4FA3EA-C9AF-4331-9611-A7C3B3C7BCF5.ics",
+    "etag": "C=17773@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Sarah’s Birthday",
+      "uid": "4B4FA3EA-C9AF-4331-9611-A7C3B3C7BCF5",
+      "location": null,
+      "description": null,
+      "start": "2022-08-04T00:00:00.000Z",
+      "end": "2022-08-04T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:02:48.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/F70EED39-E464-4E82-8619-FA3DF060370D.ics",
+    "etag": "C=17815@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Wedding Anniversary",
+      "uid": "F70EED39-E464-4E82-8619-FA3DF060370D",
+      "location": null,
+      "description": null,
+      "start": "2022-08-21T00:00:00.000Z",
+      "end": "2022-08-21T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2019-07-01T12:09:58.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/64D0E13B-3005-40BD-BB7A-C7F201B8AD25.ics",
+    "etag": "C=17285@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "John’s Birthday",
+      "uid": "64D0E13B-3005-40BD-BB7A-C7F201B8AD25",
+      "location": null,
+      "description": null,
+      "start": "2022-12-16T00:00:00.000Z",
+      "end": "2022-12-16T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:03:26.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/6756DCD7-F595-4835-9F12-9AC59859044A.ics",
+    "etag": "C=17283@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Charlie’s Birthday",
+      "uid": "6756DCD7-F595-4835-9F12-9AC59859044A",
+      "location": null,
+      "description": null,
+      "start": "2022-12-25T00:00:00.000Z",
+      "end": "2022-12-25T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:02:10.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/0E93663C-7B31-44E9-9546-EEAE094938D9.ics",
+    "etag": "C=17457@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack’s Birthday",
+      "uid": "0E93663C-7B31-44E9-9546-EEAE094938D9",
+      "location": null,
+      "description": null,
+      "start": "2023-05-01T00:00:00.000Z",
+      "end": "2023-05-01T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:01:39.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/4B4FA3EA-C9AF-4331-9611-A7C3B3C7BCF5.ics",
+    "etag": "C=17773@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Sarah’s Birthday",
+      "uid": "4B4FA3EA-C9AF-4331-9611-A7C3B3C7BCF5",
+      "location": null,
+      "description": null,
+      "start": "2023-08-04T00:00:00.000Z",
+      "end": "2023-08-04T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:02:48.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/F70EED39-E464-4E82-8619-FA3DF060370D.ics",
+    "etag": "C=17815@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Wedding Anniversary",
+      "uid": "F70EED39-E464-4E82-8619-FA3DF060370D",
+      "location": null,
+      "description": null,
+      "start": "2023-08-21T00:00:00.000Z",
+      "end": "2023-08-21T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2019-07-01T12:09:58.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/64D0E13B-3005-40BD-BB7A-C7F201B8AD25.ics",
+    "etag": "C=17285@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "John’s Birthday",
+      "uid": "64D0E13B-3005-40BD-BB7A-C7F201B8AD25",
+      "location": null,
+      "description": null,
+      "start": "2023-12-16T00:00:00.000Z",
+      "end": "2023-12-16T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:03:26.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/6756DCD7-F595-4835-9F12-9AC59859044A.ics",
+    "etag": "C=17283@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Charlie’s Birthday",
+      "uid": "6756DCD7-F595-4835-9F12-9AC59859044A",
+      "location": null,
+      "description": null,
+      "start": "2023-12-25T00:00:00.000Z",
+      "end": "2023-12-25T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:02:10.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/0E93663C-7B31-44E9-9546-EEAE094938D9.ics",
+    "etag": "C=17457@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack’s Birthday",
+      "uid": "0E93663C-7B31-44E9-9546-EEAE094938D9",
+      "location": null,
+      "description": null,
+      "start": "2024-05-01T00:00:00.000Z",
+      "end": "2024-05-01T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:01:39.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/4B4FA3EA-C9AF-4331-9611-A7C3B3C7BCF5.ics",
+    "etag": "C=17773@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Sarah’s Birthday",
+      "uid": "4B4FA3EA-C9AF-4331-9611-A7C3B3C7BCF5",
+      "location": null,
+      "description": null,
+      "start": "2024-08-04T00:00:00.000Z",
+      "end": "2024-08-04T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:02:48.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/F70EED39-E464-4E82-8619-FA3DF060370D.ics",
+    "etag": "C=17815@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Wedding Anniversary",
+      "uid": "F70EED39-E464-4E82-8619-FA3DF060370D",
+      "location": null,
+      "description": null,
+      "start": "2024-08-21T00:00:00.000Z",
+      "end": "2024-08-21T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2019-07-01T12:09:58.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/64D0E13B-3005-40BD-BB7A-C7F201B8AD25.ics",
+    "etag": "C=17285@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "John’s Birthday",
+      "uid": "64D0E13B-3005-40BD-BB7A-C7F201B8AD25",
+      "location": null,
+      "description": null,
+      "start": "2024-12-16T00:00:00.000Z",
+      "end": "2024-12-16T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:03:26.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/6756DCD7-F595-4835-9F12-9AC59859044A.ics",
+    "etag": "C=17283@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Charlie’s Birthday",
+      "uid": "6756DCD7-F595-4835-9F12-9AC59859044A",
+      "location": null,
+      "description": null,
+      "start": "2024-12-25T00:00:00.000Z",
+      "end": "2024-12-25T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:02:10.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/0E93663C-7B31-44E9-9546-EEAE094938D9.ics",
+    "etag": "C=17457@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack’s Birthday",
+      "uid": "0E93663C-7B31-44E9-9546-EEAE094938D9",
+      "location": null,
+      "description": null,
+      "start": "2025-05-01T00:00:00.000Z",
+      "end": "2025-05-01T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:01:39.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/4B4FA3EA-C9AF-4331-9611-A7C3B3C7BCF5.ics",
+    "etag": "C=17773@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Sarah’s Birthday",
+      "uid": "4B4FA3EA-C9AF-4331-9611-A7C3B3C7BCF5",
+      "location": null,
+      "description": null,
+      "start": "2025-08-04T00:00:00.000Z",
+      "end": "2025-08-04T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:02:48.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/F70EED39-E464-4E82-8619-FA3DF060370D.ics",
+    "etag": "C=17815@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Wedding Anniversary",
+      "uid": "F70EED39-E464-4E82-8619-FA3DF060370D",
+      "location": null,
+      "description": null,
+      "start": "2025-08-21T00:00:00.000Z",
+      "end": "2025-08-21T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2019-07-01T12:09:58.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/64D0E13B-3005-40BD-BB7A-C7F201B8AD25.ics",
+    "etag": "C=17285@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "John’s Birthday",
+      "uid": "64D0E13B-3005-40BD-BB7A-C7F201B8AD25",
+      "location": null,
+      "description": null,
+      "start": "2025-12-16T00:00:00.000Z",
+      "end": "2025-12-16T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:03:26.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/6756DCD7-F595-4835-9F12-9AC59859044A.ics",
+    "etag": "C=17283@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Charlie’s Birthday",
+      "uid": "6756DCD7-F595-4835-9F12-9AC59859044A",
+      "location": null,
+      "description": null,
+      "start": "2025-12-25T00:00:00.000Z",
+      "end": "2025-12-25T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:02:10.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/0E93663C-7B31-44E9-9546-EEAE094938D9.ics",
+    "etag": "C=17457@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack’s Birthday",
+      "uid": "0E93663C-7B31-44E9-9546-EEAE094938D9",
+      "location": null,
+      "description": null,
+      "start": "2026-05-01T00:00:00.000Z",
+      "end": "2026-05-01T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:01:39.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/4B4FA3EA-C9AF-4331-9611-A7C3B3C7BCF5.ics",
+    "etag": "C=17773@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Sarah’s Birthday",
+      "uid": "4B4FA3EA-C9AF-4331-9611-A7C3B3C7BCF5",
+      "location": null,
+      "description": null,
+      "start": "2026-08-04T00:00:00.000Z",
+      "end": "2026-08-04T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:02:48.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/F70EED39-E464-4E82-8619-FA3DF060370D.ics",
+    "etag": "C=17815@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Wedding Anniversary",
+      "uid": "F70EED39-E464-4E82-8619-FA3DF060370D",
+      "location": null,
+      "description": null,
+      "start": "2026-08-21T00:00:00.000Z",
+      "end": "2026-08-21T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2019-07-01T12:09:58.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/64D0E13B-3005-40BD-BB7A-C7F201B8AD25.ics",
+    "etag": "C=17285@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "John’s Birthday",
+      "uid": "64D0E13B-3005-40BD-BB7A-C7F201B8AD25",
+      "location": null,
+      "description": null,
+      "start": "2026-12-16T00:00:00.000Z",
+      "end": "2026-12-16T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:03:26.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/6756DCD7-F595-4835-9F12-9AC59859044A.ics",
+    "etag": "C=17283@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Charlie’s Birthday",
+      "uid": "6756DCD7-F595-4835-9F12-9AC59859044A",
+      "location": null,
+      "description": null,
+      "start": "2026-12-25T00:00:00.000Z",
+      "end": "2026-12-25T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:02:10.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/0E93663C-7B31-44E9-9546-EEAE094938D9.ics",
+    "etag": "C=17457@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack’s Birthday",
+      "uid": "0E93663C-7B31-44E9-9546-EEAE094938D9",
+      "location": null,
+      "description": null,
+      "start": "2027-05-01T00:00:00.000Z",
+      "end": "2027-05-01T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:01:39.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/4B4FA3EA-C9AF-4331-9611-A7C3B3C7BCF5.ics",
+    "etag": "C=17773@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Sarah’s Birthday",
+      "uid": "4B4FA3EA-C9AF-4331-9611-A7C3B3C7BCF5",
+      "location": null,
+      "description": null,
+      "start": "2027-08-04T00:00:00.000Z",
+      "end": "2027-08-04T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:02:48.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/F70EED39-E464-4E82-8619-FA3DF060370D.ics",
+    "etag": "C=17815@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Wedding Anniversary",
+      "uid": "F70EED39-E464-4E82-8619-FA3DF060370D",
+      "location": null,
+      "description": null,
+      "start": "2027-08-21T00:00:00.000Z",
+      "end": "2027-08-21T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2019-07-01T12:09:58.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/64D0E13B-3005-40BD-BB7A-C7F201B8AD25.ics",
+    "etag": "C=17285@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "John’s Birthday",
+      "uid": "64D0E13B-3005-40BD-BB7A-C7F201B8AD25",
+      "location": null,
+      "description": null,
+      "start": "2027-12-16T00:00:00.000Z",
+      "end": "2027-12-16T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:03:26.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/6756DCD7-F595-4835-9F12-9AC59859044A.ics",
+    "etag": "C=17283@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Charlie’s Birthday",
+      "uid": "6756DCD7-F595-4835-9F12-9AC59859044A",
+      "location": null,
+      "description": null,
+      "start": "2027-12-25T00:00:00.000Z",
+      "end": "2027-12-25T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:02:10.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/0E93663C-7B31-44E9-9546-EEAE094938D9.ics",
+    "etag": "C=17457@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack’s Birthday",
+      "uid": "0E93663C-7B31-44E9-9546-EEAE094938D9",
+      "location": null,
+      "description": null,
+      "start": "2028-05-01T00:00:00.000Z",
+      "end": "2028-05-01T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:01:39.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/4B4FA3EA-C9AF-4331-9611-A7C3B3C7BCF5.ics",
+    "etag": "C=17773@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Sarah’s Birthday",
+      "uid": "4B4FA3EA-C9AF-4331-9611-A7C3B3C7BCF5",
+      "location": null,
+      "description": null,
+      "start": "2028-08-04T00:00:00.000Z",
+      "end": "2028-08-04T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:02:48.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/F70EED39-E464-4E82-8619-FA3DF060370D.ics",
+    "etag": "C=17815@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Wedding Anniversary",
+      "uid": "F70EED39-E464-4E82-8619-FA3DF060370D",
+      "location": null,
+      "description": null,
+      "start": "2028-08-21T00:00:00.000Z",
+      "end": "2028-08-21T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2019-07-01T12:09:58.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/64D0E13B-3005-40BD-BB7A-C7F201B8AD25.ics",
+    "etag": "C=17285@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "John’s Birthday",
+      "uid": "64D0E13B-3005-40BD-BB7A-C7F201B8AD25",
+      "location": null,
+      "description": null,
+      "start": "2028-12-16T00:00:00.000Z",
+      "end": "2028-12-16T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:03:26.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/6756DCD7-F595-4835-9F12-9AC59859044A.ics",
+    "etag": "C=17283@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Charlie’s Birthday",
+      "uid": "6756DCD7-F595-4835-9F12-9AC59859044A",
+      "location": null,
+      "description": null,
+      "start": "2028-12-25T00:00:00.000Z",
+      "end": "2028-12-25T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:02:10.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/0E93663C-7B31-44E9-9546-EEAE094938D9.ics",
+    "etag": "C=17457@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack’s Birthday",
+      "uid": "0E93663C-7B31-44E9-9546-EEAE094938D9",
+      "location": null,
+      "description": null,
+      "start": "2029-05-01T00:00:00.000Z",
+      "end": "2029-05-01T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:01:39.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/4B4FA3EA-C9AF-4331-9611-A7C3B3C7BCF5.ics",
+    "etag": "C=17773@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Sarah’s Birthday",
+      "uid": "4B4FA3EA-C9AF-4331-9611-A7C3B3C7BCF5",
+      "location": null,
+      "description": null,
+      "start": "2029-08-04T00:00:00.000Z",
+      "end": "2029-08-04T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:02:48.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/64D0E13B-3005-40BD-BB7A-C7F201B8AD25.ics",
+    "etag": "C=17285@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "John’s Birthday",
+      "uid": "64D0E13B-3005-40BD-BB7A-C7F201B8AD25",
+      "location": null,
+      "description": null,
+      "start": "2029-12-16T00:00:00.000Z",
+      "end": "2029-12-16T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:03:26.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/6756DCD7-F595-4835-9F12-9AC59859044A.ics",
+    "etag": "C=17283@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Charlie’s Birthday",
+      "uid": "6756DCD7-F595-4835-9F12-9AC59859044A",
+      "location": null,
+      "description": null,
+      "start": "2029-12-25T00:00:00.000Z",
+      "end": "2029-12-25T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:02:10.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/0E93663C-7B31-44E9-9546-EEAE094938D9.ics",
+    "etag": "C=17457@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Jack’s Birthday",
+      "uid": "0E93663C-7B31-44E9-9546-EEAE094938D9",
+      "location": null,
+      "description": null,
+      "start": "2030-05-01T00:00:00.000Z",
+      "end": "2030-05-01T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:01:39.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/4B4FA3EA-C9AF-4331-9611-A7C3B3C7BCF5.ics",
+    "etag": "C=17773@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Sarah’s Birthday",
+      "uid": "4B4FA3EA-C9AF-4331-9611-A7C3B3C7BCF5",
+      "location": null,
+      "description": null,
+      "start": "2030-08-04T00:00:00.000Z",
+      "end": "2030-08-04T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:02:48.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/64D0E13B-3005-40BD-BB7A-C7F201B8AD25.ics",
+    "etag": "C=17285@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "John’s Birthday",
+      "uid": "64D0E13B-3005-40BD-BB7A-C7F201B8AD25",
+      "location": null,
+      "description": null,
+      "start": "2030-12-16T00:00:00.000Z",
+      "end": "2030-12-16T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:03:26.000Z"
+    }
+  },
+  {
+    "ics": "/99815676/calendars/67f4d3e2-84cb-439e-8604-402bc199db2b/6756DCD7-F595-4835-9F12-9AC59859044A.ics",
+    "etag": "C=17283@U=6adaee6d-757c-4678-829b-3b9ac4e785d9",
+    "data": {
+      "title": "Charlie’s Birthday",
+      "uid": "6756DCD7-F595-4835-9F12-9AC59859044A",
+      "location": null,
+      "description": null,
+      "start": "2030-12-25T00:00:00.000Z",
+      "end": "2030-12-25T23:59:59.000Z",
+      "duration": {
+        "weeks": 0,
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 0,
+        "isNegative": false
+      },
+      "type": {
+        "recurring": true,
+        "edited": false
+      },
+      "createdAt": "2021-04-03T00:02:10.000Z"
+    }
+  }
+]

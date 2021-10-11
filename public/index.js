@@ -88,40 +88,6 @@ function getCalendarEvents() {
           itemElement.appendChild(eventName);
         }
 
-
-
-
-
-
-
-        // Date Container
-        //const datecontainer = document.createElement("div");
-        //datecontainer.classList.add("datecontainer");
-        //itemElement.appendChild(datecontainer);
-
-        //const monthbox = document.createElement("div");
-        //monthbox.classList.add("monthbox");
-        //datecontainer.appendChild(monthbox);
-
-        //const datebox = document.createElement("div");
-        //datebox.classList.add("datebox");
-        //datecontainer.appendChild(datebox);
-
-        //monthbox.textContent = event.start.month;
-        //datebox.textContent = event.start.date;
-
-        //// Event Container
-        //const eventcontainer = document.createElement("div");
-        //eventcontainer.classList.add("eventcontainer");
-        //itemElement.appendChild(eventcontainer);
-
-
-        //const timebox = document.createElement("div");
-        //timebox.classList.add("timebox");
-        //eventcontainer.appendChild(timebox);
-        //if (!event.allDay) {
-          //timebox.textContent = event.start.time;
-        //}
       });
 
       calendarElement.innerHTML = "";
@@ -135,6 +101,41 @@ function getCalendarEvents() {
       }
     });
 
+}
+
+function getCountdownEvents() {
+  fetch("/countdown")
+    .then((response) => response.json())
+    .then((events) => {
+      const filteredEvents = events.slice(0,5);
+      const calendarElement = document.querySelector("#countdown-list");
+
+      const listElement = document.createElement("ul");
+      filteredEvents.forEach((event) => {
+        const itemElement = document.createElement("li");
+        itemElement.classList.add("countdown-event");
+        listElement.appendChild(itemElement);
+
+        itemElement.classList.add('row');
+        const eventName = document.createElement("div");
+        eventName.classList.add("countdown-event-name");
+        eventName.textContent = event.title;
+
+        const daysLeft = document.createElement("div");
+        daysLeft.classList.add("countdown-days-left");
+
+        const start = moment(event.date);
+        const today = moment().utc().startOf('day');
+        const days = moment.duration(start.diff(today)).asDays();
+        daysLeft.textContent = days;
+
+        itemElement.appendChild(eventName);
+        itemElement.appendChild(daysLeft);
+      });
+
+      calendarElement.innerHTML = "";
+      calendarElement.appendChild(listElement);
+    });
 }
 
 /* Event Helpers */
@@ -455,6 +456,7 @@ showPositiveMessage();
 showTime();
 showCartoonCharacter();
 getCalendarEvents();
+getCountdownEvents();
 getWeather();
 getJaysSchedule();
 
@@ -478,6 +480,7 @@ setInterval(() => {
 setInterval(() => {
   getJaysSchedule(); // dynamic timing based on server
   getCalendarEvents(); // no check on server
+  getCountdownEvents();
   showPositiveMessage();
 }, 1000 * 60); // every minute
 

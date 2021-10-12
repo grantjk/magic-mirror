@@ -124,10 +124,10 @@ function getCountdownEvents() {
         const daysLeft = document.createElement("div");
         daysLeft.classList.add("countdown-days-left");
 
-        const start = moment(event.date);
-        const today = moment().utc().startOf('day');
+        const today = moment().startOf('day');
+        const start = moment(moment(event.date).utc().format('YYYY-MM-DD'));
         const days = moment.duration(start.diff(today)).asDays();
-        daysLeft.textContent = days;
+        daysLeft.textContent = Math.round(days);
 
         itemElement.appendChild(eventName);
         itemElement.appendChild(daysLeft);

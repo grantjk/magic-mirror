@@ -12,6 +12,7 @@
     "url": "git+https://github.com/grantjk/magic-mirror.git"
   },
   "dependencies": {
+    "airtable": "^0.11.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "got": "^9.6.0",

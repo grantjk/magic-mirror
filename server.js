@@ -6,6 +6,7 @@ const app = express();
 const fs = require("fs");
 const moment = require("moment");
 const got = require("got");
+const Airtable = require('airtable');
 
 /* =========================== */
 /*      Renderer               */
@@ -314,6 +315,32 @@ app.get("/mlb", async (req, res) => {
     res.json({});
   }
 });
+
+// ============= Messages =========== */
+
+Airtable.configure({
+  apiKey: process.env.AIRTABLE_KEY
+})
+
+app.get('/announcements', (req, res) => {
+  var base = new Airtable({apiKey: process.env.AIRTABLE_KEY}).base(process.env.AIRTABLE_BASE);
+  base('announcements')
+    .select({ view: 'Grid view'})
+    .firstPage()
+    .then((records) => {
+      records.forEach(function(record) {
+        console.log(record);
+        console.log('Retrieved', record.get('identifier'));
+        console.log(record.get('text'));
+        console.log(record.get('enabled'));
+      });
+      res.json({});
+    }).catch((err) => {
+      console.error(err);
+      res.json({});
+  });
+});
+
 
 /* ===========SYNC Data ============*/
 const syncFilePath = "data/sync.json";

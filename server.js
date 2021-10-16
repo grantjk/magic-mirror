@@ -89,13 +89,12 @@ app.get("/countdown", async (req, res) => {
       { identifier: "countdown", ttlCount: 1, ttlUnit: "hour" },
       async () => {
         const start = moment()
-          .subtract(1, "day")
           .format("YYYYMMDD[T]HHmmss[Z]");
         const end = moment().add(1, "year").format("YYYYMMDD[T]HHmmss[Z]");
         const events = await countdownGoat.getEventsByTime(start, end);
         //writeJSONFile({filename: 'countdown-fixture', json: events})
         return events.map((e) => {
-          return { title: e.data.title, date: e.data.start }
+          return { title: e.data.title, date: moment(e.data.start).utc().format('YYYY-MM-DD') }
         });
       }
     );

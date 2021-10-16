@@ -466,7 +466,7 @@ function getAnnouncements() {
 }
 
 function showAnnouncement(announcement) {
-  if (announcement.enabled === false) {
+  if (!announcement.enabled) {
     return false
   }
 

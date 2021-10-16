@@ -46,6 +46,11 @@ body {
   text-transform: uppercase;
 }
 
+.text-4 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
 .text-normal {
   font-weight: 100;
 }
@@ -299,4 +304,14 @@ ul {
   justify-content: space-between;
   font-size: 26px;
   text-decoration: bold;
+}
+
+/* Announcements */
+#announcement-container div {
+  margin-bottom: 30px;
+}
+
+#announcement-container div li {
+  font-size: 30px;
+  text-transform: none;
 }

@@ -449,6 +449,36 @@ function teamLogoUrl(teamId) {
   return `https://www.mlbstatic.com/team-logos/${teamId}.svg`;
 }
 
+/* ============= Announcements ============= */
+function getAnnouncements() {
+  fetch("/announcements")
+    .then((response) => response.json())
+    .then((payload) => {
+      const el = document.querySelector("#announcement-container");
+      el.innerHTML = "";
+
+      payload.filter(p => showAnnouncement(p)).forEach(message => {
+        const messageEl = document.createElement("div");
+        messageEl.innerHTML = message.text;
+        el.appendChild(messageEl);
+      });
+    });
+}
+
+function showAnnouncement(announcement) {
+  if (announcement.enabled === false) {
+    return false
+  }
+
+  if (announcement.start_hour === undefined) {
+    return true
+  }
+
+  const now = moment()
+  const currentHour = now.hour()
+  return currentHour >= announcement.start_hour && currentHour < announcement.end_hour
+}
+
 /* ============ Main ====================== */
 configureMoment();
 showDate();
@@ -459,6 +489,7 @@ getCalendarEvents();
 getCountdownEvents();
 getWeather();
 getJaysSchedule();
+getAnnouncements();
 
 /* Run Loop */
 setInterval(() => {
@@ -482,6 +513,7 @@ setInterval(() => {
   getCalendarEvents(); // no check on server
   getCountdownEvents();
   showPositiveMessage();
+  getAnnouncements();
 }, 1000 * 60); // every minute
 
 setInterval(() => {

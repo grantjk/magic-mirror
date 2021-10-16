@@ -7,6 +7,7 @@ const fs = require("fs");
 const moment = require("moment");
 const got = require("got");
 const Airtable = require('airtable');
+const sanitize = require('sanitize-html');
 
 /* =========================== */
 /*      Renderer               */
@@ -328,14 +329,11 @@ app.get('/announcements', (req, res) => {
     .select({ view: 'Grid view'})
     .firstPage()
     .then((records) => {
-      records.forEach(function(record) {
-        console.log(record);
-        console.log('Retrieved', record.get('identifier'));
-        console.log(record.get('text'));
-        console.log(record.get('enabled'));
-      });
-      res.json({});
-    }).catch((err) => {
+      res.json(records.map((r) => {
+        return { ...r.fields, text: sanitize(r.fields.text) }
+      }))
+    })
+    .catch((err) => {
       console.error(err);
       res.json({});
   });

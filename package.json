@@ -20,6 +20,7 @@
     "lite-server": "^2.6.1",
     "moment": "^2.29.1",
     "nodemon": "^2.0.7",
+    "sanitize-html": "^2.5.2",
     "scrapegoat": "https://github.com/timklge/scrapegoat.git"
   },
   "devDependencies": {

@@ -103,11 +103,20 @@ function getCalendarEvents() {
 
 }
 
+function numberOfDaysToEvent(event) {
+  const today = moment().startOf('day');
+  const start = moment(event.date);
+  const days = moment.duration(start.diff(today)).asDays();
+  return Math.round(days);
+}
+
 function getCountdownEvents() {
   fetch("/countdown")
     .then((response) => response.json())
     .then((events) => {
-      const filteredEvents = events.slice(0,5);
+      const filteredEvents = events.filter( (e) => {
+        return numberOfDaysToEvent(e) > 0;
+      }).slice(0,5);
       const calendarElement = document.querySelector("#countdown-list");
 
       const listElement = document.createElement("ul");
@@ -123,11 +132,7 @@ function getCountdownEvents() {
 
         const daysLeft = document.createElement("div");
         daysLeft.classList.add("countdown-days-left");
-
-        const today = moment().startOf('day');
-        const start = moment(event.date);
-        const days = moment.duration(start.diff(today)).asDays();
-        daysLeft.textContent = Math.round(days);
+        daysLeft.textContent = numberOfDaysToEvent(event);
 
         itemElement.appendChild(eventName);
         itemElement.appendChild(daysLeft);

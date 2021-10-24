@@ -307,11 +307,11 @@ ul {
 }
 
 /* Announcements */
-#announcement-container div {
+.announcement {
   margin-bottom: 30px;
 }
 
-#announcement-container div li {
+.announcement-content {
   font-size: 30px;
   text-transform: none;
 }

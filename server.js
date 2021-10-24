@@ -330,7 +330,7 @@ app.get('/announcements', (req, res) => {
     .firstPage()
     .then((records) => {
       res.json(records.map((r) => {
-        return { ...r.fields, text: sanitize(r.fields.text) }
+        return { ...r.fields, title: sanitize(r.fields.title), content: sanitize(r.fields.content) }
       }))
     })
     .catch((err) => {

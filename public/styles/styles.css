@@ -26,6 +26,9 @@ body {
 .mt10 {
   margin-top: 10px;
 }
+.mt40 {
+  margin-top: 40px;
+}
 
 .mb20 {
   margin-bottom: 20px;
@@ -141,7 +144,7 @@ body {
   flex-direction: column;
 }
 
-#event-list {
+.event-list {
   width: 600px;
 }
 

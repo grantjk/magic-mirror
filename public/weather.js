@@ -168,6 +168,7 @@ function weatherIcon(weatherText, isDayTime) {
     case "mostly sunny w/ t-storms":
       return "thunderstorm";
     case "snow":
+    case "rain and snow":
     case "flurries":
     case "light snow":
       return "frost";

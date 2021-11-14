@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Settings</title>
+      <link rel="stylesheet" type="text/css" href="styles/flaticon.css" />
+  <link rel="stylesheet" type="text/css" href="styles/fonts.css" />
+  <link rel="stylesheet" type="text/css" href="styles/settings.css" />
+  </head>
+  <body>
+    <h1>Magic Mirror Settings</h1>
+    <form action='/settings' method='post'>
+      <div class="field-group">
+        <label for='email'>iCloud Email </label>
+        <input id='calendar' type='email' name='icloudEmail' value='<%= it.icloudEmail %>'>
+      </div>
+      <div class="field-group">
+        <label for='app-spec-pass'>iCloud App Specific Password </label>
+        <input id='app-spec-pass' type='text' name='icloudAppSpecificPassword' value='<%= it.icloudAppSpecificPassword %>'>
+      </div>
+      <div class="field-group">
+        <label for='calendar'>iCloud Calendar URL </label>
+        <input id='calendar' type='text' name='icloudCalendarUrl' value='<%= it.icloudCalendarUrl %>'>
+      </div>
+      <div class="field-group">
+        <label for='countdown'>iCloud Countdown Calendar URL </label>
+        <input id='countdown' type='text' name='icloudCountdownCalendarUrl' value='<%= it.icloudCountdownCalendarUrl %>'>
+      </div>
+      <div class="field-group">
+        <label for='accuweather'>Accuweather Api Key </label>
+        <input id='accuweather' type='text' name='accuweatherApiKey' value='<%= it.accuweatherApiKey %>'>
+      </div>
+      <div class="field-group">
+        <label for='accuweather-city'>Accuweather City Identifier </label>
+        <input id='accuweather-city' type='text' name='accuweatherCityKey' value='<%= it.accuweatherCityKey %>'>
+      </div>
+      <div class="field-group">
+        <label for='airtable'>Airtable Key </label>
+        <input id='airtable' type='text' name='airtableKey' value='<%= it.airtableKey %>'>
+      </div>
+      <div class="field-group">
+        <label for='airtable-base'>Airtable Base Idenitifer </label>
+        <input id='airtable-base' type='text' name='airtableBase' value='<%= it.airtableBase %>'>
+      </div>
+      <div>
+        <input type='submit' value='Save and Restart'>
+      </div>
+    </form>
+  </body>
+</html>

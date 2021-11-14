@@ -1,0 +1,51 @@
+* {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 0 0 0;
+  padding: 0;
+  /* border: 1px solid red; */
+  height: 2360px;
+  font-family: "HK";
+  font-weight: bold;
+}
+
+h1 {
+  padding: 0 40px;
+}
+
+form {
+  margin-top: 20px;
+  padding: 0 40px;
+}
+
+input[type='submit'] {
+  margin-top: 20px;
+  padding: 10px;
+  font-family: "HK";
+  font-weight: bold;
+  background: #aaaa;
+  width: 100%;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: row;
+  padding-top: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input:not([type='submit']) {
+  height: 34px;
+  font-family: "HK";
+  font-size: 14px;
+  width: 300px;
+}
+

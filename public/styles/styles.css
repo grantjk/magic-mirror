@@ -318,3 +318,11 @@ ul {
   font-size: 30px;
   text-transform: none;
 }
+
+#settings-link {
+  right: 0;
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  background: #00000000
+}

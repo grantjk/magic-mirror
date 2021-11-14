@@ -1,6 +1,4 @@
 const path = require("path");
-require("dotenv").config({ path: path.join(__dirname, ".env") });
-
 const express = require("express");
 const app = express();
 const fs = require("fs");
@@ -8,13 +6,56 @@ const moment = require("moment");
 const got = require("got");
 const Airtable = require('airtable');
 const sanitize = require('sanitize-html');
+const bodyParser = require('body-parser');
+const { exec } = require('child_process');
+
+const settings = require('./src/settings.js');
+const loadedSettings = {...settings.readSettings()};
+
+
+app.use(bodyParser.urlencoded({ extended: true}));
+app.use(express.static(filePath("public")));
 
 /* =========================== */
 /*      Renderer               */
 /* =========================== */
-app.use(express.static(filePath("public")));
-app.get("/", (req, res) => {
+app.set('view engine', 'eta');
+app.get("/", (_req, res) => {
   res.sendFile(__dirname + "/public/index.html");
+});
+
+/* =========================== */
+/*     Configure Settings      */
+/* =========================== */
+app.get("/settings", (_req, res) => {
+  res.render('./settings', loadedSettings);
+});
+
+app.post("/settings", (req, res) => {
+  // Save the settings
+  console.log("saving...");
+  const settingsData = {...req.body };
+  settings.writeSettings(settingsData);
+
+  // Redirect to the mirror
+  console.log("redirecting...");
+  res.redirect('/');
+
+  // Reboot the process
+  //if (process.env.NODE_ENV === 'production') {
+  console.log("rebooting...");
+    exec("pm2 restart mirror", (error, stdout, stderr) => {
+      if (error) {
+        console.log(`error: ${error.message}`);
+        return;
+      }
+      if (stderr) {
+          console.log(`stderr: ${stderr}`);
+          return;
+      }
+      console.log(`stdout: ${stdout}`);
+      })
+  //}
 });
 
 /* =========================== */
@@ -22,19 +63,19 @@ app.get("/", (req, res) => {
 /* =========================== */
 let config = {
   auth: {
-    user: process.env.ICLOUD_EMAIL,
-    pass: process.env.ICLOUD_PASS,
+    user: loadedSettings.icloudEmail,
+    pass: loadedSettings.icloudAppSpecificPassword,
     sendImmediately: true,
   },
-  uri: process.env.ICLOUD_URL,
+  uri: loadedSettings.icloudCalendarUrl,
 };
 const Scrapegoat = require("scrapegoat");
 const scrapegoat = new Scrapegoat(config);
 
-let countdownConfig = {...config, uri: process.env.ICLOUD_COUNTDOWN_URL }
+let countdownConfig = {...config, uri: loadedSettings.icloudCountdownCalendarUrl }
 const countdownGoat = new Scrapegoat(countdownConfig);
 
-app.get("/events", async (req, res) => {
+app.get("/events", async (_req, res) => {
   try {
     const { json, ttlSeconds } = await updateData(
       { identifier: "calendar", ttlCount: 15, ttlUnit: "minutes" },
@@ -85,7 +126,7 @@ app.get("/events", async (req, res) => {
   }
 });
 
-app.get("/countdown", async (req, res) => {
+app.get("/countdown", async (_req, res) => {
   try {
     const { json, ttlSeconds } = await updateData(
       { identifier: "countdown", ttlCount: 1, ttlUnit: "hour" },
@@ -124,7 +165,7 @@ function isFullDayEvent(event) {
 /* =========================== */
 /*      Positive Message       */
 /* =========================== */
-app.get("/message", async (req, res) => {
+app.get("/message", async (_req, res) => {
   try {
     const { json, ttlSeconds } = await updateData(
       {
@@ -153,7 +194,7 @@ app.get("/message", async (req, res) => {
 /* =========================== */
 /*      Pokemon                */
 /* =========================== */
-app.get("/pokemon", async (req, res) => {
+app.get("/pokemon", async (_req, res) => {
   try {
     const { json, ttlSeconds } = await updateData(
       {
@@ -189,7 +230,7 @@ app.get("/pokemon", async (req, res) => {
 /* =========================== */
 /*      Weather                */
 /* =========================== */
-app.get("/weather", async (req, res) => {
+app.get("/weather", async (_req, res) => {
   if (moment().hour() < 5) {
     // Don't waste calls when people are sleeping
     log(
@@ -199,13 +240,13 @@ app.get("/weather", async (req, res) => {
     res.json({});
   } else {
     try {
-      const api_key = process.env.ACCUWEATHER_API_KEY;
+      const api_key = loadedSettings.accuweatherApiKey;
 
       let { json: current, ttlSeconds: currentTtl } = await updateData(
         { identifier: "current-conditions", ttlCount: 1, ttlUnit: "hour" },
         async () => {
           const response = await got(
-            `http://dataservice.accuweather.com/currentconditions/v1/55488?apikey=${api_key}&details=true`,
+            `http://dataservice.accuweather.com/currentconditions/v1/${loadedSettings.accuweatherCityKey}?apikey=${api_key}&details=true`,
             { json: true }
           );
           return response.body[0];
@@ -216,7 +257,7 @@ app.get("/weather", async (req, res) => {
         { identifier: "hourly-conditions", ttlCount: 1, ttlUnit: "hour" },
         async () => {
           const response = await got(
-            `http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/55488?apikey=${api_key}&details=true&metric=true`,
+            `http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/${loadedSettings.accuweatherCityKey}?apikey=${api_key}&details=true&metric=true`,
             { json: true }
           );
           return response.body;
@@ -227,7 +268,7 @@ app.get("/weather", async (req, res) => {
         { identifier: "5day-forecast", ttlCount: 6, ttlUnit: "hours" },
         async () => {
           const response = await got(
-            `http://dataservice.accuweather.com/forecasts/v1/daily/5day/55488?apikey=${api_key}&details=true&metric=true`,
+            `http://dataservice.accuweather.com/forecasts/v1/daily/5day/${loadedSettings.accuweatherCityKey}?apikey=${api_key}&details=true&metric=true`,
             { json: true }
           );
           return response.body;
@@ -259,7 +300,7 @@ app.get("/weather", async (req, res) => {
 // curl -H 'Host: statsapi.mlb.com' -H 'Accept: */*' -H 'Cookie: gpv_v48=ATBAT%3A%20Season-pick-em%3A%20MLB%202021%20Season%20Pick%20%26%23x27%3BEm; s_getNewRepeat=1617637893080-New; s_lv=1617637893081; s_lv_s=More%20than%2030%20days; s_ppn=ATBAT%3A%20Season-pick-em%3A%20MLB%202021%20Season%20Pick%20%26%23x27%3BEm; AMCV_A65F776A5245B01B0A490D44%40AdobeOrg=1687686476%7CMCIDTS%7C18723%7CMCMID%7C16301876984098754232224264368243292811%7CMCAID%7CNONE%7CMCOPTOUT-1617645091s%7CNONE%7CvVersion%7C3.0.0; mbox=session#0f995e8bed99489e90882ba659600b7d#1617639715; __cfduid=dd54ec15c6fb13c9d90e7919893a719261617637848' -H 'User-Agent: MLB/6099 CFNetwork/1237 Darwin/20.4.0' -H 'Accept-Language: en-ca' --compressed 'https://statsapi.mlb.com/api/v1/schedule?startDate=2021-03-28&endDate=2021-04-13&sportId=1&teamId=141,160&hydrate=team,game(seriesSummary),decisions,person,stats,linescore(runners,matchup,positions),flags,probablePitcher&fields='
 //curl -H 'Host: statsapi.mlb.com' -H 'Accept: */*' -H 'User-Agent: MLB/6099 CFNetwork/1237 Darwin/20.4.0' -H 'Accept-Language: en-ca' --compressed 'https://statsapi.mlb.com/api/v1/schedule?startDate=2021-03-28&endDate=2021-04-13&sportId=1&teamId=141,160&hydrate=team,game(seriesSummary),decisions,person,stats,linescore(runners,matchup,positions),flags,probablePitcher&fields='
 
-app.get("/mlb", async (req, res) => {
+app.get("/mlb", async (_req, res) => {
   try {
     const { json, ttlSeconds } = await updateData(
       {
@@ -320,11 +361,11 @@ app.get("/mlb", async (req, res) => {
 // ============= Messages =========== */
 
 Airtable.configure({
-  apiKey: process.env.AIRTABLE_KEY
+  apiKey: loadedSettings.airtableKey,
 })
 
-app.get('/announcements', (req, res) => {
-  var base = new Airtable({apiKey: process.env.AIRTABLE_KEY}).base(process.env.AIRTABLE_BASE);
+app.get('/announcements', (_req, res) => {
+  var base = new Airtable({apiKey: loadedSettings.airtableKey}).base(loadedSettings.airtableBase);
   base('announcements')
     .select({ view: 'Grid view'})
     .firstPage()
@@ -444,12 +485,3 @@ const logDateFormat = "YYYY-MM-DD HH:mm:ss";
 app.listen(8000, () => {
   console.log("Alive on http://localhost:8000....");
 });
-
-/* Weather routes
-
-curl -X GET "http://dataservice.accuweather.com/currentconditions/v1/55488?apikey=API_KEY&details=true"
-curl -X GET "http://dataservice.accuweather.com/forecasts/v1/daily/5day/55488?apikey=API_KEY&details=true&metric=true"
-curl -X GET "http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/55488?apikey=API_KEY&details=true&metric=true"
-
-
-*/

@@ -12,7 +12,9 @@ export function getCalendarEvents() {
       calendarElement.appendChild(todayList);
 
       // Tomorrow's Events
-      const tomorrowsEvents = payload.filter((e) => !eventIsOver(e) && isEventTomorrow(e));
+      const tomorrowsEvents = payload.filter((e) =>{
+        return isEventTomorrow(e)
+      });
       const tomorrowList = buildCalendarListItemsFromEvents(tomorrowsEvents);
       const tomorrowElement = document.querySelector("#event-list-tomorrow");
       tomorrowElement.innerHTML = "";

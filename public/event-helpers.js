@@ -24,12 +24,20 @@ export function eventIsOver(event) {
 }
 
 export function isEventToday(event) {
-  const startDate = moment(moment.utc(event.start.raw).format("YYYY-MM-DD"))
+  const startDate = eventStartDate(event);
   return startDate.isSame(moment(), "day");
 }
 
 export function isEventTomorrow(event) {
-  const startDate = moment(moment.utc(event.start.raw).format("YYYY-MM-DD"))
+  const startDate = eventStartDate(event);
   return startDate.isSame(moment().add(1, 'day'), "day");
+}
+
+function eventStartDate(event) {
+  let startDate = moment(moment(event.start.raw).format("YYYY-MM-DD"))
+  if (event.allDay) {
+    startDate = moment(moment.utc(event.start.raw).format("YYYY-MM-DD"))
+  }
+  return startDate
 }
 

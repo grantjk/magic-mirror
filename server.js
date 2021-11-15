@@ -33,29 +33,25 @@ app.get("/settings", (_req, res) => {
 
 app.post("/settings", (req, res) => {
   // Save the settings
-  console.log("saving...");
   const settingsData = {...req.body };
   settings.writeSettings(settingsData);
 
   // Redirect to the mirror
-  console.log("redirecting...");
   res.redirect('/');
 
   // Reboot the process
-  //if (process.env.NODE_ENV === 'production') {
   console.log("rebooting...");
-    exec("pm2 restart mirror", (error, stdout, stderr) => {
-      if (error) {
-        console.log(`error: ${error.message}`);
+  exec("pm2 restart mirror", (error, stdout, stderr) => {
+    if (error) {
+      console.log(`error: ${error.message}`);
+      return;
+    }
+    if (stderr) {
+        console.log(`stderr: ${stderr}`);
         return;
-      }
-      if (stderr) {
-          console.log(`stderr: ${stderr}`);
-          return;
-      }
-      console.log(`stdout: ${stdout}`);
-      })
-  //}
+    }
+    console.log(`stdout: ${stdout}`);
+  })
 });
 
 /* =========================== */

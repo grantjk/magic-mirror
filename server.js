@@ -8,9 +8,14 @@ const Airtable = require('airtable');
 const sanitize = require('sanitize-html');
 const bodyParser = require('body-parser');
 const { exec } = require('child_process');
+const eta = require("eta");
 
 const settings = require('./src/settings.js');
+
+console.log("----------------START");
+console.log(settings.readSettings());
 const loadedSettings = {...settings.readSettings()};
+console.log(loadedSettings);
 
 
 app.use(bodyParser.urlencoded({ extended: true}));
@@ -19,6 +24,8 @@ app.use(express.static(filePath("public")));
 /* =========================== */
 /*      Renderer               */
 /* =========================== */
+app.engine("eta", eta.renderFile)
+app.set("views", "./views")
 app.set('view engine', 'eta');
 app.get("/", (_req, res) => {
   res.sendFile(__dirname + "/public/index.html");
@@ -28,7 +35,7 @@ app.get("/", (_req, res) => {
 /*     Configure Settings      */
 /* =========================== */
 app.get("/settings", (_req, res) => {
-  res.render('./settings', loadedSettings);
+  res.render('settings', loadedSettings);
 });
 
 app.post("/settings", (req, res) => {

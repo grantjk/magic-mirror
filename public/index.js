@@ -22,9 +22,9 @@ function configureMoment() {
 
 function loadAll() {
   showDate();
-  showPositiveMessage();
+  //showPositiveMessage();
   showTime();
-  showCartoonCharacter();
+  //showCartoonCharacter();
   getCalendarEvents();
   getCountdownEvents();
   getWeather();
@@ -41,13 +41,13 @@ function updateEveryMinute() {
   getJaysSchedule(); // dynamic timing based on server
   getCalendarEvents(); // no check on server
   getCountdownEvents();
-  showPositiveMessage();
+  //showPositiveMessage();
   getAnnouncements();
   getWeather(); // controlled on server side, so can request frequently
 }
 
 function updateEveryFiveMins() {
-  showCartoonCharacter();
+  //showCartoonCharacter();
 }
 
 function updateEveryHour() {

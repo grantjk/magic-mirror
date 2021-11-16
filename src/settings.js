@@ -5,10 +5,7 @@ const settingsPath = configPath + '/settings.json';
 
 function readSettings() {
   try {
-    console.log("READING DATA at path....");
-    console.log(settingsPath);
     const data = fs.readFileSync(settingsPath, 'utf8')
-    console.log(data);
     return JSON.parse(data);
   } catch (err) {
     // if the file doesn't exist, write an empty file

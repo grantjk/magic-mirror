@@ -11,12 +11,7 @@ const { exec } = require('child_process');
 const eta = require("eta");
 
 const settings = require('./src/settings.js');
-
-console.log("----------------START");
-console.log(settings.readSettings());
 const loadedSettings = {...settings.readSettings()};
-console.log(loadedSettings);
-
 
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(express.static(filePath("public")));
@@ -25,7 +20,7 @@ app.use(express.static(filePath("public")));
 /*      Renderer               */
 /* =========================== */
 app.engine("eta", eta.renderFile)
-app.set("views", "./views")
+app.set("views", path.join(__dirname, 'views'))
 app.set('view engine', 'eta');
 app.get("/", (_req, res) => {
   res.sendFile(__dirname + "/public/index.html");
@@ -43,12 +38,12 @@ app.post("/settings", (req, res) => {
   const settingsData = {...req.body };
   settings.writeSettings(settingsData);
 
-  // Redirect to the mirror
+  // Redirect to the mirror before rebooting to not kill process I guess
   res.redirect('/');
 
   // Reboot the process
   console.log("rebooting...");
-  exec("pm2 restart mirror", (error, stdout, stderr) => {
+  exec('eval "$(fnm env)" && pm2 restart mirror', (error, stdout, stderr) => {
     if (error) {
       console.log(`error: ${error.message}`);
       return;

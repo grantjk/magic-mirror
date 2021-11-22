@@ -173,6 +173,7 @@ function weatherIcon(weatherText, isDayTime) {
     case "light snow":
     case "partly sunny w/ flurries":
     case "partly cloudy w/ flurries":
+    case "mostly cloudy w/ flurries":
       return "frost";
   }
 

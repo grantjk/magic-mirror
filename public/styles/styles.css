@@ -1,3 +1,9 @@
+/*
+ * Default styles are for the 27" screen in the Mirror Mark I
+ * 768 width queries are for the iPad screens in the Mirror Mark II
+ *
+ */
+
 * {
   background-color: black;
   color: white;
@@ -15,11 +21,27 @@ body {
   font-weight: bold;
 }
 
+/* No Left margin necessary on iPads */
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0 0 0 0;
+    height: 1024px;
+  }
+}
+
 .container {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin: 70px 60px 60px 40px; /* To align in the mirror frame */
+}
+
+/* iPad screens aren't hidden behind the frame */
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 0 0 0 0;
+    width: 100%;
+  }
 }
 
 /* spacing */
@@ -39,14 +61,32 @@ body {
   font-size: 210px;
 }
 
+@media screen and (max-width: 768px) {
+  .text-1 {
+    font-size: 110px;
+  }
+}
+
 .text-2 {
   font-size: 60px;
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 768px) {
+  .text-2 {
+    font-size: 38px;
+  }
+}
+
 .text-3 {
   font-size: 40px;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .text-3 {
+    font-size: 30px;
+  }
 }
 
 .text-4 {
@@ -120,6 +160,15 @@ body {
 #time {
   margin-bottom: -40px;
 }
+
+@media screen and (max-width: 768px) {
+  #time {
+    margin-bottom: -20px;
+  }
+  #date {
+    margin-bottom: 40px;
+  }
+}
 /* Messages */
 
 #positiveMessage {
@@ -148,6 +197,13 @@ body {
   width: 600px;
 }
 
+@media screen and (max-width: 768px) {
+  .event-list {
+    width: 300px;
+  }
+}
+
+
 ul {
   list-style-type: none;
 }
@@ -170,8 +226,20 @@ ul {
   font-size: 30px;
 }
 
+@media screen and (max-width: 768px) {
+  .calendar-time-row {
+    font-size: 24px;
+  }
+}
+
 .event-name {
   font-size: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .event-name {
+    font-size: 24px;
+  }
 }
 
 .event-name-all-day {
@@ -192,7 +260,15 @@ ul {
 .weather-row {
   display: flex;
   align-items: flex-start;
+  margin-bottom: -50px; /* Needed to shrink bottom padding */
 }
+
+@media screen and (max-width: 768px) {
+  .weather-row {
+    margin-bottom: -20px; /* Needed to shrink bottom padding */
+  }
+}
+
 
 .forecast {
   margin: 0 40px;
@@ -200,22 +276,23 @@ ul {
   margin-top: 50px;
 }
 
-.weather-row {
-  margin-bottom: -50px; /* Needed to shrink bottom padding */
-}
-
-#weather-prompt {
-  font-size: 50px;
-  max-width: 800px;
-}
-
-.temperature {
-  font-size: 250px;
+@media screen and (max-width: 768px) {
+  .forecast {
+    margin: 0 20px;
+    font-size: 80px;
+    margin-top: 20px;
+  }
 }
 
 #precip-icon {
   margin: 10px 20px;
   font-size: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  #precip-icon {
+    font-size: 40px;
+  }
 }
 
 .hidden {
@@ -226,8 +303,10 @@ ul {
   margin-bottom: -20px;
 }
 
-.feels-like {
-  font-size: 70px;
+@media screen and (max-width: 768px) {
+  .high-low-row {
+    margin-bottom: 0;
+  }
 }
 
 #weather-forecast {
@@ -235,6 +314,14 @@ ul {
   margin-top: 100px;
   width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  #weather-forecast {
+    margin: 0;
+    margin-top: 50px;
+  }
+}
+
 
 .forecast-row {
   display: flex;
@@ -245,8 +332,20 @@ ul {
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .forecast-row {
+    font-size: 24px;
+  }
+}
+
 .forecast-row > * {
- width: 90px;
+  width: 90px;
+}
+
+@media screen and (max-width: 768px) {
+  .forecast-row > * {
+    width: 60px;
+  }
 }
 
 .forecast-row > div:last-child {
@@ -255,6 +354,12 @@ ul {
 
 .forecast-row > i {
   font-size: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .forecast-row > i {
+    font-size: 36px;
+  }
 }
 
 .push-down {
@@ -268,9 +373,9 @@ ul {
 #hourly-gradient {
   position: absolute;
   bottom: 0;
-  height: 60%;
+  height: 80%;
   width: 100%;
-  background: linear-gradient(#00000000, #000000);
+  background: linear-gradient(#00000000, #0000008f);
 }
 
 /* MLB */
@@ -278,6 +383,12 @@ ul {
 #mlb-row {
   align-items: center;
   margin: 50px 200px;
+}
+
+@media screen and (max-width: 768px) {
+  #mlb-row {
+    margin: 10px 0;
+  }
 }
 
 .team-logo {
@@ -308,15 +419,32 @@ ul {
   font-size: 26px;
   text-decoration: bold;
 }
+@media screen and (max-width: 768px) {
+  .countdown-event {
+    font-size: 20px;
+  }
+}
 
 /* Announcements */
 .announcement {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 768px) {
+  .announcement {
+    margin-bottom: 30px;
+  }
+}
+
 .announcement-content {
   font-size: 30px;
   text-transform: none;
+}
+
+@media screen and (max-width: 768px) {
+  .announcement-content {
+    font-size: 20px;
+  }
 }
 
 #settings-link {

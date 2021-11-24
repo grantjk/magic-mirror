@@ -166,7 +166,7 @@ body {
     margin-bottom: -20px;
   }
   #date {
-    margin-bottom: 40px;
+    margin-bottom: 80px;
   }
 }
 /* Messages */
@@ -334,7 +334,7 @@ ul {
 
 @media screen and (max-width: 768px) {
   .forecast-row {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
@@ -344,7 +344,7 @@ ul {
 
 @media screen and (max-width: 768px) {
   .forecast-row > * {
-    width: 60px;
+    width: 80px;
   }
 }
 
@@ -353,12 +353,12 @@ ul {
 }
 
 .forecast-row > i {
-  font-size: 40px;
+  font-size: 38px;
 }
 
 @media screen and (max-width: 768px) {
   .forecast-row > i {
-    font-size: 36px;
+    font-size: 32px;
   }
 }
 

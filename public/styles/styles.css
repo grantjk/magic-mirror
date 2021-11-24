@@ -166,7 +166,7 @@ body {
     margin-bottom: -20px;
   }
   #date {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
   }
 }
 /* Messages */
@@ -292,6 +292,7 @@ ul {
 @media screen and (max-width: 768px) {
   #precip-icon {
     font-size: 40px;
+    margin: 0px 20px;
   }
 }
 

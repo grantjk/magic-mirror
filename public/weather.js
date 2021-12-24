@@ -51,7 +51,7 @@ export function getWeather() {
 
       if (moment().hour() < 20) {
         // Hourly
-        payload?.hourly?.slice(0, 12).forEach((f) => {
+        payload?.hourly?.slice(0, 8).forEach((f) => {
           const li = buildHourlyListElement(f);
           forecastList.appendChild(li);
         });

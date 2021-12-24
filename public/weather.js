@@ -51,7 +51,7 @@ export function getWeather() {
 
       if (moment().hour() < 20) {
         // Hourly
-        payload?.hourly?.slice(0, 8).forEach((f) => {
+        payload?.hourly?.slice(0, numberOfWeatherRows()).forEach((f) => {
           const li = buildHourlyListElement(f);
           forecastList.appendChild(li);
         });
@@ -63,6 +63,13 @@ export function getWeather() {
         });
       }
     });
+}
+
+function numberOfWeatherRows() {
+  if (window.innerHeight > 1500) {
+    return 12
+  }
+  return 8;
 }
 
 function buildHourlyListElement(forecast) {

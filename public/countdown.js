@@ -7,8 +7,15 @@ export function getCountdownEvents() {
       const filteredEvents = events.filter( (e) => {
         return numberOfDaysToEvent(e) > 0;
       }).slice(0,5);
+
+      // Add title
+      const title = filteredEvents.length > 0 ? "How many sleeps until..." : "";
+      const titleEl = document.querySelector('#countdown-title');
+      titleEl.textContent = title;
+
       const calendarElement = document.querySelector("#countdown-list");
 
+      // Add list items
       const listElement = document.createElement("ul");
       filteredEvents.forEach((event) => {
         const itemElement = document.createElement("li");

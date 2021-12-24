@@ -16,7 +16,6 @@ export function getWeather() {
 
       // Set Current Temp
       const currentTemp = payload?.current?.Temperature?.Metric?.Value;
-      const feelsLike = payload?.current?.RealFeelTemperature?.Metric?.Value;
       document.querySelector("#weather-temp").innerHTML = `${currentTemp}`;
 
       // Set High / Low

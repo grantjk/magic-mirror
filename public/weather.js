@@ -165,6 +165,7 @@ function weatherIcon(weatherText, isDayTime) {
     case "partly sunny w/ showers":
     case "mostly cloudy w/ showers":
     case "partly cloudy w/ showers":
+    case "freezing rain": // TODO: change
     case "heavy rain":
       return "rain";
     case "thunderstorms":
@@ -182,6 +183,7 @@ function weatherIcon(weatherText, isDayTime) {
     case "partly sunny w/ flurries":
     case "partly cloudy w/ flurries":
     case "mostly cloudy w/ flurries":
+    case "sleet":
       return "frost";
   }
 

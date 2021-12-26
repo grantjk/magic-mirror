@@ -251,6 +251,16 @@ ul {
   border-radius: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  .event-name-all-day {
+    padding: 3px 10px;
+    font-size: 26px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipses;
+  }
+}
+
 .empty-calendar {
   font-size: 80px;
 }

@@ -11,9 +11,18 @@ export function eventIsOver(event) {
     const end = moment.utc(event.end.raw);
     const now = moment();
 
+    const today = dateOnly(now);
+    const eventEndDay = dateOnly(end);
+
+    // Check for long running events over multiple days in the future
+    if (start.isBefore(now) && moment(today).isBefore(moment(eventEndDay))) {
+      return false
+    }
+
+    // Check for events ending today
     return (
       start.isBefore(now) &&
-      !moment(end.format("YYYY-MM-DD")).isSame(now, "day")
+      !moment(eventEndDay).isSame(now, "day")
     );
   }
 
@@ -21,6 +30,10 @@ export function eventIsOver(event) {
   const end = moment(event.end.raw);
   const now = moment();
   return start.isBefore(now) && end.isBefore(now);
+}
+
+export function dateOnly(momentDate) {
+  return momentDate.format("YYYY-MM-DD")
 }
 
 export function isEventToday(event) {

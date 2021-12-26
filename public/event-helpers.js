@@ -38,6 +38,15 @@ export function dateOnly(momentDate) {
 
 export function isEventToday(event) {
   const startDate = eventStartDate(event);
+  const endDate = eventEndDate(event);
+  const today = moment(dateOnly(moment()));
+
+  // Check for events spanning multiple days
+  if (startDate.isBefore(today) && endDate.isAfter(today)) {
+    return true
+  }
+
+  // Otherwise, only check events starting today
   return startDate.isSame(moment(), "day");
 }
 
@@ -47,10 +56,17 @@ export function isEventTomorrow(event) {
 }
 
 function eventStartDate(event) {
-  let startDate = moment(moment(event.start.raw).format("YYYY-MM-DD"))
+  let startDate = moment(dateOnly(moment(event.start.raw)))
   if (event.allDay) {
-    startDate = moment(moment.utc(event.start.raw).format("YYYY-MM-DD"))
+    startDate = moment(dateOnly(moment.utc(event.start.raw)))
   }
   return startDate
 }
 
+function eventEndDate(event) {
+  let endDate = moment(dateOnly(moment(event.end.raw)))
+  if (event.allDay) {
+    endDate = moment(dateOnly(moment.utc(event.end.raw)))
+  }
+  return endDate
+}

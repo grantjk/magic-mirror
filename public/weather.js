@@ -155,6 +155,7 @@ function weatherIcon(weatherText, isDayTime) {
       return isDayTime ? "cloudy-1" : "cloudy-night";
     case "cloudy":
     case "fog":
+    case "freezing fog":
     case "windy": // should probably change
     case "dreary":
       return "cloudy-2";

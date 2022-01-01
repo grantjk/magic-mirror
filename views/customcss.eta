@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Custom CSS</title>
+    <link rel="stylesheet" type="text/css" href="styles/flaticon.css" />
+    <link rel="stylesheet" type="text/css" href="styles/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="styles/settings.css" />
+    <style>
+      <%= it.css %>
+    </style>
+  </head>
+  <body>
+    <h1>Enter Custom CSS Rules here</h1>
+    <form action='/customcss' method='post'>
+      <div class="field-group">
+        <textarea id='customCss' rows='50' cols='70' name='customCss'><%= it.css %></textarea>
+      </div>
+      <div>
+        <input type='submit' value='Save and Restart'>
+      </div>
+    </form>
+  </body>
+</html>

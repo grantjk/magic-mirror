@@ -4,3 +4,4 @@ node_modules
 cache
 data/sync.json
 config/settings.json
+config/customcss.css

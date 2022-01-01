@@ -26,6 +26,22 @@ app.get("/", (_req, res) => {
 });
 
 /* =========================== */
+/*     Custom CSS              */
+/* =========================== */
+app.get("/customcss", (_req, res) => {
+  const css = settings.readCustomCSS();
+  res.render('customcss', {css});
+});
+
+
+app.post("/customcss", (req, res) => {
+  const css = req.body.customCss || "";
+  settings.writeCustomCSS(css);
+
+  res.redirect('/customcss');
+})
+
+/* =========================== */
 /*     Configure Settings      */
 /* =========================== */
 app.get("/settings", (_req, res) => {

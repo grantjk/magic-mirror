@@ -2,7 +2,6 @@ const fs = require('fs');
 const configPath =  __dirname + '/../config';
 const settingsPath = configPath + '/settings.json';
 
-
 function readSettings() {
   try {
     const data = fs.readFileSync(settingsPath, 'utf8')
@@ -17,9 +16,7 @@ function readSettings() {
   }
 }
 
-
 /*
-
   icloudEmail:
   icloudAppSpecificPassword:
   icloudCalendarUrl:

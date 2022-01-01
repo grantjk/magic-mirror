@@ -7,11 +7,10 @@ const got = require("got");
 const Airtable = require('airtable');
 const sanitize = require('sanitize-html');
 const bodyParser = require('body-parser');
-const { exec } = require('child_process');
 const eta = require("eta");
+const Scrapegoat = require("scrapegoat");
 
 const settings = require('./src/settings.js');
-const loadedSettings = {...settings.readSettings()};
 
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(express.static(filePath("public")));
@@ -30,7 +29,7 @@ app.get("/", (_req, res) => {
 /*     Configure Settings      */
 /* =========================== */
 app.get("/settings", (_req, res) => {
-  res.render('settings', loadedSettings);
+  res.render('settings', settings.readSettings());
 });
 
 app.post("/settings", (req, res) => {
@@ -38,40 +37,57 @@ app.post("/settings", (req, res) => {
   const settingsData = {...req.body };
   settings.writeSettings(settingsData);
 
-  // Redirect to the mirror before rebooting to not kill process I guess
-  res.redirect('/');
+  // Clear the Scrapegoat cache
+  clearSettingsCache();
 
-  // Reboot the process
-  console.log("rebooting...");
-  exec('eval "$(fnm env)" && pm2 restart mirror', (error, stdout, stderr) => {
-    if (error) {
-      console.log(`error: ${error.message}`);
-      return;
-    }
-    if (stderr) {
-        console.log(`stderr: ${stderr}`);
-        return;
-    }
-    console.log(`stdout: ${stdout}`);
-  })
+  // Clear data cache?
+  clearDataCache()
+
+  // Redirect to home
+  res.redirect('/');
 });
+
+function clearSettingsCache() {
+  scrapegoat = null;
+  countdownGoat = null;
+}
+
+function clearDataCache() {
+  clearSyncData({key: 'calendar'})
+}
 
 /* =========================== */
 /*      iCloud calendar        */
 /* =========================== */
-let config = {
-  auth: {
-    user: loadedSettings.icloudEmail,
-    pass: loadedSettings.icloudAppSpecificPassword,
-    sendImmediately: true,
-  },
-  uri: loadedSettings.icloudCalendarUrl,
-};
-const Scrapegoat = require("scrapegoat");
-const scrapegoat = new Scrapegoat(config);
 
-let countdownConfig = {...config, uri: loadedSettings.icloudCountdownCalendarUrl }
-const countdownGoat = new Scrapegoat(countdownConfig);
+function scrapegoatConfig() {
+  const loadedSettings = settings.readSettings()
+  return {
+    auth: {
+      user: loadedSettings.icloudEmail,
+      pass: loadedSettings.icloudAppSpecificPassword,
+      sendImmediately: true,
+    },
+    uri: loadedSettings.icloudCalendarUrl,
+  };
+}
+
+let scrapegoat = null;
+function useScrapegoat() {
+  if (scrapegoat) { return scrapegoat }
+
+  scrapegoat = new Scrapegoat(scrapegoatConfig());
+  return scrapegoat
+}
+
+let countdownGoat = null;
+function useCountdownScrapegoat() {
+  if (countdownGoat) { return countdownGoat }
+
+  let countdownConfig = {...config, uri: settings.readSettings().icloudCountdownCalendarUrl }
+  countdownGoat = new Scrapegoat(countdownConfig);
+  return countdownGoat
+}
 
 app.get("/events", async (_req, res) => {
   try {
@@ -82,7 +98,8 @@ app.get("/events", async (_req, res) => {
           .subtract(1, "day")
           .format("YYYYMMDD[T]HHmmss[Z]");
         const end = moment().add(1, "month").format("YYYYMMDD[T]HHmmss[Z]");
-        const events = await scrapegoat.getEventsByTime(start, end);
+        const goat = useScrapegoat()
+        const events = await goat.getEventsByTime(start, end);
         // writeJSONFile({filename: 'calendar-fixture', json: events})
         return events.map((e) => {
           let start = moment(e.data.start);
@@ -114,7 +131,7 @@ app.get("/events", async (_req, res) => {
       }
     );
 
-    res.set("Cache-Control", `private, max-age=${ttlSeconds}`);
+    ////res.set("Cache-Countrol", `private, max-age=${ttlSeconds}`);
     res.json(json);
   } catch (err) {
     log("Calendar", "Error fetching calendar");
@@ -132,7 +149,8 @@ app.get("/countdown", async (_req, res) => {
         const start = moment()
           .format("YYYYMMDD[T]HHmmss[Z]");
         const end = moment().add(1, "year").format("YYYYMMDD[T]HHmmss[Z]");
-        const events = await countdownGoat.getEventsByTime(start, end);
+        const goat = useCountdownScrapegoat()
+        const events = await goat.getEventsByTime(start, end);
         //writeJSONFile({filename: 'countdown-fixture', json: events})
         return events.map((e) => {
           return { title: e.data.title, date: moment(e.data.start).utc().format('YYYY-MM-DD') }
@@ -140,7 +158,7 @@ app.get("/countdown", async (_req, res) => {
       }
     );
 
-    res.set("Cache-Control", `private, max-age=${ttlSeconds}`);
+    ////res.set("Cache-Countrol", `private, max-age=${ttlSeconds}`);
     res.json(json);
   } catch (err) {
     log("Countdown", "Error fetching countdown");
@@ -179,7 +197,7 @@ app.get("/message", async (_req, res) => {
         return { message: messageList[messageNumber] };
       }
     );
-    res.set("Cache-Control", `private, max-age=${ttlSeconds}`);
+    //res.set("Cache-Countrol", `private, max-age=${ttlSeconds}`);
     res.json(json);
   } catch (err) {
     log("postive-message", "Error fetching positive message");
@@ -215,7 +233,7 @@ app.get("/pokemon", async (_req, res) => {
         return { art };
       }
     );
-    res.set("Cache-Control", `private, max-age=${ttlSeconds}`);
+    //res.set("Cache-Control", `private, max-age=${ttlSeconds}`);
     res.json(json);
   } catch (err) {
     log("pokemon", "Error fetching pokemon");
@@ -243,6 +261,7 @@ app.get("/weather", async (_req, res) => {
     })
   } else {
     try {
+      const loadedSettings = settings.readSettings();
       const api_key = loadedSettings.accuweatherApiKey;
 
       let { json: current, ttlSeconds: currentTtl } = await updateData(
@@ -278,10 +297,10 @@ app.get("/weather", async (_req, res) => {
         }
       );
 
-      res.set(
-        "Cache-Control",
-        `private, max-age=${Math.min(currentTtl, hourlyTtl, forecastTtl)}`
-      );
+      //res.set(
+        //"Cache-Control",
+        //`private, max-age=${Math.min(currentTtl, hourlyTtl, forecastTtl)}`
+      //);
       res.json({
         current,
         forecast,
@@ -352,7 +371,7 @@ app.get("/mlb", async (_req, res) => {
       }
     );
 
-    res.set("Cache-Control", `private, max-age=${ttlSeconds}`);
+    //res.set("Cache-Control", `private, max-age=${ttlSeconds}`);
     res.json(json);
   } catch (err) {
     // This means our cache has failed
@@ -362,12 +381,8 @@ app.get("/mlb", async (_req, res) => {
 });
 
 // ============= Messages =========== */
-
-Airtable.configure({
-  apiKey: loadedSettings.airtableKey,
-})
-
 app.get('/announcements', (_req, res) => {
+  const loadedSettings = settings.readSettings();
   var base = new Airtable({apiKey: loadedSettings.airtableKey}).base(loadedSettings.airtableBase);
   base('announcements')
     .select({ view: 'Grid view'})
@@ -444,6 +459,13 @@ function readSyncData(key) {
   const json = readJSONFile(syncFilePath);
   const value = json[key];
   return value;
+}
+
+function clearSyncData({key}) {
+  const json = readJSONFile(syncFilePath);
+  delete json[key]
+
+  writeJSONFile({ filename: syncFilePath, json });
 }
 
 function writeSyncData({ key, value }) {

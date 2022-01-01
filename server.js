@@ -229,11 +229,12 @@ app.get("/pokemon", async (_req, res) => {
 /*      Weather                */
 /* =========================== */
 app.get("/weather", async (_req, res) => {
-  if (moment().hour() < 5) {
+  const today = moment()
+  if (today.hour() >= 2 && today.hour() < 5) {
     // Don't waste calls when people are sleeping
     log(
       "weather",
-      "Between 12am and 5am. Everyone is sleeping - reading weather from cache..."
+      "Between 2am and 5am. Everyone is sleeping - reading weather from cache..."
     );
     res.json({});
   } else {

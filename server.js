@@ -52,8 +52,10 @@ function clearSettingsCache() {
   countdownGoat = null;
 }
 
+// Only clearing calendar for now - others dont make sense yet
 function clearDataCache() {
   clearSyncData({key: 'calendar'})
+  clearSyncData({key: 'countdown'})
 }
 
 /* =========================== */

@@ -236,7 +236,11 @@ app.get("/weather", async (_req, res) => {
       "weather",
       "Between 2am and 5am. Everyone is sleeping - reading weather from cache..."
     );
-    res.json({});
+    res.json({
+      current: readJSONFile('cache/current-conditions.json'),
+      forecast: readJSONFile('cache/5day-forecast.json'),
+      hourly: readJSONFile('cache/hourly-conditions.json')
+    })
   } else {
     try {
       const api_key = loadedSettings.accuweatherApiKey;

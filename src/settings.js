@@ -1,4 +1,5 @@
 const fs = require('fs');
+const sanitize = require('sanitize-html');
 const configPath =  __dirname + '/../config';
 const settingsPath = configPath + '/settings.json';
 const cssPath = configPath + '/customcss.css';
@@ -37,9 +38,12 @@ function writeSettings(settings) {
 }
 
 function writeCustomCSS(css) {
-  // Create directory if it doesn't exist yet
-  console.log("WROTONG")
-  console.log(css);
+
+  //const cleanCSS = sanitize(css, {
+    //allowedAttributes: {
+  //})
+
+
   fs.mkdirSync(configPath, {recursive: true});
   fs.writeFileSync(cssPath, css);
 }

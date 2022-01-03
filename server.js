@@ -22,7 +22,8 @@ app.engine("eta", eta.renderFile)
 app.set("views", path.join(__dirname, 'views'))
 app.set('view engine', 'eta');
 app.get("/", (_req, res) => {
-  res.sendFile(__dirname + "/public/index.html");
+  const css = settings.readCustomCSS();
+  res.render('index', {css});
 });
 
 /* =========================== */

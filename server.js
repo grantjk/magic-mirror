@@ -86,7 +86,7 @@ let countdownGoat = null;
 function useCountdownScrapegoat() {
   if (countdownGoat) { return countdownGoat }
 
-  let countdownConfig = {...config, uri: settings.readSettings().icloudCountdownCalendarUrl }
+  let countdownConfig = {...scrapegoatConfig(), uri: settings.readSettings().icloudCountdownCalendarUrl }
   countdownGoat = new Scrapegoat(countdownConfig);
   return countdownGoat
 }

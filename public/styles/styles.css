@@ -21,6 +21,10 @@ body {
   font-weight: bold;
 }
 
+.debug {
+  border: 1px solid red;
+}
+
 /* No Left margin necessary on iPads */
 @media screen and (max-width: 768px) {
   body {
@@ -91,6 +95,11 @@ body {
 
 .text-4 {
   font-size: 30px;
+  text-transform: uppercase;
+}
+
+.text-5 {
+  font-size: 20px;
   text-transform: uppercase;
 }
 
@@ -393,7 +402,8 @@ ul {
 
 #mlb-row {
   align-items: center;
-  margin: 50px 200px;
+  margin-top: 50px;
+  /*margin: 50px 200px;*/
 }
 
 @media screen and (max-width: 768px) {
@@ -402,10 +412,55 @@ ul {
   }
 }
 
+.standings-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .team-logo {
-  /* filter: grayscale(100%); */
   max-width: 100px;
   max-height: 100px;
+  padding: 10px;
+}
+
+.team-score {
+  padding: 0px 50px;
+}
+
+.logo-wrapper {
+  width: 120px;
+  height: 120px;
+}
+
+.team-logo-small {
+  max-width: 20px;
+  max-height: 20px;
+  padding: 5px;
+}
+
+.image-wrapper-small {
+  width: 30px;
+  height: 30px;
+}
+
+.standings-table {
+  display: table;
+  width: 100%;
+}
+
+.standings-table .standings-row {
+  display: table-row;
+}
+
+.standings-table .standings-col {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.standings-count{
+  text-align: right;
+  padding-left: 15px;
 }
 
 #fun-container {

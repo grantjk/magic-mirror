@@ -382,6 +382,35 @@ app.get("/mlb", async (_req, res) => {
   }
 });
 
+app.get("/mlb-standings", async (_req, res) => {
+  try {
+    const { json, ttlSeconds } = await updateData(
+      {
+        identifier: "mlb-standings",
+        ttlHook: (payload) => {
+          return moment().add(1, "hour");
+        },
+      },
+      async () => {
+        log(`MLB`, `Fetching update....`);
+
+        let now = moment();
+        const gameDate = now.format("YYYY-MM-DD");
+        const url = `https://statsapi.mlb.com/api/v1/standings?hydrate=team(previousSchedule(date%3D${gameDate},limit%3D1,gameType%3D%5BR%5D,inclusive%3Dtrue),nextSchedule(date%3D${gameDate},limit%3D1,gameType%3D%5BR%5D,inclusive%3Dfalse),division)&leagueId=103,104&season=${now.format("YYYY")}&sportId=1&standingsType=wildCardWithLeaders`;
+        const response = await got(url, { json: true });
+        return response.body;
+      }
+    );
+
+    //res.set("Cache-Control", `private, max-age=${ttlSeconds}`);
+    res.json(json);
+  } catch (err) {
+    // This means our cache has failed
+    log(`MLB`, `ERROR fetching mlb scores: ${err}`);
+    res.json({});
+  }
+});
+
 // ============= Messages =========== */
 app.get('/announcements', (_req, res) => {
   const loadedSettings = settings.readSettings();

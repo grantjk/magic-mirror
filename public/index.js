@@ -2,7 +2,7 @@ import { showDate, showTime } from './datetime.js';
 import { getCalendarEvents } from './calendar.js';
 import { getCountdownEvents } from './countdown.js';
 import { getWeather } from './weather.js';
-import { getJaysSchedule } from './baseball.js';
+import { getJaysSchedule, getJaysStandings } from './baseball.js';
 import { getAnnouncements } from './announcements.js';
 import { showPositiveMessage } from './positive-message.js';
 import { showCartoonCharacter } from './cartoon.js';
@@ -29,6 +29,7 @@ function loadAll() {
   getCountdownEvents();
   getWeather();
   getJaysSchedule();
+  getJaysStandings();
   getAnnouncements();
 }
 
@@ -39,6 +40,7 @@ function updateEverySecond() {
 
 function updateEveryMinute() {
   getJaysSchedule(); // dynamic timing based on server
+  getJaysStandings(); // dynamic timing based on server
   getCalendarEvents(); // no check on server
   getCountdownEvents();
   //showPositiveMessage();

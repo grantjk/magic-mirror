@@ -88,3 +88,79 @@ function teamLogoUrl(teamId) {
 }
 
 
+export function getJaysStandings() {
+  fetch("/mlb-standings")
+    .then((response) => response.json())
+    .then((payload) => {
+      console.log(payload);
+
+      // Get top 5 wild card teams in AL
+      const standingsRaw = payload?.records?.[0].teamRecords?.slice(0, 5) ?? [];
+
+      // Format into nicer format
+      const standings = standingsRaw.map( (data) => {
+          return {
+            teamName: data.team.teamName,
+            teamLogo: teamLogoUrl(data.team.id),
+            wildCardRank: parseInt(data.wildCardRank),
+            wildCardGamesBack: data.wildCardGamesBack,
+            gamesBack: data.gamesBack,
+          }
+      });
+
+      console.log(standings);
+
+      const standingsEl = document.querySelector("#mlb-standings");
+      standingsEl.innerHTML = "";
+
+      if (standings.length > 0) {
+        const titleEl = document.createElement('div');
+        titleEl.classList.add('text-5');
+        titleEl.innerText = "AL Wild Card Race";
+        standingsEl.appendChild(titleEl);
+
+        const table = document.createElement("section");
+        table.classList.add('standings-table');
+        standingsEl.appendChild(table);
+
+        standings.forEach((standing) => {
+
+          const rowEl = document.createElement("div");
+          rowEl.classList.add('standings-row');
+
+          // Add the logo
+          const imgWrapper = document.createElement("div");
+          imgWrapper.classList.add('image-wrapper-small');
+          imgWrapper.classList.add('standings-col');
+          const img = document.createElement('img');
+          img.classList.add('team-logo-small');
+          img.src = standing.teamLogo;
+          imgWrapper.appendChild(img);
+          rowEl.appendChild(imgWrapper);
+
+          // Team name
+          const nameEl = document.createElement('div');
+          nameEl.classList.add('standings-col');
+          nameEl.innerText = standing.teamName;
+          rowEl.appendChild(nameEl);
+
+          // Wild Card Games Back
+          const wcBackEl = document.createElement('div');
+          wcBackEl.classList.add('standings-col');
+          wcBackEl.classList.add('standings-count');
+          wcBackEl.innerText = standing.wildCardGamesBack;
+          rowEl.appendChild(wcBackEl);
+
+          // Division Games Back
+          const gamesBackEl = document.createElement('div');
+          gamesBackEl.classList.add('standings-col');
+          gamesBackEl.classList.add('standings-count');
+          gamesBackEl.innerText = `(${standing.gamesBack})`;
+          rowEl.appendChild(gamesBackEl);
+
+          table.appendChild(rowEl);
+        });
+      }
+
+    });
+}

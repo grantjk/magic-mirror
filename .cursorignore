@@ -1,0 +1,8 @@
+config/settings.json
+.env
+node_modules
+.DS_Store
+cache
+data/sync.json
+config/settings.json
+config/

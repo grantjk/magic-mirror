@@ -3,5 +3,5 @@ node_modules
 .DS_Store
 cache
 data/sync.json
-configsettings.json
+config/settings.json
 config/

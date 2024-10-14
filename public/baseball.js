@@ -73,6 +73,24 @@ function teamLogoUrl(teamId) {
 
 
 export function getJaysStandings() {
+  const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
+  const startOfSeasonDate = new Date(currentYear, 3, 1); // April 1st (month is 0-indexed)
+  const endOfSeasonDate = new Date(currentYear, 9, 2); // October 2nd (month is 0-indexed)
+
+  const standingsEl = document.querySelector("#mlb-standings");
+  standingsEl.innerHTML = ""; // Clear out old data
+
+  if (currentDate < startOfSeasonDate) {
+    console.log("Season hasn't started yet. Skipping standings fetch.");
+    return;
+  }
+
+  if (currentDate > endOfSeasonDate) {
+    console.log("Season has ended. Skipping standings fetch.");
+    return;
+  }
+
   fetch("/mlb-standings")
     .then((response) => response.json())
     .then((payload) => {
@@ -81,21 +99,17 @@ export function getJaysStandings() {
       // Get top 5 wild card teams in AL
       const standingsRaw = payload?.records?.[0].teamRecords?.slice(0, 5) ?? [];
 
-      // Format into nicer format
-      const standings = standingsRaw.map( (data) => {
-          return {
-            teamName: data.team.teamName,
-            teamLogo: teamLogoUrl(data.team.id),
-            wildCardRank: parseInt(data.wildCardRank),
-            wildCardGamesBack: data.wildCardGamesBack,
-            gamesBack: data.gamesBack,
-          }
+      const standings = standingsRaw.map((data) => {
+        return {
+          teamName: data.team.teamName,
+          teamLogo: teamLogoUrl(data.team.id),
+          wildCardRank: parseInt(data.wildCardRank),
+          wildCardGamesBack: data.wildCardGamesBack,
+          gamesBack: data.gamesBack,
+        }
       });
 
       console.log(standings);
-
-      const standingsEl = document.querySelector("#mlb-standings");
-      standingsEl.innerHTML = "";
 
       if (standings.length > 0) {
         const titleEl = document.createElement('div');

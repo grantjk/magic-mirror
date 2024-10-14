@@ -147,6 +147,7 @@ function weatherIcon(weatherText, isDayTime) {
     case "mostly sunny":
       return isDayTime ? "sun" : "moon-1";
     case "partly sunny":
+    case "hazy sunshine":
       return "cloudy";
     case "partly cloudy":
     case "intermittent clouds":
